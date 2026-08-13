@@ -1,0 +1,57 @@
+name: Deploy
+
+# Every merge to master publishes to Cloudflare Pages.
+# Manual runs are allowed too, for re-deploying without a code change.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# A newer push supersedes an in-flight deploy rather than racing it.
+concurrency:
+  group: deploy-master
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Rebuilds terms.json / display.json from the cheat sheet and the question
+      # pool, then runs the contract validator. A broken subject fails here
+      # rather than shipping.
+      - name: Build content and validate
+        run: npm run content
+
+      # The generated files are committed so local dev needs no build step.
+      # If regenerating them changes anything, the commit was stale — fail loudly
+      # instead of silently deploying something the repo does not reflect.
+      - name: Check generated content is up to date
+        run: |
+          # --porcelain catches new untracked files too, not just modified ones.
+          changed=$(git status --porcelain -- subjects/)
+          if [ -n "$changed" ]; then
+            echo "$changed"
+            echo "::error::subjects/ is stale — run 'npm run content' and commit the result."
+            exit 1
+          fi
+
+      - run: npm run build
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=meshit30 --branch=master

@@ -1,0 +1,27 @@
+# dependencies & build output
+node_modules/
+dist/
+.vite/
+
+# Cloudflare / wrangler local state
+.wrangler/
+.dev.vars
+
+# secrets — API tokens live in GitHub Actions secrets, never in the repo
+.env
+.env.*
+!.env.example
+
+# local tool state
+.claude/settings.local.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# logs
+*.log
+npm-debug.log*
