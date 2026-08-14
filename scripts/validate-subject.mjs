@@ -100,16 +100,31 @@ function validate(slug) {
       errors.push(`${at}: correct answer "${q.correct}" points at an empty option`);
     }
 
-    // Optional image, resolved relative to the subject folder.
+    // absolute paths are served from public/, relative from the subject dir
+    const resolveAsset = (src) =>
+      src.startsWith('/') ? join(SUBJECTS_DIR, '..', 'public', src.slice(1)) : path(src);
+
+    // Optional single image, resolved relative to the subject folder.
     if (q.image !== undefined) {
       if (typeof q.image !== 'string' || !q.image.trim()) {
         errors.push(`${at}: image must be a non-empty string`);
+      } else if (!existsSync(resolveAsset(q.image))) {
+        errors.push(`${at}: image "${q.image}" does not exist`);
+      }
+    }
+
+    // Optional figure strip: the plates a scenario question cites by number.
+    if (q.figures !== undefined) {
+      if (!Array.isArray(q.figures) || q.figures.length === 0) {
+        errors.push(`${at}: figures must be a non-empty array`);
       } else {
-        // absolute paths are served from public/, relative from the subject dir
-        const file = q.image.startsWith('/')
-          ? join(SUBJECTS_DIR, '..', 'public', q.image.slice(1))
-          : path(q.image);
-        if (!existsSync(file)) errors.push(`${at}: image "${q.image}" does not exist`);
+        for (const fig of q.figures) {
+          if (!fig?.src?.trim()) errors.push(`${at}: a figure has no src`);
+          else if (!existsSync(resolveAsset(fig.src))) {
+            errors.push(`${at}: figure "${fig.src}" does not exist`);
+          }
+          if (!fig?.caption?.trim()) errors.push(`${at}: figure "${fig?.src}" has no caption`);
+        }
       }
     }
   }
@@ -118,6 +133,21 @@ function validate(slug) {
   const topics = new Map();
   for (const q of questions) topics.set(q.topic, (topics.get(q.topic) ?? 0) + 1);
   if (topics.size === 0) errors.push('no topics found — the topic filters would be empty');
+
+  // Disqualifying topics are named as free text, so a typo would silently
+  // switch the rule off instead of failing anything.
+  const critical = pool.exam?.critical;
+  if (critical !== undefined) {
+    if (!Array.isArray(critical.topics) || critical.topics.length === 0) {
+      errors.push('exam.critical.topics must be a non-empty array');
+    } else {
+      for (const t of critical.topics) {
+        if (!topics.has(t)) errors.push(`exam.critical names topic "${t}", which no question uses`);
+      }
+    }
+    if (!critical.note?.trim()) errors.push('exam.critical.note must explain the rule to the learner');
+    if (!critical.label?.trim()) errors.push('exam.critical.label must name the disqualifying family');
+  }
   for (const [topic, n] of topics) {
     if (n < 2) warnings.push(`topic "${topic}" has only ${n} question(s) — thin for a per-topic breakdown`);
   }

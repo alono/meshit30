@@ -468,3 +468,26 @@ table.topics td.num { text-align: left; font-variant-numeric: tabular-nums; whit
 
 .qtext { font-size: 1.12rem; font-weight: 600; margin: 0 0 4px; }
 .qimage { max-width: 100%; border-radius: var(--radius); margin: 12px 0; }
+
+/* A ימאות scenario can cite two plates at once, so figures sit side by side and
+   wrap; the caption keeps the plate number visible next to the picture. */
+.qfigs { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+.qfigs figure { margin: 0; flex: 0 1 auto; max-width: 100%; }
+.qfigs a { display: block; }
+.qfigs a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+/* The plates are black line art on a baked-in white ground, so they read the
+   same in both themes; the border keeps them from bleeding into a light card. */
+.qfigs img {
+  display: block;
+  max-width: 100%;
+  max-height: 220px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  image-rendering: -webkit-optimize-contrast;
+}
+.qfigs figcaption {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}

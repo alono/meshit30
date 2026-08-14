@@ -66,6 +66,7 @@ export default function Exam({ subject, onFinish }) {
           אין משוב עד להגשה.
           {excluded > 0 && ` ${excluded} שאלות פגומות במקור הרשמי אינן נכללות בסימולציה.`}
         </p>
+        {subject.exam.critical && <p className="notice">⚠ {subject.exam.critical.note}</p>}
         <button type="button" className="btn" onClick={start}>להתחיל</button>
       </div>
     );
