@@ -33,8 +33,12 @@ export default function Results({ subject, attempt, result, onAgain, onHome }) {
       </div>
 
       <div className="row">
-        <button type="button" className="btn" onClick={onAgain}>סימולציה נוספת</button>
-        <button type="button" className="btn ghost" onClick={onHome}>חזרה לתפריט</button>
+        {onAgain && (
+          <button type="button" className="btn" onClick={onAgain}>סימולציה נוספת</button>
+        )}
+        <button type="button" className="btn ghost" onClick={onHome}>
+          {onAgain ? 'חזרה לתפריט' : 'חזרה להתקדמות'}
+        </button>
       </div>
 
       <h2 style={{ marginTop: 28 }}>

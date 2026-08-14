@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { RESETTABLE, resetArea, resetSubject, summarize } from '../lib/progress.js';
+import { buildAttempt, scoreAttempt } from '../lib/exam.js';
+import Results from './Results.jsx';
 
 const pct = (n) => (n == null ? '—' : `${Math.round(n * 100)}%`);
 
@@ -8,10 +10,26 @@ export default function Progress({ subject }) {
   // Owned here rather than passed in, so a reset can refresh the figures
   // without leaving the screen.
   const [stats, setStats] = useState(() => summarize(subject));
+  const [replay, setReplay] = useState(null);
   const refresh = () => setStats(summarize(subject));
 
   const { attempts } = stats;
   const top = Math.max(100, ...attempts.map((a) => a.score));
+
+  // Reviewing a past attempt: rebuild the exact paper — stored with the
+  // attempt when available, deterministically re-drawn from its seed for
+  // attempts recorded before the paper was stored — and re-score the stored
+  // answers through the ordinary Results screen.
+  if (replay) {
+    const attempt =
+      replay.questionIds && replay.optionOrder
+        ? { seed: replay.seed, questionIds: replay.questionIds, optionOrder: replay.optionOrder }
+        : buildAttempt(subject, replay.seed);
+    const result = scoreAttempt(subject, attempt, replay.answers ?? {});
+    return (
+      <Results subject={subject} attempt={attempt} result={result} onHome={() => setReplay(null)} />
+    );
+  }
 
   return (
     <>
@@ -47,6 +65,23 @@ export default function Progress({ subject }) {
                 />
               ))}
             </div>
+            <table className="topics" style={{ marginTop: 12 }}>
+              <tbody>
+                {[...attempts].reverse().slice(0, 8).map((a) => (
+                  <tr key={a.at}>
+                    <td className="meta">{new Date(a.at).toLocaleDateString('he-IL')}</td>
+                    <td className="num">
+                      <b>{a.score}</b> / 100 {a.passed ? '✓' : ''}
+                    </td>
+                    <td className="num">
+                      <button type="button" className="chip" onClick={() => setReplay(a)}>
+                        צפייה
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </>
         )}
       </div>

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import QuestionCard from '../components/QuestionCard.jsx';
 import { loadWrongQueue, recordAnswer } from '../lib/progress.js';
+import { newSeed, rng, shuffle } from '../lib/rng.js';
 import { cheatsheetSnippet } from '../lib/snippet.js';
 
 /**
@@ -18,13 +19,17 @@ export default function Practice({ subject }) {
   const [picked, setPicked] = useState(null);
   const [cursor, setCursor] = useState(0);
   const [wrongQueue, setWrongQueue] = useState(() => loadWrongQueue(subject.slug));
+  // One shuffle per filter selection. The seed only changes on reset(), so
+  // answering (which updates wrongQueue) re-filters without re-ordering.
+  const [seed, setSeed] = useState(newSeed);
 
   const questions = useMemo(() => {
     const wrong = new Set(wrongQueue);
-    return subject.questions.filter(
+    const filtered = subject.questions.filter(
       (q) => (!topic || q.topic === topic) && (!onlyWrong || wrong.has(q.id)),
     );
-  }, [subject.questions, topic, onlyWrong, wrongQueue]);
+    return shuffle(filtered, rng(seed));
+  }, [subject.questions, topic, onlyWrong, wrongQueue, seed]);
 
   const question = questions[cursor % Math.max(questions.length, 1)];
 
@@ -44,6 +49,7 @@ export default function Practice({ subject }) {
     fn();
     setPicked(null);
     setCursor(0);
+    setSeed(newSeed());
   };
 
   const snippet = picked && picked !== question.correct
