@@ -81,6 +81,15 @@ export default function Home({ progress, onOpen, theme, onThemeChange }) {
         );
       })}
 
+      <button type="button" className="tile" onClick={() => onOpen('signals')}>
+        <div className="row">
+          <span className="title">🔦 אורות וסימנים</span>
+          <span className="spacer" style={{ flex: 1 }} />
+          <span className="pill">127 תמונות</span>
+        </div>
+        <div className="sub">חוברת העזר הרשמית: זיהוי אורות, סימני יום, דגלים ואותות קוליים</div>
+      </button>
+
       <ThemeControl theme={theme} onChange={onThemeChange} variant="picker" />
 
       <div className="card">
