@@ -230,20 +230,117 @@ button { font: inherit; color: inherit; }
 .termbox b { display: block; }
 .termbox .close { float: inline-start; }
 
-/* ---------- flashcard ---------- */
+/* ---------- flashcard: 3D flip + swipe ---------- */
 
-.flash {
-  width: 100%;
-  min-height: 220px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 28px 20px;
-  font-size: 1.25rem;
-  cursor: pointer;
+/* Outer wrapper carries the drag (translate/rotate); the button inside carries
+   the flip (rotateY). Keeping them on separate elements is what lets a flipped
+   card be dragged without the transforms fighting. */
+.swipe-stage { position: relative; margin: 14px 0 4px; }
+
+.swipe-wrap {
+  position: relative;
+  perspective: 900px;
+  transition: transform 0.18s ease-out;
+  touch-action: pan-y; /* horizontal drags are ours; vertical scrolling stays the page's */
 }
-.flash .hint { display: block; margin-top: 14px; font-size: 0.85rem; color: var(--ink-soft); }
-.flash .answer { font-size: 1.05rem; color: var(--ink); }
+
+/* The just-graded card: engine state has moved on, this is only its exit. */
+.swipe-wrap.ghost {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: fly-out 0.32s ease-in forwards;
+}
+.swipe-wrap.ghost .stamp { opacity: 1; }
+.flipcard.static { transition: none; cursor: default; }
+
+.fly-know { --to: -130%; }
+.fly-dont { --to: 130%; }
+@keyframes fly-out {
+  from { transform: translateX(var(--from, 0px)); opacity: 1; }
+  to { transform: translateX(var(--to)) rotate(10deg); opacity: 0; }
+}
+
+.flipcard {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 240px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+  text-align: center;
+}
+.flipcard.flipped { transform: rotateY(180deg); }
+
+.face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.face.back { transform: rotateY(180deg); }
+
+.flash-main { font-size: 1.4rem; font-weight: 800; }
+.flash-answer { font-size: 1.05rem; line-height: 1.65; }
+.flash-hint { font-size: 0.82rem; color: var(--ink-soft); }
+
+/* Grade stamps that fade in with the drag. */
+.stamp {
+  position: absolute;
+  top: 16px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-weight: 800;
+  pointer-events: none;
+  transform: rotate(-8deg);
+}
+.stamp.know { inset-inline-start: 14px; background: var(--right); color: var(--on-right); }
+.stamp.dont { inset-inline-end: 14px; background: var(--wrong); color: var(--on-wrong); transform: rotate(8deg); }
+
+.btn.know { background: var(--right); border-color: var(--right); color: var(--on-right); }
+
+.round-meta { margin-top: 10px; }
+.swipe-hint { text-align: center; }
+
+/* ---------- שינון entry dashboard ---------- */
+
+.deck-count { font-size: 1.7rem; font-weight: 800; margin: 2px 0; }
+
+.boxes { display: flex; gap: 10px; align-items: flex-end; margin-top: 10px; }
+.boxes .b { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; text-align: center; }
+.boxes .b i { display: block; border-radius: 6px 6px 2px 2px; background: var(--brand); opacity: 0.45; }
+.boxes .b:last-child i { opacity: 1; }
+.boxes .b small { color: var(--ink-soft); font-size: 0.72rem; }
+
+.btn.start-round { width: 100%; margin-top: 14px; font-size: 1.05rem; }
+
+/* ---------- round summary ---------- */
+
+.sumline { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.sumline:last-child { border-bottom: 0; }
+.sumline .ico { width: 24px; text-align: center; }
+.sumline .ico.up { color: var(--right); font-weight: 700; }
+.sumline .ico.down { color: var(--wrong); font-weight: 700; }
+
+/* Motion is decorative here — without it everything still works. */
+@media (prefers-reduced-motion: reduce) {
+  .swipe-wrap, .flipcard { transition: none; }
+  .swipe-wrap.ghost { animation: none; visibility: hidden; }
+}
 
 /* ---------- misc ---------- */
 
