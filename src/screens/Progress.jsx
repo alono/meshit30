@@ -1,7 +1,15 @@
+import { useState } from 'react';
+import { RESETTABLE, resetArea, resetSubject, summarize } from '../lib/progress.js';
+
 const pct = (n) => (n == null ? '—' : `${Math.round(n * 100)}%`);
 
-/** התקדמות — pool coverage, per-topic accuracy, and the attempt history. */
-export default function Progress({ subject, stats }) {
+/** התקדמות — pool coverage, per-topic accuracy, attempt history, and resets. */
+export default function Progress({ subject }) {
+  // Owned here rather than passed in, so a reset can refresh the figures
+  // without leaving the screen.
+  const [stats, setStats] = useState(() => summarize(subject));
+  const refresh = () => setStats(summarize(subject));
+
   const { attempts } = stats;
   const top = Math.max(100, ...attempts.map((a) => a.score));
 
@@ -63,6 +71,107 @@ export default function Progress({ subject, stats }) {
         </table>
         <p className="meta">העמודה האחרונה: כמה שאלות מהנושא כבר ראית.</p>
       </div>
+
+      <ResetPanel subject={subject} onChange={refresh} />
     </>
+  );
+}
+
+function ResetPanel({ subject, onChange }) {
+  // Which row is awaiting confirmation. Resets are irreversible, so nothing
+  // happens on the first press.
+  const [pending, setPending] = useState(null);
+
+  const run = (action) => {
+    action();
+    setPending(null);
+    onChange();
+  };
+
+  const rows = RESETTABLE.map((area) => ({ ...area, n: area.count(subject.slug) }));
+  const total = rows.reduce((sum, r) => sum + r.n, 0);
+
+  return (
+    <div className="card">
+      <b>איפוס התקדמות</b>
+      <p className="meta">
+        אפשר לאפס כל חלק בנפרד. הנתונים נשמרים במכשיר הזה בלבד, והאיפוס אינו ניתן לביטול —
+        כדאי לייצא גיבוי מהמסך הראשי לפני איפוס.
+      </p>
+
+      <table className="topics">
+        <tbody>
+          {rows.map((area) => (
+            <tr key={area.id}>
+              <td>
+                {area.he}
+                <div className="meta">{area.note}</div>
+                {pending === area.id && (
+                  <div className="notice" style={{ marginTop: 8 }}>
+                    לאפס {area.n} {area.unit}? הפעולה אינה ניתנת לביטול.
+                  </div>
+                )}
+              </td>
+              <td className="num meta">{area.n} {area.unit}</td>
+              <td className="num">
+                {pending === area.id ? (
+                  <span className="row" style={{ justifyContent: 'flex-end' }}>
+                    <button type="button" className="chip" onClick={() => setPending(null)}>
+                      ביטול
+                    </button>
+                    <button
+                      type="button"
+                      className="chip danger"
+                      onClick={() => run(() => resetArea(subject.slug, area.id))}
+                    >
+                      אישור האיפוס
+                    </button>
+                  </span>
+                ) : (
+                  <button
+                    type="button"
+                    className="chip"
+                    disabled={area.n === 0}
+                    onClick={() => setPending(area.id)}
+                  >
+                    איפוס
+                  </button>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <div className="row" style={{ marginTop: 16 }}>
+        {pending === 'all' ? (
+          <>
+            <div className="notice" style={{ width: '100%' }}>
+              לאפס את כל ההתקדמות בנושא {subject.he}? כל ארבעת החלקים יימחקו. שאר הנושאים לא ייפגעו.
+            </div>
+            <span style={{ flex: 1 }} />
+            <button type="button" className="btn ghost" onClick={() => setPending(null)}>
+              ביטול
+            </button>
+            <button
+              type="button"
+              className="btn danger"
+              onClick={() => run(() => resetSubject(subject.slug))}
+            >
+              אישור האיפוס
+            </button>
+          </>
+        ) : (
+          <button
+            type="button"
+            className="btn ghost"
+            disabled={total === 0}
+            onClick={() => setPending('all')}
+          >
+            איפוס הכול בנושא זה
+          </button>
+        )}
+      </div>
+    </div>
   );
 }

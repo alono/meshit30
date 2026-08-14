@@ -236,6 +236,15 @@ button { font: inherit; color: inherit; }
 }
 .chip.on { background: var(--brand); color: #fff; border-color: var(--brand); }
 @media (prefers-color-scheme: dark) { .chip.on { color: #06222f; } }
+.chip[disabled] { opacity: 0.45; cursor: default; }
+
+/* Confirmation step of an irreversible reset. */
+.chip.danger, .btn.danger {
+  background: var(--wrong-soft);
+  color: var(--wrong);
+  border-color: var(--wrong);
+  font-weight: 600;
+}
 
 table.topics { width: 100%; border-collapse: collapse; }
 table.topics td { padding: 8px 0; border-bottom: 1px solid var(--line); vertical-align: middle; }
