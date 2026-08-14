@@ -53,6 +53,15 @@ export function write(slug, area, data) {
   }
 }
 
+/** Drop one area of one subject, leaving the rest untouched. */
+export function remove(slug, area) {
+  try {
+    localStorage.removeItem(key(slug, area));
+  } catch {
+    // Nothing to do — the value simply stays.
+  }
+}
+
 export function clearSubject(slug) {
   for (const k of Object.keys(localStorage)) {
     if (k.startsWith(`${PREFIX}${slug}:`)) localStorage.removeItem(k);

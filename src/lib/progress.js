@@ -1,9 +1,53 @@
 // Per-subject progress: what she has seen, what she keeps getting wrong, and
 // how her exam attempts are trending.
 
-import { read, write } from './storage.js';
+import { clearSubject, read, remove, write } from './storage.js';
 
 const AREAS = { answers: 'answers', deck: 'deck', attempts: 'attempts', wrong: 'wrong' };
+
+/**
+ * The four independently-stored parts of progress, each resettable on its own.
+ *
+ * They are genuinely independent rather than views of one blob: clearing the
+ * exam history leaves the per-question statistics alone, and vice versa — which
+ * is why each says plainly what it holds and what resetting it costs.
+ */
+export const RESETTABLE = [
+  {
+    id: AREAS.answers,
+    he: 'סטטיסטיקת שאלות',
+    note: 'כיסוי המאגר והדיוק לפי נושא. אינו מוחק את היסטוריית הסימולציות.',
+    count: (slug) => Object.keys(loadAnswers(slug)).length,
+    unit: 'שאלות',
+  },
+  {
+    id: AREAS.deck,
+    he: 'כרטיסיות השינון',
+    note: 'הקופסאות של כל הכרטיסיות חוזרות לקופסה הראשונה.',
+    count: (slug) => Object.keys(loadDeck(slug)).length,
+    unit: 'כרטיסיות',
+  },
+  {
+    id: AREAS.attempts,
+    he: 'היסטוריית הסימולציות',
+    note: 'הציונים, הרצף והגרף. אינו מוחק את סטטיסטיקת השאלות.',
+    count: (slug) => loadAttempts(slug).length,
+    unit: 'ניסיונות',
+  },
+  {
+    id: AREAS.wrong,
+    he: 'תור התרגול החוזר',
+    note: 'רשימת השאלות שטעית בהן, המשמשת לסינון בתרגול.',
+    count: (slug) => loadWrongQueue(slug).length,
+    unit: 'שאלות',
+  },
+];
+
+/** Reset one area. */
+export const resetArea = (slug, area) => remove(slug, area);
+
+/** Reset everything stored for this subject, leaving other subjects untouched. */
+export const resetSubject = (slug) => clearSubject(slug);
 
 export const loadAnswers = (slug) => read(slug, AREAS.answers, {});
 export const loadDeck = (slug) => read(slug, AREAS.deck, {});

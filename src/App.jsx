@@ -96,9 +96,7 @@ export default function App() {
       {subject && mode === 'learn' && <Learn subject={subject} />}
       {subject && mode === 'practice' && <Practice subject={subject} />}
       {subject && mode === 'study' && <Markdown source={subject.cheatsheet} />}
-      {subject && mode === 'progress' && (
-        <ProgressScreen subject={subject} stats={summarize(subject)} />
-      )}
+      {subject && mode === 'progress' && <ProgressScreen subject={subject} />}
 
       {subject && mode === 'exam' && !finished && (
         <Exam subject={subject} onFinish={setFinished} />
