@@ -42,7 +42,10 @@ export default function Home({ progress, onOpen, theme, onThemeChange }) {
 
   return (
     <>
-      <p className="meta">ארבעת מבחני התיאוריה של רישיון משיט 30. יש לבחור נושא כדי להתחיל.</p>
+      <div className="brand">
+        <img src="/wave-logo.png" alt="" width="64" height="64" />
+        <p className="meta">ארבעת מבחני התיאוריה של רישיון משיט 30. יש לבחור נושא כדי להתחיל.</p>
+      </div>
 
       {subjects.map((s) => {
         const stats = progress[s.slug];
@@ -98,6 +101,13 @@ export default function Home({ progress, onOpen, theme, onThemeChange }) {
         </div>
         {message && <p className="notice info" style={{ marginTop: 12 }}>{message}</p>}
       </div>
+
+      <p className="meta sources">
+        המקור הרשמי לכל מאגרי השאלות:{' '}
+        <a href="https://www.gov.il/he/pages/exame_small_vessel" target="_blank" rel="noopener noreferrer">
+          מאגר שאלות למבחני הסמכה למשיטים — רשות הספנות והנמלים
+        </a>
+      </p>
     </>
   );
 }
