@@ -1,6 +1,19 @@
 /* Hebrew-only, RTL, mobile-first. Sized for one-handed phone use: nothing
    tappable is under 48px, and the answer buttons sit within thumb reach. */
 
+/* ---------- theme tokens ----------
+   Three states, and the order of these blocks is what makes them work:
+
+     1. :root                      the complete light palette, always defined
+     2. prefers-color-scheme: dark  dark tokens, but skipped when the reader has
+                                    explicitly chosen light
+     3. :root[data-theme="dark"]    dark tokens again, so an explicit choice wins
+                                    even on a light system
+
+   Every colour in this file must come from a token below. A literal colour in a
+   rule cannot follow the theme — see .claude/skills/theming/SKILL.md, and
+   `npm run check:theme` fails the build if the two dark blocks drift apart. */
+
 :root {
   --bg: #f4f6f8;
   --surface: #ffffff;
@@ -9,18 +22,23 @@
   --line: #dbe3e8;
   --brand: #0b3f5c;
   --brand-soft: #e6eef3;
+  --on-brand: #ffffff;
   --right: #1a7f4b;
   --right-soft: #e4f4ec;
+  --on-right: #ffffff;
   --wrong: #b3261e;
   --wrong-soft: #fbe9e8;
+  --on-wrong: #ffffff;
   --warn: #8a6100;
   --warn-soft: #fdf3dc;
+  --scrim: rgba(16, 36, 46, 0.55);
   --radius: 14px;
   --tap: 48px;
 }
 
+/* DARK PALETTE — keep the two blocks below identical. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --bg: #0e161b;
     --surface: #16242c;
     --ink: #eef4f7;
@@ -28,13 +46,37 @@
     --line: #273a45;
     --brand: #7fc4e8;
     --brand-soft: #1b2f3a;
+    --on-brand: #06222f;
     --right: #57d295;
     --right-soft: #14332a;
+    --on-right: #06222f;
     --wrong: #ff9a92;
     --wrong-soft: #3a1e1d;
+    --on-wrong: #2a0f0e;
     --warn: #f0c469;
     --warn-soft: #33290f;
+    --scrim: rgba(4, 12, 17, 0.72);
   }
+}
+
+:root[data-theme='dark'] {
+  --bg: #0e161b;
+  --surface: #16242c;
+  --ink: #eef4f7;
+  --ink-soft: #9fb2bd;
+  --line: #273a45;
+  --brand: #7fc4e8;
+  --brand-soft: #1b2f3a;
+  --on-brand: #06222f;
+  --right: #57d295;
+  --right-soft: #14332a;
+  --on-right: #06222f;
+  --wrong: #ff9a92;
+  --wrong-soft: #3a1e1d;
+  --on-wrong: #2a0f0e;
+  --warn: #f0c469;
+  --warn-soft: #33290f;
+  --scrim: rgba(4, 12, 17, 0.72);
 }
 
 * { box-sizing: border-box; }
@@ -86,6 +128,9 @@ button { font: inherit; color: inherit; }
 }
 .back:hover { border-color: var(--brand); }
 
+/* Square, so the icon stays centred whichever glyph is showing. */
+.theme-cycle { padding: 0; font-size: 1.15rem; line-height: 1; }
+
 /* ---------- cards & buttons ---------- */
 
 .card {
@@ -120,11 +165,10 @@ button { font: inherit; color: inherit; }
   border-radius: var(--radius);
   border: 1px solid var(--brand);
   background: var(--brand);
-  color: #fff;
+  color: var(--on-brand);
   font-weight: 600;
   cursor: pointer;
 }
-@media (prefers-color-scheme: dark) { .btn { color: #06222f; } }
 .btn.ghost { background: var(--surface); color: var(--ink); border-color: var(--line); }
 .btn[disabled] { opacity: 0.5; cursor: default; }
 .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
@@ -161,9 +205,9 @@ button { font: inherit; color: inherit; }
 }
 .option.picked { border-color: var(--brand); background: var(--brand-soft); }
 .option.right { border-color: var(--right); background: var(--right-soft); }
-.option.right .key { background: var(--right); color: #fff; }
+.option.right .key { background: var(--right); color: var(--on-right); }
 .option.wrong { border-color: var(--wrong); background: var(--wrong-soft); }
-.option.wrong .key { background: var(--wrong); color: #fff; }
+.option.wrong .key { background: var(--wrong); color: var(--on-wrong); }
 
 /* ---------- terms ---------- */
 
@@ -234,8 +278,7 @@ button { font: inherit; color: inherit; }
   background: var(--surface);
   cursor: pointer;
 }
-.chip.on { background: var(--brand); color: #fff; border-color: var(--brand); }
-@media (prefers-color-scheme: dark) { .chip.on { color: #06222f; } }
+.chip.on { background: var(--brand); color: var(--on-brand); border-color: var(--brand); }
 .chip[disabled] { opacity: 0.45; cursor: default; }
 
 /* Confirmation step of an irreversible reset. */
@@ -272,7 +315,7 @@ table.topics td.num { text-align: left; font-variant-numeric: tabular-nums; whit
   place-items: center;
   padding: 16px;
   overflow-y: auto;
-  background: rgba(4, 12, 17, 0.72);
+  background: var(--scrim);
 }
 
 .modal {

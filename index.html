@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0b3f5c" />
     <title>משיט 30 — מבחני תיאוריה</title>
+    <!-- Apply the saved appearance before first paint, so a dark-mode reader
+         never sees a white flash. The key is also in src/lib/theme.js;
+         `npm run check:theme` fails if the two disagree. -->
+    <script>
+      try {
+        var t = localStorage.getItem('meshit30:theme:v1');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
