@@ -11,7 +11,8 @@
     "content": "npm run terms && npm run display && npm run validate",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:theme": "node scripts/check-theme.mjs"
   },
   "dependencies": {
     "react": "18.3.1",

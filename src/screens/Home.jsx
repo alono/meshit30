@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { subjects } from '../subjects/loader.js';
 import { exportAll, importAll } from '../lib/storage.js';
+import ThemeControl from '../components/ThemeControl.jsx';
 
 /**
  * The subject picker. All four exams are listed from day one — the three that
  * have no question pool yet appear as בקרוב, so the shape of the whole licence
  * is visible from the start.
  */
-export default function Home({ progress, onOpen }) {
+export default function Home({ progress, onOpen, theme, onThemeChange }) {
   const [message, setMessage] = useState(null);
   const fileInput = useRef(null);
 
@@ -76,6 +77,8 @@ export default function Home({ progress, onOpen }) {
           </button>
         );
       })}
+
+      <ThemeControl theme={theme} onChange={onThemeChange} variant="picker" />
 
       <div className="card">
         <b>גיבוי ושחזור</b>

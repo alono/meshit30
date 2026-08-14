@@ -47,6 +47,9 @@ jobs:
             exit 1
           fi
 
+      - name: Check the theming contract
+        run: npm run check:theme
+
       - run: npm run build
 
       - name: Publish to Cloudflare Pages

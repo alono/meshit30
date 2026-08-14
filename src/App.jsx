@@ -2,7 +2,9 @@ import { useCallback, useEffect, useState } from 'react';
 import { activeSubjects, loadSubject, subjects } from './subjects/loader.js';
 import { summarize } from './lib/progress.js';
 import { acceptTerms, hasAcceptedTerms } from './lib/storage.js';
+import { applyTheme, readTheme, saveTheme } from './lib/theme.js';
 import Disclaimer from './components/Disclaimer.jsx';
+import ThemeControl from './components/ThemeControl.jsx';
 import Markdown from './components/Markdown.jsx';
 import Home from './screens/Home.jsx';
 import Learn from './screens/Learn.jsx';
@@ -27,6 +29,7 @@ export default function App() {
   const [error, setError] = useState(null);
   const [overview, setOverview] = useState({});
   const [accepted, setAccepted] = useState(hasAcceptedTerms);
+  const [theme, setTheme] = useState(readTheme);
 
   // Home-screen figures for every active subject, refreshed whenever we return.
   const refreshOverview = useCallback(async () => {
@@ -44,6 +47,10 @@ export default function App() {
   }, []);
 
   useEffect(() => { refreshOverview(); }, [refreshOverview]);
+
+  useEffect(() => { applyTheme(theme); }, [theme]);
+
+  const changeTheme = (next) => { saveTheme(next); setTheme(next); };
 
   useEffect(() => {
     if (!slug) { setSubject(null); return; }
@@ -85,11 +92,15 @@ export default function App() {
           </button>
         )}
         <h1>{title}</h1>
+        <span className="spacer" />
+        <ThemeControl theme={theme} onChange={changeTheme} variant="cycle" />
       </header>
 
       {error && <p className="notice">שגיאה בטעינת התוכן: {error}</p>}
 
-      {!slug && <Home progress={overview} onOpen={setSlug} />}
+      {!slug && (
+        <Home progress={overview} onOpen={setSlug} theme={theme} onThemeChange={changeTheme} />
+      )}
 
       {slug && !subject && !error && <p className="meta">טוען…</p>}
 
