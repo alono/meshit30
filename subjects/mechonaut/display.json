@@ -278,10 +278,13 @@
         "ד": "על ידי לחץ שמן צנטריפוגלי."
       },
       "terms": [
+        "pressure-lubrication",
         "lubricating-oil",
         "oil-pressure"
       ],
-      "questionTerms": []
+      "questionTerms": [
+        "pressure-lubrication"
+      ]
     },
     {
       "id": 16,
@@ -1831,12 +1834,12 @@
         "ד": "על שימוש ממושך בשמן."
       },
       "terms": [
-        "oil-level",
+        "rising-oil-level",
         "oil-sump-pan",
         "intake-exhaust-manifold"
       ],
       "questionTerms": [
-        "oil-level",
+        "rising-oil-level",
         "oil-sump-pan"
       ]
     },
@@ -2313,7 +2316,8 @@
         "diesel-engine",
         "diesel-fuel",
         "lubricating-oil",
-        "oil-sump-pan"
+        "oil-sump-pan",
+        "lubrication-system"
       ],
       "questionTerms": [
         "temperature-gauge",
@@ -2348,12 +2352,12 @@
         "ד": "לירידה בספיקת הדלק."
       },
       "terms": [
-        "engine",
+        "loose-belt",
         "oil-pressure",
         "battery"
       ],
       "questionTerms": [
-        "engine"
+        "loose-belt"
       ]
     },
     {
@@ -2460,7 +2464,8 @@
       "terms": [
         "gearbox-transmission",
         "engine",
-        "lubricating-oil"
+        "lubricating-oil",
+        "lubrication-system"
       ],
       "questionTerms": [
         "gearbox-transmission",
@@ -2660,7 +2665,7 @@
         "ד": "חדירת מים למערכת האוויר."
       },
       "terms": [
-        "lubricating-oil"
+        "lubrication-system"
       ],
       "questionTerms": []
     },
@@ -2911,7 +2916,8 @@
       },
       "terms": [
         "oil-pressure",
-        "engine"
+        "engine",
+        "lubrication-system"
       ],
       "questionTerms": [
         "oil-pressure"
