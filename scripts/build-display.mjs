@@ -42,6 +42,12 @@ function build(slug) {
   const overrides = existsSync(path('text-overrides.json')) ? readJson(path('text-overrides.json')) : {};
   const byId = overrides.questions ?? {};
 
+  // Spacing repair exists for OCR-damaged sources (mechonaut's PDF). A cleanly
+  // typed pool must pass through verbatim: on clean text the repairer can only
+  // do harm — it welds enumeration letters ("א ו-ב נכונות") and glues articles
+  // onto Latin terms ("את ה-E.P.I.R.B" -> "אתה").
+  const repairEnabled = overrides.repair !== false;
+
   const vocab = buildVocabulary({
     cheatsheet: readFileSync(path('cheatsheet.md'), 'utf8'),
     corpus: questions.flatMap((q) => [q.question, ...Object.values(q.options)]),
@@ -62,6 +68,7 @@ function build(slug) {
         report.push({ id: q.id, field, from: original, to: replacement, kind: 'reconstructed' });
         return replacement;
       }
+      if (!repairEnabled) return original;
       const r = repairText(original, vocab);
       assertLettersPreserved(original, r.text, `q${q.id} ${field}`);
       for (const rep of r.repairs) {

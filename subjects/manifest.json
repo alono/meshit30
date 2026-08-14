@@ -10,18 +10,18 @@
       "icon": "⚙️"
     },
     {
+      "slug": "nav-instruments",
+      "he": "ניווט ב' — מכשירים",
+      "en": "Instrument Navigation",
+      "status": "active",
+      "icon": "🧭"
+    },
+    {
       "slug": "seamanship",
       "he": "ימאות ג'",
       "en": "Seamanship",
       "status": "coming-soon",
       "icon": "⚓"
-    },
-    {
-      "slug": "nav-instruments",
-      "he": "ניווט ב' — מכשירים",
-      "en": "Instrument Navigation",
-      "status": "coming-soon",
-      "icon": "🧭"
     },
     {
       "slug": "nav-coastal",
