@@ -85,6 +85,22 @@
       "aliases": [
         "מד צפיפות"
       ]
+    },
+    "pressure-lubrication": {
+      "aliases": [
+        "שימון בלחץ"
+      ]
+    },
+    "rising-oil-level": {
+      "aliases": [
+        "עליה במפלס השמן",
+        "עליית מפלס השמן"
+      ]
+    },
+    "loose-belt": {
+      "aliases": [
+        "רצועת מנוע רפויה"
+      ]
     }
   },
   "add": [
@@ -97,7 +113,11 @@
         "index": 3,
         "he": "מערכת הסיכה (שמן)",
         "en": "Lubrication System"
-      }
+      },
+      "aliases": [
+        "מערכת השמן"
+      ],
+      "definition": "כלל רכיבי הזרמת השמן במנוע. בבחינה היא מכונה גם \"מערכת השמן\"."
     },
     {
       "id": "oil-level",
