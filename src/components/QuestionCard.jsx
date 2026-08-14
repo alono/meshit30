@@ -60,6 +60,23 @@ export default function QuestionCard({
 
       {question.image && <img className="qimage" src={question.image} alt="" />}
 
+      {/* ימאות questions name plates from the official אורות וסימנים booklet —
+          often two of them in one scenario — so the figures come as a strip. */}
+      {question.figures?.length > 0 && (
+        <div className="qfigs">
+          {question.figures.map((fig) => (
+            <figure key={fig.src}>
+              {/* The position wheel is a tall plate with sixteen labels, so on a
+                  phone it needs a way to be opened at full size. */}
+              <a href={fig.src} target="_blank" rel="noreferrer">
+                <img src={fig.src} alt="" loading="lazy" />
+              </a>
+              <figcaption>{fig.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      )}
+
       {question.issue && (
         <p className="notice">⚠ {question.issue}</p>
       )}

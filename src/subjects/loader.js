@@ -52,6 +52,7 @@ export async function loadSubject(slug) {
         topic: q.topic,
         correct: q.correct,
         image: q.image,
+        figures: q.figures,
         question: t.question ?? q.question,
         options: t.options ?? q.options,
         terms: t.terms ?? [],

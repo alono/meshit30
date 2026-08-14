@@ -14,6 +14,16 @@ export default function Results({ subject, attempt, result, onAgain, onHome }) {
         </div>
       </div>
 
+      {/* A wrong answer on a rule-of-the-road question fails the paper on its
+          own, so the reason has to be said outright — otherwise a score above
+          the pass mark next to "לא עברת" reads as a bug. */}
+      {result.criticalMisses?.length > 0 && (
+        <p className="notice">
+          ⚠ נפסל: {result.criticalMisses.length === 1 ? 'טעות אחת' : `${result.criticalMisses.length} טעויות`}
+          {' '}בשאלות {result.criticalRule?.label ?? 'קריטיות'}. {result.criticalRule?.note}
+        </p>
+      )}
+
       <div className="card">
         <b>לפי נושא</b>
         <table className="topics">

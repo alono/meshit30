@@ -62,16 +62,34 @@ export function buildAttempt(subject, seed) {
 /** Rebuild an identical paper from a stored attempt. */
 export const replayAttempt = (subject, attempt) => buildAttempt(subject, attempt.seed);
 
+/**
+ * Topics whose questions disqualify the whole paper when answered wrong.
+ *
+ * ימאות is scored this way: a wrong answer to a rule-of-the-road question —
+ * one whose consequence is a collision or an injury — fails the exam whatever
+ * the score. Subjects without an `exam.critical` block are unaffected.
+ */
+export const criticalTopics = (subject) => new Set(subject.exam.critical?.topics ?? []);
+
 export function scoreAttempt(subject, attempt, answers) {
   const points = subject.exam.points_per_question;
+  const critical = criticalTopics(subject);
   const rows = attempt.questionIds.map((id) => {
     const q = subject.byId.get(id);
     const given = answers[id] ?? null;
-    return { id, topic: q.topic, given, correct: q.correct, right: given === q.correct };
+    return {
+      id,
+      topic: q.topic,
+      given,
+      correct: q.correct,
+      right: given === q.correct,
+      critical: critical.has(q.topic),
+    };
   });
 
   const right = rows.filter((r) => r.right).length;
   const score = right * points;
+  const criticalMisses = rows.filter((r) => r.critical && !r.right);
 
   const byTopic = new Map();
   for (const r of rows) {
@@ -86,8 +104,10 @@ export function scoreAttempt(subject, attempt, answers) {
     right,
     total: rows.length,
     score,
-    passed: score >= subject.exam.pass,
+    passed: score >= subject.exam.pass && criticalMisses.length === 0,
     pass: subject.exam.pass,
+    criticalMisses,
+    criticalRule: subject.exam.critical ?? null,
     byTopic: [...byTopic.values()].sort((a, b) => a.right / a.total - b.right / b.total),
     mistakes: rows.filter((r) => !r.right),
   };
