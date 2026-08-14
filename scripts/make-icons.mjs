@@ -77,6 +77,8 @@ const files = {
   'apple-touch-icon.png': render(180),
   // browser tab: the tinted wave itself, no ground
   'favicon-32.png': render(32, { transparent: true }),
+  // in-page logo on the home screen (transparent, works on both themes)
+  'wave-logo.png': render(192, { transparent: true }),
 };
 for (const [name, png] of Object.entries(files)) {
   writeFileSync(join(OUT, name), png);

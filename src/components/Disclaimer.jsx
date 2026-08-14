@@ -54,7 +54,13 @@ export default function Disclaimer({ onAccept }) {
               הרשמי או לתוצאות הבחינה.
             </p>
             <p>
-              <b>המקור המחייב הוא החומר הרשמי של רספ״ן בלבד.</b>
+              <b>
+                המקור המחייב הוא{' '}
+                <a href="https://www.gov.il/he/pages/exame_small_vessel" target="_blank" rel="noopener noreferrer">
+                  החומר הרשמי של רספ״ן
+                </a>{' '}
+                בלבד.
+              </b>
             </p>
 
             <div className="row end">

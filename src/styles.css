@@ -101,6 +101,13 @@ button { font: inherit; color: inherit; }
   padding: 0 16px calc(32px + env(safe-area-inset-bottom));
 }
 
+a { color: var(--brand); }
+
+/* home brand row */
+.brand { display: flex; align-items: center; gap: 14px; margin: 14px 0 4px; }
+.brand img { flex-shrink: 0; }
+.sources { margin-top: 20px; }
+
 /* ---------- header ---------- */
 
 .topbar {
