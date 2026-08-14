@@ -33,7 +33,7 @@ export default function Home({ progress, onOpen }) {
     if (!file) return;
     try {
       const n = importAll(await file.text());
-      setMessage(`יובאו נתונים מ-${n} רשומות. רענני את הדף כדי לראות את ההתקדמות.`);
+      setMessage(`יובאו נתונים מ-${n} רשומות. יש לרענן את הדף כדי לראות את ההתקדמות.`);
     } catch (err) {
       setMessage(`הייבוא נכשל: ${err.message}`);
     }
@@ -41,7 +41,7 @@ export default function Home({ progress, onOpen }) {
 
   return (
     <>
-      <p className="meta">ארבעת מבחני התיאוריה של רישיון משיט 30. בחרי נושא כדי להתחיל.</p>
+      <p className="meta">ארבעת מבחני התיאוריה של רישיון משיט 30. יש לבחור נושא כדי להתחיל.</p>
 
       {subjects.map((s) => {
         const stats = progress[s.slug];
