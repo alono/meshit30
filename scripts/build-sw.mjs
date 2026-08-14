@@ -25,7 +25,12 @@ const assets = readdirSync(join(DIST, 'assets')).map((f) => `/assets/${f}`);
 const statics = readdirSync(DIST)
   .filter((f) => f.endsWith('.png') || f === 'manifest.webmanifest')
   .map((f) => `/${f}`);
-const precache = ['/', ...statics.sort(), ...assets.sort()];
+// static content directories (the signals booklet) — precached so the whole
+// reference works offline
+const dirs = readdirSync(DIST, { withFileTypes: true })
+  .filter((d) => d.isDirectory() && d.name !== 'assets')
+  .flatMap((d) => readdirSync(join(DIST, d.name)).map((f) => `/${d.name}/${f}`));
+const precache = ['/', ...statics.sort(), ...dirs.sort(), ...assets.sort()];
 
 // Version follows content: the hashed asset names capture the code and the
 // content; index.html captures everything else (it references the entry).

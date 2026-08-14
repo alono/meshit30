@@ -12,6 +12,7 @@ import Practice from './screens/Practice.jsx';
 import Exam from './screens/Exam.jsx';
 import Results from './screens/Results.jsx';
 import ProgressScreen from './screens/Progress.jsx';
+import Signals from './screens/Signals.jsx';
 
 const MODES = [
   { id: 'learn', title: 'שינון', sub: 'כרטיסיות מונחים בשני הכיוונים' },
@@ -53,7 +54,7 @@ export default function App() {
   const changeTheme = (next) => { saveTheme(next); setTheme(next); };
 
   useEffect(() => {
-    if (!slug) { setSubject(null); return; }
+    if (!slug || slug === 'signals') { setSubject(null); return; }
     let live = true;
     loadSubject(slug)
       .then((s) => live && setSubject(s))
@@ -64,9 +65,12 @@ export default function App() {
   const goHome = () => { setSlug(null); setMode(null); setFinished(null); refreshOverview(); };
   const goMenu = () => { setMode(null); setFinished(null); refreshOverview(); };
 
-  const title = !slug
-    ? 'משיט 30'
-    : `${subjects.find((s) => s.slug === slug)?.he ?? ''}${mode ? ` · ${MODES.find((m) => m.id === mode)?.title}` : ''}`;
+  const title =
+    slug === 'signals'
+      ? 'אורות וסימנים'
+      : !slug
+        ? 'משיט 30'
+        : `${subjects.find((s) => s.slug === slug)?.he ?? ''}${mode ? ` · ${MODES.find((m) => m.id === mode)?.title}` : ''}`;
 
   // Nothing else mounts until the disclaimer is accepted. Placed after every
   // hook above so the hook order stays stable across the two branches.
@@ -102,7 +106,9 @@ export default function App() {
         <Home progress={overview} onOpen={setSlug} theme={theme} onThemeChange={changeTheme} />
       )}
 
-      {slug && !subject && !error && <p className="meta">טוען…</p>}
+      {slug === 'signals' && <Signals />}
+
+      {slug && slug !== 'signals' && !subject && !error && <p className="meta">טוען…</p>}
 
       {subject && !mode && <SubjectMenu subject={subject} stats={overview[subject.slug]} onPick={setMode} />}
 
