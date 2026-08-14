@@ -10,9 +10,10 @@
     "validate": "node scripts/validate-subject.mjs --all",
     "content": "npm run terms && npm run display && npm run validate",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/build-sw.mjs",
     "preview": "vite preview",
-    "check:theme": "node scripts/check-theme.mjs"
+    "check:theme": "node scripts/check-theme.mjs",
+    "icons": "node scripts/make-icons.mjs"
   },
   "dependencies": {
     "react": "18.3.1",

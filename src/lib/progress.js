@@ -105,6 +105,11 @@ export function recordAttempt(slug, attempt, result) {
     right: result.right,
     total: result.total,
     answers: Object.fromEntries(result.rows.map((r) => [r.id, r.given])),
+    // The paper itself, so a review shows exactly what was on screen even if
+    // the pool changes in a future content update. Older attempts without
+    // these fields are rebuilt from the seed.
+    questionIds: attempt.questionIds,
+    optionOrder: attempt.optionOrder,
   };
   const next = [...attempts, entry].slice(-50);
   write(slug, AREAS.attempts, next);
