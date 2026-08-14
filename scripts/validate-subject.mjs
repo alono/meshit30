@@ -102,8 +102,15 @@ function validate(slug) {
 
     // Optional image, resolved relative to the subject folder.
     if (q.image !== undefined) {
-      if (typeof q.image !== 'string' || !q.image.trim()) errors.push(`${at}: image must be a non-empty string`);
-      else if (!existsSync(path(q.image))) errors.push(`${at}: image "${q.image}" does not exist`);
+      if (typeof q.image !== 'string' || !q.image.trim()) {
+        errors.push(`${at}: image must be a non-empty string`);
+      } else {
+        // absolute paths are served from public/, relative from the subject dir
+        const file = q.image.startsWith('/')
+          ? join(SUBJECTS_DIR, '..', 'public', q.image.slice(1))
+          : path(q.image);
+        if (!existsSync(file)) errors.push(`${at}: image "${q.image}" does not exist`);
+      }
     }
   }
 
@@ -120,6 +127,21 @@ function validate(slug) {
   if (!terms.length) errors.push('terms.json holds no terms');
   const knownTerms = new Set(terms.map((t) => t.id));
 
+  // The Hebrew-only rule bans English translations, not the exam's own Latin
+  // vocabulary (GPS, NAVTEX, SART, UTC…). A Latin token on a card face is
+  // legitimate exactly when the official pool itself prints it.
+  const poolLatin = new Set(
+    questions
+      .flatMap((q) => [q.question, ...Object.values(q.options)])
+      .join(' ')
+      .match(/[A-Za-z]+/g)
+      ?.map((t) => t.toUpperCase()) ?? [],
+  );
+  const foreignLatin = (text) =>
+    (text.match(/[A-Za-z]+/g) ?? [])
+      .map((t) => t.toUpperCase())
+      .filter((t) => !poolLatin.has(t));
+
   for (const t of terms) {
     const at = `term "${t.id}"`;
     if (!t.he?.trim()) errors.push(`${at}: empty Hebrew headword`);
@@ -132,8 +154,12 @@ function validate(slug) {
     if (t.definition.includes(t.he)) {
       errors.push(`${at}: the definition contains the term itself — the reverse card gives itself away`);
     }
-    if (HAS_LATIN.test(t.he) || HAS_LATIN.test(t.definition)) {
-      errors.push(`${at}: Latin characters in a flashcard face — the app is Hebrew only`);
+    const foreign = [...foreignLatin(t.he), ...foreignLatin(t.definition)];
+    if (foreign.length) {
+      errors.push(
+        `${at}: Latin not used by the exam itself on a flashcard face (${foreign.join(', ')}) — ` +
+          `the app teaches only the exam's vocabulary`,
+      );
     }
   }
 
