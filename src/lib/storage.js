@@ -7,6 +7,30 @@
 const PREFIX = 'meshit30:v1:';
 const SCHEMA = 1;
 
+// Acceptance of the disclaimer is deliberately stored OUTSIDE the PREFIX that
+// export/import walks, so restoring a backup on someone else's device cannot
+// suppress the notice for them. Versioned, so materially rewording the text can
+// re-prompt everyone by bumping the key.
+const TERMS_KEY = 'meshit30:legal:v1';
+
+export function hasAcceptedTerms() {
+  try {
+    return localStorage.getItem(TERMS_KEY) !== null;
+  } catch {
+    // Storage blocked (private mode, embedded webview): show the notice rather
+    // than silently skipping it.
+    return false;
+  }
+}
+
+export function acceptTerms() {
+  try {
+    localStorage.setItem(TERMS_KEY, new Date().toISOString());
+  } catch {
+    // Nothing to do: the notice will simply appear again next time.
+  }
+}
+
 const key = (slug, area) => `${PREFIX}${slug}:${area}`;
 
 export function read(slug, area, fallback) {

@@ -43,7 +43,7 @@ export function dueCards(deck, state, limit = 20) {
   return (active.length ? active : ordered).slice(0, limit);
 }
 
-/** "יודעת" promotes one box; "עוד לא" drops straight back to box 1. */
+/** "זכרתי" promotes one box; "לא זכרתי" drops straight back to box 1. */
 export function grade(state, cardId, known) {
   const current = state[cardId]?.box ?? 1;
   return {

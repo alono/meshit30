@@ -65,7 +65,7 @@ export default function Practice({ subject }) {
           className={`chip ${onlyWrong ? 'on' : ''}`}
           onClick={() => reset(() => setOnlyWrong((v) => !v))}
         >
-          תרגלי שוב את מה שטעית בו ({wrongQueue.length})
+          שאלות שטעית בהן ({wrongQueue.length})
         </button>
       </div>
 

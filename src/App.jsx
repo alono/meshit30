@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import { activeSubjects, loadSubject, subjects } from './subjects/loader.js';
 import { summarize } from './lib/progress.js';
+import { acceptTerms, hasAcceptedTerms } from './lib/storage.js';
+import Disclaimer from './components/Disclaimer.jsx';
 import Markdown from './components/Markdown.jsx';
 import Home from './screens/Home.jsx';
 import Learn from './screens/Learn.jsx';
@@ -24,6 +26,7 @@ export default function App() {
   const [finished, setFinished] = useState(null);
   const [error, setError] = useState(null);
   const [overview, setOverview] = useState({});
+  const [accepted, setAccepted] = useState(hasAcceptedTerms);
 
   // Home-screen figures for every active subject, refreshed whenever we return.
   const refreshOverview = useCallback(async () => {
@@ -57,6 +60,19 @@ export default function App() {
   const title = !slug
     ? 'משיט 30'
     : `${subjects.find((s) => s.slug === slug)?.he ?? ''}${mode ? ` · ${MODES.find((m) => m.id === mode)?.title}` : ''}`;
+
+  // Nothing else mounts until the disclaimer is accepted. Placed after every
+  // hook above so the hook order stays stable across the two branches.
+  if (!accepted) {
+    return (
+      <Disclaimer
+        onAccept={() => {
+          acceptTerms();
+          setAccepted(true);
+        }}
+      />
+    );
+  }
 
   return (
     <div className="app">

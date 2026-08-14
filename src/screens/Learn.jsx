@@ -86,11 +86,11 @@ export default function Learn({ subject }) {
 
           <div className="row">
             <button type="button" className="btn ghost" disabled={!flipped} onClick={() => answer(false)}>
-              עוד לא יודעת
+              לא זכרתי
             </button>
             <span style={{ flex: 1 }} />
             <button type="button" className="btn" disabled={!flipped} onClick={() => answer(true)}>
-              יודעת
+              זכרתי
             </button>
           </div>
           <p className="meta">
