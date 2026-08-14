@@ -77,9 +77,11 @@ export default function App() {
   return (
     <div className="app">
       <header className="topbar">
+        {/* The arrow points right: in an RTL layout "back" is towards the right,
+            the side the text starts from. */}
         {(slug || mode) && (
           <button type="button" className="back" onClick={mode ? goMenu : goHome}>
-            ← חזרה
+            → חזרה
           </button>
         )}
         <h1>{title}</h1>
