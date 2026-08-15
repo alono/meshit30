@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { subjects } from '../subjects/loader.js';
+import { isEnabled, setEnabled } from '../lib/analytics.js';
 import { exportAll, importAll } from '../lib/storage.js';
 import ThemeControl from '../components/ThemeControl.jsx';
 
@@ -10,7 +11,14 @@ import ThemeControl from '../components/ThemeControl.jsx';
  */
 export default function Home({ progress, onOpen, theme, onThemeChange }) {
   const [message, setMessage] = useState(null);
+  const [stats, setStats] = useState(isEnabled);
   const fileInput = useRef(null);
+
+  const toggleStats = () => {
+    const next = !stats;
+    setEnabled(next);
+    setStats(next);
+  };
 
   useEffect(() => {
     if (!message) return undefined;
@@ -109,6 +117,22 @@ export default function Home({ progress, onOpen, theme, onThemeChange }) {
           />
         </div>
         {message && <p className="notice info" style={{ marginTop: 12 }}>{message}</p>}
+      </div>
+
+      <div className="card">
+        <b>נתוני שימוש</b>
+        <p className="meta">
+          כדי לדעת מה עוזר ומה לא, נאסף מידע מצטבר על אילו מסכים נפתחו, יחד עם מזהה אקראי שנוצר
+          במכשיר כדי לספור משתמשים חוזרים. אין עוגיות, אין שמות ואין איסוף מידע אישי — וההתקדמות
+          עצמה, כולל תשובות וציונים, נשארת במכשיר ואינה נשלחת לשום מקום.
+        </p>
+        <div className="row">
+          <span className="pill" aria-live="polite">{stats ? 'האיסוף פעיל' : 'האיסוף כבוי'}</span>
+          <span className="spacer" style={{ flex: 1 }} />
+          <button type="button" className="btn ghost" onClick={toggleStats}>
+            {stats ? 'כיבוי האיסוף' : 'הפעלת האיסוף'}
+          </button>
+        </div>
       </div>
 
       <p className="meta sources">

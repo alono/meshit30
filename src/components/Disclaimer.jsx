@@ -62,6 +62,12 @@ export default function Disclaimer({ onAccept }) {
                 בלבד.
               </b>
             </p>
+            <p className="meta">
+              האפליקציה אוספת נתוני שימוש מצטברים לשיפור הכלי: אילו מסכים נפתחו, מדינה וסוג מכשיר,
+              ומזהה אקראי שנוצר במכשיר כדי לספור משתמשים חוזרים. אין עוגיות, אין שמות ואין איסוף
+              מידע אישי. ההתקדמות עצמה נשמרת במכשיר בלבד ואינה נשלחת לשום מקום. אפשר לכבות את
+              האיסוף במסך הבית.
+            </p>
 
             <div className="row end">
               <button type="button" className="btn ghost" onClick={() => setDeclined(true)}>
