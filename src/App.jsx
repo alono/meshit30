@@ -1,6 +1,8 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { activeSubjects, loadSubject, subjects } from './subjects/loader.js';
 import { summarize } from './lib/progress.js';
+import { sendView } from './lib/analytics.js';
+import { fromPath, screenOf, toPath } from './lib/route.js';
 import { acceptTerms, hasAcceptedTerms } from './lib/storage.js';
 import { applyTheme, readTheme, saveTheme } from './lib/theme.js';
 import Disclaimer from './components/Disclaimer.jsx';
@@ -22,9 +24,13 @@ const MODES = [
   { id: 'progress', title: 'התקדמות', sub: 'כיסוי, דיוק לפי נושא והיסטוריית מבחנים' },
 ];
 
+// Where this load started, read once before React mounts, so a shared link or
+// a refresh reopens the same screen.
+const opened = fromPath(window.location.pathname);
+
 export default function App() {
-  const [slug, setSlug] = useState(null);
-  const [mode, setMode] = useState(null);
+  const [slug, setSlug] = useState(opened.slug);
+  const [mode, setMode] = useState(opened.mode);
   const [subject, setSubject] = useState(null);
   const [finished, setFinished] = useState(null);
   const [error, setError] = useState(null);
@@ -52,6 +58,40 @@ export default function App() {
   useEffect(() => { applyTheme(theme); }, [theme]);
 
   const changeTheme = (next) => { saveTheme(next); setTheme(next); };
+
+  // The address bar follows the screen, and each screen change is one analytics
+  // line. Both live here so there is exactly one place a screen is named.
+  const synced = useRef(false);
+  useEffect(() => {
+    if (!accepted) return;  // nothing is recorded before the notice is accepted
+    const here = { slug, mode, finished };
+    const path = toPath(here);
+    if (path !== window.location.pathname) {
+      // The first sync only corrects the address (a cold load of …/exam/results
+      // has no paper to show), so it must not leave a Back-button trap behind.
+      window.history[synced.current ? 'pushState' : 'replaceState'](null, '', path);
+    }
+    synced.current = true;
+    sendView(screenOf(here), slug === 'signals' ? null : slug);
+  }, [accepted, slug, mode, finished]);
+
+  // Back and Forward move between screens instead of leaving the app.
+  useEffect(() => {
+    const onPop = () => {
+      const next = { ...fromPath(window.location.pathname), finished: null };
+      // Several addresses can lead to one screen — …/exam/results reopens the
+      // exam intro, since a handed-in paper cannot be restored. When they do,
+      // the state below does not change, React skips the sync effect, and the
+      // address would be left describing a screen that is not on show.
+      const path = toPath(next);
+      if (path !== window.location.pathname) window.history.replaceState(null, '', path);
+      setSlug(next.slug);
+      setMode(next.mode);
+      setFinished(null);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
 
   useEffect(() => {
     if (!slug || slug === 'signals') { setSubject(null); return; }
