@@ -44,30 +44,49 @@ export async function loadSubject(slug) {
     ]);
     if (!pool || !display || !termData) throw new Error(`חסרים קבצי תוכן לנושא "${slug}"`);
 
+    // Open pools (kind: "open") hold chart-work exercises: lettered sub-parts
+    // with model answers instead of four options.
+    const kind = pool.default.kind ?? 'mc';
     const text = new Map(display.default.questions.map((q) => [q.id, q]));
     const questions = pool.default.questions.map((q) => {
       const t = text.get(q.id) ?? {};
-      return {
+      const common = {
         id: q.id,
         topic: q.topic,
-        correct: q.correct,
         image: q.image,
         figures: q.figures,
         question: t.question ?? q.question,
-        options: t.options ?? q.options,
         terms: t.terms ?? [],
         questionTerms: t.questionTerms ?? [],
         reconstructed: t.reconstructed ?? [],
         note: t.note,
         issue: t.issue,
       };
+      if (kind === 'open') {
+        // Text the learner reads comes from display.json; the typed-answer
+        // specs are the answer key, so they come from questions.json.
+        return {
+          ...common,
+          parts: q.parts.map((p, i) => ({
+            key: p.key,
+            question: t.parts?.[i]?.question ?? p.question,
+            solution: t.parts?.[i]?.solution ?? p.solution,
+            answers: p.answers,
+          })),
+        };
+      }
+      return { ...common, correct: q.correct, options: t.options ?? q.options };
     });
 
     const terms = termData.default.terms;
     return {
       ...meta,
+      kind,
       exam: pool.default.exam,
       source: pool.default.source,
+      prelude: pool.default.prelude,
+      deviationTable: pool.default.deviation_table,
+      chart: pool.default.chart,
       questions,
       byId: new Map(questions.map((q) => [q.id, q])),
       // Topic list and per-topic counts are derived, never hardcoded: each
