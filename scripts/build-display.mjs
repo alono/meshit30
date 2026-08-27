@@ -37,7 +37,11 @@ function build(slug) {
     throw new Error(`${slug}: no terms.json — run "node scripts/build-terms.mjs ${slug}" first`);
   }
 
-  const { questions } = readJson(path('questions.json'));
+  const pool = readJson(path('questions.json'));
+  const questions = pool.questions;
+  // Open pools carry lettered sub-parts with model answers instead of options;
+  // the same repair/reconstruction pipeline runs over every text field.
+  const kind = pool.kind ?? 'mc';
   const dictionary = readJson(path('terms.json')).terms;
   const overrides = existsSync(path('text-overrides.json')) ? readJson(path('text-overrides.json')) : {};
   const byId = overrides.questions ?? {};
@@ -50,7 +54,11 @@ function build(slug) {
 
   const vocab = buildVocabulary({
     cheatsheet: readFileSync(path('cheatsheet.md'), 'utf8'),
-    corpus: questions.flatMap((q) => [q.question, ...Object.values(q.options)]),
+    corpus: questions.flatMap((q) =>
+      kind === 'open'
+        ? [q.question ?? '', ...q.parts.flatMap((p) => [p.question, p.solution])]
+        : [q.question, ...Object.values(q.options)],
+    ),
   });
   for (const w of overrides.vocabulary ?? []) vocab.add(w);
 
@@ -78,6 +86,41 @@ function build(slug) {
       return r.text;
     };
 
+    const shared = {
+      ...(reconstructed.size ? { reconstructed: [...reconstructed] } : {}),
+      ...(ov.note ?? q.note ? { note: ov.note ?? q.note } : {}),
+      ...(ov.issue ? { issue: ov.issue } : {}),
+    };
+
+    if (kind === 'open') {
+      // Overrides address a part by its printed letter (an unlettered single
+      // part as "1"): { "parts": { "א": { "question": …, "solution": … } },
+      // "reconstructed": ["א.question"] }.
+      const question =
+        q.question === undefined
+          ? undefined
+          : render('question', q.question, reconstructed.has('question') ? ov.question : undefined);
+      const parts = q.parts.map((p, i) => {
+        const ref = p.key ?? String(i + 1);
+        const ovp = ov.parts?.[ref] ?? {};
+        return {
+          ...(p.key ? { key: p.key } : {}),
+          question: render(`${ref}.question`, p.question, reconstructed.has(`${ref}.question`) ? ovp.question : undefined),
+          solution: render(`${ref}.solution`, p.solution, reconstructed.has(`${ref}.solution`) ? ovp.solution : undefined),
+        };
+      });
+      const asked = [question ?? '', ...parts.map((p) => p.question)].join(' \n ');
+      const haystack = [asked, ...parts.map((p) => p.solution)].join(' \n ');
+      return {
+        id: q.id,
+        ...(question === undefined ? {} : { question }),
+        parts,
+        terms: findTerms(haystack, dictionary),
+        questionTerms: findTerms(asked, dictionary),
+        ...shared,
+      };
+    }
+
     const question = render('question', q.question, reconstructed.has('question') ? ov.question : undefined);
     const options = Object.fromEntries(
       OPTION_KEYS.map((k) => [k, render(`opt ${k}`, q.options[k], ov.options?.[k])]),
@@ -90,9 +133,7 @@ function build(slug) {
       options,
       terms: findTerms(haystack, dictionary),
       questionTerms: findTerms(question, dictionary),
-      ...(reconstructed.size ? { reconstructed: [...reconstructed] } : {}),
-      ...(ov.note ?? q.note ? { note: ov.note ?? q.note } : {}),
-      ...(ov.issue ? { issue: ov.issue } : {}),
+      ...shared,
     };
   });
 
