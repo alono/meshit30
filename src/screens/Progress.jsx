@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { RESETTABLE, resetArea, resetSubject, summarize } from '../lib/progress.js';
 import { buildAttempt, scoreAttempt } from '../lib/exam.js';
+import { scoreOpenAttempt } from '../lib/open.js';
 import Results from './Results.jsx';
+import OpenResults from './OpenResults.jsx';
 
 const pct = (n) => (n == null ? '—' : `${Math.round(n * 100)}%`);
 
@@ -22,9 +24,15 @@ export default function Progress({ subject }) {
   // answers through the ordinary Results screen.
   if (replay) {
     const attempt =
-      replay.questionIds && replay.optionOrder
+      replay.questionIds
         ? { seed: replay.seed, questionIds: replay.questionIds, optionOrder: replay.optionOrder }
         : buildAttempt(subject, replay.seed);
+    if (subject.kind === 'open') {
+      const result = scoreOpenAttempt(subject, attempt, replay.answers ?? {});
+      return (
+        <OpenResults subject={subject} attempt={attempt} result={result} onHome={() => setReplay(null)} />
+      );
+    }
     const result = scoreAttempt(subject, attempt, replay.answers ?? {});
     return (
       <Results subject={subject} attempt={attempt} result={result} onHome={() => setReplay(null)} />
