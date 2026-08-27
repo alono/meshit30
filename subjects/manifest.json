@@ -25,9 +25,9 @@
     },
     {
       "slug": "nav-coastal",
-      "he": "ניווט חופי",
+      "he": "נווט א' — חופי",
       "en": "Coastal Navigation",
-      "status": "coming-soon",
+      "status": "active",
       "icon": "🗺️"
     }
   ]

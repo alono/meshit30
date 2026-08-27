@@ -170,7 +170,7 @@ function Entry({ deck, state, topics, topic, onTopic, roundSize, onRoundSize, on
         </>
       ) : (
         <button type="button" className="btn start-round" onClick={() => onStart(false)}>
-          ▶ התחלת סבב
+          התחלת סבב ◀
         </button>
       )}
     </>

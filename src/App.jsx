@@ -13,6 +13,9 @@ import Learn from './screens/Learn.jsx';
 import Practice from './screens/Practice.jsx';
 import Exam from './screens/Exam.jsx';
 import Results from './screens/Results.jsx';
+import OpenPractice from './screens/OpenPractice.jsx';
+import OpenExam from './screens/OpenExam.jsx';
+import OpenResults from './screens/OpenResults.jsx';
 import ProgressScreen from './screens/Progress.jsx';
 import Signals from './screens/Signals.jsx';
 
@@ -152,23 +155,38 @@ export default function App() {
 
       {subject && !mode && <SubjectMenu subject={subject} stats={overview[subject.slug]} onPick={setMode} />}
 
+      {/* Open (chart-work) subjects swap in their own practice/exam/results;
+          every other screen is shared. */}
       {subject && mode === 'learn' && <Learn subject={subject} />}
-      {subject && mode === 'practice' && <Practice subject={subject} />}
+      {subject && mode === 'practice' &&
+        (subject.kind === 'open' ? <OpenPractice subject={subject} /> : <Practice subject={subject} />)}
       {subject && mode === 'study' && <Markdown source={subject.cheatsheet} />}
       {subject && mode === 'progress' && <ProgressScreen subject={subject} />}
 
-      {subject && mode === 'exam' && !finished && (
-        <Exam subject={subject} onFinish={setFinished} />
-      )}
-      {subject && mode === 'exam' && finished && (
-        <Results
-          subject={subject}
-          attempt={finished.attempt}
-          result={finished.result}
-          onAgain={() => setFinished(null)}
-          onHome={goMenu}
-        />
-      )}
+      {subject && mode === 'exam' && !finished &&
+        (subject.kind === 'open' ? (
+          <OpenExam subject={subject} onFinish={setFinished} />
+        ) : (
+          <Exam subject={subject} onFinish={setFinished} />
+        ))}
+      {subject && mode === 'exam' && finished &&
+        (subject.kind === 'open' ? (
+          <OpenResults
+            subject={subject}
+            attempt={finished.attempt}
+            result={finished.result}
+            onAgain={() => setFinished(null)}
+            onHome={goMenu}
+          />
+        ) : (
+          <Results
+            subject={subject}
+            attempt={finished.attempt}
+            result={finished.result}
+            onAgain={() => setFinished(null)}
+            onHome={goMenu}
+          />
+        ))}
 
       {subject && !mode && (
         <p className="meta" style={{ marginTop: 24 }}>מקור המאגר: {subject.source}</p>
@@ -185,7 +203,7 @@ function SubjectMenu({ subject, stats, onPick }) {
           <b>{subject.questions.length} שאלות במאגר</b>
           <span style={{ flex: 1 }} />
           <span className="pill">
-            {subject.exam.questions} שאלות · {subject.exam.minutes} דק' · עובר {subject.exam.pass}
+            {subject.exam.questions} {subject.kind === 'open' ? 'תרגילים' : 'שאלות'} · {subject.exam.minutes} דק' · עובר {subject.exam.pass}
           </span>
         </div>
         {stats && (

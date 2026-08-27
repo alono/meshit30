@@ -439,6 +439,56 @@ table.topics td.num { text-align: left; font-variant-numeric: tabular-nums; whit
 .history > i { flex: 1; min-width: 6px; max-width: 28px; border-radius: 3px 3px 0 0; background: var(--brand); opacity: 0.65; }
 .history > i.pass { background: var(--right); opacity: 1; }
 
+/* ---------- open (chart-work) questions ---------- */
+
+.part { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
+
+.partkey {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-weight: 700;
+  margin-inline-end: 8px;
+}
+
+/* The official model answer, shown on reveal. */
+.solution {
+  margin: 10px 0 0;
+  padding: 12px;
+  border-radius: var(--radius);
+  background: var(--brand-soft);
+  border: 1px solid var(--line);
+}
+.solution > b { display: block; margin-bottom: 4px; font-size: 0.85rem; }
+
+/* Numeric results are typed LTR (courses, positions, times) even on an RTL page. */
+.open-input {
+  min-height: var(--tap);
+  width: 150px;
+  max-width: 100%;
+  padding: 0 12px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  direction: ltr;
+  text-align: left;
+}
+.open-input:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
+.open-input.right { border-color: var(--right); background: var(--right-soft); }
+.open-input.wrong { border-color: var(--wrong); background: var(--wrong-soft); }
+
+/* Self-grade chips: the chosen verdict is filled in its meaning's colour. */
+.chip.grade-right { background: var(--right); color: var(--on-right); border-color: var(--right); }
+.chip.grade-wrong { background: var(--wrong); color: var(--on-wrong); border-color: var(--wrong); }
+
+.devtable summary { cursor: pointer; font-weight: 600; min-height: var(--tap); display: flex; align-items: center; }
+
 /* ---------- blocking disclaimer ---------- */
 
 .modal-backdrop {
