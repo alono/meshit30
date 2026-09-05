@@ -23,18 +23,24 @@ export default function Practice({ subject }) {
   // answering (which updates wrongQueue) re-filters without re-ordering.
   const [seed, setSeed] = useState(newSeed);
 
+  // The list is fixed for the length of a filter selection: re-reading the
+  // wrong queue here (instead of depending on the `wrongQueue` state) means
+  // answering a question can't shrink/reshuffle the array she is mid-question
+  // on, which used to shift the current index onto a different question
+  // while its reveal state was still showing — marking the wrong one — or,
+  // when the shrink landed on an empty array, crash the screen outright.
   const questions = useMemo(() => {
-    const wrong = new Set(wrongQueue);
+    const wrong = new Set(loadWrongQueue(subject.slug));
     const filtered = subject.questions.filter(
       (q) => (!topic || q.topic === topic) && (!onlyWrong || wrong.has(q.id)),
     );
     return shuffle(filtered, rng(seed));
-  }, [subject.questions, topic, onlyWrong, wrongQueue, seed]);
+  }, [subject.questions, subject.slug, topic, onlyWrong, seed]);
 
   const question = questions[cursor % Math.max(questions.length, 1)];
 
   const choose = (key) => {
-    if (picked) return;
+    if (picked || !question) return;
     setPicked(key);
     recordAnswer(subject.slug, question.id, key === question.correct);
     setWrongQueue(loadWrongQueue(subject.slug));
@@ -52,7 +58,7 @@ export default function Practice({ subject }) {
     setSeed(newSeed());
   };
 
-  const snippet = picked && picked !== question.correct
+  const snippet = picked && question && picked !== question.correct
     ? cheatsheetSnippet(subject, question)
     : null;
 

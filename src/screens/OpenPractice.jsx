@@ -24,17 +24,23 @@ export default function OpenPractice({ subject }) {
   // One shuffle per filter selection, exactly like the MC practice screen.
   const [seed, setSeed] = useState(newSeed);
 
+  // The list is fixed for the length of a filter selection: re-reading the
+  // wrong queue here (instead of depending on the `wrongQueue` state) means
+  // grading an exercise in next() can't shrink/reshuffle the array out from
+  // under the cursor she is about to advance onto. See Practice.jsx for the
+  // same fix and the bug it closes.
   const questions = useMemo(() => {
-    const wrong = new Set(wrongQueue);
+    const wrong = new Set(loadWrongQueue(subject.slug));
     const filtered = subject.questions.filter(
       (q) => (!topic || q.topic === topic) && (!onlyWrong || wrong.has(q.id)),
     );
     return shuffle(filtered, rng(seed));
-  }, [subject.questions, topic, onlyWrong, wrongQueue, seed]);
+  }, [subject.questions, subject.slug, topic, onlyWrong, seed]);
 
   const question = questions[cursor % Math.max(questions.length, 1)];
 
   const reveal = () => {
+    if (!question) return;
     setRevealed(true);
     setVerdicts(question.parts.map((part, i) => autoVerdict(part, inputs[i])));
   };
