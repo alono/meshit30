@@ -11,7 +11,6 @@ repair         q7    opt א      ל רסס  ->  לרסס
 reconstructed  q8    opt ג      גלגל התנופה גי דל באופן יחסי למספר הצילינדרים.  ->  גלגל התנופה יגדל באופן יחסי למספר הצילינדרים.
 repair         q11   opt א      בדי קת  ->  בדיקת
 repair         q12   opt ג      מני עת  ->  מניעת
-reconstructed  q13   opt א      שמירת אינרציה ויציבות סל"  ->  שמירת אינרציה ויציבות סל"ד.
 repair         q15   opt ב      משא בת  ->  משאבת
 repair         q22   opt א      בק ו  ->  בקו
 repair         q25   opt ב      האר כובה  ->  הארכובה
@@ -22,12 +21,10 @@ repair         q43   opt ב      ההידרו סטטי  ->  ההידרוסטטי
 repair         q50   question   למ ה  ->  למה
 repair         q55   question   למ נוע  ->  למנוע
 reconstructed  q55   opt ב      מדחף, סמ בים רלוונטיים, ברגים, אטמים.  ->  מדחף, מסבים רלוונטיים, ברגים, אטמים.
-reconstructed  q59   opt ב      למנוע  ->  למנוע איכול חשמלי של חלקים מתכתיים שבמים.
 reconstructed  q62   question   מה יגרום ל פעולת מנוע דיזל הל פוך לבלתי סדירה?  ->  מה יגרום לפעולת מנוע דיזל להפוך לבלתי סדירה?
 repair         q63   question   ש מן  ->  שמן
 repair         q63   question   ה שמן  ->  השמן
 repair?        q63   opt ג      ו צמיג  ->  וצמיג
-reconstructed  q67   opt ב      ק"  ->  ק"ג כפול מטר / שנייה.
 repair         q70   question   ה מנוע  ->  המנוע
 repair         q71   opt ד      בע זרת  ->  בעזרת
 repair         q73   opt ד      האח רונה  ->  האחרונה
@@ -43,7 +40,6 @@ repair         q104  question   מי סב  ->  מיסב
 repair         q105  question   ה ת קשרות  ->  התקשרות
 repair         q108  opt ג      והח ו ם  ->  והחום
 repair         q109  opt ב      וי ינזק  ->  ויינזק
-reconstructed  q112  opt ד      תשובות  ->  תשובות ב' וג' נכונות.
 reconstructed  q114  question   מה פירוש "טעינת ית ר"charge) (turbo?  ->  מה פירוש "טעינת יתר" (turbo charge)?
 repair         q115  question   מא בד  ->  מאבד
 repair         q116  question   ל מצבר  ->  למצבר
@@ -53,7 +49,6 @@ repair         q122  question   הס יבה  ->  הסיבה
 repair         q126  opt ד      לד בר  ->  לדבר
 repair         q135  opt ד      המ נוע  ->  המנוע
 repair         q139  question   ב לוח  ->  בלוח
-reconstructed  q139  opt א      לחץ שמן, חום מנוע, סל"  ->  לחץ שמן, חום מנוע, סל"ד.
 repair?        q140  opt ג      ל שנות  ->  לשנות
 repair         q142  opt ב      מנוט רל  ->  מנוטרל
 repair?        q149  question   ה תופעות  ->  התופעות
@@ -64,11 +59,9 @@ reconstructed  q158  question   "מחליף חום ((COOLER, אופייני למ
 repair         q165  question   הט רמוסטט  ->  הטרמוסטט
 repair         q166  question   מנוט רל  ->  מנוטרל
 reconstructed  q168  question   מהם הסימנים העשויים להצביע לע חוסר קוויות ((line של גל המדחף?  ->  מהם הסימנים העשויים להצביע על חוסר קוויות של גל המדחף?
-repair         q171  opt ב      מ ניעת  ->  מניעת
 repair         q171  opt ג      וחל קים  ->  וחלקים
 repair?        q173  question   ה קיבולת  ->  הקיבולת
 repair         q174  opt א      תקי נים  ->  תקינים
 repair         q175  opt ב      להזר יק  ->  להזריק
-reconstructed  q176  opt ג      מגעי הח שמל  ->  מגעי החשמל אינם תקינים.
 repair         q177  question   ה סיבה  ->  הסיבה
 repair?        q177  question   ה אפשרית  ->  האפשרית
