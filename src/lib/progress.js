@@ -3,7 +3,7 @@
 
 import { clearSubject, read, remove, write } from './storage.js';
 
-const AREAS = { answers: 'answers', deck: 'deck', attempts: 'attempts', wrong: 'wrong' };
+const AREAS = { answers: 'answers', deck: 'deck', attempts: 'attempts', wrong: 'wrong', practicePos: 'practicePos' };
 
 /**
  * The four independently-stored parts of progress, each resettable on its own.
@@ -53,6 +53,12 @@ export const loadAnswers = (slug) => read(slug, AREAS.answers, {});
 export const loadDeck = (slug) => read(slug, AREAS.deck, {});
 export const loadAttempts = (slug) => read(slug, AREAS.attempts, []);
 export const loadWrongQueue = (slug) => read(slug, AREAS.wrong, []);
+
+// Where she left off in תרגול — filter selection and position — so leaving
+// (or a reload) can offer to pick up there instead of losing the spot.
+export const loadPracticePos = (slug) => read(slug, AREAS.practicePos, null);
+export const savePracticePos = (slug, pos) => write(slug, AREAS.practicePos, pos);
+export const clearPracticePos = (slug) => remove(slug, AREAS.practicePos);
 
 export const saveDeck = (slug, deck) => write(slug, AREAS.deck, deck);
 
