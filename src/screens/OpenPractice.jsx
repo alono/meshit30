@@ -1,9 +1,28 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import OpenQuestionCard, { autoVerdict } from '../components/OpenQuestionCard.jsx';
 import DeviationTable from '../components/DeviationTable.jsx';
-import { loadWrongQueue, recordAnswer } from '../lib/progress.js';
+import {
+  clearPracticePos,
+  loadPracticePos,
+  loadWrongQueue,
+  recordAnswer,
+  savePracticePos,
+} from '../lib/progress.js';
 import { newSeed, rng, shuffle } from '../lib/rng.js';
 import { cheatsheetSnippet } from '../lib/snippet.js';
+
+// The list is fixed for the length of a filter selection: re-reading the
+// wrong queue here (instead of depending on the `wrongQueue` state) means
+// grading an exercise in next() can't shrink/reshuffle the array out from
+// under the cursor she is about to advance onto. See Practice.jsx for the
+// same fix and the bug it closes.
+const buildQuestions = (subject, topic, onlyWrong, seed) => {
+  const wrong = new Set(loadWrongQueue(subject.slug));
+  const filtered = subject.questions.filter(
+    (q) => (!topic || q.topic === topic) && (!onlyWrong || wrong.has(q.id)),
+  );
+  return shuffle(filtered, rng(seed));
+};
 
 /**
  * תרגול for an open (chart-work) subject.
@@ -14,6 +33,16 @@ import { cheatsheetSnippet } from '../lib/snippet.js';
  * joins the review queue unless all of its parts were right.
  */
 export default function OpenPractice({ subject }) {
+  // See Practice.jsx: a saved position is only offered if it still lands
+  // somewhere, otherwise it's stale and silently treated as nothing to resume.
+  const resumable = useMemo(() => {
+    const saved = loadPracticePos(subject.slug);
+    if (!saved) return null;
+    const total = buildQuestions(subject, saved.topic, saved.onlyWrong, saved.seed).length;
+    return total ? { ...saved, total } : null;
+  }, [subject]);
+
+  const [pending, setPending] = useState(Boolean(resumable));
   const [topic, setTopic] = useState(null);
   const [onlyWrong, setOnlyWrong] = useState(false);
   const [cursor, setCursor] = useState(0);
@@ -24,18 +53,18 @@ export default function OpenPractice({ subject }) {
   // One shuffle per filter selection, exactly like the MC practice screen.
   const [seed, setSeed] = useState(newSeed);
 
-  // The list is fixed for the length of a filter selection: re-reading the
-  // wrong queue here (instead of depending on the `wrongQueue` state) means
-  // grading an exercise in next() can't shrink/reshuffle the array out from
-  // under the cursor she is about to advance onto. See Practice.jsx for the
-  // same fix and the bug it closes.
-  const questions = useMemo(() => {
-    const wrong = new Set(loadWrongQueue(subject.slug));
-    const filtered = subject.questions.filter(
-      (q) => (!topic || q.topic === topic) && (!onlyWrong || wrong.has(q.id)),
-    );
-    return shuffle(filtered, rng(seed));
-  }, [subject.questions, subject.slug, topic, onlyWrong, seed]);
+  const questions = useMemo(
+    () => buildQuestions(subject, topic, onlyWrong, seed),
+    [subject, topic, onlyWrong, seed],
+  );
+
+  // Remember where she is, so leaving (or a reload) can offer to pick up here
+  // instead of losing the spot. Held off while the resume choice is still
+  // pending so it can't overwrite the very save it's about to offer.
+  useEffect(() => {
+    if (pending) return;
+    savePracticePos(subject.slug, { topic, onlyWrong, seed, cursor });
+  }, [subject.slug, topic, onlyWrong, seed, cursor, pending]);
 
   const question = questions[cursor % Math.max(questions.length, 1)];
 
@@ -64,6 +93,33 @@ export default function OpenPractice({ subject }) {
     setCursor(0);
     setSeed(newSeed());
   };
+
+  const resume = () => {
+    setTopic(resumable.topic);
+    setOnlyWrong(resumable.onlyWrong);
+    setSeed(resumable.seed);
+    setCursor(resumable.cursor);
+    setPending(false);
+  };
+
+  const startOver = () => {
+    clearPracticePos(subject.slug);
+    setPending(false);
+  };
+
+  if (pending) {
+    const parts = [resumable.topic, resumable.onlyWrong ? 'שאלות שטעית בהן' : null].filter(Boolean);
+    const label = parts.length ? parts.join(' · ') : 'כל השאלות';
+    return (
+      <div className="card">
+        <p>יש לך תרגול פתוח — {label}, שאלה {(resumable.cursor % resumable.total) + 1} מתוך {resumable.total}.</p>
+        <div className="row">
+          <button type="button" className="btn" onClick={resume}>המשך מאיפה שהפסקתי</button>
+          <button type="button" className="btn ghost" onClick={startOver}>התחלה מחדש</button>
+        </div>
+      </div>
+    );
+  }
 
   const snippet = graded && verdicts.some((v) => v === false)
     ? cheatsheetSnippet(subject, question)
