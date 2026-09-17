@@ -27,6 +27,8 @@ export default function Learn({ subject }) {
   const [summary, setSummary] = useState(null);
   // Deck state as it stood when the round began — the summary compares to it.
   const stateAtStart = useRef(null);
+  // Snapshots taken before each grade, so a mis-swipe can be taken back.
+  const history = useRef([]);
 
   const deck = useMemo(() => buildDeck(subject.terms, { topic }), [subject.terms, topic]);
   const topics = useMemo(
@@ -44,12 +46,14 @@ export default function Learn({ subject }) {
     const cards = buildSession(deck, state, { size: prefs.roundSize, studyAhead });
     if (!cards.length) return;
     stateAtStart.current = state;
+    history.current = [];
     setSummary(null);
     setRound(startRound(cards));
   };
 
   const onGrade = (known) => {
     const card = currentCard(round);
+    history.current.push({ round, state });
     const { round: next, countsForBox } = answerCard(round, known);
     if (countsForBox) {
       const nextState = grade(state, card.id, known);
@@ -64,8 +68,21 @@ export default function Learn({ subject }) {
     }
   };
 
+  // Back to the card just graded, with the deck as it was before the grade.
+  const undo = () => {
+    const prev = history.current.pop();
+    if (!prev) return;
+    setState(prev.state);
+    saveDeck(subject.slug, prev.state);
+    setSummary(null);
+    setRound(prev.round);
+  };
+  const canUndo = history.current.length > 0;
+
   if (round) {
-    return <Round round={round} onGrade={onGrade} onQuit={() => setRound(null)} />;
+    return (
+      <Round round={round} onGrade={onGrade} onQuit={() => setRound(null)} onUndo={undo} canUndo={canUndo} />
+    );
   }
   if (summary) {
     return (
@@ -73,6 +90,8 @@ export default function Learn({ subject }) {
         summary={summary}
         onAgain={() => start(false)}
         onBack={() => setSummary(null)}
+        onUndo={undo}
+        canUndo={canUndo}
         canAgain={deckOverview(deck, state).due + deckOverview(deck, state).fresh > 0}
       />
     );
@@ -189,7 +208,7 @@ function formatWhen(ts) {
 
 const SWIPE_THRESHOLD_RATIO = 0.35;
 
-function Round({ round, onGrade, onQuit }) {
+function Round({ round, onGrade, onQuit, onUndo, canUndo }) {
   const card = currentCard(round);
   const { answered, total } = roundProgress(round);
   const [flipped, setFlipped] = useState(false);
@@ -375,6 +394,9 @@ function Round({ round, onGrade, onQuit }) {
       </p>
 
       <div className="row end">
+        <button type="button" className="chip" disabled={!canUndo} onClick={onUndo}>
+          → הכרטיסייה הקודמת
+        </button>
         <button type="button" className="chip" onClick={onQuit}>
           סיום מוקדם
         </button>
@@ -386,7 +408,7 @@ function Round({ round, onGrade, onQuit }) {
 
 /* -------------------------------------------------------------- summary -- */
 
-function Summary({ summary, onAgain, onBack, canAgain }) {
+function Summary({ summary, onAgain, onBack, onUndo, canUndo, canAgain }) {
   const pct = summary.total ? Math.round((summary.known / summary.total) * 100) : 0;
 
   return (
@@ -437,6 +459,13 @@ function Summary({ summary, onAgain, onBack, canAgain }) {
           חזרה
         </button>
       </div>
+      {canUndo && (
+        <div className="row end">
+          <button type="button" className="chip" onClick={onUndo}>
+            → הכרטיסייה האחרונה
+          </button>
+        </div>
+      )}
     </>
   );
 }

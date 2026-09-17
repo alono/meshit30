@@ -3,10 +3,12 @@ import OpenQuestionCard, { autoVerdict } from '../components/OpenQuestionCard.js
 import DeviationTable from '../components/DeviationTable.jsx';
 import {
   clearPracticePos,
+  loadBookmarks,
   loadPracticePos,
   loadWrongQueue,
   recordAnswer,
   savePracticePos,
+  toggleBookmark,
 } from '../lib/progress.js';
 import { newSeed, rng, shuffle } from '../lib/rng.js';
 import { cheatsheetSnippet } from '../lib/snippet.js';
@@ -16,10 +18,14 @@ import { cheatsheetSnippet } from '../lib/snippet.js';
 // grading an exercise in next() can't shrink/reshuffle the array out from
 // under the cursor she is about to advance onto. See Practice.jsx for the
 // same fix and the bug it closes.
-const buildQuestions = (subject, topic, onlyWrong, seed) => {
+const buildQuestions = (subject, topic, onlyWrong, onlyMarked, seed) => {
   const wrong = new Set(loadWrongQueue(subject.slug));
+  const marked = new Set(loadBookmarks(subject.slug));
   const filtered = subject.questions.filter(
-    (q) => (!topic || q.topic === topic) && (!onlyWrong || wrong.has(q.id)),
+    (q) =>
+      (!topic || q.topic === topic) &&
+      (!onlyWrong || wrong.has(q.id)) &&
+      (!onlyMarked || marked.has(q.id)),
   );
   return shuffle(filtered, rng(seed));
 };
@@ -38,24 +44,26 @@ export default function OpenPractice({ subject }) {
   const resumable = useMemo(() => {
     const saved = loadPracticePos(subject.slug);
     if (!saved) return null;
-    const total = buildQuestions(subject, saved.topic, saved.onlyWrong, saved.seed).length;
+    const total = buildQuestions(subject, saved.topic, saved.onlyWrong, saved.onlyMarked, saved.seed).length;
     return total ? { ...saved, total } : null;
   }, [subject]);
 
   const [pending, setPending] = useState(Boolean(resumable));
   const [topic, setTopic] = useState(null);
   const [onlyWrong, setOnlyWrong] = useState(false);
+  const [onlyMarked, setOnlyMarked] = useState(false);
   const [cursor, setCursor] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [inputs, setInputs] = useState({});
   const [verdicts, setVerdicts] = useState([]);
   const [wrongQueue, setWrongQueue] = useState(() => loadWrongQueue(subject.slug));
+  const [bookmarks, setBookmarks] = useState(() => loadBookmarks(subject.slug));
   // One shuffle per filter selection, exactly like the MC practice screen.
   const [seed, setSeed] = useState(newSeed);
 
   const questions = useMemo(
-    () => buildQuestions(subject, topic, onlyWrong, seed),
-    [subject, topic, onlyWrong, seed],
+    () => buildQuestions(subject, topic, onlyWrong, onlyMarked, seed),
+    [subject, topic, onlyWrong, onlyMarked, seed],
   );
 
   // Remember where she is, so leaving (or a reload) can offer to pick up here
@@ -63,8 +71,8 @@ export default function OpenPractice({ subject }) {
   // pending so it can't overwrite the very save it's about to offer.
   useEffect(() => {
     if (pending) return;
-    savePracticePos(subject.slug, { topic, onlyWrong, seed, cursor });
-  }, [subject.slug, topic, onlyWrong, seed, cursor, pending]);
+    savePracticePos(subject.slug, { topic, onlyWrong, onlyMarked, seed, cursor });
+  }, [subject.slug, topic, onlyWrong, onlyMarked, seed, cursor, pending]);
 
   const question = questions[cursor % Math.max(questions.length, 1)];
 
@@ -97,6 +105,7 @@ export default function OpenPractice({ subject }) {
   const resume = () => {
     setTopic(resumable.topic);
     setOnlyWrong(resumable.onlyWrong);
+    setOnlyMarked(Boolean(resumable.onlyMarked));
     setSeed(resumable.seed);
     setCursor(resumable.cursor);
     setPending(false);
@@ -108,7 +117,11 @@ export default function OpenPractice({ subject }) {
   };
 
   if (pending) {
-    const parts = [resumable.topic, resumable.onlyWrong ? 'שאלות שטעית בהן' : null].filter(Boolean);
+    const parts = [
+      resumable.topic,
+      resumable.onlyWrong ? 'שאלות שטעית בהן' : null,
+      resumable.onlyMarked ? 'שאלות שסימנת' : null,
+    ].filter(Boolean);
     const label = parts.length ? parts.join(' · ') : 'כל השאלות';
     return (
       <div className="card">
@@ -130,8 +143,8 @@ export default function OpenPractice({ subject }) {
       <div className="chips">
         <button
           type="button"
-          className={`chip ${!topic && !onlyWrong ? 'on' : ''}`}
-          onClick={() => reset(() => { setTopic(null); setOnlyWrong(false); })}
+          className={`chip ${!topic && !onlyWrong && !onlyMarked ? 'on' : ''}`}
+          onClick={() => reset(() => { setTopic(null); setOnlyWrong(false); setOnlyMarked(false); })}
         >
           כל השאלות
         </button>
@@ -141,6 +154,13 @@ export default function OpenPractice({ subject }) {
           onClick={() => reset(() => setOnlyWrong((v) => !v))}
         >
           שאלות שטעית בהן ({wrongQueue.length})
+        </button>
+        <button
+          type="button"
+          className={`chip ${onlyMarked ? 'on' : ''}`}
+          onClick={() => reset(() => setOnlyMarked((v) => !v))}
+        >
+          ★ שאלות שסימנת ({bookmarks.length})
         </button>
       </div>
 
@@ -165,7 +185,11 @@ export default function OpenPractice({ subject }) {
 
       {!questions.length ? (
         <p className="notice info">
-          {onlyWrong ? 'אין כרגע שאלות שטעית בהן — כל הכבוד!' : 'אין שאלות בנושא הזה.'}
+          {onlyWrong
+            ? 'אין כרגע שאלות שטעית בהן — כל הכבוד!'
+            : onlyMarked
+              ? 'עדיין לא סימנת שאלות — הכוכב מתחת לשאלה מסמן אותה.'
+              : 'אין שאלות בנושא הזה.'}
         </p>
       ) : (
         <>
@@ -194,6 +218,13 @@ export default function OpenPractice({ subject }) {
           </OpenQuestionCard>
 
           <div className="row end">
+            <button
+              type="button"
+              className={`chip ${bookmarks.includes(question.id) ? 'on' : ''}`}
+              onClick={() => setBookmarks(toggleBookmark(subject.slug, question.id))}
+            >
+              {bookmarks.includes(question.id) ? '★ מסומנת' : '☆ סימון'}
+            </button>
             {!revealed ? (
               <button type="button" className="btn" onClick={reveal}>הצגת הפתרון</button>
             ) : (
