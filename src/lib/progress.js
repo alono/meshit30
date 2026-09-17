@@ -3,7 +3,7 @@
 
 import { clearSubject, read, remove, write } from './storage.js';
 
-const AREAS = { answers: 'answers', deck: 'deck', attempts: 'attempts', wrong: 'wrong', practicePos: 'practicePos' };
+const AREAS = { answers: 'answers', deck: 'deck', attempts: 'attempts', wrong: 'wrong', practicePos: 'practicePos', bookmarks: 'bookmarks' };
 
 /**
  * The four independently-stored parts of progress, each resettable on its own.
@@ -61,6 +61,17 @@ export const savePracticePos = (slug, pos) => write(slug, AREAS.practicePos, pos
 export const clearPracticePos = (slug) => remove(slug, AREAS.practicePos);
 
 export const saveDeck = (slug, deck) => write(slug, AREAS.deck, deck);
+
+// Questions she starred in תרגול, to come back to whenever she likes.
+export const loadBookmarks = (slug) => read(slug, AREAS.bookmarks, []);
+export function toggleBookmark(slug, questionId) {
+  const marked = loadBookmarks(slug);
+  const next = marked.includes(questionId)
+    ? marked.filter((id) => id !== questionId)
+    : [...marked, questionId];
+  write(slug, AREAS.bookmarks, next);
+  return next;
+}
 
 /** Record one practice answer and keep the review queue in step. */
 export function recordAnswer(slug, questionId, right) {
