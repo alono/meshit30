@@ -89,7 +89,7 @@ function build(slug) {
     const shared = {
       ...(reconstructed.size ? { reconstructed: [...reconstructed] } : {}),
       ...(ov.note ?? q.note ? { note: ov.note ?? q.note } : {}),
-      ...(ov.issue ? { issue: ov.issue } : {}),
+      ...(ov.issue ?? q.issue ? { issue: ov.issue ?? q.issue } : {}),
     };
 
     if (kind === 'open') {

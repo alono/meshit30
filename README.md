@@ -12,6 +12,14 @@ npm run dev
 `npm run build` מוסיף גם את ה-service worker. כל דחיפה ל-master נפרסת אוטומטית
 ל-Cloudflare Pages דרך `.github/workflows/deploy.yml`.
 
+## עריכת תוכן מקומית
+
+`npm run dev` ואז `http://localhost:5173/admin` — טופס לעריכת שאלות, תשובות ומונחים של כל
+הנושאים. כל שמירה נכתבת לקובץ המקור (`questions.json` לשאלה, `term-overrides.json` למונח),
+בונה מחדש את הנגזרים ומריצה את הוולידציה; מה שנשאר הוא diff ב-git לבדיקה ולקומיט.
+קיים רק בשרת הפיתוח (`scripts/admin-server.mjs`, `src/screens/Admin.jsx`) ועונה רק
+מ-localhost — לא נבנה לפרודקשן.
+
 ## איפה מה
 
 | | |

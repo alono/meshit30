@@ -232,6 +232,26 @@ a { color: var(--brand); }
 .termbox b { display: block; }
 .termbox .close { float: inline-start; }
 
+/* ---------- local content admin (dev server only) ---------- */
+
+.admin { max-width: 1100px; }
+.admin-grid { display: grid; grid-template-columns: minmax(260px, 2fr) 3fr; gap: 16px; align-items: start; }
+.admin-list { display: grid; gap: 6px; max-height: 70vh; overflow: auto; margin-top: 8px; }
+.admin-list .option { padding: 10px; }
+.admin label { display: block; margin: 10px 0 4px; color: var(--ink-soft); font-size: 0.9rem; }
+.admin input[type='text'], .admin textarea, .admin select {
+  width: 100%;
+  padding: 8px 12px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.admin fieldset { border: 1px solid var(--line); border-radius: var(--radius); margin: 10px 0; }
+.admin pre { white-space: pre-wrap; font-size: 0.85rem; }
+@media (max-width: 720px) { .admin-grid { grid-template-columns: 1fr; } }
+
 /* ---------- flashcard: 3D flip + swipe ---------- */
 
 /* Outer wrapper carries the drag (translate/rotate); the button inside carries
