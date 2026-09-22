@@ -13,20 +13,32 @@ export default function TermText({ text, terms, enabled = true }) {
     [text, terms, enabled],
   );
 
+  const toggle = (term) => setOpen(open?.id === term.id ? null : term);
+
   return (
     <>
       <span>
         {segments.map((seg, i) =>
           seg.term ? (
-            <button
+            // A span, not a <button>: buttons are inline-block, so a term
+            // wrapped to the next line as one piece and left its prefix
+            // letter ("ב" of "במערכת") stranded on the line above.
+            <span
               key={i}
-              type="button"
+              role="button"
+              tabIndex={0}
               className="term"
               aria-label={`הסבר למונח ${seg.term.he}`}
-              onClick={() => setOpen(open?.id === seg.term.id ? null : seg.term)}
+              onClick={() => toggle(seg.term)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  toggle(seg.term);
+                }
+              }}
             >
               {seg.text}
-            </button>
+            </span>
           ) : (
             <span key={i}>{seg.text}</span>
           ),

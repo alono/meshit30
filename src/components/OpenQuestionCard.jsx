@@ -61,7 +61,8 @@ export default function OpenQuestionCard({
 
       {question.question && (
         <p className="qtext">
-          <TermText text={question.question} terms={termRecords} />
+          {/* Keyed so an open term box closes on reveal or moving on. */}
+          <TermText key={`${question.id}:${reveal}`} text={question.question} terms={termRecords} />
         </p>
       )}
 
@@ -93,7 +94,7 @@ function Part({ part, termRecords, reveal, input, onInput, verdict, onVerdict, r
     <div className="part">
       <p style={{ margin: 0 }}>
         {part.key && <span className="partkey">{part.key}</span>}
-        <TermText text={part.question} terms={termRecords} />
+        <TermText key={String(reveal)} text={part.question} terms={termRecords} />
         {reconstructed?.includes(`${partRef}.question`) && <span className="meta"> · נוסח משוחזר</span>}
       </p>
 
