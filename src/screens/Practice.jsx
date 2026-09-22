@@ -40,32 +40,40 @@ const buildQuestions = (subject, topic, onlyWrong, onlyMarked, seed) => {
  * the simulated exam.
  */
 export default function Practice({ subject }) {
-  // A saved position is only offered if it still lands somewhere — a stale
-  // save (its topic no longer has any questions, or the wrong queue it
-  // filtered on has since been cleared elsewhere) collapses to an empty list
-  // and is silently treated as nothing to resume.
+  // A saved position carries the exact question order it was walking, so
+  // resuming lands on the same question even after the wrong queue shrank or
+  // a content update moved things — questions that no longer exist are
+  // dropped, and a save that collapses to nothing is silently ignored.
   const resumable = useMemo(() => {
     const saved = loadPracticePos(subject.slug);
     if (!saved) return null;
-    const total = buildQuestions(subject, saved.topic, saved.onlyWrong, saved.onlyMarked, saved.seed).length;
-    return total ? { ...saved, total } : null;
+    // Older saves kept only the seed; rebuild their order the way they did.
+    const ids = (saved.ids ?? buildQuestions(subject, saved.topic, saved.onlyWrong, saved.onlyMarked, saved.seed).map((q) => q.id))
+      .filter((id) => subject.byId.has(id));
+    return ids.length ? { ...saved, ids, total: ids.length } : null;
   }, [subject]);
 
   const [pending, setPending] = useState(Boolean(resumable));
   const [topic, setTopic] = useState(null);
   const [onlyWrong, setOnlyWrong] = useState(false);
   const [onlyMarked, setOnlyMarked] = useState(false);
-  const [picked, setPicked] = useState(null);
+  // Her pick per position, so stepping back shows the question as she left
+  // it (already revealed) instead of letting it be answered twice.
+  const [picks, setPicks] = useState({});
   const [cursor, setCursor] = useState(0);
   const [wrongQueue, setWrongQueue] = useState(() => loadWrongQueue(subject.slug));
   const [bookmarks, setBookmarks] = useState(() => loadBookmarks(subject.slug));
   // One shuffle per filter selection. The seed only changes on reset(), so
   // answering (which updates wrongQueue) re-filters without re-ordering.
   const [seed, setSeed] = useState(newSeed);
+  // A resumed run keeps the list it was saved with; reset() drops it.
+  const [order, setOrder] = useState(null);
 
   const questions = useMemo(
-    () => buildQuestions(subject, topic, onlyWrong, onlyMarked, seed),
-    [subject, topic, onlyWrong, onlyMarked, seed],
+    () => (order
+      ? order.map((id) => subject.byId.get(id))
+      : buildQuestions(subject, topic, onlyWrong, onlyMarked, seed)),
+    [subject, topic, onlyWrong, onlyMarked, seed, order],
   );
 
   // Remember where she is, so leaving (or a reload) can offer to pick up here
@@ -73,35 +81,36 @@ export default function Practice({ subject }) {
   // pending so it can't overwrite the very save it's about to offer.
   useEffect(() => {
     if (pending) return;
-    savePracticePos(subject.slug, { topic, onlyWrong, onlyMarked, seed, cursor });
-  }, [subject.slug, topic, onlyWrong, onlyMarked, seed, cursor, pending]);
+    savePracticePos(subject.slug, { topic, onlyWrong, onlyMarked, cursor, picks, ids: questions.map((q) => q.id) });
+  }, [subject.slug, topic, onlyWrong, onlyMarked, cursor, picks, questions, pending]);
 
   const question = questions[cursor % Math.max(questions.length, 1)];
+  const picked = picks[cursor] ?? null;
 
   const choose = (key) => {
     if (picked || !question) return;
-    setPicked(key);
+    setPicks((p) => ({ ...p, [cursor]: key }));
     recordAnswer(subject.slug, question.id, key === question.correct);
     setWrongQueue(loadWrongQueue(subject.slug));
   };
 
-  const next = () => {
-    setPicked(null);
-    setCursor((c) => c + 1);
-  };
+  const next = () => setCursor((c) => c + 1);
+  const prev = () => setCursor((c) => c - 1);
 
   const reset = (fn) => {
     fn();
-    setPicked(null);
+    setPicks({});
     setCursor(0);
     setSeed(newSeed());
+    setOrder(null);
   };
 
   const resume = () => {
     setTopic(resumable.topic);
     setOnlyWrong(resumable.onlyWrong);
     setOnlyMarked(Boolean(resumable.onlyMarked));
-    setSeed(resumable.seed);
+    setOrder(resumable.ids);
+    setPicks(resumable.picks ?? {});
     setCursor(resumable.cursor);
     setPending(false);
   };
@@ -201,6 +210,9 @@ export default function Practice({ subject }) {
           </QuestionCard>
 
           <div className="row end">
+            <button type="button" className="chip" disabled={!cursor} onClick={prev}>
+              → השאלה הקודמת
+            </button>
             <button
               type="button"
               className={`chip ${bookmarks.includes(question.id) ? 'on' : ''}`}
