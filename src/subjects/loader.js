@@ -43,64 +43,71 @@ export async function loadSubject(slug) {
       pick(cheatsheetFiles, slug),
     ]);
     if (!pool || !display || !termData) throw new Error(`חסרים קבצי תוכן לנושא "${slug}"`);
-
-    // Open pools (kind: "open") hold chart-work exercises: lettered sub-parts
-    // with model answers instead of four options.
-    const kind = pool.default.kind ?? 'mc';
-    const text = new Map(display.default.questions.map((q) => [q.id, q]));
-    const questions = pool.default.questions.map((q) => {
-      const t = text.get(q.id) ?? {};
-      const common = {
-        id: q.id,
-        topic: q.topic,
-        image: q.image,
-        figures: q.figures,
-        question: t.question ?? q.question,
-        terms: t.terms ?? [],
-        questionTerms: t.questionTerms ?? [],
-        reconstructed: t.reconstructed ?? [],
-        note: t.note,
-        issue: t.issue,
-      };
-      if (kind === 'open') {
-        // Text the learner reads comes from display.json; the typed-answer
-        // specs are the answer key, so they come from questions.json.
-        return {
-          ...common,
-          parts: q.parts.map((p, i) => ({
-            key: p.key,
-            question: t.parts?.[i]?.question ?? p.question,
-            solution: t.parts?.[i]?.solution ?? p.solution,
-            answers: p.answers,
-          })),
-        };
-      }
-      return { ...common, correct: q.correct, options: t.options ?? q.options };
-    });
-
-    const terms = termData.default.terms;
-    return {
-      ...meta,
-      kind,
-      exam: pool.default.exam,
-      source: pool.default.source,
-      prelude: pool.default.prelude,
-      deviationTable: pool.default.deviation_table,
-      chart: pool.default.chart,
-      questions,
-      byId: new Map(questions.map((q) => [q.id, q])),
-      // Topic list and per-topic counts are derived, never hardcoded: each
-      // subject brings its own topics and the exam mirrors their distribution.
-      topics: buildTopics(questions),
-      terms,
-      termsById: new Map(terms.map((t) => [t.id, t])),
-      termTopics: termData.default.topics ?? [],
-      cheatsheet: cheatsheet ?? '',
-    };
+    return fold(meta, pool.default, display.default, termData.default, cheatsheet);
   })();
 
   cache.set(slug, promise);
   return promise;
+}
+
+/**
+ * The fold itself, on already-parsed files. Exported so the local admin can
+ * show exactly what the app shows from files it fetched a moment ago.
+ */
+export function fold(meta, pool, display, termData, cheatsheet) {
+  // Open pools (kind: "open") hold chart-work exercises: lettered sub-parts
+  // with model answers instead of four options.
+  const kind = pool.kind ?? 'mc';
+  const text = new Map(display.questions.map((q) => [q.id, q]));
+  const questions = pool.questions.map((q) => {
+    const t = text.get(q.id) ?? {};
+    const common = {
+      id: q.id,
+      topic: q.topic,
+      image: q.image,
+      figures: q.figures,
+      question: t.question ?? q.question,
+      terms: t.terms ?? [],
+      questionTerms: t.questionTerms ?? [],
+      reconstructed: t.reconstructed ?? [],
+      note: t.note,
+      issue: t.issue,
+    };
+    if (kind === 'open') {
+      // Text the learner reads comes from display.json; the typed-answer
+      // specs are the answer key, so they come from questions.json.
+      return {
+        ...common,
+        parts: q.parts.map((p, i) => ({
+          key: p.key,
+          question: t.parts?.[i]?.question ?? p.question,
+          solution: t.parts?.[i]?.solution ?? p.solution,
+          answers: p.answers,
+        })),
+      };
+    }
+    return { ...common, correct: q.correct, options: t.options ?? q.options };
+  });
+
+  const terms = termData.terms;
+  return {
+    ...meta,
+    kind,
+    exam: pool.exam,
+    source: pool.source,
+    prelude: pool.prelude,
+    deviationTable: pool.deviation_table,
+    chart: pool.chart,
+    questions,
+    byId: new Map(questions.map((q) => [q.id, q])),
+    // Topic list and per-topic counts are derived, never hardcoded: each
+    // subject brings its own topics and the exam mirrors their distribution.
+    topics: buildTopics(questions),
+    terms,
+    termsById: new Map(terms.map((t) => [t.id, t])),
+    termTopics: termData.topics ?? [],
+    cheatsheet: cheatsheet ?? '',
+  };
 }
 
 function buildTopics(questions) {

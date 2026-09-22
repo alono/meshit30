@@ -1,11 +1,17 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './styles.css';
 
+// The local content admin exists only on the dev server: this condition is a
+// constant false in a production build, so the screen is never even bundled.
+const Admin = import.meta.env.DEV && window.location.pathname.startsWith('/admin')
+  ? lazy(() => import('./screens/Admin.jsx'))
+  : null;
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {Admin ? <Suspense fallback={null}><Admin /></Suspense> : <App />}
   </StrictMode>,
 );
 
