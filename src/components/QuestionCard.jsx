@@ -55,7 +55,8 @@ export default function QuestionCard({
       )}
 
       <p className="qtext">
-        <TermText text={question.question} terms={termRecords} />
+        {/* Keyed so an open term box closes when she answers or moves on. */}
+        <TermText key={`${question.id}:${picked}`} text={question.question} terms={termRecords} />
       </p>
 
       {question.image && <img className="qimage" src={question.image} alt="" />}
