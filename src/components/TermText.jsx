@@ -17,7 +17,7 @@ export default function TermText({ text, terms, enabled = true }) {
 
   return (
     <>
-      <span>
+      <span className={text?.includes('\n') ? 'termtext lines' : 'termtext'}>
         {segments.map((seg, i) =>
           seg.term ? (
             // A span, not a <button>: buttons are inline-block, so a term
