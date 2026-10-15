@@ -218,6 +218,12 @@ a { color: var(--brand); }
 
 /* ---------- terms ---------- */
 
+/* Content strings break lines with \n — keep them, still collapse spaces. */
+.termtext { white-space: pre-line; }
+/* Multi-line text can quote an English radio call: each line takes its own
+   direction (needs a block), so English lines read LTR and align left. Not on single-line
+   text, where "CARDINAL מסמנים..." would flip the whole Hebrew line to LTR. */
+.termtext.lines { display: block; unicode-bidi: plaintext; }
 .term {
   border-bottom: 2px dotted var(--brand);
   cursor: help;
