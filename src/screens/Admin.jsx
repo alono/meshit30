@@ -14,7 +14,7 @@ const api = async (path, init) => {
 
 /**
  * Local content admin — reachable only from the dev server (main.jsx mounts
- * it in DEV, scripts/admin-server.mjs answers only on loopback).
+ * it in DEV, scripts/admin-server.mjs answers only on loopback and the LAN).
  *
  * Every edit lands in a hand-kept file — questions.json for a question,
  * term-overrides.json for a term — and the derived display.json/terms.json

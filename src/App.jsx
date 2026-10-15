@@ -18,12 +18,14 @@ import OpenExam from './screens/OpenExam.jsx';
 import OpenResults from './screens/OpenResults.jsx';
 import ProgressScreen from './screens/Progress.jsx';
 import Signals from './screens/Signals.jsx';
+import Browse from './screens/Browse.jsx';
 
 const MODES = [
   { id: 'learn', title: 'שינון', sub: 'כרטיסיות מונחים בשני הכיוונים' },
   { id: 'practice', title: 'תרגול', sub: 'שאלות לפי נושא, עם משוב מיידי' },
   { id: 'exam', title: 'סימולציה', sub: 'מבחן מלא על זמן, בלי משוב עד ההגשה' },
   { id: 'study', title: 'חומר עזר', sub: 'דף הריכוז של הנושא' },
+  { id: 'browse', title: 'כל השאלות', sub: 'המאגר המלא עם התשובות, לקריאה' },
   { id: 'progress', title: 'התקדמות', sub: 'כיסוי, דיוק לפי נושא והיסטוריית מבחנים' },
 ];
 
@@ -161,6 +163,7 @@ export default function App() {
       {subject && mode === 'practice' &&
         (subject.kind === 'open' ? <OpenPractice subject={subject} /> : <Practice subject={subject} />)}
       {subject && mode === 'study' && <Markdown source={subject.cheatsheet} />}
+      {subject && mode === 'browse' && <Browse subject={subject} />}
       {subject && mode === 'progress' && <ProgressScreen subject={subject} />}
 
       {subject && mode === 'exam' && !finished &&
