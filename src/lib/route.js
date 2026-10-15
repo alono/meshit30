@@ -9,7 +9,7 @@
 //   /                            home
 //   /signals                     אורות וסימנים
 //   /s/<slug>                    subject menu
-//   /s/<slug>/<mode>             learn | practice | exam | study | progress
+//   /s/<slug>/<mode>             learn | practice | exam | study | progress | browse
 //   /s/<slug>/exam/results       results
 //
 // Hash routes are deliberately not used: the analytics beacon hooks pushState
@@ -17,7 +17,7 @@
 
 import { activeSubjects } from '../subjects/loader.js';
 
-const MODES = new Set(['learn', 'practice', 'exam', 'study', 'progress']);
+const MODES = new Set(['learn', 'practice', 'exam', 'study', 'progress', 'browse']);
 
 /** Every value screenOf can return — the allow-list functions/api/v.js mirrors. */
 export const SCREENS = [
@@ -30,6 +30,7 @@ export const SCREENS = [
   'results',
   'study',
   'progress',
+  'browse',
 ];
 
 const HOME = { slug: null, mode: null };

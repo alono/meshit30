@@ -8,13 +8,13 @@
 //
 // Never in production: `apply: 'serve'` keeps it out of `vite build`, and the
 // dev server listens on the LAN for phone testing, so every request must also
-// come from the loopback interface.
+// come from loopback or a private (RFC 1918) LAN address.
 
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { ROOT, listSubjects, readJson, subjectPath } from './lib/subjects.mjs';
 
-const LOOPBACK = new Set(['127.0.0.1', '::1', '::ffff:127.0.0.1']);
+const LOCAL = /^(::1|(::ffff:)?(127\.|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.))/;
 const QUESTION_FIELDS = ['topic', 'question', 'options', 'correct', 'parts', 'note', 'issue'];
 // What a text-overrides entry may say about the same fields; an edit through
 // the admin becomes the source text, so these go or they would mask it.
@@ -33,7 +33,7 @@ export default function admin() {
 }
 
 async function handle(req, res) {
-  if (!LOOPBACK.has(req.socket.remoteAddress)) return send(res, 403, { error: 'localhost only' });
+  if (!LOCAL.test(req.socket.remoteAddress)) return send(res, 403, { error: 'local network only' });
   const [slug, kind, id] = req.url.split('?')[0].split('/').filter(Boolean).map(decodeURIComponent);
   if (!listSubjects().includes(slug)) return send(res, 404, { error: `unknown subject "${slug}"` });
   const file = (f) => subjectPath(slug, f);

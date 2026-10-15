@@ -26,6 +26,7 @@ const SCREENS = new Set([
   'results',
   'study',
   'progress',
+  'browse',
 ]);
 
 const SUBJECTS = new Set(manifest.subjects.map((s) => s.slug));
