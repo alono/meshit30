@@ -2,8 +2,11 @@
 //
 // Adding a subject is a content drop: create subjects/<slug>/ with its four
 // files, flip the manifest entry to "active", rebuild. Nothing here changes.
+// An English edition is the same drop with "lang": "en" in the manifest; it
+// may come without a cheatsheet, which leaves it without שינון and חומר עזר.
 
 import manifest from '../../subjects/manifest.json';
+import { subjectTitle } from '../lib/i18n.js';
 
 const questionFiles = import.meta.glob('../../subjects/*/questions.json');
 const displayFiles = import.meta.glob('../../subjects/*/display.json');
@@ -89,9 +92,13 @@ export function fold(meta, pool, display, termData, cheatsheet) {
     return { ...common, correct: q.correct, options: t.options ?? q.options };
   });
 
+  const lang = meta.lang ?? 'he';
+
   const terms = termData.terms;
   return {
     ...meta,
+    lang,
+    title: subjectTitle(meta),
     kind,
     exam: pool.exam,
     source: pool.source,

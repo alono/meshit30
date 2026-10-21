@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import QuestionCard from '../components/QuestionCard.jsx';
 import OpenQuestionCard from '../components/OpenQuestionCard.jsx';
+import { strings } from '../lib/i18n.js';
 
 /**
  * כל השאלות — the whole pool, answers shown, read only. The admin's question
  * list without the editing: filter by topic or text, then read down the page.
  */
 export default function Browse({ subject }) {
+  const t = strings(subject.lang);
   const [topic, setTopic] = useState(null);
   const [search, setSearch] = useState('');
 
@@ -25,10 +27,10 @@ export default function Browse({ subject }) {
           </button>
         ))}
       </div>
-      <input type="search" className="search" placeholder="חיפוש — מספר או טקסט" value={search} onChange={(e) => setSearch(e.target.value)} />
-      <p className="meta">{list.length} שאלות</p>
+      <input type="search" className="search" placeholder={t.search} value={search} onChange={(e) => setSearch(e.target.value)} />
+      <p className="meta">{t.count(list.length)}</p>
       {list.map((q, i) => (
-        <Card key={q.id} question={q} terms={subject.termsById} reveal showNote index={i} total={list.length} />
+        <Card key={q.id} question={q} lang={subject.lang} terms={subject.termsById} reveal showNote index={i} total={list.length} />
       ))}
     </>
   );

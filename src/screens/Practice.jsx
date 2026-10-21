@@ -11,6 +11,7 @@ import {
 } from '../lib/progress.js';
 import { newSeed, rng, shuffle } from '../lib/rng.js';
 import { cheatsheetSnippet } from '../lib/snippet.js';
+import { strings } from '../lib/i18n.js';
 
 // The list is fixed for the length of a filter selection: re-reading the
 // wrong queue here (instead of depending on the `wrongQueue` state) means
@@ -40,6 +41,7 @@ const buildQuestions = (subject, topic, onlyWrong, onlyMarked, seed) => {
  * the simulated exam.
  */
 export default function Practice({ subject }) {
+  const t = strings(subject.lang);
   // A saved position carries the exact question order it was walking, so
   // resuming lands on the same question even after the wrong queue shrank or
   // a content update moved things — questions that no longer exist are
@@ -123,16 +125,16 @@ export default function Practice({ subject }) {
   if (pending) {
     const parts = [
       resumable.topic,
-      resumable.onlyWrong ? 'שאלות שטעית בהן' : null,
-      resumable.onlyMarked ? 'שאלות שסימנת' : null,
+      resumable.onlyWrong ? t.wrongOnes : null,
+      resumable.onlyMarked ? t.markedOnes : null,
     ].filter(Boolean);
-    const label = parts.length ? parts.join(' · ') : 'כל השאלות';
+    const label = parts.length ? parts.join(' · ') : t.allQuestions;
     return (
       <div className="card">
-        <p>יש לך תרגול פתוח — {label}, שאלה {(resumable.cursor % resumable.total) + 1} מתוך {resumable.total}.</p>
+        <p>{t.resumeLine(label, (resumable.cursor % resumable.total) + 1, resumable.total)}</p>
         <div className="row">
-          <button type="button" className="btn" onClick={resume}>המשך מאיפה שהפסקתי</button>
-          <button type="button" className="btn ghost" onClick={startOver}>התחלה מחדש</button>
+          <button type="button" className="btn" onClick={resume}>{t.resume}</button>
+          <button type="button" className="btn ghost" onClick={startOver}>{t.startOver}</button>
         </div>
       </div>
     );
@@ -150,21 +152,21 @@ export default function Practice({ subject }) {
           className={`chip ${!topic && !onlyWrong && !onlyMarked ? 'on' : ''}`}
           onClick={() => reset(() => { setTopic(null); setOnlyWrong(false); setOnlyMarked(false); })}
         >
-          כל השאלות
+          {t.allQuestions}
         </button>
         <button
           type="button"
           className={`chip ${onlyWrong ? 'on' : ''}`}
           onClick={() => reset(() => setOnlyWrong((v) => !v))}
         >
-          שאלות שטעית בהן ({wrongQueue.length})
+          {t.wrongOnes} ({wrongQueue.length})
         </button>
         <button
           type="button"
           className={`chip ${onlyMarked ? 'on' : ''}`}
           onClick={() => reset(() => setOnlyMarked((v) => !v))}
         >
-          ★ שאלות שסימנת ({bookmarks.length})
+          ★ {t.markedOnes} ({bookmarks.length})
         </button>
       </div>
 
@@ -183,16 +185,13 @@ export default function Practice({ subject }) {
 
       {!questions.length ? (
         <p className="notice info">
-          {onlyWrong
-            ? 'אין כרגע שאלות שטעית בהן — כל הכבוד!'
-            : onlyMarked
-              ? 'עדיין לא סימנת שאלות — הכוכב מתחת לשאלה מסמן אותה.'
-              : 'אין שאלות בנושא הזה.'}
+          {onlyWrong ? t.noWrong : onlyMarked ? t.noMarked : t.noTopic}
         </p>
       ) : (
         <>
           <QuestionCard
             question={question}
+            lang={subject.lang}
             terms={subject.termsById}
             picked={picked}
             reveal={Boolean(picked)}
@@ -203,7 +202,7 @@ export default function Practice({ subject }) {
           >
             {snippet && (
               <div className="notice info" style={{ marginTop: 12 }}>
-                <b>מהצ'יט שיט:</b>
+                <b>{t.fromCheatsheet}</b>
                 {snippet.map((line, i) => <p key={i} style={{ margin: '6px 0 0' }}>{line}</p>)}
               </div>
             )}
@@ -211,20 +210,20 @@ export default function Practice({ subject }) {
 
           <div className="row end">
             <button type="button" className="chip" disabled={!cursor} onClick={prev}>
-              → השאלה הקודמת
+              {t.prevQuestion}
             </button>
             <button
               type="button"
               className={`chip ${bookmarks.includes(question.id) ? 'on' : ''}`}
               onClick={() => setBookmarks(toggleBookmark(subject.slug, question.id))}
             >
-              {bookmarks.includes(question.id) ? '★ מסומנת' : '☆ סימון'}
+              {bookmarks.includes(question.id) ? t.marked : t.mark}
             </button>
             <button type="button" className="btn" onClick={next} disabled={!picked}>
-              השאלה הבאה
+              {t.nextQuestion}
             </button>
           </div>
-          <p className="meta">אפשר לענות גם במקלדת: 1–4 או א–ד.</p>
+          <p className="meta">{t.keyboardHint}</p>
         </>
       )}
     </>

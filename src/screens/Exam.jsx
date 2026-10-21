@@ -3,6 +3,7 @@ import QuestionCard from '../components/QuestionCard.jsx';
 import { buildAttempt, scoreAttempt } from '../lib/exam.js';
 import { newSeed } from '../lib/rng.js';
 import { recordAttempt } from '../lib/progress.js';
+import { strings } from '../lib/i18n.js';
 
 const two = (n) => String(n).padStart(2, '0');
 const clock = (ms) => {
@@ -12,6 +13,7 @@ const clock = (ms) => {
 
 /** סימולציה — a full timed paper, no feedback until it is handed in. */
 export default function Exam({ subject, onFinish }) {
+  const t = strings(subject.lang);
   const [attempt, setAttempt] = useState(null);
   const [answers, setAnswers] = useState({});
   const [cursor, setCursor] = useState(0);
@@ -56,18 +58,14 @@ export default function Exam({ subject, onFinish }) {
     const excluded = subject.questions.filter((q) => q.issue).length;
     return (
       <div className="card">
-        <b>סימולציית מבחן</b>
-        <p>
-          {subject.exam.questions} שאלות · {subject.exam.minutes} דקות ·{' '}
-          {subject.exam.points_per_question} נקודות לשאלה · ציון עובר {subject.exam.pass}
-        </p>
+        <b>{t.examTitle}</b>
+        <p>{t.examLine(subject.exam.questions, subject.exam.minutes, subject.exam.points_per_question, subject.exam.pass)}</p>
         <p className="meta">
-          השאלות נבחרות באקראי לפי התפלגות הנושאים במאגר, וסדר התשובות מתערבב בכל ניסיון.
-          אין משוב עד להגשה.
-          {excluded > 0 && ` ${excluded} שאלות פגומות במקור הרשמי אינן נכללות בסימולציה.`}
+          {t.examRules}
+          {excluded > 0 && t.examExcluded(excluded)}
         </p>
         {subject.exam.critical && <p className="notice">⚠ {subject.exam.critical.note}</p>}
-        <button type="button" className="btn" onClick={start}>להתחיל</button>
+        <button type="button" className="btn" onClick={start}>{t.start}</button>
       </div>
     );
   }
@@ -85,7 +83,7 @@ export default function Exam({ subject, onFinish }) {
             ⏱ {clock(remaining)}
           </span>
           <span style={{ flex: 1 }} />
-          <span className="meta">נענו {answered} מתוך {attempt.questionIds.length}</span>
+          <span className="meta">{t.answered(answered, attempt.questionIds.length)}</span>
         </div>
         <div className="bar" style={{ marginTop: 10 }}>
           <i style={{ width: `${(answered / attempt.questionIds.length) * 100}%` }} />
@@ -94,6 +92,7 @@ export default function Exam({ subject, onFinish }) {
 
       <QuestionCard
         question={question}
+        lang={subject.lang}
         order={attempt.optionOrder[id]}
         terms={subject.termsById}
         picked={answers[id] ?? null}
@@ -109,19 +108,19 @@ export default function Exam({ subject, onFinish }) {
           disabled={cursor === 0}
           onClick={() => setCursor((c) => c - 1)}
         >
-          הקודמת
+          {t.prev}
         </button>
         <span style={{ flex: 1 }} />
         {last ? (
-          <button type="button" className="btn" onClick={() => submit(answers)}>הגשה</button>
+          <button type="button" className="btn" onClick={() => submit(answers)}>{t.submit}</button>
         ) : (
-          <button type="button" className="btn" onClick={() => setCursor((c) => c + 1)}>הבאה</button>
+          <button type="button" className="btn" onClick={() => setCursor((c) => c + 1)}>{t.next}</button>
         )}
       </div>
 
       {last && answered < attempt.questionIds.length && (
         <p className="notice" style={{ marginTop: 12 }}>
-          נותרו {attempt.questionIds.length - answered} שאלות ללא מענה. אין ניקוד שלילי — כדאי לענות על הכול.
+          {t.unanswered(attempt.questionIds.length - answered)}
         </p>
       )}
     </>

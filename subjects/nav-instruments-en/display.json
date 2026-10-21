@@ -1,0 +1,2328 @@
+{
+  "schema": 1,
+  "subject": "nav-instruments-en",
+  "generatedFrom": [
+    "questions.json",
+    "terms.json",
+    "text-overrides.json"
+  ],
+  "count": 193,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why has the earth’s surface been divided into longitude and latitude lines?",
+      "options": {
+        "a": "To define locations at their intersections.",
+        "b": "To highlight the positions of ports and anchorages.",
+        "c": "To enable distance measurements.",
+        "d": "To create segments for drawing maps."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 2,
+      "question": "Why do you see the sun rising in the east and setting in the west?",
+      "options": {
+        "a": "The earth moves rapidly west around the sun.",
+        "b": "The earth spins on it axis from west to east.",
+        "c": "A lateral earth axis traces a circular path around the North Star.",
+        "d": "The earth spins on its axis from east to west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 3,
+      "question": "What does a vessel deduce when every evening it measures the same angle above the horizon to the North Star?",
+      "options": {
+        "a": "That it is sailing on a steady latitude.",
+        "b": "That it is sailing from west to east or from east to west.",
+        "c": "That it is sailing from north to south or from south to north.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 4,
+      "question": "Where should you measure distances on a Mercator map?",
+      "options": {
+        "a": "In units of latitude lines on the right or left and in the sailing area.",
+        "b": "In units of latitude at any end we choose.",
+        "c": "In the standard nautical mile unit which is 1.853 kilometers.",
+        "d": "Measure the minute latitude on any big circle arc."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 5,
+      "question": "How will devices containing speakers, headsets, microphone and batteries influence the vessel’s compass?",
+      "options": {
+        "a": "They will unbalance the magnetic compass.",
+        "b": "They will influence the mechanical gyrocompass and cause it to seek the south instead of the north.",
+        "c": "They will improve the accuracy of any compass dependent on magnetic fields.",
+        "d": "The instruments might be damaged due to the strength of the magnets in the compass."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 6,
+      "question": "What is the meaning of the characteristic called “FLOAT FREE”?",
+      "options": {
+        "a": "A technical arrangement that enables self detachment and floatation of the emergency beacons.",
+        "b": "Free from the ability to float.",
+        "c": "A device that inflates a life raft so that the emergency beacon is on the roof and will not get wet from the water.",
+        "d": "A special wrapping provided for each type of beacon, to ensure it floats and remains waterproof even in sweet water."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 7,
+      "question": "A nautical mile is equal in length to:",
+      "options": {
+        "a": "One minute at latitude 45°.",
+        "b": "1650 meters.",
+        "c": "A minute on a large circle.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 8,
+      "question": "What is the deviation error?",
+      "options": {
+        "a": "The error that is the result of the difference between the magnetic north and geographic north.",
+        "b": "The error caused by metal mass and electricity on board the vessel.",
+        "c": "Exists only on vessels made of metal.",
+        "d": "An error that exists in magnetic, electrical and gyroscopic compasses."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 9,
+      "question": "How is the LOCAL TIME calculated?",
+      "options": {
+        "a": "Based on the current longitude of the vessel east or west of Greenwich.",
+        "b": "The average of the longitude lines in each country.",
+        "c": "The center of each time zone.",
+        "d": "The sunrise time at the location where the measurement is taking place."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 10,
+      "question": "What is the drawback of an automatic electrical steering?",
+      "options": {
+        "a": "Greatly impacted by the wind and the accuracy of sail tightness.",
+        "b": "A large electricity consumer, especially in stormy seas.",
+        "c": "Turns the boat when the wind changes.",
+        "d": "None of the above answers is correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 11,
+      "question": "What wind does the wind gauge indicate when the boat is not moving?",
+      "options": {
+        "a": "The real wind.",
+        "b": "The relative (perceived) wind.",
+        "c": "Head wind.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 12,
+      "question": "A partially floating object is thrown from the bow of a 15 meter long vessel. It takes 5 seconds until it reaches the stern. What is the vessel speed in knots?",
+      "options": {
+        "a": "3 knots.",
+        "b": "1.853 knots.",
+        "c": "6 knots approximately.",
+        "d": "5.5 knots exactly."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 13,
+      "question": "A rope is released from the stern of a vessel in motion. The rope has knots on it at equal 5 meter distances from each other. What is the vessel speed if you counted 5 knots in 10 seconds (excluding the tip)?",
+      "options": {
+        "a": "5 knots.",
+        "b": "5 nautical miles an hour.",
+        "c": "2.5 meters per second.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 14,
+      "question": "What is magnetic course?",
+      "options": {
+        "a": "The angle between the keel of the boat and the magnetic north.",
+        "b": "The angle between the keel of the boat and the latitude line which it is on.",
+        "c": "The angle between the keel of the boat and the magnetic north + the deviation due to currents.",
+        "d": "The angle between the keel of the boat and the magnetic north + the deviation due to wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 15,
+      "question": "What does “area time” or “Time Zone” indicate?",
+      "options": {
+        "a": "The uniform time that is applicable to 7.5 degrees to the west of whole longitude degrees.",
+        "b": "The time each country chooses based on the season.",
+        "c": "The uniform time that exists every 15 degrees, 7.5 to the east and 7.5 to the west of a central longitude line.",
+        "d": "The noon time relative to noon time at Greenwich."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 16,
+      "question": "What is the length of one nautical mile?",
+      "options": {
+        "a": "It is the distance of one degree latitude measured on a longitude line.",
+        "b": "It is the distance of one degree of longitude measured on a latitude line other than the equator.",
+        "c": "1,852.5 meters.",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 17,
+      "question": "What course of sailing does the wind steering maintain?",
+      "options": {
+        "a": "A steady course of sailing relative to the water.",
+        "b": "A course of sailing at a constant angle between the keel line of the vessel and the relative (perceived) wind.",
+        "c": "On a constant course, as long as it receives data from the electrical compass linked directly to the GPS.",
+        "d": "On opening and closing of the foresail, based on the wind strength and direction of sailing."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 18,
+      "question": "What is the distance to the horizon of a lookout at 9 meters?",
+      "options": {
+        "a": "About 9.6 miles.",
+        "b": "About 6.3 miles.",
+        "c": "About 3 miles.",
+        "d": "About 2.1 miles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 19,
+      "question": "On the geographic grid, how many whole degrees are there from the equator to either of the poles?",
+      "options": {
+        "a": "90° to the north pole and 90° to the south pole.",
+        "b": "45° to the north pole and 45° to the south pole.",
+        "c": "180° to the north pole and 180° to the south pole.",
+        "d": "90° to the left to the Greenwich Line and 90° to the right to the Date Line."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 20,
+      "question": "The Greenwich Longitude is:",
+      "options": {
+        "a": "The initial longitude from which you count the values / names of all the other longitude lines east and west of it.",
+        "b": "The longitude that passes through a small town near London named Greenwich.",
+        "c": "Half of a big circle whose other half is longitude 180°.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 21,
+      "question": "On the 31st of December you are at longitude 179°31’E the time is 23:59 what is the time and date at longitude 179°31’W?",
+      "options": {
+        "a": "22:59 on 30th December.",
+        "b": "23:59 on 30th December.",
+        "c": "23:59 on 1st January of the next year.",
+        "d": "The same time and the same date."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 22,
+      "question": "What is meant when one says that the local time is UTC+3?",
+      "options": {
+        "a": "That you are east of time zone 0.",
+        "b": "That if in Greenwich it is 06:00 in your area it is 09:00.",
+        "c": "That the time in your location is 3 hours later that the time at U.T.C.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 23,
+      "question": "What is required to determine the risk of collision with another vessel in the area?",
+      "options": {
+        "a": "A bearing compass, a watch and at least 3 measurements to the assessed vessel and the ability to estimate distance.",
+        "b": "A steering compass that has an attachment for a night vision telescope.",
+        "c": "A compass with a known error and a lookout with 7x50 millimeter binoculars.",
+        "d": "A compass with a ring with markings for the horizon relative to the bow (Relative Bearing)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 24,
+      "question": "On what compasses does the variation have the same effect?",
+      "options": {
+        "a": "A magnetic compass and a flux gate compass.",
+        "b": "A gyroscopic compass and an azimuth compass.",
+        "c": "Compasses that have not had a deviation table prepared for them.",
+        "d": "Compasses on vessels that are not made of metal and so are exposed to surrounding influences."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 25,
+      "question": "What does the wind gauge on board show while sailing?",
+      "options": {
+        "a": "The real wind.",
+        "b": "The head wind.",
+        "c": "The relative (perceived) wind.",
+        "d": "The following wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 26,
+      "question": "What is the primary advantage of automatic steering?",
+      "options": {
+        "a": "Enables sailing the boat with a “missing crew” but this must be accompanied by a sea worthiness certificate.",
+        "b": "Frees from the need for a lookout.",
+        "c": "Enables more convenient day shifts and focus on lookout and the urgent maintenance in harsh conditions.",
+        "d": "Enables automatic clearing of the way when there is a range alert from the radar."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 27,
+      "question": "What is required in order to prepare a deviation table for magnetic compasses?",
+      "options": {
+        "a": "It is required to identify precisely, both on a map and by taking the compass bearing, two locations on a single line.",
+        "b": "It requires spinning the vessel around 360° with the compass being evaluated, at a fixed location, and noting the magnetic course of the compass at equal intervals.",
+        "c": "To sail back and forth, at a constant speed, between two buoys with known locations, and note the direction to a fixed location on shore at 4 minute intervals.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 28,
+      "question": "On what depends the accuracy of maintaining the course inserted to automatic electrical steering?",
+      "options": {
+        "a": "The technical quality of the transmission system.",
+        "b": "The balance between the sails and steering",
+        "c": "On the type and accuracy of the compass, which is used as the direction gauge.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 29,
+      "question": "What are the primary drawbacks of the electrical automatic steering?",
+      "options": {
+        "a": "Constantly uses electricity and the assembly requires maintenance and is prone to failure.",
+        "b": "May cause a loss of vigilance on the part of the lookout, and the steering considerations in a wavy sea or crowded with objects.",
+        "c": "It does not respond to wind changes when sailing on sails.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 30,
+      "question": "Indicate the most accurate statement regarding wind steering:",
+      "options": {
+        "a": "Not dependent on electricity, on a sail boat maintains the desired angle relative to the wind.",
+        "b": "Is not useful in a motor boat, not suitable for heavy vessels above a certain weight.",
+        "c": "Requires alertness to changes in the wind.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 31,
+      "question": "What are the uses of an Echo Sounder?",
+      "options": {
+        "a": "Sailing safety, navigation, routing, anchoring.",
+        "b": "Fishing, mapping, naval warfare.",
+        "c": "Identifying underwater hazards, detecting submarines and schools of fish, detecting entrances to ports and anchorages.",
+        "d": "None of the above answers is correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 32,
+      "question": "Where is the converter of the echo sounder located?",
+      "options": {
+        "a": "On the water line of the vessel when it is in maximum floating in salt water.",
+        "b": "On the deepest point of the vessel when it is maximally loaded in sweet water.",
+        "c": "On the bow of the vessel and at an angle so it can receive the echoes from the hazards before the vessel reaches them.",
+        "d": "There is no importance to the depth at which it is located because it is possible to calibrate the display and show depths starting from the maximum immersion point, but it is important that the beam not be disrupted by bubbles and adjacent objects."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 33,
+      "question": "How should you maintain the converter of the echo sounder?",
+      "options": {
+        "a": "Cleaning it with a polish machine and covering it with paint containing metal.",
+        "b": "Carefully remove from it (not with a metallic tool) sea plants and life forms.",
+        "c": "Must be kept clean of all paint and if it is an electromagnetic converter renew the magnetic strength by rubbing it with a natural magnet.",
+        "d": "There is no maintenance required. The conversion is not affected by substances and bubbles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 34,
+      "question": "How should you maintain the converter of the echo sounder?",
+      "options": {
+        "a": "Cleaning it with a polish machine and covering it with paint containing metal.",
+        "b": "Paint it with a non-metallic paint.",
+        "c": "Must be kept clean of all paint and if it is an electromagnetic converter renew the magnetic strength by rubbing it with a natural magnet.",
+        "d": "There is no maintenance required. The conversion is not affected by substances and bubbles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 35,
+      "question": "In what situations will we use the echo sounder?",
+      "options": {
+        "a": "For naval warfare only.",
+        "b": "For the safety of the vessel, navigation and anchoring.",
+        "c": "Locating underwater targets and detecting submarines.",
+        "d": "Fishing and locating schools of fish only."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 36,
+      "question": "While sailing the echo sounder measures a depth of 12 meters while on the map it states, in the same location, 10 meters. The boat’s draught is 1.2 meters. What is the reason for the disparity?",
+      "options": {
+        "a": "The pulse length does not enable this level of accuracy.",
+        "b": "There are waves at an average height of 1.2 meters.",
+        "c": "The depth on the chart indicates the depth at low tide and when measuring there is a tide of 3.2 meters.",
+        "d": "The depth on the chart indicates the depth during high tide if the converter is installed on the water line."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 37,
+      "question": "What does not affect the accuracy of the echo sounder?",
+      "options": {
+        "a": "The water temperature.",
+        "b": "The water salinity.",
+        "c": "The pulse length hitting the object or bottom underneath the vessel.",
+        "d": "The magnetic field created by the friction between the rudder and the upper layer of water."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 38,
+      "question": "What will be the depth that should appear on the chart when the echo sounder shows a depth of 10 meters, the boat draught is 2 meters and the tide is 1 meter?",
+      "options": {
+        "a": "13 meters.",
+        "b": "10 meters.",
+        "c": "9 meters.",
+        "d": "11 meters."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 39,
+      "question": "While sailing the echo sounder shows a depth of 12 meters while on the map it says, in the same location, 10.8, the boat draught is 1.2 meters. The reason for the difference is caused by:",
+      "options": {
+        "a": "The pulse length does not enable this level of accuracy.",
+        "b": "There are waves at an average height of 1.2 meters.",
+        "c": "The depth on the chart indicates the depth at low tide and when measuring there is a tide of 2.4 meters.",
+        "d": "The depth on the chart indicates the depth during high tide but the converter is installed on the water line."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 40,
+      "question": "What alternatives are there for estimating the depth when there is no echo sounder or it is not functional. Select the most practical answer:",
+      "options": {
+        "a": "Input the Chart Datum of the area chart into the GPS receiver and activate it in 3D mode.",
+        "b": "Seek the description of the area in the shore book.",
+        "c": "For shallow depths use a rope with a weight and for deep depths read and calculate from the map indications of depth, high tide and low tide.",
+        "d": "Sail with anchor down between 1 to 2 meters more than the boat’s maximum draught."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 41,
+      "question": "How does the GPS receiver produce the location?",
+      "options": {
+        "a": "Transmitting an identification code to the satellites above it and these respond, after calculating, with its location in longitude and latitude.",
+        "b": "Receiving the identification code and distance from 3 or more satellites, and converting the meeting point of the distances to the intersection of longitude and latitude on the map or other display.",
+        "c": "Receiving the intersection point of the direction to 3 satellites and projecting the point on a grid of longitude and latitude by deducting the height to the intersection point in space.",
+        "d": "The receiver produces in an ordered sequence from the first satellite that passes over it the time, from the second the longitude and from the third the latitude, and then displays the location with discrepancies that are updated every thousandth of a second."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 42,
+      "question": "The acronym GPS, what does it mean?",
+      "options": {
+        "a": "Global Identification System.",
+        "b": "Global Positioning System.",
+        "c": "Grounding Position of Satellites.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 43,
+      "question": "The difference between SETUP and INITIALIZATION is:",
+      "options": {
+        "a": "Initialization on some receivers happens on its own and requires some time and in other receivers requires entering at least: estimated location, map standard, antenna height and local time. SETUP is in principle at user discretion.",
+        "b": "During SETUP you select primarily the displays and units for the user. Initialization is required every time the receiver has been off for a long period of time or has been displaced over 500 miles.",
+        "c": "There is no significant difference since most of the new receivers include in SETUP everything that does not happen automatically.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between the MOB button and the MARK button?",
+      "options": {
+        "a": "There is no difference. Both of them mark the present location as a Way Point.",
+        "b": "MOB marks the present position as an “active way point” to which the direction and range will be displayed continuously while MARK only marks the present position.",
+        "c": "MARK marks the present position and the 180° reverse direction to quickly reach the person who has fallen to sea, while Miles Off Buoy = MOB marks the distance to the nearest buoy in a race.",
+        "d": "MARK activates an alert of the vessel being within the “accuracy range” of the receiver from the destination point while MOB activates the receiver in anchoring / mooring status for maintenance (without movement data) = Maintenance On Board."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 45,
+      "question": "In order to receive your position using the GPS receiver there is a need for:",
+      "options": {
+        "a": "Reception of at least one satellite.",
+        "b": "Simultaneous reception from at least 2 satellites.",
+        "c": "Simultaneous reception from at least 3 satellites.",
+        "d": "Simultaneous reception from at least 4 satellites."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 46,
+      "question": "Where on board is it recommended to install the GPS antenna?",
+      "options": {
+        "a": "As high as possible in order to maintain line of sight to 3 satellites or more and increase the reception range.",
+        "b": "As low as possible (to avoid movement) while maintaining free field of view to the sky and surrounding.",
+        "c": "As high as possible and near the radar antenna and if there is no radar then the VHF antenna.",
+        "d": "There is no importance to the height and location, an antenna height of 30 centimeters will enable functioning anywhere on board the vessel."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 47,
+      "question": "When the vessel is anchored in a location with a tide:",
+      "options": {
+        "a": "The GPS receiver will show only the current speed, and the water speed gauge will show zero speed.",
+        "b": "On the GPS receiver we will see zero speed, while on the water speed gauge we will get the speed of the current.",
+        "c": "On speed gauges that measure the speed relative to the bottom we will get the current value with a positive sign, and on speed gauges that measure speed relative to the water we will get the current value with a negative sign.",
+        "d": "We will get zero in any event since the speed gauges are not accurate enough to display the low speeds of the common currents."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 48,
+      "question": "A motorized vessel is sailing in direction 270° in a west wind of 10 knots, in an area where there is a west current of 2 knots. The mechanical speed gauge is showing 8 knots and the GPS receiver is showing 10 knots. What is the reason for the discrepancy?",
+      "options": {
+        "a": "The water speed gauge does not take into account the current and the wind, while the GPS receiver shows the real speed relative to the ground.",
+        "b": "Based on the Beaufort table every 5 knots of head wind slow the ship down by 1 knot so the 10 knot wind cancels out the 2 knot addition of the current, while on the GPS receiver there is a discrepancy of 2 knots.",
+        "c": "A head wind of 10 knots does not affect a motorized vessel and the wing wheel of the speed gauge is expected to accumulate a sticky layer of pollution and water plants that reduce its response time.",
+        "d": "Aside from a towed speed gauge, all the speed gauges are inaccurate to a certain degree, since the bottom of the boat drags with it a layer of water in the direction of sailing (“drag” which is dependent on the quality of the bottom)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 49,
+      "question": "What are the uses for the radar?",
+      "options": {
+        "a": "Detect the presence of vessels and objects in the chosen range when there is no visibility and beyond the visual range.",
+        "b": "Collision avoidance, navigation, routing, search and rescue.",
+        "c": "Detect vessels and objects in the area and activate an alert when the range is small.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 50,
+      "question": "Is it possible to identify on the radar aircraft and rain clouds?",
+      "options": {
+        "a": "It is possible but only at altitudes that are within the vertical beam of the radar.",
+        "b": "Not possible since the maritime radar is designed to only detect objects in a plane and not be distracted by objects above the sea surface.",
+        "c": "It is possible to detect clouds only if they are raining, and aircraft on if they are flying on the bow.",
+        "d": "It is possible to detect, only if the vessel is heaving and the radiation beam is pointing upwards while heaving."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 51,
+      "question": "What are the significant drawbacks of the mechanical gyro compass?",
+      "options": {
+        "a": "Consumes electricity constantly and dependent on it, does not stabilize immediately upon activation.",
+        "b": "Cannot be used as a sensor for the automatic steering, does not present the magnetic north.",
+        "c": "Generates a magnetic field that throws off other compasses nearby.",
+        "d": "Can only be installed on large vessels and a metal structure."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 52,
+      "question": "What is M.M.S.I. for vessels?",
+      "options": {
+        "a": "A 9 digit number used for optional digital callout enabling identification of the nationality and type of transmitting station.",
+        "b": "A line number enabling optional messages, only ones that pertain to the vessel registered on this code.",
+        "c": "Must appear in the vessel documentation and must be available for readout on the radio.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 53,
+      "question": "What is the electronic assembly called D.S.C.?",
+      "options": {
+        "a": "Enables processing of messages to be sent by calling them up from prepared menus and data libraries.",
+        "b": "Enables immediate communication via a satellite relay = Direct Satellite Communication.",
+        "c": "An assembly incorporated in the communication equipment for deciphering and encoding digital communication messages.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 54,
+      "question": "Why is a security certification required to operate communication equipment on international communications?",
+      "options": {
+        "a": "Because not knowing the procedures and functions of the buttons on the equipment, may prevent you from getting assistance in distress or disrupt emergency communication of other vessels.",
+        "b": "Because mispronouncing a term in the communication procedure, may cause a misunderstanding of the traffic intentions of other vessels and what is termed “VHF collision”.",
+        "c": "Because in case of distress it could be, that on the nearest vessel for providing assistance the radio operator does not know the language of the people in distress.",
+        "d": "Because that is the norm according to the rules of good seamanship."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 55,
+      "question": "What is the role of the D.W. = Dual Watch control on the radio?",
+      "options": {
+        "a": "Listening on the channel selected by the operator but transmitting only on channel 16.",
+        "b": "Listening and transmitting on the chosen channel, but breaking in of reception when there are communications on channel 16.",
+        "c": "Double shift both at the device and by the helmsman.",
+        "d": "Double shift both by the DSC and on the voice communication channel between vessels."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 56,
+      "question": "You are conducting distress communications on channel 16 and due to unceasing disruptions you request to switch to a “clean” channel. Which group of channels is suitable?",
+      "options": {
+        "a": "25, 70, 76.",
+        "b": "17, 24, 75.",
+        "c": "06, 08, 13.",
+        "d": "All the DUPLEX channels."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 57,
+      "question": "What is common to “squelch” on the radio, disturbance analyzers on a radar, manual steering of the rudder and correct tightening of a sail?",
+      "options": {
+        "a": "Their setting is not the same in all situations.",
+        "b": "Adeptness gained from previous experience is required for proper adjustment.",
+        "c": "An extreme setting will work counter to the desired objective.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 58,
+      "question": "What primarily affects the communication range in the VHF frequency range?",
+      "options": {
+        "a": "Hour of the day, water salinity, speed of the vessel.",
+        "b": "Space free of obstructions between the antennas, power output of the transmission, height of the antennas, radio wave expansion conditions.",
+        "c": "The frequency in use, volume of speech, season of the year, the number of sun spots when transmitting.",
+        "d": "The temperature and density of material in the air layer between the stations, the number of bounces the wave performs from the ionosphere until it reaches the destination."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 59,
+      "question": "When will the distress protocol be employed from a vessel station?",
+      "options": {
+        "a": "Only at the discretion of the vessel’s commander.",
+        "b": "Anyone who identifies immediate danger to the vessel.",
+        "c": "When there is immediate and serious danger to a single person, the whole crew or the vessel and the commander in charge determines that immediate assistance is required.",
+        "d": "Only answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 60,
+      "question": "What are the situations in which the urgency protocol will be used?",
+      "options": {
+        "a": "Request for advice or medical assistance and rescue of sick or injured.",
+        "b": "Cases when the vessel is not fit and towing or some technical assistance is required.",
+        "c": "All the emergency situations that are not distress and channel 16 can be kept clear.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 61,
+      "question": "How will you inform the station in charge of communications when a distress event is over and you wish to free channel 16 for regular communication?",
+      "options": {
+        "a": "SEELONCE FEENEE.",
+        "b": "RESUME NORMAL TRAFFIC.",
+        "c": "PRUDONCE.",
+        "d": "FINISH OF SILENCE PERIOD."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 62,
+      "question": "In which of the following listed equipment can you learn of the existence of distress situations on other vessels?",
+      "options": {
+        "a": "NAVTEX.",
+        "b": "S.A.R.T.",
+        "c": "E.P.I.R.B",
+        "d": "None of the above answers are correct, only the D.S.C. instrument can indicate the existence of a distress situation."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 63,
+      "question": "What does the radar detection range depend on?",
+      "options": {
+        "a": "The price of the radar. Usually a higher price means a radar from a better company and will thus transmit to a greater distance.",
+        "b": "The width of the horizontal beam of the antenna.",
+        "c": "The height of the antenna, the transmission power, the weather and atmospheric conditions.",
+        "d": "The height of the antenna and the transmission power only."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 64,
+      "question": "In which locations in the life raft should you place the E.P.I.R.B. device so that its transmission will be optimally received?",
+      "options": {
+        "a": "In the water next to the life raft.",
+        "b": "In the life raft as high as possible.",
+        "c": "In the life raft in a protected and dry location.",
+        "d": "Its location does not matter."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 65,
+      "question": "Which broadcasts are transmitted at a low power?",
+      "options": {
+        "a": "It is recommended to transmit at low power unless the vessel does not hear us then we will switch to high power.",
+        "b": "Test transmissions and internal boat communication.",
+        "c": "Communications within a port or within a marina.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 66,
+      "question": "How often is a NAVTEX transmission received from a given shore station?",
+      "options": {
+        "a": "Every half hour.",
+        "b": "Every 4 hours.",
+        "c": "Every two hours.",
+        "d": "Every 8 hours."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 67,
+      "question": "You have called a shore station and there is no response. What will you do?",
+      "options": {
+        "a": "Wait 30 seconds and call it again on the call frequency or on its work frequency, after verifying that the channel is free.",
+        "b": "Wait at least two minutes and call it again on the call channel or its work channel, after verifying that the channel is free.",
+        "c": "Break into its work channel and demand that it respond immediately.",
+        "d": "If there is no response from a particular station, it is an indication that the station is not working."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 68,
+      "question": "Can two Israeli yachts communicate amongst themselves on channel 26?",
+      "options": {
+        "a": "No, channel 26 is a backup emergency channel.",
+        "b": "Yes, channel 26 is a general communication channel.",
+        "c": "Yes, only Israeli yachts are allowed to communicate on channel 26.",
+        "d": "No, channel 26 is a two way communication channel intended for public communication."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 69,
+      "question": "What is channel “6” on VHF radios used for?",
+      "options": {
+        "a": "Messages having to do with the NAVTEX transmissions.",
+        "b": "Safety warnings in the automatic read-out system.",
+        "c": "Distress communication, urgent communications, security and call outs.",
+        "d": "For vessel to vessel communication."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 70,
+      "question": "What is the meaning of the call PAN PAN *3 on the radio?",
+      "options": {
+        "a": "A call preceding a security message that is in secondary priority on the network.",
+        "b": "A call preceding an urgent message that is in secondary priority on the network.",
+        "c": "A call preceding a distress message that is in first priority on the network.",
+        "d": "A call preceding an urgent message – man overboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 71,
+      "question": "What is it recommended to install in the NAVTEX instrument prior to sailing?",
+      "options": {
+        "a": "The sailing area and the recommended reception times.",
+        "b": "The “stations” and type of requested information.",
+        "c": "The type of safety and urgent messages.",
+        "d": "The times of day during which you would like to receive weather forecasts."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 72,
+      "question": "What is required from a radio antenna?",
+      "options": {
+        "a": "It must be made of acrylic materials only for insulation.",
+        "b": "Its length will be appropriate for the radio transmission and reception frequency range.",
+        "c": "To decouple the audio wave from the carrier wave, so that only the audio wave is received in the device.",
+        "d": "Selecting the channel the device will receive."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 73,
+      "question": "For what types of events do you use “urgent” communication?",
+      "options": {
+        "a": "Messages related to saving life.",
+        "b": "Messages intended for vessels with an E.P.I.R.B. device when medical assistance is required.",
+        "c": "The message after the call will deal with cases of extreme weather conditions.",
+        "d": "None of the above answers is correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 74,
+      "question": "Until when will a D.S.C. device continue to transmit the distress call?",
+      "options": {
+        "a": "Until another vessel receives the call.",
+        "b": "The transmission is only transmitted once.",
+        "c": "Until the operator presses the button to stop the distress broadcast.",
+        "d": "Until a shore station or another vessel acknowledges receipt of the call."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 75,
+      "question": "What will “wake” an S.A.R.T. device into action?",
+      "options": {
+        "a": "Manual activation + contact with water.",
+        "b": "By “acquiring” any radar pulse.",
+        "c": "By the activation of another S.A.R.T. device in its vicinity.",
+        "d": "Only when an X-band radar activates it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 76,
+      "question": "What is the purpose of the GAIN button on the radar?",
+      "options": {
+        "a": "To make the picture lighter, especially at night.",
+        "b": "To amplify or reduce the transmission power to nearby targets.",
+        "c": "To reduce the effects of rain and central disruptions.",
+        "d": "To reduce or amplify the reception sensitivity."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 77,
+      "question": "What is the main factor affecting the transmission range in the VHF frequencies?",
+      "options": {
+        "a": "Weather conditions.",
+        "b": "Day or night.",
+        "c": "The transmission power.",
+        "d": "Line of sight between the antennas."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 78,
+      "question": "Regarding a Flux Gate compass, mark the correct answer:",
+      "options": {
+        "a": "Like a magnetic compass it indicates the north based on the magnetic fields in the area.",
+        "b": "Instead of magnetic rods there are tiny electromagnets installed within it.",
+        "c": "Creates its own magnetic field which the manufacturer calibrates ahead of time to cancel the variation and deviation.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 79,
+      "question": "Can you detect small vessels and an entrance to a marina on the radar in torrential rain and what button must you activate on the control panel?",
+      "options": {
+        "a": "It is possible to detect, but it is dependent on the size and material of the objects and the rain density. The correct control is Anti-Clutter-Rain or FTC.",
+        "b": "It is possible to detect when activating the Anti-Clutter-Rain or STC.",
+        "c": "It is possible with the control to increase the transmission power.",
+        "d": "It is not possible, you must reduce speed and wait."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 80,
+      "question": "The quality and detection range of an object on the radar depend on:",
+      "options": {
+        "a": "The set of ranges selected using the RANGE control and the maximum range for which it is designed.",
+        "b": "The transmitter power, the receiver sensitivity, the quality of the antenna and the conditions for radio wave spreading.",
+        "c": "A correct adjustment of the BRILLIANCE, GAIN, TUNE, pulse width and disturbance attenuator.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 81,
+      "question": "What do you need in order to detect a potential collision on the radar?",
+      "options": {
+        "a": "A collision course will be seen on the radar when connecting the dots of different target positions over time will cross or pass near the center of the radar display.",
+        "b": "You need to draw out the relative progress on a special page or map.",
+        "c": "On an advanced radar, it is enough to mark the targets and the computer will display the motion data for each target.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 82,
+      "question": "STAND-BY mode on a maritime radar:",
+      "options": {
+        "a": "The radar only receives and does not transmit.",
+        "b": "The radar is fully functional but the display is temporarily off to prevent blinding the lookout at night.",
+        "c": "All the controls and buttons are set to the initial default settings for detection of danger.",
+        "d": "The radar does no transmit or receive but the screen is “hot” and ready for immediate activation."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 83,
+      "question": "Distress messages that appear on the output of the NAVTEX receiver:",
+      "options": {
+        "a": "Transmitted from vessels in distress and intended only for shore stations that need to dispatch a rescue team.",
+        "b": "Originate at shore stations and area control center of the NAVTEX transmitter in order to expand the number of vessels that can offer assistance.",
+        "c": "Is transmitted from the shore stations of the maritime service and from vessels, which have received a spoken distress message on channel 16 of the maritime VHF communications.",
+        "d": "There is a ban on broadcasting NAVTEX distress messages to prevent misunderstanding and involvement of vessels outside the maritime VHF range, and not available for immediate assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 84,
+      "question": "VITAL, IMPORTANT, ROUTINE are:",
+      "options": {
+        "a": "Ordering of priority in NAVTEX messages.",
+        "b": "Receive priority accordingly.",
+        "c": "The categorization and priority equivalent to DISTRESS, URGENT, and SAFETY in voice communication.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 85,
+      "question": "An emergency beacon belonging to the Cospas-Sarsat system:",
+      "options": {
+        "a": "Operates on frequency 406 MHZ.",
+        "b": "Is disallowed for a shore sailing vessel, because it will alert stations in the whole satellite coverage area, and not those that are within the immediate rescue range of the maritime VHF.",
+        "c": "Enables voice communication without keying in prepared messages from a menu.",
+        "d": "Enables homing (direction and range) of rescue teams in limited visibility."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 86,
+      "question": "What is a radar transponder for search and rescue purposes?",
+      "options": {
+        "a": "A device that from the moment of activation receives maritime radar signals and serves as an active radar “reflector”.",
+        "b": "A device that must be activated in cases of distress to enable radar homing.",
+        "c": "Search And Rescue Radar Transponder = S.A.R.T.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 87,
+      "question": "What are the characteristics of the S.A.R.T.?",
+      "options": {
+        "a": "Ability to float, a battery that enables reception for 96 hours or 8 hours of transmission, a light and a voice alert.",
+        "b": "Permanent attachment to the vessel and an arrangement to keep the antenna vertical even during sea motion.",
+        "c": "A transmission button, that will display on adjacent radars the pattern ▪ ▪ ▪ ▬ ▬ ▬ ▪ ▪ ▪.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 88,
+      "question": "A vessel that sees on its radar screen the following symbols: ●●●●●●●●●●●● and after a while ) ) ) ) ) ) and after some more time elapses",
+      "options": {
+        "a": "Naval shore radar transponder signals are received, that identify changes in vessel course and speed.",
+        "b": "Radar beacon signals are received that guide vessels to an entry path into a port.",
+        "c": "SART transmissions at ranges of about 8 miles, about 5 miles and less than 1 mile are received respectively (from left to right).",
+        "d": "There are 3 survivor rafts carrying an active SART, and each one is signaling the range to it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 89,
+      "question": "What does it mean when one says “Digital Selective Call”?",
+      "options": {
+        "a": "A unique number for each vessel, that enables its identification in digital coded communication.",
+        "b": "The device or assembly whose purpose is to identify / identify oneself, decipher and process digital communication messages = Digital Selective Call.",
+        "c": "The coded number, in the installation and initialization of a DSC device, as an automatic self-identity as a message source, prior to their transmission.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 90,
+      "question": "The identification, in international communication, of a radio station on board vessels:",
+      "options": {
+        "a": "Can be the number of the sailing and the port of departure.",
+        "b": "Can be the name of the vessel, preceded by the type of activity or type of propulsion.",
+        "c": "Can be 4X3738, 5BCT, ELMR2, Cabin Cruiser Lilach.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 91,
+      "question": "When vessels are required to be equipped with a communication device the intent is a device that receives and transmits in the frequency range between 156 to 174 MHZ. Why?",
+      "options": {
+        "a": "This is the range allocated for maritime mobile services, by the international communication organization.",
+        "b": "The wave length in this frequency range is less than 2 meters and it is convenient to construct small mobile antennas for it.",
+        "c": "The communication distances in this frequency range are limited to several dozen miles, and so mutual interference with vessels who are not within the shore area of each country is avoided.",
+        "d": "In this frequency range it is possible to use FM encoding and thus avoid interference from lightning."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 92,
+      "question": "To which uses has there not been an allocation of maritime VHF frequencies?",
+      "options": {
+        "a": "Distress and safety, search and rescue, port operations.",
+        "b": "Bridge to bridge (vessels), on deck or with service boats, control of vessel movement.",
+        "c": "Public traffic, guard band, digital communication (DSC).",
+        "d": "Monitoring anchored vessels, automatic radar proximity warning, links to automatic dialers through a satellite link."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 93,
+      "question": "When switching to which channels will the voice communication between two vessels not be lost, and for what reason?",
+      "options": {
+        "a": "13 since it is intended for bridge to bridge communication, with antennas higher than the vessels.",
+        "b": "25 since it operates in Duplex mode with shore stations only.",
+        "c": "17 since it is low power (1 W) and the communication range will be shorter on both ends, 70 since it is intended for digital communication only.",
+        "d": "On switching to any channel without listening first whether it is busy with legal communication."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 94,
+      "question": "A DISTRESS CALL is:",
+      "options": {
+        "a": "A call on channel 16, to anyone who hears, to stop all activity (that is not distress related) and listen to the “distress call” that is expected following it.",
+        "b": "Transmitting the phrase THIS IS MAYDAY, and all the relevant details required for search and rescue.",
+        "c": "A directive for shore stations to acknowledge the reception first and take control of the communications.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 95,
+      "question": "A man fell overboard from a vessel and eye contact with him has been lost:",
+      "options": {
+        "a": "The Distress protocol will be employed and in the message content must be included the location and time last seen.",
+        "b": "The Urgency protocol will be employed and vessels will be asked to report to the calling station on any object sticking out of the water in their horizon.",
+        "c": "Immediately upon noticing the loss of person any available floatation means should be tossed into the water.",
+        "d": "One should communicate only on DSC on channel 70."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 96,
+      "question": "The message preceded by the word MEDICO:",
+      "options": {
+        "a": "Is in priority on Urgent communication and should include the gender and age of the patient, body temperature, pulse, description of the symptoms and treatment if provided. Following the call on channel 16 one can switch to another channel.",
+        "b": "It has Distress priority and the message should be concise up to one minute: blood pressure, temperature, location of pain and medical history.",
+        "c": "It has Distress priority only if the commander of the vessel is involved and one must display the signals for limited maneuverability.",
+        "d": "Will be transmitted by encoding from the green pages of the international code book INTERCO using digital means or Morse Code to avoid mistakes in pronunciation and understanding of medical terms."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 97,
+      "question": "Messages preceded by the call SECURITE repeated 3 times:",
+      "options": {
+        "a": "Can be transmitted on channel 16 if they are shorter than a minute and intended for all stations.",
+        "b": "Include content relating to vessel safety (weather, navigation hazards, etc.). They are transmitted on the “working channel” of the transmitting station following the call and the request on channel 16.",
+        "c": "Transmitted on a known schedule several times a day and can be received also on a NAVTEX receiver.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 98,
+      "question": "A station managing the distress communication and wishing to stop the interference of other communication stations on channel 16 that are not aware of the situation will transmit to them:",
+      "options": {
+        "a": "EMERCENCY STOP SENDING.",
+        "b": "SEELONCE DISTRESS.",
+        "c": "SEELONCE MAYDAY.",
+        "d": "RESCUE OPERATION KEEP SILENT."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 99,
+      "question": "What will a non-controlling station which is in the area of a distress event and wishes to stop the interference on channel 16 of stations that are not aware of the situation report?",
+      "options": {
+        "a": "PLEASE LISTEN MAYDAY.",
+        "b": "SWITCH TO OTHER CHANNEL.",
+        "c": "SEELONCE DISTRESS.",
+        "d": "CLOSE TRANSMITTER."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 100,
+      "question": "When a Distress event is close to termination and there is no longer a continuous need for channel 16 (“gradual termination”) the communication controlling station will report:",
+      "options": {
+        "a": "BACK TO NORMAL.",
+        "b": "PRUDONCE.",
+        "c": "KEEP LISTENING.",
+        "d": "EASE THE TRAFFIC."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 101,
+      "question": "What communication equipment checks must be performed on a vessel and recorded in the log?",
+      "options": {
+        "a": "Batteries, D.S.C. operations, transmission (up to 10 seconds) and reception operation on the V.H.F. transceiver, the expiration date on the batteries and damage assessment on the various beacons.",
+        "b": "According to the special inspection log which has special lines for the frequency of each check and the expiration date of each assembly or document.",
+        "c": "There is no need for any special checks, only the daily damage assessment, all the rest is performed once every two years during the sea worthiness inspection.",
+        "d": "Answers “a” and “b” (if it exists) are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 102,
+      "question": "In which of the following groups does the North Star appear?",
+      "options": {
+        "a": "Illustration a.",
+        "b": "Illustration b.",
+        "c": "Illustration c.",
+        "d": "Illustration d."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 103,
+      "question": "Choose from the following illustrations the star group called the “Big Dipper”.",
+      "options": {
+        "a": "Illustration a.",
+        "b": "Illustration b.",
+        "c": "Illustration c.",
+        "d": "Illustration d."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 104,
+      "question": "A speed gauge based on GPS indicates a speed of 8 knots. In the area is an opposing current at 2 knots. What is your boat’s speed relative to the bottom?",
+      "options": {
+        "a": "8 knots.",
+        "b": "10 knots.",
+        "c": "6 knots.",
+        "d": "It is impossible to determine from the above data."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 105,
+      "question": "What is the difference between a RADAR REFLECTOR (first) and an S.A.R.T. (second)?",
+      "options": {
+        "a": "The first is usable in vessels constructed of materials that are not strong reflectors of radar signals.",
+        "b": "The second is used only in distress for search and rescue.",
+        "c": "The first does not transmit while the second responds with a transmission.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 106,
+      "question": "In which instruments can you receive the S.A.R.T. transmissions?",
+      "options": {
+        "a": "On the NAVTEX.",
+        "b": "On the V.H.F. device on channel 70.",
+        "c": "On maritime radars operating in the X range.",
+        "d": "At shore stations on channel 16 V.H.F."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 107,
+      "question": "On which instruments on board a vessel can you receive distress signals?",
+      "options": {
+        "a": "NAVTEX.",
+        "b": "S.A.R.T.",
+        "c": "E.P.I.R.B.",
+        "d": "None of the above answers are correct. Distress can only be received on the radio."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 108,
+      "question": "The date on the vessel is 24.06.11 the local time is 10:42. The observer latitude is 154:39E. What will be the date and time at Greenwich?",
+      "options": {
+        "a": "The time will be 23:42 on 24.06.11.",
+        "b": "The time will be 21:42 on 24.06.11.",
+        "c": "The time will be 00:42 on 24.06.11.",
+        "d": "The time will be 23:42 on 24.06.11."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 109,
+      "question": "Which of the answers below represents a vessel identification?",
+      "options": {
+        "a": "42800501",
+        "b": "232000432",
+        "c": "042811111",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 110,
+      "question": "Based on the requirements of the G.M.D.S.S. what emergency equipment must be on board the vessel in area A1?",
+      "options": {
+        "a": "S.A.R.T -E.P.I.R.B -D.S.C- -RADAR",
+        "b": "D.S.C -S.A.R.T -E.P.I.R.B -PORTABLE V.H.F –NAVTEX -V.H.F",
+        "c": "D.S.C -S.A.R.T -E.P.I.R.B -PORTABLE V.H.F",
+        "d": "V.H.F S.A.R.T -E.P.I.R.B -D.S.C -D.F-"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 111,
+      "question": "What determines the physical size of the antenna?",
+      "options": {
+        "a": "The higher the frequency the smaller the antenna size.",
+        "b": "The data rate one wishes to communicate.",
+        "c": "Depends on whether the antenna is intended for transmission or reception.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 112,
+      "question": "In the FM modulation scheme:",
+      "options": {
+        "a": "The carrier wave amplitude is modulated based on the transmitted data.",
+        "b": "The carrier wave phase is modulated based on the transmitted data.",
+        "c": "The carrier wave frequency is modulated based on the transmitted data.",
+        "d": "The antenna length is modified based on the transmitted data."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 113,
+      "question": "The following call is heard on the V.H.F. channel 16.\nMAYDAY MAYDAY MAYDAY THIS IS SONDRA SONDRA SONDRA\nM.M.S.I.356004420 MAYDAY SONDRA\nTHREE FIVE DEGREES FOUR FOUR MINUTES EAST THREE TWO DEGREES FIVE NINE MINUTES NORTH\nIN ROUGH SEA AND IN DANGER OF SINKING. REQUIRE IMMEDIATE ASSISTANCE\n8 PERSONS ON BOARD\nOVER\nIn the distress call there might be some mistakes in the message syntax. Mark the correct answer:",
+      "options": {
+        "a": "In defining the vessel location one must first state the longitude.",
+        "b": "The only mistake is in the M.M.S.I. number.",
+        "c": "The ending is wrong the idiom should be OUT.",
+        "d": "The time of the event must be included."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 114,
+      "question": "Between two physically close targets which are in the same direction on the radar, when will the discrimination be better?",
+      "options": {
+        "a": "When the vertical beam angle is larger.",
+        "b": "When the horizontal beam angle is smaller.",
+        "c": "When the transmission power is higher.",
+        "d": "When the transmission pulse length is lower."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 115,
+      "question": "What will the station overseeing communication announce, when a distress event is over and they want to “free up” channel 16 for routine messages?",
+      "options": {
+        "a": "PRUDONCE.",
+        "b": "SEELONCE FEENEE.",
+        "c": "RESUME NORMAL TRAFFIC.",
+        "d": "FINISH OF SILENCE PERIOD."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 116,
+      "question": "What is the purpose of the “DUAL WATCH” control on the V.H.F. device?",
+      "options": {
+        "a": "The device will listen on two channels: 16 and one other SIMPLEX only channel.",
+        "b": "Cancels all the DUPLEX channels.",
+        "c": "The device will listen on the SIMPLEX channels and in addition on DUPLEX.",
+        "d": "The device will listen on channel 16 and on an additional channel of choice."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 117,
+      "question": "In what frequency range does the NAVTEX device receive?",
+      "options": {
+        "a": "M.F.",
+        "b": "S.F.",
+        "c": "On the “X-Band” so a radar will receive it.",
+        "d": "VHF"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 118,
+      "question": "If the north star is 45 degrees above the horizon it can be assumed that the observer is located approximately:",
+      "options": {
+        "a": "Latitude 45 degrees south.",
+        "b": "Latitude 45 degrees east.",
+        "c": "Latitude 45 degrees north.",
+        "d": "Latitude 45 degrees west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 119,
+      "question": "To what do messages of the type VITAL, IMPORTANT, ROUTINE relate and what is the meaning of these messages.",
+      "options": {
+        "a": "The order of precedence and message content on NAVTEX messages.",
+        "b": "ROUTINE and IMPORTANT messages will be identified by a number and will not be received again after being logged in the V.H.F. receiver memory, and VITAL only refers to NAVTEX.",
+        "c": "The classification and priority equivalent to Distress, Urgency and Safety in E.P.I.R.B. messages.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 120,
+      "question": "Can two yachts communicate with each other on V.H.F. channel 25?",
+      "options": {
+        "a": "No – this is the backup Distress channel.",
+        "b": "Yes - this is a public communication band.",
+        "c": "Yes - this is the communication channel between Israeli vessels.",
+        "d": "No - this is a duplex channel."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 121,
+      "question": "What will a change in the response sensitivity of the automatic steering cause?",
+      "options": {
+        "a": "Disconnect of the automatic steering from batteries and its connection directly to the alternator.",
+        "b": "Connect the automatic steering to G.P.S. tracking and thus the steering will work less as it will be tracking the desired direction.",
+        "c": "Extreme course changes.",
+        "d": "Reducing or increasing the rate of response to course changes."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 122,
+      "question": "When will you choose to transmit on SIMPLEX and when will you transmit on DUPLEX on the maritime V.H.F. device?",
+      "options": {
+        "a": "It is desirable to always transmit in DUPLEX.",
+        "b": "The device is always set to SIMPLEX transmission.",
+        "c": "The device is always set to DUPLEX transmission.",
+        "d": "We have no selection, the device automatically switches between them when we change channels."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 123,
+      "question": "Under what circumstances must a safety procedure be employed?",
+      "options": {
+        "a": "Request for advice or medical assistance and rescue of sick or injured.",
+        "b": "When the vessel is not fully functional and towing or other technical assistance is required.",
+        "c": "Any emergency, which is not a distress, and channel 16 can be cleared if a distress situation occurrs.",
+        "d": "None of the above answers is correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 124,
+      "question": "Why do you sometimes need to change frequencies at night when establishing H.F. communication?",
+      "options": {
+        "a": "Due to the change in ionosphere altitude.",
+        "b": "Due to deteriorated reception conditions at night.",
+        "c": "Due to improved reception conditions at night.",
+        "d": "There is a need to change frequencies only if the range between the devices is greater than 1000 miles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 125,
+      "question": "What is the maritime V.H.F. frequency range?",
+      "options": {
+        "a": "The range from 30 Megahertz to 300 Kilohertz.",
+        "b": "The range from 30 Megahertz to 300 Megahertz.",
+        "c": "The range from 156 Megahertz to 174 Megahertz.",
+        "d": "The range from 1600 Megahertz to 2850 Megahertz."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 126,
+      "question": "What can you calculate from the detection of S.A.R.T. on the radar screen?",
+      "options": {
+        "a": "Approximate distance and direction to the target.",
+        "b": "Speed of the target.",
+        "c": "The target course.",
+        "d": "Transmission of the target position to satellite in a distress situation."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 127,
+      "question": "A (mobile) V.H.F. transmitter can reduce the transmission power down to:",
+      "options": {
+        "a": "0.1 W",
+        "b": "1 W",
+        "c": "5 W",
+        "d": "10 W"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 128,
+      "question": "What is the purpose of the A.I.S. system?",
+      "options": {
+        "a": "Serves as a substitute for the D.S.C. system.",
+        "b": "Provides the vessel with safety information as a substitute for the NAVTEX system.",
+        "c": "Increases the sailing safety and prevents collisions between vessels.",
+        "d": "Increases the detection range of targets on vessel radars."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 129,
+      "question": "What does the code MA33 indicate?",
+      "options": {
+        "a": "The call sign of a radio-telephone vessel.",
+        "b": "A NAVTEX identification code.",
+        "c": "A shore station whose country ID characters are “MA”.",
+        "d": "Identification code of a D.S.C. alert dealing with a navigation warning."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 130,
+      "question": "How many times and for how long will a NAVTEX station transmit during a 24-hour period?",
+      "options": {
+        "a": "Every 6 hours, each transmission 15 minutes at most.",
+        "b": "Every 4 hours, each transmission 10 minutes at most.",
+        "c": "4 times, in each transmission as much as needed to complete the messages",
+        "d": "6 times, each transmission 1 minute at most."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 131,
+      "question": "What does the bending of radar waves cause?",
+      "options": {
+        "a": "Reducing the radar range.",
+        "b": "Increasing the radar range.",
+        "c": "Loss of accuracy in measuring distance to the target.",
+        "d": "Answers “b” and ”c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 132,
+      "question": "You are sailing on yacht MARNI M.M.S.I. 428666099 and you are on anchor opposite the Haifa port 32 º 42’N 34 º 58’E. At midnight local time an unidentified vessel collides with your vessel. As a result, your yacht is leaning on its side and there is danger of sinking. On board the yacht are 3 passengers and 3 crew members. Your boat is equipped per the GMDSS requirements for AREA A1. Select the correct statement:",
+      "options": {
+        "a": "One must send out a distress call to Haifa port including the U.T.C. time. Send a message on D.S.C. and select distress code SINKING. Indicate on the V.H.F. that there are 9 people on board.",
+        "b": "One must send out a distress call to Haifa port including the U.T.C. time. Send a message on D.S.C. and select distress code COLLISION. Indicate on the V.H.F. that there are 9 people on board.",
+        "c": "One must send out a distress call to everyone. Send a message on D.S.C. and select distress code COLLISION. Indicate on the V.H.F. that there are 6 people on board.",
+        "d": "One must send out a distress call to everyone. Send a message on D.S.C. and select distress code COLLISION. Indicate on the V.H.F. that there are 3 crew members on board."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 133,
+      "question": "Your position is 32 º 17’N 157 º 42’ E the time is 17:53 U.T.C., therefore the regional time is:",
+      "options": {
+        "a": "15:53",
+        "b": "04:53",
+        "c": "00:53",
+        "d": "18:00"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 134,
+      "question": "A compass measures the angle between:",
+      "options": {
+        "a": "The compass north and a specific object on the horizon.",
+        "b": "The geographic north and a direction indicator.",
+        "c": "The North Star and the direction of the vessel bow.",
+        "d": "The real north (geographic) after correction for the earth’s magnetic field inaccuracies."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 135,
+      "question": "When increasing the depth range on the depth gauge, then:",
+      "options": {
+        "a": "More pulses are transmitted per time period.",
+        "b": "Fewer pulses are transmitted per time period.",
+        "c": "There is no change.",
+        "d": "There is no change in the pulse frequency but the pulse length changes."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 136,
+      "question": "What checks must you conduct for the vessel communication equipment?",
+      "options": {
+        "a": "Batteries, D.S.C. operations, transmission (up to 10 seconds) and reception operation on the V.H.F. transceiver, the expiration date on the batteries and damage assessment on the various beacons.",
+        "b": "According to the special inspection log which has special lines for the frequency of each check and the expiration date of each assembly or document.",
+        "c": "There is no need for any special checks, only the daily damage assessment, all the rest is performed once every two years during the sea worthiness inspection.",
+        "d": "Answers “a” and “b” (if it exists) are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 137,
+      "question": "The reduction in accuracy due to reception of satellites that are close to each other is indicated by:",
+      "options": {
+        "a": "TDOP (TIME DILUTION OF PRECISION).",
+        "b": "VDOP (VERTICAL DILUTION OF PRECISION).",
+        "c": "GDOP (GEOMETRIC DILUTION OF PRECISION).",
+        "d": "PDOP (POSITION DILUTION OF PRECISION)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 138,
+      "question": "The definition of the ZT (ZONE TIME) is:",
+      "options": {
+        "a": "The area time determined by the observer latitude.",
+        "b": "The area time determined by the observer longitude.",
+        "c": "The time in the area determined by the time zone.",
+        "d": "The time in the area determined by the position of the sun."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 139,
+      "question": "The definition of U.T.C. is:",
+      "options": {
+        "a": "Upper tract based on coordinated time.",
+        "b": "Universal time based on the star CANOPUS.",
+        "c": "Universal Coordinated Time which is equal to the average time at Greenwich.",
+        "d": "Average time of the area close to the Greenwich longitude."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 140,
+      "question": "What is Local Mean Time?",
+      "options": {
+        "a": "The time in the area based on atomic clock.",
+        "b": "The time in the area based on the Mean Latitude.",
+        "c": "The time in the area based on time zone.",
+        "d": "The time in the area based on the observer latitude."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 141,
+      "question": "A Flux Gate compass has the following advantages. Mark the one that does not fit:",
+      "options": {
+        "a": "Can provide an accuracy of about half a degree.",
+        "b": "Convenient to correct the deviation and variation errors.",
+        "c": "Does not take up much space and is easily installed anywhere.",
+        "d": "One can separate the sensor from the display and install it where it is not affected by magnetic fields."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 142,
+      "question": "What is the combination 428000500?",
+      "options": {
+        "a": "The MMSI identification code for the DSC device of a vessel.",
+        "b": "The MMSI identification code for a country with the MID 428.",
+        "c": "The MMSI identification code of a group of DSC devices.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 143,
+      "question": "What DSC related data is automatically transmitted with every transmission?",
+      "options": {
+        "a": "Time.",
+        "b": "Position.",
+        "c": "MMSI.",
+        "d": "Distress state."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 144,
+      "question": "What messages can you send on the NAVTEX device from the ship?",
+      "options": {
+        "a": "Distress (VITAL)",
+        "b": "Safety, Urgent (IMPORTANT)",
+        "c": "Routine (ROUTINE)",
+        "d": "None of the above answers is correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 145,
+      "question": "In which areas is an “EPIRB” device operating on a system of satellites circling the earth from pole to pole usable?",
+      "options": {
+        "a": "A1",
+        "b": "A2, 3",
+        "c": "A4",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 146,
+      "question": "A bearing to a shore site can be most accurately obtained by:",
+      "options": {
+        "a": "Radar",
+        "b": "GPS",
+        "c": "Direction Finder (D.F.)",
+        "d": "Pelorus"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 147,
+      "question": "The latitude lines on the earth are:",
+      "options": {
+        "a": "Big circles parallel to the equator.",
+        "b": "Other than the equator, small circles perpendicular to the earth’s rotation axis whose diameters grow progressively smaller toward the poles.",
+        "c": "The lines along which the sun progresses during earth’s daily rotation, based on the declination.",
+        "d": "Identical in length to the longitude lines."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 148,
+      "question": "Longitude lines are:",
+      "options": {
+        "a": "Big circles perpendicular to the equator and passing through the poles.",
+        "b": "Equal in length to the latitude lines except for the equator.",
+        "c": "Equal in length to the cosine of the latitude.",
+        "d": "Bid circles that are parallel to each other."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 149,
+      "question": "What is a RHUMB LINE?",
+      "options": {
+        "a": "The shortest path between two points on earth.",
+        "b": "A line crossing the latitude lines at the same angle on a map.",
+        "c": "A straight line on a Mercator map.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 150,
+      "question": "On which devices / systems is the Doppler effect utilized?",
+      "options": {
+        "a": "The COSPASS-SARASAT satellite system.",
+        "b": "Gyroscopic compass.",
+        "c": "A speedometer for reading SOG",
+        "d": "Magnetic compass."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 151,
+      "question": "The sun rises in the east and sets in the west because:",
+      "options": {
+        "a": "The earth moves rapidly west around the sun.",
+        "b": "The earth rotates on its axis from west to east.",
+        "c": "The earth’s axis performs a circular motion around the North Star.",
+        "d": "The earth rotates on its axis from east to west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 152,
+      "question": "How are the seasons created?",
+      "options": {
+        "a": "The sun is not in the center of the earth’s trajectory.",
+        "b": "The earth’s equatorial plane is tilted 23½° relative to the plane of motion around the sun.",
+        "c": "The earth’s speed changes depending on its distance from the sun.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 153,
+      "question": "What does the position of the moon relative to the earth and sun affect?",
+      "options": {
+        "a": "The cycle and degree of high and low tide.",
+        "b": "The monthly ocean level average.",
+        "c": "The tide and the low, the further you go north and south of the equator",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 154,
+      "question": "What will instruments that contain speaker, headphones, microphone and batteries affect?",
+      "options": {
+        "a": "Will unbalance the magnetic compass.",
+        "b": "Influence the mechanical gyrocompass and cause it to seek the south instead of the north.",
+        "c": "Improve the accuracy of any compass dependent on magnetic fields.",
+        "d": "The instruments might be damaged due to the strength of the magnets in the compass."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 155,
+      "question": "The variation affects to the same extent the:",
+      "options": {
+        "a": "Magnetic compass and flux gate compass.",
+        "b": "Gyrocompass and azimuth compass.",
+        "c": "Compasses for which a deviation table has not been prepared.",
+        "d": "Compasses on vessels not built of metal and therefore exposed to the surrounding influences."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 156,
+      "question": "How does a flux gate compass work?",
+      "options": {
+        "a": "Just like a magnetic compass, it shows the north with influence from the magnetic forces in the area.",
+        "b": "Instead of magnetic rods has small electromagnets installed.",
+        "c": "Creates its own magnetic field which the manufacturer calibrates ahead of time to cancel the variation and deviation.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 157,
+      "question": "What are the significant disadvantages of a gyrocompass?",
+      "options": {
+        "a": "Consumes electricity constantly and dependent on it, does not stabilize immediately upon activation, develops an error dependent on the longitude and direction / speed of the vessel in which it is installed.",
+        "b": "Cannot be used as a sensor for the automatic steering, does not present the magnetic north.",
+        "c": "Generates a magnetic field that throws off other compasses nearby.",
+        "d": "Can only be installed on large vessels and a metal structure."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 158,
+      "question": "There are various systems for improving the accuracy of the GPS to less than a meter. How will you know of their availability for your use, or at least the level of accuracy of your receiver?",
+      "options": {
+        "a": "It is enough to look in the operator manual, whether the current sailing area is covered within the accuracy improvement zone.",
+        "b": "It is enough to select the option when initializing the receiver.",
+        "c": "It is sufficient to operate the receiver in 3D mode, hold it close to the water line and every few hours to note whether the change in elevation of ebb and tide is displayed according to the calculations from the map.",
+        "d": "When the boat is tied to a dock, compare a position, that is created by triangulating 3 bearings, and the position the GPS produces and verify that the GPS is showing zero speed."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 159,
+      "question": "What is the difference between the MOB button and the MARK button?",
+      "options": {
+        "a": "There is no difference. Both of them mark the present position as a Way Point.",
+        "b": "MOB marks the present position as an “active way point” to which the direction and range will be displayed continuously while MARK only marks the present position.",
+        "c": "MARK marks the present position and the 180° reverse direction to quickly reach the person who has fallen to sea, while Miles Off Buoy = MOB marks the distance to the nearest buoy in a race.",
+        "d": "MARK activates an alert of the vessel being within the “accuracy range” of the receiver from the destination point while MOB activates the receiver in anchoring / mooring status for maintenance (without movement data) = Maintenance On Board."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 160,
+      "question": "On a GPS receiver what is the meaning (respectively) of: 1 – ROUTE, 2 – TRACK, 3 – Course To Steer?",
+      "options": {
+        "a": "1 - The course in degrees between two “way points”; 2 – the motion curve actually performed by the vessel; 3 – the course in degrees one must maintain to get back on ROUTE.",
+        "b": "1- a number of segments with different courses between every two adjacent and sequential points linked to one path and kept in memory under a selected name; 2 – the path the vessel should pass from origin to destination; 3 – the course corrected by the receiver, which one must maintain to reach the selected way point.",
+        "c": "The real course between the origin and destination; 2 – the traces of the direction of motion of the vessel behind the rudder; 3 – the direction you must maintain so the receiver does not detect a Cross Track Error.",
+        "d": "1 – the regulation course for an Olympic sailing race; 2 – one of the legs of a race course; 3 – the course to the first buoy from the start line of a sailing race."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 161,
+      "question": "What are the uses of a radar?",
+      "options": {
+        "a": "Detect the presence of submarines underwater.",
+        "b": "Collision prevention, navigation, routing, search and rescue.",
+        "c": "In each radar there are warnings when the distance to a target is small.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 162,
+      "question": "Can you detect small vessels and an entrance to a marina on the radar in torrential rain and what button must you activate on the control panel?",
+      "options": {
+        "a": "It is possible to detect, but it is dependent on the size and material of the objects and the rain density. The appropriate control is Anti – Clutter – Rain or FTC.",
+        "b": "It is possible to detect when activating GAIN or STC.",
+        "c": "It is possible with the control to increase the transmission power.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 163,
+      "question": "Mark the most accurate statement regarding the maritime radar:",
+      "options": {
+        "a": "The shorter the transmitted pulse so the range detection accuracy improves and the shorter the distance the better the direction reading.",
+        "b": "The greater the range the better the directional accuracy and the distance accuracy is reduced.",
+        "c": "The longer the transmission pulse the better the detection of small objects but the detection range is reduced.",
+        "d": "At shorter distances we will select a short pulse to improve the separation between objects close to each other and we will also get better directional accuracy; at longer distances one will prefer a longer pulse for better reflection from small objects with reduced directional accuracy."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 164,
+      "question": "On what does the quality and detection range of an object by radar depend?",
+      "options": {
+        "a": "The distance range selected using the RANGE control and the maximum distance for which it is designed.",
+        "b": "The transmitter power, the receiver sensitivity, the quality of the antenna and the conditions for spreading of the radio waves.",
+        "c": "Correct setting of TUNE, GAIN, BRILLIANCE, PULSE and interference attenuators.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 165,
+      "question": "What is the role of the converter in the echo sounder?",
+      "options": {
+        "a": "To convert the wave fronts to a sound wave in the transmit direction and convert the return echo to a radio wave in the receive direction.",
+        "b": "To shape the radiation beam so that strong echoes are received only from below the vessel even when swaying.",
+        "c": "Sweep the selected depth cross section and provide directions to objects detected within that depth section.",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 166,
+      "question": "How are messages conveyed on the NAVTEX system?",
+      "options": {
+        "a": "As a file with sailing safety messages (Navigational Text Book), which is updated at the beginning of each month, and may be obtained from the sailing manager of each anchorage or downloaded from the internet.",
+        "b": "A network of administration and transmitters worldwide, to disseminate safety information to vessels, the vessels receive the printed data through special receivers called NAVTEX receivers.",
+        "c": "A network of satellites moving at distance of 800 miles from each other are fed the sailing security information for the area over which they are passing, and at the same time rebroadcast it to the vessel receivers.",
+        "d": "An edition of sailing warnings transmitted digitally (D.S.C.) to vessels on maritime VHF channel 70 after a spoken referral message on channel 16 of the maritime VHF range."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 167,
+      "question": "How is the network of NAVTEX transmitters for disseminating safety information spread out?",
+      "options": {
+        "a": "So that a vessel leaving the coverage area of one transmitter enters the covers area of the adjacent transmitter.",
+        "b": "So that in coastal sailing one can cross check the information received across at least three different transmitters.",
+        "c": "So that within the designed range for each transmitter (about 400 miles) there will not be any overlapping interference with an adjacent transmitter covering the adjacent area (about 800 miles), but there is power and dissemination coordination between adjacent administrations.",
+        "d": "So that all of them transmit at the same daylight hours of the local time of day but on different frequencies at the discretion of the sailor."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 168,
+      "question": "How do distress signals appear on the output of a NAVTEX receiver?",
+      "options": {
+        "a": "Transmitted from the vessel in distress and intended only for the shore stations that must summon a rescue team.",
+        "b": "They originate at shore stations and regional administration of the NAVTEX transmitter in order to expand the number of vessels who can offer assistance.",
+        "c": "They are transmitted from shore stations of the maritime service and from vessels who receive the voice distress message on channel 16 of the maritime VHF range.",
+        "d": "It is forbidden to disseminate distress messages on NAVTEX to avoid confusion and involvement of vessels who are outside the maritime VHF communication range, and are not available for immediate assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 169,
+      "question": "Mark the correct statement regarding a Cospas-Sarsat beacon:",
+      "options": {
+        "a": "Operates on frequency 406 MHZ of the satellite network, but is allowed to be installed on vessels as an alternative to a beacon on channel 70 of the maritime VHF.",
+        "b": "Is not allowed on vessels for shore sailing, since it will alert stations throughout the coverage area of the satellite, and not only those that are within immediate rescue range of the maritime VHF.",
+        "c": "Enable voice communication without the need to key in prepared messages from a menu.",
+        "d": "Enables homing (direction and range) of a rescue team in limited visibility."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 170,
+      "question": "What is the meaning of the characteristic called “FLOAT FREE”?",
+      "options": {
+        "a": "A technical arrangement that enables self detachment and floatation of the emergency beacons in the event of distress.",
+        "b": "Free from the ability to float.",
+        "c": "A device that inflates a life raft so that the emergency beacon is on the roof and will not get wet from the water.",
+        "d": "A special wrapping provided for each type of beacon, to ensure it floats and remains waterproof even in sweet water."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 171,
+      "question": "What is the electronic assembly called D.S.C.?",
+      "options": {
+        "a": "Enables processing of messages to be sent by calling them up from prepared menus and data libraries.",
+        "b": "Enables immediate communication via a satellite relay = Direct Satellite Communication.",
+        "c": "An assembly incorporated in the communication equipment for deciphering and encoding digital communication messages, specifically so there is no reliance on the operator skill level.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 172,
+      "question": "What primarily affects the communication range in the VHF spectrum?",
+      "options": {
+        "a": "Hour of the day, water salinity, speed of the vessel.",
+        "b": "Space free of obstructions between the antennas (antenna heights), power output of the transmission, amplification and coordination of the antennas, several radio wave expansion conditions.",
+        "c": "The frequency in use, volume of speech, season of the year, the number of sun spots when transmitting.",
+        "d": "The temperature and density of material in the air layer between the stations, the number of bounces the wave performs from the ionosphere until it reaches the destination."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 173,
+      "question": "What is a DISTRESS CALL?",
+      "options": {
+        "a": "A call on channel 16, to anyone who hears, to stop all activity (that is not distress related) and listen to the “distress call” that is expected following it.",
+        "b": "Transmitting the protocol phrase THIS IS MAYDAY 3 times, and 3 times the transmitting station call sign.",
+        "c": "It is expected that shore stations will acknowledge the reception first and take control of the communications.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 174,
+      "question": "What is the shortest distance between the Straits of Gibraltar and the City of New York?",
+      "options": {
+        "a": "A section of a large circle that passes through the two sites.",
+        "b": "A section of a small circle that passes through the two sites.",
+        "c": "A snail line passing between the two sites.",
+        "d": "None of the above answers is correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 175,
+      "question": "What will be the elevation of the North Star above the horizon for a vessel sailing from Haifa to Cyprus when the latitude is about 36 degrees north?",
+      "options": {
+        "a": "The North Star elevation will be about 90 degrees above the horizon.",
+        "b": "The North Star elevation will be about 36 degrees above the horizon.",
+        "c": "The North Star elevation will be about 54 degrees above the horizon.",
+        "d": "There is no impact of the latitude I am at for the North Star elevation as long as I am in the northern hemisphere."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 176,
+      "question": "How should you maintain the converter of the echo sounder?",
+      "options": {
+        "a": "Cleaning it with a polish machine and covering it with paint containing metal.",
+        "b": "If it is a ceramic converter dipped in oil, you must check it and complete any missing oil.",
+        "c": "Must be kept clean of all paint and if it is an electromagnetic converter renew the magnetic strength by rubbing it with a natural magnet.",
+        "d": "There is no maintenance required. The conversion is not affected by substances and bubbles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 177,
+      "question": "What are the characteristics of the SART?",
+      "options": {
+        "a": "Ability to float, a battery that enables reception for 96 hours or 8 hours of transmission, a light and an audible alert.",
+        "b": "Permanent attachment to the vessel and an arrangement to keep the antenna vertical even in sea motion.",
+        "c": "A transmission button, that will display on adjacent radars the pattern ▪ ▪ ▪ ▬ ▬ ▬ ▪ ▪ ▪.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 178,
+      "question": "Assuming the echo sounder shows the depth from the maximum draught, the vessel has a draught of 1.5 meters and measures a depth of 1 meter, while on the map is written 2 meters. What is the reason for the discrepancy?",
+      "options": {
+        "a": "The depth on the map represents high tide and when measuring there is a an ebb of 0.5 meters.",
+        "b": "The depth on the map is indicated for low tide but when measuring there is a 0.5 meter higher tide.",
+        "c": "The sea floor at the point of measurement is about 0.5 meters higher than the Chart Datum.",
+        "d": "Answers “b” and “c” are correct possibilities."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 179,
+      "question": "What is the distance, in nautical miles, between two adjacent latitude lines on the face of earth?",
+      "options": {
+        "a": "One mile.",
+        "b": "Ten miles.",
+        "c": "60 miles.",
+        "d": "100 miles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 180,
+      "question": "Is the distance between two adjacent longitude lines on the face of the earth constant?",
+      "options": {
+        "a": "Yes.",
+        "b": "No.",
+        "c": "Yes, except at the equator.",
+        "d": "Only at the poles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 181,
+      "question": "Where does latitude 20°N end?",
+      "options": {
+        "a": "At the north pole.",
+        "b": "At the Greenwich line.",
+        "c": "At the equator.",
+        "d": "It does not end."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 182,
+      "question": "What longitude line completes to a full circle longitude line 40° E?",
+      "options": {
+        "a": "40° W.",
+        "b": "220° E.",
+        "c": "140° W.",
+        "d": "220° W."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 183,
+      "question": "You are sailing east on latitude line 30°S. At which bearing can you see the North Star?",
+      "options": {
+        "a": "0°.",
+        "b": "90° to port.",
+        "c": "30° to starboard.",
+        "d": "The star is not visible."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 184,
+      "question": "What is the position of the North Star relative to earth?",
+      "options": {
+        "a": "At the imaginary continuation of the earth’s equator.",
+        "b": "At the imaginary continuation of the north end of the earth’s axis.",
+        "c": "At the halfway distance between earth’s poles.",
+        "d": "The position changes depending on the seasons on earth."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 185,
+      "question": "Where is the North Star in the star system?",
+      "options": {
+        "a": "In the middle of the Milky Way.",
+        "b": "In the middle of the Little Dipper.",
+        "c": "At the bottom of the Cassiopeia star group.",
+        "d": "At the end of the shaft of the Little Dipper."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 186,
+      "question": "Why do the stars appear small?",
+      "options": {
+        "a": "Because they are far away from us.",
+        "b": "Because they are small.",
+        "c": "Because we see only a part of their surface.",
+        "d": "Because of the optical distortion caused by the atmosphere."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 187,
+      "question": "Which of the following instruments shows the true course of sailing of the vessel relative to the true north?",
+      "options": {
+        "a": "G.P.S.",
+        "b": "Magnetic compass.",
+        "c": "Electrical compass.",
+        "d": "Flux Gate compass."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 188,
+      "question": "Can the G.P.S. measure speed?",
+      "options": {
+        "a": "Yes",
+        "b": "No.",
+        "c": "Only when sailing slowly.",
+        "d": "Only in calm seas."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 189,
+      "question": "When can you determine based on the radar that your vessel is in danger of a collision?",
+      "options": {
+        "a": "When the target remains at a fixed distance and the bearing changes.",
+        "b": "When the target remains at a steady bearing and the range decreases.",
+        "c": "When the target remains at a steady bearing and the range increases.",
+        "d": "When the target approaches you at a constant rate."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 190,
+      "question": "Your vessel is sailing backward in the east direction. What course will the magnetic compass indicate, and what course will the G.P.S. device indicate?",
+      "options": {
+        "a": "The magnetic compass – E; the G.P.S. receiver – E.",
+        "b": "The magnetic compass – E; the G.P.S. receiver – W.",
+        "c": "The magnetic compass – W; the G.P.S. receiver – E.",
+        "d": "The magnetic compass – W; the G.P.S. receiver – W."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 191,
+      "question": "A vessel that was standing with its bow in direction 150° has been turned 30° to port. What sailing course will a magnetic compass indicate and what sailing course will the G.P.S. receiver indicate?",
+      "options": {
+        "a": "The magnetic compass – 120°; the G.P.S. receiver – 120°.",
+        "b": "The magnetic compass – 120°; the G.P.S. receiver – will not react.",
+        "c": "The magnetic compass – 180°; the G.P.S. receiver – 120°.",
+        "d": "The magnetic compass – 150°; the G.P.S. receiver – will not react."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 192,
+      "question": "The bearing marker in the maritime compass is to the north. If we turn the compass 90° to the left, what will the marker point to?",
+      "options": {
+        "a": "West.",
+        "b": "North.",
+        "c": "East.",
+        "d": "South."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 193,
+      "question": "Who should respond to a MAYDAY call?",
+      "options": {
+        "a": "Anyone hearing the call.",
+        "b": "Anyone who can offer immediate assistance.",
+        "c": "Anyone located near the vessel.",
+        "d": "Anyone engaged in rescue."
+      },
+      "terms": [],
+      "questionTerms": []
+    }
+  ]
+}

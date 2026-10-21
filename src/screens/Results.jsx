@@ -1,16 +1,18 @@
 import QuestionCard from '../components/QuestionCard.jsx';
+import { strings } from '../lib/i18n.js';
 
 const pct = (n) => `${Math.round(n * 100)}%`;
 
 /** תוצאות — score, pass banner at the subject's own mark, and the mistakes. */
 export default function Results({ subject, attempt, result, onAgain, onHome }) {
+  const t = strings(subject.lang);
   return (
     <>
       <div className={`banner ${result.passed ? 'pass' : 'fail'}`}>
-        {result.passed ? 'עברת! 🎉' : 'לא עברת הפעם'}
+        {result.passed ? t.passed : t.failed}
         <div style={{ fontSize: '2rem', marginTop: 6 }}>{result.score} / 100</div>
         <div className="meta">
-          {result.right} תשובות נכונות מתוך {result.total} · ציון עובר {result.pass}
+          {t.rightOf(result.right, result.total, result.pass)}
         </div>
       </div>
 
@@ -19,13 +21,12 @@ export default function Results({ subject, attempt, result, onAgain, onHome }) {
           the pass mark next to "לא עברת" reads as a bug. */}
       {result.criticalMisses?.length > 0 && (
         <p className="notice">
-          ⚠ נפסל: {result.criticalMisses.length === 1 ? 'טעות אחת' : `${result.criticalMisses.length} טעויות`}
-          {' '}בשאלות {result.criticalRule?.label ?? 'קריטיות'}. {result.criticalRule?.note}
+          {t.disqualified(result.criticalMisses.length, result.criticalRule?.label, result.criticalRule?.note)}
         </p>
       )}
 
       <div className="card">
-        <b>לפי נושא</b>
+        <b>{t.byTopic}</b>
         <table className="topics">
           <tbody>
             {result.byTopic.map((t) => (
@@ -39,25 +40,26 @@ export default function Results({ subject, attempt, result, onAgain, onHome }) {
             ))}
           </tbody>
         </table>
-        <p className="meta">הנושאים החלשים ביותר מופיעים למעלה.</p>
+        <p className="meta">{t.weakestFirst}</p>
       </div>
 
       <div className="row">
         {onAgain && (
-          <button type="button" className="btn" onClick={onAgain}>סימולציה נוספת</button>
+          <button type="button" className="btn" onClick={onAgain}>{t.again}</button>
         )}
         <button type="button" className="btn ghost" onClick={onHome}>
-          {onAgain ? 'חזרה לתפריט' : 'חזרה להתקדמות'}
+          {onAgain ? t.toMenu : t.toProgress}
         </button>
       </div>
 
       <h2 style={{ marginTop: 28 }}>
-        {result.mistakes.length ? `הטעויות (${result.mistakes.length})` : 'ללא טעויות 🎯'}
+        {result.mistakes.length ? t.mistakes(result.mistakes.length) : t.noMistakes}
       </h2>
       {result.mistakes.map((row) => (
         <QuestionCard
           key={row.id}
           question={subject.byId.get(row.id)}
+          lang={subject.lang}
           order={attempt.optionOrder[row.id]}
           terms={subject.termsById}
           picked={row.given}

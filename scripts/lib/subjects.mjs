@@ -27,6 +27,11 @@ export function listSubjects({ activeOnly = false } = {}) {
     .map((s) => s.slug);
 }
 
+/** The language a subject is taught in — "he" unless its manifest entry says otherwise. */
+export function subjectLang(slug) {
+  return readManifest().subjects.find((s) => s.slug === slug)?.lang ?? 'he';
+}
+
 export function subjectPath(slug, file) {
   return join(SUBJECTS_DIR, slug, file);
 }

@@ -17,6 +17,14 @@
       "icon": "🧭"
     },
     {
+      "slug": "nav-instruments-en",
+      "he": "ניווט ב' — מכשירים (אנגלית)",
+      "en": "Navigation B — Instruments",
+      "lang": "en",
+      "status": "active",
+      "icon": "🧭"
+    },
+    {
       "slug": "seamanship",
       "he": "ימאות ג'",
       "en": "Seamanship",

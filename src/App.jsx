@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { activeSubjects, loadSubject, subjects } from './subjects/loader.js';
+import { activeSubjects, getSubjectMeta, loadSubject } from './subjects/loader.js';
 import { summarize } from './lib/progress.js';
 import { sendView } from './lib/analytics.js';
 import { fromPath, screenOf, toPath } from './lib/route.js';
 import { acceptTerms, hasAcceptedTerms } from './lib/storage.js';
 import { applyTheme, readTheme, saveTheme } from './lib/theme.js';
+import { strings, subjectTitle } from './lib/i18n.js';
 import Disclaimer from './components/Disclaimer.jsx';
 import ThemeControl from './components/ThemeControl.jsx';
 import Markdown from './components/Markdown.jsx';
@@ -20,13 +21,15 @@ import ProgressScreen from './screens/Progress.jsx';
 import Signals from './screens/Signals.jsx';
 import Browse from './screens/Browse.jsx';
 
+// Titles come from the subject's language (i18n.js). A subject without a
+// cheatsheet — an English edition, so far — has no deck and no study sheet.
 const MODES = [
-  { id: 'learn', title: 'שינון', sub: 'כרטיסיות מונחים בשני הכיוונים' },
-  { id: 'practice', title: 'תרגול', sub: 'שאלות לפי נושא, עם משוב מיידי' },
-  { id: 'exam', title: 'סימולציה', sub: 'מבחן מלא על זמן, בלי משוב עד ההגשה' },
-  { id: 'study', title: 'חומר עזר', sub: 'דף הריכוז של הנושא' },
-  { id: 'browse', title: 'כל השאלות', sub: 'המאגר המלא עם התשובות, לקריאה' },
-  { id: 'progress', title: 'התקדמות', sub: 'כיסוי, דיוק לפי נושא והיסטוריית מבחנים' },
+  { id: 'learn', needs: (s) => s.terms.length > 0 },
+  { id: 'practice' },
+  { id: 'exam' },
+  { id: 'study', needs: (s) => Boolean(s.cheatsheet) },
+  { id: 'browse' },
+  { id: 'progress' },
 ];
 
 // Where this load started, read once before React mounts, so a shared link or
@@ -107,15 +110,27 @@ export default function App() {
     return () => { live = false; };
   }, [slug]);
 
+  // A shared link can name a screen this subject does not have (/learn on an
+  // English edition); fall back to its menu.
+  useEffect(() => {
+    const m = MODES.find((x) => x.id === mode);
+    if (subject && m?.needs && !m.needs(subject)) setMode(null);
+  }, [subject, mode]);
+
   const goHome = () => { setSlug(null); setMode(null); setFinished(null); refreshOverview(); };
   const goMenu = () => { setMode(null); setFinished(null); refreshOverview(); };
+
+  // Known from the manifest before the subject itself has loaded, so the
+  // header and the reading direction are right from the first frame.
+  const meta = slug && slug !== 'signals' ? getSubjectMeta(slug) : null;
+  const t = strings(meta?.lang);
 
   const title =
     slug === 'signals'
       ? 'אורות וסימנים'
       : !slug
         ? 'משיט 30'
-        : `${subjects.find((s) => s.slug === slug)?.he ?? ''}${mode ? ` · ${MODES.find((m) => m.id === mode)?.title}` : ''}`;
+        : `${meta ? subjectTitle(meta) : ''}${mode ? ` · ${t.modes[mode]?.[0]}` : ''}`;
 
   // Nothing else mounts until the disclaimer is accepted. Placed after every
   // hook above so the hook order stays stable across the two branches.
@@ -131,13 +146,13 @@ export default function App() {
   }
 
   return (
-    <div className="app">
+    <div className="app" dir={t.dir} lang={meta?.lang ?? 'he'}>
       <header className="topbar">
-        {/* The arrow points right: in an RTL layout "back" is towards the right,
-            the side the text starts from. */}
+        {/* The arrow points the way the text starts: right in Hebrew, left in
+            an English subject. */}
         {(slug || mode) && (
           <button type="button" className="back" onClick={mode ? goMenu : goHome}>
-            → חזרה
+            {t.back}
           </button>
         )}
         <h1>{title}</h1>
@@ -145,7 +160,7 @@ export default function App() {
         <ThemeControl theme={theme} onChange={changeTheme} variant="cycle" />
       </header>
 
-      {error && <p className="notice">שגיאה בטעינת התוכן: {error}</p>}
+      {error && <p className="notice">{t.loadError(error)}</p>}
 
       {!slug && (
         <Home progress={overview} onOpen={setSlug} theme={theme} onThemeChange={changeTheme} />
@@ -153,7 +168,7 @@ export default function App() {
 
       {slug === 'signals' && <Signals />}
 
-      {slug && slug !== 'signals' && !subject && !error && <p className="meta">טוען…</p>}
+      {slug && slug !== 'signals' && !subject && !error && <p className="meta">{t.loading}</p>}
 
       {subject && !mode && <SubjectMenu subject={subject} stats={overview[subject.slug]} onPick={setMode} />}
 
@@ -192,21 +207,22 @@ export default function App() {
         ))}
 
       {subject && !mode && (
-        <p className="meta" style={{ marginTop: 24 }}>מקור המאגר: {subject.source}</p>
+        <p className="meta" style={{ marginTop: 24 }}>{t.source(subject.source)}</p>
       )}
     </div>
   );
 }
 
 function SubjectMenu({ subject, stats, onPick }) {
+  const t = strings(subject.lang);
   return (
     <>
       <div className="card">
         <div className="row">
-          <b>{subject.questions.length} שאלות במאגר</b>
+          <b>{t.poolSize(subject.questions.length)}</b>
           <span style={{ flex: 1 }} />
           <span className="pill">
-            {subject.exam.questions} {subject.kind === 'open' ? 'תרגילים' : 'שאלות'} · {subject.exam.minutes} דק' · עובר {subject.exam.pass}
+            {t.examPill(subject.exam.questions, subject.kind === 'open', subject.exam.minutes, subject.exam.pass)}
           </span>
         </div>
         {stats && (
@@ -215,17 +231,17 @@ function SubjectMenu({ subject, stats, onPick }) {
               <i style={{ width: `${Math.round(stats.coverage * 100)}%` }} />
             </div>
             <p className="meta">
-              כיסוי {Math.round(stats.coverage * 100)}%
-              {stats.wrongCount > 0 && ` · ${stats.wrongCount} שאלות ממתינות לתרגול חוזר`}
+              {t.coverage(Math.round(stats.coverage * 100))}
+              {stats.wrongCount > 0 && t.waiting(stats.wrongCount)}
             </p>
           </>
         )}
       </div>
 
-      {MODES.map((m) => (
+      {MODES.filter((m) => !m.needs || m.needs(subject)).map((m) => (
         <button key={m.id} type="button" className="tile" onClick={() => onPick(m.id)}>
-          <div className="title">{m.title}</div>
-          <div className="sub">{m.sub}</div>
+          <div className="title">{t.modes[m.id][0]}</div>
+          <div className="sub">{t.modes[m.id][1]}</div>
         </button>
       ))}
     </>

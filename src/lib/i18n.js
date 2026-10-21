@@ -1,0 +1,208 @@
+// The languages a subject can be taught in.
+//
+// The app is Hebrew; a subject whose manifest entry says "lang": "en" is an
+// English edition of an exam and every screen it reaches reads its words from
+// here instead. Adding a language is one more entry in LANGS — screens never
+// branch on the language themselves.
+//
+// Open (chart-work) subjects and the שינון deck exist only in Hebrew, so their
+// screens keep their own Hebrew text.
+
+const HE = {
+  dir: 'rtl',
+  locale: 'he-IL',
+  optionKeys: ['א', 'ב', 'ג', 'ד'],
+  back: '→ חזרה',
+  loading: 'טוען…',
+  loadError: (msg) => `שגיאה בטעינת התוכן: ${msg}`,
+  source: (s) => `מקור המאגר: ${s}`,
+  modes: {
+    learn: ['שינון', 'כרטיסיות מונחים בשני הכיוונים'],
+    practice: ['תרגול', 'שאלות לפי נושא, עם משוב מיידי'],
+    exam: ['סימולציה', 'מבחן מלא על זמן, בלי משוב עד ההגשה'],
+    study: ['חומר עזר', 'דף הריכוז של הנושא'],
+    browse: ['כל השאלות', 'המאגר המלא עם התשובות, לקריאה'],
+    progress: ['התקדמות', 'כיסוי, דיוק לפי נושא והיסטוריית מבחנים'],
+  },
+  poolSize: (n) => `${n} שאלות במאגר`,
+  examPill: (q, open, min, pass) => `${q} ${open ? 'תרגילים' : 'שאלות'} · ${min} דק' · עובר ${pass}`,
+  coverage: (pct) => `כיסוי ${pct}%`,
+  waiting: (n) => ` · ${n} שאלות ממתינות לתרגול חוזר`,
+  // Home tile
+  tileStats: (seen, size, acc) => `נלמדו ${seen} שאלות מתוך ${size} · דיוק ${acc}`,
+  tileStreak: (n) => ` · ${n} סימולציות עוברות ברצף`,
+  notStarted: 'טרם התחלת',
+  // QuestionCard
+  questionOf: (i, n) => `שאלה ${i} מתוך ${n}`,
+  reconstructed: ' · נוסח משוחזר',
+  note: (s) => `הערה: ${s}`,
+  // Practice
+  allQuestions: 'כל השאלות',
+  wrongOnes: 'שאלות שטעית בהן',
+  markedOnes: 'שאלות שסימנת',
+  resumeLine: (label, i, n) => `יש לך תרגול פתוח — ${label}, שאלה ${i} מתוך ${n}.`,
+  resume: 'המשך מאיפה שהפסקתי',
+  startOver: 'התחלה מחדש',
+  noWrong: 'אין כרגע שאלות שטעית בהן — כל הכבוד!',
+  noMarked: 'עדיין לא סימנת שאלות — הכוכב מתחת לשאלה מסמן אותה.',
+  noTopic: 'אין שאלות בנושא הזה.',
+  fromCheatsheet: "מהצ'יט שיט:",
+  prevQuestion: '→ השאלה הקודמת',
+  marked: '★ מסומנת',
+  mark: '☆ סימון',
+  nextQuestion: 'השאלה הבאה',
+  keyboardHint: 'אפשר לענות גם במקלדת: 1–4 או א–ד.',
+  // Exam
+  examTitle: 'סימולציית מבחן',
+  examLine: (q, min, pts, pass) => `${q} שאלות · ${min} דקות · ${pts} נקודות לשאלה · ציון עובר ${pass}`,
+  examRules: 'השאלות נבחרות באקראי לפי התפלגות הנושאים במאגר, וסדר התשובות מתערבב בכל ניסיון. אין משוב עד להגשה.',
+  examExcluded: (n) => ` ${n} שאלות פגומות במקור הרשמי אינן נכללות בסימולציה.`,
+  start: 'להתחיל',
+  answered: (a, n) => `נענו ${a} מתוך ${n}`,
+  prev: 'הקודמת',
+  next: 'הבאה',
+  submit: 'הגשה',
+  unanswered: (n) => `נותרו ${n} שאלות ללא מענה. אין ניקוד שלילי — כדאי לענות על הכול.`,
+  // Results
+  passed: 'עברת! 🎉',
+  failed: 'לא עברת הפעם',
+  rightOf: (r, n, pass) => `${r} תשובות נכונות מתוך ${n} · ציון עובר ${pass}`,
+  disqualified: (n, label, note) =>
+    `⚠ נפסל: ${n === 1 ? 'טעות אחת' : `${n} טעויות`} בשאלות ${label ?? 'קריטיות'}. ${note ?? ''}`,
+  byTopic: 'לפי נושא',
+  weakestFirst: 'הנושאים החלשים ביותר מופיעים למעלה.',
+  again: 'סימולציה נוספת',
+  toMenu: 'חזרה לתפריט',
+  toProgress: 'חזרה להתקדמות',
+  mistakes: (n) => `הטעויות (${n})`,
+  noMistakes: 'ללא טעויות 🎯',
+  // Browse
+  search: 'חיפוש — מספר או טקסט',
+  count: (n) => `${n} שאלות`,
+  // Progress
+  poolCoverage: 'כיסוי המאגר',
+  practiced: (seen, n, acc) => `תרגלת ${seen} מתוך ${n} שאלות · דיוק כולל ${acc}`,
+  deckLearned: (n) => ` · ${n} כרטיסיות שינון בקופסה האחרונה`,
+  simulations: 'סימולציות',
+  noAttempts: 'טרם ביצעת סימולציה.',
+  attemptsLine: (n, best, streak, pass) =>
+    `${n} ניסיונות · הציון הגבוה ביותר ${best} · ${streak > 0 ? `${streak} עוברות ברצף` : 'אין רצף פעיל'} · ציון עובר ${pass}`,
+  view: 'צפייה',
+  accuracyByTopic: 'דיוק לפי נושא',
+  seenColumn: 'העמודה האחרונה: כמה שאלות מהנושא כבר ראית.',
+  resetTitle: 'איפוס התקדמות',
+  resetIntro: 'אפשר לאפס כל חלק בנפרד. הנתונים נשמרים במכשיר הזה בלבד, והאיפוס אינו ניתן לביטול — כדאי לייצא גיבוי מהמסך הראשי לפני איפוס.',
+  resetConfirm: (n, unit) => `לאפס ${n} ${unit}? הפעולה אינה ניתנת לביטול.`,
+  cancel: 'ביטול',
+  confirmReset: 'אישור האיפוס',
+  reset: 'איפוס',
+  resetAllConfirm: (name) => `לאפס את כל ההתקדמות בנושא ${name}? כל ארבעת החלקים יימחקו. שאר הנושאים לא ייפגעו.`,
+  resetAll: 'איפוס הכול בנושא זה',
+  areas: {
+    answers: ['סטטיסטיקת שאלות', 'כיסוי המאגר והדיוק לפי נושא. אינו מוחק את היסטוריית הסימולציות.', 'שאלות'],
+    deck: ['כרטיסיות השינון', 'הקופסאות של כל הכרטיסיות חוזרות לקופסה הראשונה.', 'כרטיסיות'],
+    attempts: ['היסטוריית הסימולציות', 'הציונים, הרצף והגרף. אינו מוחק את סטטיסטיקת השאלות.', 'ניסיונות'],
+    wrong: ['תור התרגול החוזר', 'רשימת השאלות שטעית בהן, המשמשת לסינון בתרגול.', 'שאלות'],
+  },
+};
+
+const EN = {
+  dir: 'ltr',
+  locale: 'en-GB',
+  optionKeys: ['a', 'b', 'c', 'd'],
+  back: '← Back',
+  loading: 'Loading…',
+  loadError: (msg) => `Could not load the content: ${msg}`,
+  source: (s) => `Question pool source: ${s}`,
+  modes: {
+    learn: ['Flashcards', 'Terms in both directions'],
+    practice: ['Practice', 'Questions by topic, with instant feedback'],
+    exam: ['Exam simulation', 'A full timed paper, no feedback until you hand it in'],
+    study: ['Study sheet', 'The summary sheet for this subject'],
+    browse: ['All questions', 'The whole pool with answers, to read through'],
+    progress: ['Progress', 'Coverage, accuracy by topic and exam history'],
+  },
+  poolSize: (n) => `${n} questions in the pool`,
+  examPill: (q, open, min, pass) => `${q} ${open ? 'exercises' : 'questions'} · ${min} min · pass ${pass}`,
+  coverage: (pct) => `Coverage ${pct}%`,
+  waiting: (n) => ` · ${n} questions waiting for review`,
+  tileStats: (seen, size, acc) => `${seen} of ${size} questions seen · accuracy ${acc}`,
+  tileStreak: (n) => ` · ${n} passed simulations in a row`,
+  notStarted: 'Not started yet',
+  questionOf: (i, n) => `Question ${i} of ${n}`,
+  reconstructed: ' · reconstructed wording',
+  note: (s) => `Note: ${s}`,
+  allQuestions: 'All questions',
+  wrongOnes: 'Questions you got wrong',
+  markedOnes: 'Marked questions',
+  resumeLine: (label, i, n) => `You have a practice run open — ${label}, question ${i} of ${n}.`,
+  resume: 'Continue where I left off',
+  startOver: 'Start over',
+  noWrong: 'No questions you got wrong right now — well done!',
+  noMarked: 'You have not marked any questions yet — the star under a question marks it.',
+  noTopic: 'No questions in this topic.',
+  fromCheatsheet: 'From the study sheet:',
+  prevQuestion: '← Previous question',
+  marked: '★ Marked',
+  mark: '☆ Mark',
+  nextQuestion: 'Next question',
+  keyboardHint: 'You can also answer with the keyboard: 1–4 or a–d.',
+  examTitle: 'Exam simulation',
+  examLine: (q, min, pts, pass) => `${q} questions · ${min} minutes · ${pts} points per question · pass mark ${pass}`,
+  examRules: 'Questions are drawn at random following the topic mix of the pool, and the answer order is shuffled every attempt. No feedback until you hand it in.',
+  examExcluded: (n) => ` ${n} questions damaged in the official source are left out of the simulation.`,
+  start: 'Start',
+  answered: (a, n) => `${a} of ${n} answered`,
+  prev: 'Previous',
+  next: 'Next',
+  submit: 'Hand in',
+  unanswered: (n) => `${n} questions left unanswered. There is no negative marking — answer them all.`,
+  passed: 'You passed! 🎉',
+  failed: 'Not this time',
+  rightOf: (r, n, pass) => `${r} of ${n} answers correct · pass mark ${pass}`,
+  disqualified: (n, label, note) =>
+    `⚠ Disqualified: ${n === 1 ? 'one mistake' : `${n} mistakes`} in ${label ?? 'critical'} questions. ${note ?? ''}`,
+  byTopic: 'By topic',
+  weakestFirst: 'The weakest topics are at the top.',
+  again: 'Another simulation',
+  toMenu: 'Back to the menu',
+  toProgress: 'Back to progress',
+  mistakes: (n) => `Mistakes (${n})`,
+  noMistakes: 'No mistakes 🎯',
+  search: 'Search — number or text',
+  count: (n) => `${n} questions`,
+  poolCoverage: 'Pool coverage',
+  practiced: (seen, n, acc) => `You practised ${seen} of ${n} questions · overall accuracy ${acc}`,
+  deckLearned: (n) => ` · ${n} flashcards in the last box`,
+  simulations: 'Simulations',
+  noAttempts: 'No simulation yet.',
+  attemptsLine: (n, best, streak, pass) =>
+    `${n} attempts · best score ${best} · ${streak > 0 ? `${streak} passed in a row` : 'no active streak'} · pass mark ${pass}`,
+  view: 'View',
+  accuracyByTopic: 'Accuracy by topic',
+  seenColumn: 'Last column: how many questions of the topic you have seen.',
+  resetTitle: 'Reset progress',
+  resetIntro: 'Each part can be reset on its own. The data is kept on this device only and a reset cannot be undone — export a backup from the home screen first.',
+  resetConfirm: (n, unit) => `Reset ${n} ${unit}? This cannot be undone.`,
+  cancel: 'Cancel',
+  confirmReset: 'Confirm reset',
+  reset: 'Reset',
+  resetAllConfirm: (name) => `Reset all progress in ${name}? Every part will be deleted. Other subjects are not affected.`,
+  resetAll: 'Reset everything in this subject',
+  areas: {
+    answers: ['Question statistics', 'Pool coverage and accuracy by topic. Keeps the simulation history.', 'questions'],
+    deck: ['Flashcards', 'Every card goes back to the first box.', 'cards'],
+    attempts: ['Simulation history', 'Scores, streak and chart. Keeps the question statistics.', 'attempts'],
+    wrong: ['Review queue', 'The questions you got wrong, used by the practice filter.', 'questions'],
+  },
+};
+
+const LANGS = { he: HE, en: EN };
+
+export const LANG_CODES = Object.keys(LANGS);
+
+/** The words and conventions of one language; Hebrew when none is given. */
+export const strings = (lang) => LANGS[lang] ?? HE;
+
+/** The name a subject goes by in its own language. */
+export const subjectTitle = (meta) => ((meta.lang ?? 'he') === 'he' ? meta.he : meta.en);

@@ -44,7 +44,8 @@ async function handle(req, res) {
       pool: readJson(file('questions.json')),
       display: readJson(file('display.json')),
       terms: readJson(file('terms.json')),
-      cheatsheet: readFileSync(file('cheatsheet.md'), 'utf8'),
+      // An English edition may come without a cheatsheet.
+      cheatsheet: existsSync(file('cheatsheet.md')) ? readFileSync(file('cheatsheet.md'), 'utf8') : '',
       termOverrides: readOr('term-overrides.json', {}),
     });
   }

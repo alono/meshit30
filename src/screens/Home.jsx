@@ -3,6 +3,7 @@ import { subjects } from '../subjects/loader.js';
 import { isEnabled, setEnabled } from '../lib/analytics.js';
 import { exportAll, importAll } from '../lib/storage.js';
 import ThemeControl from '../components/ThemeControl.jsx';
+import { strings, subjectTitle } from '../lib/i18n.js';
 
 /**
  * The subject picker. All four exams are listed from day one — the three that
@@ -58,32 +59,35 @@ export default function Home({ progress, onOpen, theme, onThemeChange }) {
       {subjects.map((s) => {
         const stats = progress[s.slug];
         const ready = s.status === 'active';
+        // An English edition's tile reads in English, left to right.
+        const t = strings(s.lang);
         return (
           <button
             key={s.slug}
             type="button"
             className="tile"
+            dir={t.dir}
+            lang={s.lang ?? 'he'}
             disabled={!ready}
             onClick={() => ready && onOpen(s.slug)}
           >
             <div className="row">
-              <span className="title">{s.icon} {s.he}</span>
+              <span className="title">{s.icon} {subjectTitle(s)}</span>
               <span className="spacer" style={{ flex: 1 }} />
               {!ready && <span className="pill">בקרוב</span>}
             </div>
             {ready && stats ? (
               <>
                 <div className="sub">
-                  נלמדו {stats.totalSeen} שאלות מתוך {stats.poolSize} · דיוק{' '}
-                  {stats.accuracy == null ? '—' : `${Math.round(stats.accuracy * 100)}%`}
-                  {stats.streak > 0 && ` · ${stats.streak} סימולציות עוברות ברצף`}
+                  {t.tileStats(stats.totalSeen, stats.poolSize, stats.accuracy == null ? '—' : `${Math.round(stats.accuracy * 100)}%`)}
+                  {stats.streak > 0 && t.tileStreak(stats.streak)}
                 </div>
                 <div className="bar" style={{ marginTop: 8 }}>
                   <i style={{ width: `${Math.round(stats.coverage * 100)}%` }} />
                 </div>
               </>
             ) : (
-              <div className="sub">{ready ? 'טרם התחלת' : 'מאגר השאלות טרם נוסף'}</div>
+              <div className="sub">{ready ? t.notStarted : 'מאגר השאלות טרם נוסף'}</div>
             )}
           </button>
         );

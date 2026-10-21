@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { hebrewOnly, parseCheatsheet, parseSections } from './lib/cheatsheet.mjs';
 import { matchVariants } from './lib/hebrew.mjs';
-import { SUBJECTS_DIR, listSubjects, readJson, writeJson } from './lib/subjects.mjs';
+import { SUBJECTS_DIR, listSubjects, readJson, subjectLang, writeJson } from './lib/subjects.mjs';
 
 const args = process.argv.slice(2);
 const slugs = args.includes('--all') ? listSubjects({ activeOnly: true }) : args.filter((a) => !a.startsWith('-'));
@@ -29,6 +29,13 @@ function build(slug) {
   const dir = join(SUBJECTS_DIR, slug);
   const cheatsheetPath = join(dir, 'cheatsheet.md');
   if (!existsSync(cheatsheetPath)) {
+    // An English edition may come without one: it then has no deck and no
+    // term hints, but the loader still expects the file.
+    if (subjectLang(slug) !== 'he') {
+      writeJson(join(dir, 'terms.json'), { schema: 1, subject: slug, generatedFrom: null, count: 0, topics: [], terms: [] });
+      console.log(`✓ ${slug}: no cheatsheet — empty terms.json`);
+      return;
+    }
     console.error(`✗ ${slug}: no cheatsheet.md`);
     process.exitCode = 1;
     return;

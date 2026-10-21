@@ -2,8 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import QuestionCard from '../components/QuestionCard.jsx';
 import OpenQuestionCard from '../components/OpenQuestionCard.jsx';
 import { activeSubjects, fold, getSubjectMeta } from '../subjects/loader.js';
-
-const OPTION_KEYS = ['א', 'ב', 'ג', 'ד'];
+import { strings } from '../lib/i18n.js';
 
 const api = async (path, init) => {
   const res = await fetch(`/__admin/${path}`, init);
@@ -20,6 +19,9 @@ const api = async (path, init) => {
  * term-overrides.json for a term — and the derived display.json/terms.json
  * are rebuilt on the spot. The preview under each form is the app's own card
  * on the rebuilt files, so what is shown here is what she sees.
+ *
+ * The admin itself stays Hebrew; an English edition's text fields and preview
+ * take that subject's direction and option letters.
  */
 export default function Admin() {
   const [slug, setSlug] = useState(() => {
@@ -79,7 +81,9 @@ export default function Admin() {
         ))}
         <span className="spacer" />
         <button type="button" className={`chip ${tab === 'questions' ? 'on' : ''}`} onClick={() => setTab('questions')}>שאלות</button>
-        <button type="button" className={`chip ${tab === 'terms' ? 'on' : ''}`} onClick={() => setTab('terms')}>מונחים</button>
+        {subject?.cheatsheet && (
+          <button type="button" className={`chip ${tab === 'terms' ? 'on' : ''}`} onClick={() => setTab('terms')}>מונחים</button>
+        )}
       </div>
 
       {status && (
@@ -88,7 +92,7 @@ export default function Admin() {
 
       {!subject ? (
         <p className="meta">טוען…</p>
-      ) : tab === 'questions' ? (
+      ) : tab === 'questions' || !subject.cheatsheet ? (
         <Questions key={slug} subject={subject} onSave={save} />
       ) : (
         <Terms key={slug} subject={subject} overrides={raw.termOverrides} onSave={save} />
@@ -126,7 +130,7 @@ function Questions({ subject, onSave }) {
             {list.map((q) => (
               <button key={q.id} type="button" className={`option ${q.id === id ? 'picked' : ''}`} onClick={() => setId(q.id)}>
                 <span className="key">{q.id}</span>
-                <span>{q.question || q.parts?.[0]?.question}{q.issue ? ' ⚠' : ''}</span>
+                <span dir={strings(subject.lang).dir}>{q.question || q.parts?.[0]?.question}{q.issue ? ' ⚠' : ''}</span>
               </button>
             ))}
           </div>
@@ -134,9 +138,11 @@ function Questions({ subject, onSave }) {
         {question && (
           <div>
             <QuestionForm key={question.id} subject={subject} question={question} onSave={onSave} />
-            {subject.kind === 'open'
-              ? <OpenQuestionCard question={question} terms={subject.termsById} reveal showNote />
-              : <QuestionCard question={question} terms={subject.termsById} reveal showNote />}
+            <div dir={strings(subject.lang).dir}>
+              {subject.kind === 'open'
+                ? <OpenQuestionCard question={question} terms={subject.termsById} reveal showNote />
+                : <QuestionCard question={question} lang={subject.lang} terms={subject.termsById} reveal showNote />}
+            </div>
           </div>
         )}
       </div>
@@ -146,6 +152,7 @@ function Questions({ subject, onSave }) {
 
 function QuestionForm({ subject, question, onSave }) {
   const open = subject.kind === 'open';
+  const { dir, optionKeys } = strings(subject.lang);
   const [d, setD] = useState(() => ({
     topic: question.topic,
     question: question.question ?? '',
@@ -186,13 +193,13 @@ function QuestionForm({ subject, question, onSave }) {
       }}
     >
       <label>נושא</label>
-      <input type="text" list="admin-topics" value={d.topic} onChange={(e) => set('topic', e.target.value)} />
+      <input type="text" dir={dir} list="admin-topics" value={d.topic} onChange={(e) => set('topic', e.target.value)} />
       <datalist id="admin-topics">
         {subject.topics.map((t) => <option key={t.name} value={t.name} />)}
       </datalist>
 
       <label>שאלה</label>
-      <textarea rows={3} value={d.question} onChange={(e) => set('question', e.target.value)} />
+      <textarea rows={3} dir={dir} value={d.question} onChange={(e) => set('question', e.target.value)} />
 
       {open ? d.parts.map((p, i) => (
         <fieldset key={i}>
@@ -207,20 +214,20 @@ function QuestionForm({ subject, question, onSave }) {
       )) : (
         <>
           <label>תשובות — הרדיו מסמן את הנכונה</label>
-          {OPTION_KEYS.map((k) => (
+          {optionKeys.map((k) => (
             <div key={k} className="row" style={{ marginBottom: 6 }}>
               <input type="radio" name="correct" checked={d.correct === k} onChange={() => set('correct', k)} />
               <b>{k}</b>
-              <input type="text" style={{ flex: 1, width: 'auto' }} value={d.options[k]} onChange={(e) => set('options', { ...d.options, [k]: e.target.value })} />
+              <input type="text" dir={dir} style={{ flex: 1, width: 'auto' }} value={d.options[k]} onChange={(e) => set('options', { ...d.options, [k]: e.target.value })} />
             </div>
           ))}
         </>
       )}
 
       <label>הערה (מוצגת בתרגול בלבד)</label>
-      <input type="text" value={d.note} onChange={(e) => set('note', e.target.value)} />
+      <input type="text" dir={dir} value={d.note} onChange={(e) => set('note', e.target.value)} />
       <label>פגם במקור (מוציא את השאלה מהסימולציה)</label>
-      <input type="text" value={d.issue} onChange={(e) => set('issue', e.target.value)} />
+      <input type="text" dir={dir} value={d.issue} onChange={(e) => set('issue', e.target.value)} />
 
       <div className="row end" style={{ marginTop: 12 }}>
         <button type="submit" className="btn">שמירה</button>
