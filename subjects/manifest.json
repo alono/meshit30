@@ -10,6 +10,14 @@
       "icon": "⚙️"
     },
     {
+      "slug": "mechonaut-en",
+      "he": "מכונאות (אנגלית)",
+      "en": "Engineering",
+      "lang": "en",
+      "status": "active",
+      "icon": "⚙️"
+    },
+    {
       "slug": "nav-instruments",
       "he": "ניווט ב' — מכשירים",
       "en": "Instrument Navigation",

@@ -1,0 +1,2150 @@
+{
+  "schema": 1,
+  "subject": "mechonaut-en",
+  "generatedFrom": [
+    "questions.json",
+    "terms.json",
+    "text-overrides.json"
+  ],
+  "count": 178,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the function of the blower in a two-stroke diesel engine?",
+      "options": {
+        "a": "To pump out the exhaust gases from the cylinder",
+        "b": "To supply pressured air to the cylinder to burn the residual fuel",
+        "c": "To supply pressured air to the cylinder to remove fuel fumes",
+        "d": "To supply \"fresh\" pressured air to the cylinder to remove gases"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 2,
+      "question": "What can happen when the valves' clearance is too large?",
+      "options": {
+        "a": "Noisy operation and decrease in output",
+        "b": "Loss of compression and heating of the engine",
+        "c": "Faster burning and increase in output",
+        "d": "Easier start-up"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 3,
+      "question": "What can insufficient small valves clearance cause?",
+      "options": {
+        "a": "Faster burning",
+        "b": "Noisy operation",
+        "c": "Burning of the exhaust valve",
+        "d": "Burning of the suction valve"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 4,
+      "question": "What closes the suction openings in a two-stroke petrol engine?",
+      "options": {
+        "a": "The piston",
+        "b": "The valve",
+        "c": "The cylinder",
+        "d": "The sealing rings"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 5,
+      "question": "What is the main function of the crankshaft counterweight?",
+      "options": {
+        "a": "Centrifugal balancing force",
+        "b": "Weight increase of the crankshaft",
+        "c": "Balancing force to the combustion pressure",
+        "d": "Increase of the turning moment"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 6,
+      "question": "What characterizes the fuel tubes from the injection pump to the spray-nozzles?",
+      "options": {
+        "a": "Straight and tight",
+        "b": "Smooth in order to prevent pressure fall",
+        "c": "They have same length",
+        "d": "Temperature resistant"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 7,
+      "question": "What is the function of the fuel injector?",
+      "options": {
+        "a": "To spray the oil into the fuel (mixture)",
+        "b": "To spray the returned fuel",
+        "c": "To spray the fuel into the injection pump",
+        "d": "To spray the fuel into the combustion chamber"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 8,
+      "question": "What will be the impact on the engine structure as the number of cylinders increase?",
+      "options": {
+        "a": "There is no impact due the number of cylinders, only the weight",
+        "b": "The fly-wheel will become smaller proportionally to the number of cylinders",
+        "c": "The fly-wheel will grow proportionally to the number of cylinders",
+        "d": "The number of pistons will decrease proportionally"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 9,
+      "question": "What is the main characteristic of a diesel engine?",
+      "options": {
+        "a": "An internal combustion engine and ignition by compression",
+        "b": "An internal combustion engine and ignition by spark",
+        "c": "An external combustion engine and ignition by compression",
+        "d": "An external combustion engine of diesel"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 10,
+      "question": "What is required prior to engine start-up?",
+      "options": {
+        "a": "Cleaning and oiling of gear systems",
+        "b": "Connection to power and transmissions check-up",
+        "c": "Set systems off and check up of liquids",
+        "d": "Check for leaks and that the bearings are in order"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 11,
+      "question": "What is required after start-up?",
+      "options": {
+        "a": "Check oil pressure and sea water disposal",
+        "b": "Cleaning and oiling of systems",
+        "c": "Check-up of liquids level as per need (oil, fuel, water)",
+        "d": "Draining air and water"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 12,
+      "question": "What are the functions of the piston rings?",
+      "options": {
+        "a": "Sealing the clearance between the piston and the cylinder",
+        "b": "Stopping the piston movement prior to the end",
+        "c": "Preventing the widening of piston",
+        "d": "Regulation of the piston wear and tear"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 13,
+      "question": "What is the main purpose of the fly-wheel?",
+      "options": {
+        "a": "Inertia preservation and rpm maintenance between strokes in the operation cycle",
+        "b": "Balancing the turning movement of the starter",
+        "c": "Providing momentum to the gear box",
+        "d": "Maintaining regulated turning of the propeller"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 14,
+      "question": "What are the main functions of the crankshaft?",
+      "options": {
+        "a": "Turning rotational movement arched",
+        "b": "Turning linear movement to rotational movement",
+        "c": "Acceleration of the pistons movement",
+        "d": "Stopping the fast movement of the pistons"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 15,
+      "question": "How is pressured lubrication (oiling) performed?",
+      "options": {
+        "a": "By the hydrostatic pressure of the oil",
+        "b": "By the oil pressure pump",
+        "c": "By the gravitational force of the oil",
+        "d": "By centrifugal oil pressure"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 16,
+      "question": "What is the operation order in a four-stroke diesel engine?",
+      "options": {
+        "a": "Suction, combustion, compression, exhaust",
+        "b": "Compression, Combustion, suction, exhaust",
+        "c": "Combustion, suction, compression, exhaust",
+        "d": "Suction, compression, combustion, exhaust"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 17,
+      "question": "Which mechanism performs (times) the valves operation?",
+      "options": {
+        "a": "The camshaft",
+        "b": "The fly-wheel",
+        "c": "The crankshaft",
+        "d": "The timing chain"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 18,
+      "question": "What are the pistons and connecting rods in the engine connected to?",
+      "options": {
+        "a": "To the crankshaft",
+        "b": "Directly to the shaft",
+        "c": "To the camshaft",
+        "d": "To the fly-wheel through the connecting rod"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 19,
+      "question": "How is the speed of the engine revolutions in a diesel engine adjusted?",
+      "options": {
+        "a": "By controlling the revolutions regulator",
+        "b": "By the feeding pump",
+        "c": "By controlling the air regulator",
+        "d": "By the acceleration pump"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 20,
+      "question": "Which cog-wheel does not turn during regular engine operation?",
+      "options": {
+        "a": "That of the timing shaft",
+        "b": "That of the starter",
+        "c": "That of the braking system",
+        "d": "That of the ventilation mechanism"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 21,
+      "question": "Which part in the fuel system determines the amount of fuel injected into the diesel engine?",
+      "options": {
+        "a": "The injection pump",
+        "b": "The distributor",
+        "c": "The supply (feeding) pump",
+        "d": "The injection timer"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 22,
+      "question": "In which area of the engine is the oil pressure measured?",
+      "options": {
+        "a": "In the oil suction line",
+        "b": "After the oil filter",
+        "c": "In the oil sump",
+        "d": "Before the oil filter"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 23,
+      "question": "What is the function of the piston?",
+      "options": {
+        "a": "To seal the cylinder space",
+        "b": "To start the valves",
+        "c": "To turn the burning pressure to linear movement",
+        "d": "To suck the mixture"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 24,
+      "question": "How is the fuel ignited in a diesel engine?",
+      "options": {
+        "a": "By the heat created due the compression of air",
+        "b": "By an electric spark",
+        "c": "By the heat created from the piston friction with the cylinder's side walls",
+        "d": "By an electro-mechanic spark"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 25,
+      "question": "What is the function of the connecting rod?",
+      "options": {
+        "a": "To restrain the pistons' shaking",
+        "b": "To connect the piston with the crankshaft",
+        "c": "To shake the camshaft",
+        "d": "To connect the piston with the camshaft"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 26,
+      "question": "What does the piston compress in a diesel engine?",
+      "options": {
+        "a": "Diesel drops with air",
+        "b": "Air with fuel fumes (mixture)",
+        "c": "Fuel fumes only",
+        "d": "Air only"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 27,
+      "question": "What is connected at both ends of the crankshaft?",
+      "options": {
+        "a": "The clutch at one end and the fuel and cooling pump on the other",
+        "b": "The sea water pump at one end and the camshaft on the other",
+        "c": "The propeller shaft directly at one end and the starter on the other",
+        "d": "The gear box through the fly-wheel at one end and the wheel belt on the other"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 28,
+      "question": "How is a diesel engine shut down routinely?",
+      "options": {
+        "a": "By stopping the fuel flow with the revolutions regulator",
+        "b": "By disconnecting the electric power to the feeding pump",
+        "c": "By disconnecting the air flow",
+        "d": "By disconnecting the pumping system by mechanic command"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 29,
+      "question": "Where is the oil in a diesel engine concentrated?",
+      "options": {
+        "a": "In the oil sump",
+        "b": "In the pump and the piping system",
+        "c": "In the upper absorption tank",
+        "d": "In the cooling tank"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 30,
+      "question": "What is the main function of the air blower in a two-stroke diesel engine?",
+      "options": {
+        "a": "To deliver more air into the cylinder in order increase the engine output",
+        "b": "To fully utilize the temperature of the exhaust gases",
+        "c": "To increase the engine's speed",
+        "d": "To compress fresh air to the cylinder instead of the suction activity occurring in a four-stroke engine"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 31,
+      "question": "What is the function of the turbo charger in a four-stroke diesel engine?",
+      "options": {
+        "a": "Reduction of the injected fuel amount and thus meaningful saving in fuel consumption",
+        "b": "Increase of the engine's output",
+        "c": "Increase of engine's revolutions speed by compressed air pressure into the cylinders",
+        "d": "To fill-up more air which helps heating the fuel"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 32,
+      "question": "On what does the output change in a diesel engine depend on?",
+      "options": {
+        "a": "The injection pressure",
+        "b": "The type of injected fuel",
+        "c": "The amount of injected fuel",
+        "d": "The pump's speed"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 33,
+      "question": "What is the basic purpose of the centrifugal pump in the engine?",
+      "options": {
+        "a": "Spiraling of the fuel",
+        "b": "Injecting oil",
+        "c": "Pumping water",
+        "d": "Spiraling air"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 34,
+      "question": "What is the function of the injection pump?",
+      "options": {
+        "a": "Providing fuel under pressure and timing to the spray-nozzles",
+        "b": "Injecting oil to the pistons",
+        "c": "Injecting water under pressure to the cooling system",
+        "d": "Injecting excess fuel to the tank"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 35,
+      "question": "What is the piston pump capable of?",
+      "options": {
+        "a": "Pumping water only",
+        "b": "Pumping air and liquids",
+        "c": "Pumping fuel only",
+        "d": "The pump must have pressure in suction"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 36,
+      "question": "What is the operation principle of the piston's pump?",
+      "options": {
+        "a": "Volume change",
+        "b": "Rotational movement",
+        "c": "Pressure change",
+        "d": "Area change"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 37,
+      "question": "What are the required positions of the automatic bilge pump's operating switch?",
+      "options": {
+        "a": "Switch-off, low output, high output",
+        "b": "Switch-off, manual operation, automatic switch-on (float)",
+        "c": "Switch-off, float operated, automatic switch-on",
+        "d": "Switch-off, locked, automatic swith-on"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 38,
+      "question": "What is the common failure in a sea-water pump?",
+      "options": {
+        "a": "Air penetration to the system",
+        "b": "Blocking the suction opening",
+        "c": "Blocking the exhaust opening",
+        "d": "Lack of synchronization with the engine"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 39,
+      "question": "What is the operating principle of the centrifugal pump?",
+      "options": {
+        "a": "The centrifugal speed turns to rotational movement",
+        "b": "The liquid is thrown to the pump's center due to the rotational movement",
+        "c": "The liquid is thrown to the pump's side walls due to the rotational movement",
+        "d": "The centrifugal speed turns to force"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 40,
+      "question": "What is the common use of the immersion pump?",
+      "options": {
+        "a": "Pumping of fresh water",
+        "b": "Pumping immersed oil",
+        "c": "Pumping fuel from the bottom of the tank in emergency",
+        "d": "Pumping bilge water in an emergency"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 41,
+      "question": "What is the common feeding pump in the engine's fuel system?",
+      "options": {
+        "a": "Diaphragmatic pump",
+        "b": "Rotor pump",
+        "c": "Impellor pump",
+        "d": "Piston pump"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 42,
+      "question": "On what principle does the rubber impellor pump (Jabsco) operate?",
+      "options": {
+        "a": "Pressure change",
+        "b": "Speed change",
+        "c": "Volume change",
+        "d": "Centrifugal force"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 43,
+      "question": "What can be the cause that the bilge centrifugal pump cannot dispose the water to the sea?",
+      "options": {
+        "a": "The centrifugal resistance is too low",
+        "b": "The hydrostatic pressure at the exhaust is too low",
+        "c": "The centrifugal load is too high",
+        "d": "The hydrostatic pressure at the exhaust is too high"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 44,
+      "question": "In a closed system, what is the function of the fresh (treated) water pump in the engine's cooling system?",
+      "options": {
+        "a": "To cool the sea water",
+        "b": "To cool the oil",
+        "c": "To bring the water back from the expansion tank",
+        "d": "To transfer by the water the engine's heat in the heat exchange to the sea water"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 45,
+      "question": "What is the function of the sea water pump in an closed open cooling system?",
+      "options": {
+        "a": "To spiral the water to cool the oil",
+        "b": "To supply water to cool the freshwater system",
+        "c": "To flow water to cool the incoming fuel",
+        "d": "To supply water to directly cool the engine top"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 46,
+      "question": "When the suction is unclogged, and the centrifugal pump cannot pump, what is the reason?",
+      "options": {
+        "a": "The rubber impellor is burnt",
+        "b": "The safety valve was left in the 'open' position",
+        "c": "Air is penetrating the suction line",
+        "d": "The thermostat caused the pumping to stop"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 47,
+      "question": "What is the function of the feed pump in the fuel system?",
+      "options": {
+        "a": "To feed the excess line back into the tank",
+        "b": "Assistance in the air drainage (priming) and transfer fuel from the fuel tank to the injection pump",
+        "c": "Assistance in feeding the fuel into the tank when vessel refueling",
+        "d": "Performing the fuel spiraling between the fuel filters in order to pre-filter the fuel"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 48,
+      "question": "Where is the feed pump in the fuel system generally located?",
+      "options": {
+        "a": "After the injection pump in the return line to the tank",
+        "b": "Between the tank and the fuel filter",
+        "c": "Between the oil filter and the injection pump",
+        "d": "Inside the fuel tank"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 49,
+      "question": "What transfers the main propulsion power of the propeller to the ship?",
+      "options": {
+        "a": "The tightening nut of the shaft",
+        "b": "The conic end of the shaft",
+        "c": "The groove in the shaft",
+        "d": "The tightening screws of the shaft"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 50,
+      "question": "What can a hole in the exhaust pipe of the engine cause?",
+      "options": {
+        "a": "Emission of gases into the ship's space",
+        "b": "Emission of fuel drops and risk of fire",
+        "c": "Increased air suction",
+        "d": "Engine's overheating"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 51,
+      "question": "What does \"milky oil\" (emulsion) in the engine signify?",
+      "options": {
+        "a": "Air in the oil",
+        "b": "Fuel in the oil",
+        "c": "Water in the oil",
+        "d": "Calcium in the oil"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 52,
+      "question": "The suction openings in a two-stroke petrol engine are closed by:",
+      "options": {
+        "a": "The piston",
+        "b": "The valves",
+        "c": "The liner",
+        "d": "The sealing rings"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 53,
+      "question": "What will be the impact if the propeller is changed to a larger pitch propeller?",
+      "options": {
+        "a": "The load on the engine will increase",
+        "b": "The ship's speed will decrease",
+        "c": "The load on the engine will decrease",
+        "d": "There is no significance to the pitch but only to the diameter"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 54,
+      "question": "What must be checked immediately after the engine's start-up?",
+      "options": {
+        "a": "Temperature, oil pressure, propeller's revolutions",
+        "b": "Oil pressure, cooling water flow, charging current",
+        "c": "Cooling water flow, oil flow, gases emission",
+        "d": "Oil flow, charging current, vibrations"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 55,
+      "question": "What are the essential spare parts of a diesel engine?",
+      "options": {
+        "a": "Spray-nozzles, belts, impellors, seals, filters",
+        "b": "Propeller, relevant bearings, screws, seals",
+        "c": "Pistons, seals, tubes, impellors",
+        "d": "Valves, regulators, seals, relevant belts"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 56,
+      "question": "What is the unit for measuring output?",
+      "options": {
+        "a": "Kilowatt/hour",
+        "b": "Horse power per second",
+        "c": "Watt",
+        "d": "Meter per horse power"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 57,
+      "question": "How is the change in a ship's direction from \"ahead\" to \"astern\" made?",
+      "options": {
+        "a": "Change in the rotation direction of the engine's shaft",
+        "b": "Change in the rotation direction of the propeller shaft",
+        "c": "Transmission change in the gear box",
+        "d": "Crossing the operation belts"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 58,
+      "question": "What is the liquid added to the battery?",
+      "options": {
+        "a": "Battery acid",
+        "b": "Distilled acid",
+        "c": "Diluted water",
+        "d": "Distilled water"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 59,
+      "question": "What is the purpose of the zinc fitted at the bottom of the ship?",
+      "options": {
+        "a": "Direct the water flow to the bottom",
+        "b": "Prevent electric corrosion of metal parts in the water",
+        "c": "Connect the electric grounding to the sea",
+        "d": "Balance the propellers"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 60,
+      "question": "What does the surface area of the ship’s propellor blades impact?",
+      "options": {
+        "a": "Power of the propulsion",
+        "b": "Developing speed",
+        "c": "Advance rate at every revolution",
+        "d": "Shaft engine-revolutions ratio"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 61,
+      "question": "How do you check whether fuel is reaching the injection pump?",
+      "options": {
+        "a": "Freeing the fuel tubes from the tank",
+        "b": "Freeing the fuel meter",
+        "c": "Opening the filter cap",
+        "d": "Opening the air drainage at the pump's outlet"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 62,
+      "question": "What will cause the operation of a diesel engine to turn irregular?",
+      "options": {
+        "a": "Penetration of air to the fuel",
+        "b": "Loosening of the belt",
+        "c": "Engine fatigue",
+        "d": "Changes in the oil pressure"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 63,
+      "question": "Why is the oil pressure high immediately after starting the engine?",
+      "options": {
+        "a": "There is residual oil in the system from the last operation",
+        "b": "The oil level is still at the maximum",
+        "c": "The oil is cold and more viscous",
+        "d": "The oil pump has not yet reached its full speed"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 64,
+      "question": "How does the electric switch starter turn the engine?",
+      "options": {
+        "a": "With the starting belt",
+        "b": "With the cog-wheels",
+        "c": "With the timing chain",
+        "d": "With the starting shaft"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 65,
+      "question": "What characterizes an integrated (closed) cooling system?",
+      "options": {
+        "a": "Engine is cooled by treated water cooled by sea water",
+        "b": "Engine is cooled by sea water",
+        "c": "Sea water are spiraled in a closed circuit",
+        "d": "System is closed by a totally hermetic opening"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 66,
+      "question": "How should fire in the engine chamber be extinguished?",
+      "options": {
+        "a": "Disconnecting fuel and air and extinguishing by ventilation",
+        "b": "Disconnecting fuel and electricity, opening the chamber and putting out the fire with a fire extinguisher",
+        "c": "Closing fuel, sealing ventilation openings to smother the fire and operating a fire extinguisher through a narrow aperture",
+        "d": "Immediate flooding of the engine chamber with sea water"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 67,
+      "question": "In which units is \"output\" measured?",
+      "options": {
+        "a": "Watt",
+        "b": "Kg times meter/sec",
+        "c": "Horse power",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 68,
+      "question": "What is the volume of a cubic meter of water?",
+      "options": {
+        "a": "10 liters",
+        "b": "1,000 liters",
+        "c": "100 liters",
+        "d": "10,000 liters"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 69,
+      "question": "In which type of cooling system will heat sink and a radiator appear?",
+      "options": {
+        "a": "Closed",
+        "b": "Air",
+        "c": "Open",
+        "d": "Water"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 70,
+      "question": "A quarter cubic meter of diesel oil left is in the tank. The engine consumes 8 liters of fuel per hour. How long approximately can the engine be operated?",
+      "options": {
+        "a": "31 hours",
+        "b": "18 hours",
+        "c": "21 hours",
+        "d": "42 hours"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 71,
+      "question": "Is it necessary to operate the engine in order to engage the electric anchor windlass?",
+      "options": {
+        "a": "No, it can only hamper",
+        "b": "It is desirable, in order to assist in the current supply",
+        "c": "No, the anchor's rope can be entangled in the propeller",
+        "d": "Yes, in order to tighten the anchor chain with the propeller"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 72,
+      "question": "What could the sediments in the fuel system be?",
+      "options": {
+        "a": "Heavy oil particles",
+        "b": "Solid particles",
+        "c": "Heavy fuel particles",
+        "d": "Heavy chemical particles"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 73,
+      "question": "When will the oil pressure be higher?",
+      "options": {
+        "a": "When the engine is started cold",
+        "b": "When the engine is operating hot",
+        "c": "Prior to start-up",
+        "d": "In the last start-up (the oil is more viscous)"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 74,
+      "question": "Where is the air filter located in a diesel engine?",
+      "options": {
+        "a": "Behind the air pump",
+        "b": "Inside the air pump",
+        "c": "On the evaporator",
+        "d": "On the suction manifold"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 75,
+      "question": "What is the main purpose of the oil in the engine?",
+      "options": {
+        "a": "Increase fuel viscosity",
+        "b": "Improve the sealing between the piston and the engine top",
+        "c": "Wet the parts and avoid heating",
+        "d": "Decrease wear and tear and friction"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 76,
+      "question": "What is the phenomenon caused in the compression stroke of a diesel engine?",
+      "options": {
+        "a": "Increase of pressure and temperature of the mixture",
+        "b": "Improved sealing between the piston and the engine top",
+        "c": "Increase of air pressure and temperature",
+        "d": "Reduction of wear and tear and friction"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 77,
+      "question": "What is the function of the fuel nozzle spray in a diesel engine?",
+      "options": {
+        "a": "Dissolve the fuel into aerosol and spray it in the combustion space",
+        "b": "Supply the cylinders pressurized fuel",
+        "c": "Supply the pump fuel particles",
+        "d": "Determine the amount of sprayed fuel"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 78,
+      "question": "What is the function of the revolutions regulator in a diesel engine?",
+      "options": {
+        "a": "Regulate and stabilize the pistons operation",
+        "b": "Stabilize the operation of the feed pump",
+        "c": "Stabilize and time the operation of the fuel nozzle sprays",
+        "d": "Keep the speed of the engine revolutions desirable and steady"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 79,
+      "question": "What is the main purpose of the fuel system in a diesel engine?",
+      "options": {
+        "a": "Vaporize the fuel timely and in the correct amount",
+        "b": "Spray fuel into the combustion chamber on time and in the correct quantity",
+        "c": "Create a precise mixture of fuel and air",
+        "d": "Create the precise mixture of fuel and oil"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 80,
+      "question": "How can the amount of oil in the sump be checked?",
+      "options": {
+        "a": "By the oil level meter",
+        "b": "By the dip stick",
+        "c": "By the oil pressure meter",
+        "d": "By a transparent tube (connected vessels)"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 81,
+      "question": "What is the electric current produced by the battery?",
+      "options": {
+        "a": "Direct single-phase current",
+        "b": "Alternating single-phase current",
+        "c": "Pulsating direct current",
+        "d": "Regular direct current"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 82,
+      "question": "How can the positive and negative polarity in the battery be determined?",
+      "options": {
+        "a": "The positive pole is thinner",
+        "b": "The positive pole is always on the right hand side",
+        "c": "The positive pole is always thicker",
+        "d": "The positive pole is always colored red"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 83,
+      "question": "What is the hydrometer used for?",
+      "options": {
+        "a": "The density of the solution in the battery",
+        "b": "The amount of water",
+        "c": "The acid temperature in the battery",
+        "d": "The battery voltage"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 84,
+      "question": "If it is not marked, how can it be known what voltage the battery can produce?",
+      "options": {
+        "a": "With an ammeter",
+        "b": "By the number of cells",
+        "c": "With a micrometer",
+        "d": "By the size of the battery"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 85,
+      "question": "What protects the electric system from overload?",
+      "options": {
+        "a": "The breaker",
+        "b": "The distributor",
+        "c": "The regulator",
+        "d": "The fuse"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 86,
+      "question": "What should be done when the voltage produced by the alternator is not steady?",
+      "options": {
+        "a": "Disconnect the alternator",
+        "b": "Check the starting alternator belt of the alternator",
+        "c": "Increase the engine's revolutions",
+        "d": "Disconnect the battery"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 87,
+      "question": "In what units is the battery capacity measured?",
+      "options": {
+        "a": "Watt/hour",
+        "b": "Volt",
+        "c": "Ampere/hour",
+        "d": "Kilowatt/hour"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 88,
+      "question": "What is the function of the battery in the ship?",
+      "options": {
+        "a": "Turn thermal energy into electric energy",
+        "b": "Turn chemical energy into electric energy",
+        "c": "Provide electric energy to the engine",
+        "d": "Provide electric energy to operate electric systems"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 89,
+      "question": "During daytime, when the engine is operating without the use of electric consumers, the ammeter shows 5 ampere for a long duration. What is the significance?",
+      "options": {
+        "a": "It does not matter as long as the instruments work properly",
+        "b": "There could be leakage/short circuit in the electric system",
+        "c": "The battery is properly charged",
+        "d": "The battery is full"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 90,
+      "question": "During operation and transmission by communication instruments the voltage meter drops from 13.5 volt to 12.5 volt. What is the significance?",
+      "options": {
+        "a": "The alternator is not properly charged",
+        "b": "The contact on the communication instrument is loose",
+        "c": "The batteries are ok",
+        "d": "The voltage regulator is out of order"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 91,
+      "question": "What is the purpose of the \"clearance\" between the valves and the rocker arms in the engine?",
+      "options": {
+        "a": "To prevent over-friction of rocker arms by the burning gases",
+        "b": "To enable the cooling of the suction valves",
+        "c": "To enable thermal expansion of the valves' operating mechanisms",
+        "d": "To regulate the flow of the burning gases and the fuel mixture"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 92,
+      "question": "The temperature is 176 degrees Fahrenheit, what is the approximate temperature in degrees Celsius?",
+      "options": {
+        "a": "125 degrees C",
+        "b": "80 degrees C",
+        "c": "45 degrees C",
+        "d": "195 degrees C"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 93,
+      "question": "When is the risk of explosion in the fuel tank greater?",
+      "options": {
+        "a": "When the fuel tank is almost empty",
+        "b": "When the tank is half full",
+        "c": "When the tank is full",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 94,
+      "question": "What are the sediments in the fuel tank of a diesel engine likely to be?",
+      "options": {
+        "a": "Heavy oil particles",
+        "b": "Bacteria and mushrooms developed in the fuel tank",
+        "c": "Fuel particles",
+        "d": "Heavy soot particles"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 95,
+      "question": "The thermometer in a diesel engine shows 213 degrees Fahrenheit, what is required to be done?",
+      "options": {
+        "a": "Engine is in boiling stage and should be shut down and cause checked",
+        "b": "Engine should be immediately accelerated and pressure of the cooling water increased",
+        "c": "Everything ok, nothing should be done",
+        "d": "Replace the initial fuel filter"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 96,
+      "question": "The thermometer of the cooling water in the engine shows 180 degrees C, what is the significance?",
+      "options": {
+        "a": "The temperature is too high",
+        "b": "The temperature is reasonable",
+        "c": "The temperature is too low",
+        "d": "The thermometer is probably out of order"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 97,
+      "question": "What is the main purpose of the \"kyle\" at the end of the propeller shaft?",
+      "options": {
+        "a": "Used as the main power transfer to the propeller",
+        "b": "Used as a centrifugal balancing force",
+        "c": "Used for the locking and strengthening control of the propeller to the shaft",
+        "d": "To increase the turning moment"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 98,
+      "question": "How are the engine parts of a petrol two-stroke engine oiled?",
+      "options": {
+        "a": "By the oil mixed with fuel",
+        "b": "By spraying the oil in the sump",
+        "c": "With the assistance of a mechanical oil pump",
+        "d": "By injection from an external tank"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 99,
+      "question": "What generally characterizes the tubes transporting fuel from the injection pump to the spray-nozzles?",
+      "options": {
+        "a": "They are straight and tight",
+        "b": "They are usually the same length and high-pressure resistant",
+        "c": "They are made of steel, smooth and flat in order prevent pressure fall",
+        "d": "They are temperature resistant up to 900 degrees Celsius"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 100,
+      "question": "What is the oil color indicating that water penetrated the engine's oil?",
+      "options": {
+        "a": "Reddish",
+        "b": "Purplish",
+        "c": "Whitish",
+        "d": "Blackish"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 101,
+      "question": "What can an increase in the level of oil in the sump indicate?",
+      "options": {
+        "a": "Penetration of air to the oil",
+        "b": "Penetration of fuel to the oil",
+        "c": "On a hole in the exhaust manifold",
+        "d": "Prolonged use of the oil"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 102,
+      "question": "What is the main function of the gear box in most ships?",
+      "options": {
+        "a": "To Adapt the engine to the existing load",
+        "b": "To enable change of the turning direction of the engine",
+        "c": "To enable change in the speed of the shaft",
+        "d": "To enable change of the turning direction of the propeller shaft"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 103,
+      "question": "Where does the starter get the electric power for its activation from?",
+      "options": {
+        "a": "From the dynamo",
+        "b": "From the alternator",
+        "c": "From the battery",
+        "d": "From the generator"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 104,
+      "question": "What is the function of the thrust bearing in the propeller shaft system?",
+      "options": {
+        "a": "Create pressure on the gear box due to the propeller activity",
+        "b": "Transfer of the propulsion force from the propeller to the ship",
+        "c": "Decrease of the engine pressure on the gear box",
+        "d": "Curb the centrifugal force of the propeller"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 105,
+      "question": "After sailing under load and during the mooring to the wharf, after reduction of the engine revolutions, the oil pressure alert is on, what is the required response?",
+      "options": {
+        "a": "The engine must be shut down immediately, otherwise it will be completely destroyed",
+        "b": "The revolutions should be increased, in order for the oil pressure to increase again",
+        "c": "The mooring has to be quickly completed and the engine shut down",
+        "d": "The mooring should be discontinued, the port i to be left again and the failure to be checked"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 106,
+      "question": "What is the purpose of the ventilation pipe located on the fuel tank?",
+      "options": {
+        "a": "To enable freeing and disposal of water vapor to the atmosphere",
+        "b": "To enable breathing of the fuel tank and equalize the pressure in the tank to the atmospheric pressure",
+        "c": "To enable cleaning of the tank from sediments",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 107,
+      "question": "What is the principal difference between a petrol and a diesel engine?",
+      "options": {
+        "a": "The type of fuel",
+        "b": "The compression ratio",
+        "c": "The fuel ignition method",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 108,
+      "question": "How does the fuel in a diesel engine ignite?",
+      "options": {
+        "a": "The fuel is heated before being injected into the cylinder",
+        "b": "By an electric plug",
+        "c": "It ignites due to contact with the compressed air and heat in the cylinder",
+        "d": "No answer is correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 109,
+      "question": "What will happen if we activate a Jabsco pump when its suction valve is closed?",
+      "options": {
+        "a": "The sub-pressure in suction will reach maximum and the pump will disintegrate",
+        "b": "The impellor will burn and be damaged",
+        "c": "The safety valve of the pump will open",
+        "d": "No answer is correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 110,
+      "question": "What is the purpose of the zinc fingers in the sea water cooling system?",
+      "options": {
+        "a": "To prevent the clogging of the filters and pipes with salt sediments",
+        "b": "To prevent rusting in the coolers and pipes",
+        "c": "To prevent corrosion in the parts of the sea water system",
+        "d": "All answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 111,
+      "question": "If the feed pump of the diaphragm type is not pumping, what can be the possible cause?",
+      "options": {
+        "a": "The activating cog of the pump is at its peak and the engine should be turned half a revolution",
+        "b": "The diaphragm is torn or the pump's valves are defective",
+        "c": "The net filter in the pump is clogged",
+        "d": "All answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 112,
+      "question": "What is the purpose of the valve in the cap of the expansion tank?",
+      "options": {
+        "a": "To seal the cover against leaks",
+        "b": "To keep high water pressure in the system and increase its boiling point",
+        "c": "To decrease the water pressure in the system and lower its boiling point",
+        "d": "Answers a and c are correct"
+      },
+      "terms": [],
+      "questionTerms": [],
+      "note": "d is wrong: c says the valve lowers the pressure, but its job is to keep the pressure high and raise the boiling point. b is the correct statement."
+    },
+    {
+      "id": 113,
+      "question": "While performing the engine oil check it is discovered that its color is black, what must be done?",
+      "options": {
+        "a": "The oil has to be replaced immediately because it points to a failure",
+        "b": "There is no need to do anything. The oil must absorb soot particles as well.",
+        "c": "The oil does not fit the engine and must be replaced with another type",
+        "d": "The oil filter must be urgently replaced with a new one"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 114,
+      "question": "What is the meaning of \"over charge\"? (turbo charge)",
+      "options": {
+        "a": "Bringing in larger volume of air to the cylinder of a given volume",
+        "b": "Utilization of the burning gases to bring in higher volume of air to a cylinder of a given volume",
+        "c": "Bringing in higher weight of air to a cylinder of a given volume",
+        "d": "Recycling the pressure of the burning gases exhausted from the cylinder"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 115,
+      "question": "Why does every engine lose lubricating oil while operating?",
+      "options": {
+        "a": "Because the oil in the sump dissipates even in ambient temperature",
+        "b": "Because part of the oil lubricating the piston rings is eventually burned",
+        "c": "Because there is no engine, even the newest one, that has no oil leaks",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 116,
+      "question": "Why it is prohibited to smoke near an electric battery being charged?",
+      "options": {
+        "a": "The smoke is harmful to the battery",
+        "b": "The smoke and gases mixture released from the battery while charging are harmful to the charger",
+        "c": "The hydrogen emitted during charging could explode",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 117,
+      "question": "What must be checked during the battery charge?",
+      "options": {
+        "a": "That the ventilation nozzles in the caps are open",
+        "b": "That the battery is disconnected from the electrical system",
+        "c": "That the ventilation caps are closed",
+        "d": "That the battery will not supply simultaneously voltage to consumers"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 118,
+      "question": "During the start-up attempt of a diesel engine, the engine is rotating well but not started, what could be the cause?",
+      "options": {
+        "a": "The oil pressure is low",
+        "b": "The electric contacts in the relay of the starter are out of order",
+        "c": "No fuel is arriving to the spray nozzles",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 119,
+      "question": "You have started a diesel engine and after few minutes the engine shut itself, what could be the cause?",
+      "options": {
+        "a": "You forgot to connect the main electric switch",
+        "b": "The alternator whose function is to charge the battery is out of order",
+        "c": "Lack of fuel or failure in the fuel system",
+        "d": "The battery is depleted"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 120,
+      "question": "Why is operating the engine in low speed for a prolonged time undesirable?",
+      "options": {
+        "a": "Air could penetrate the fuel system",
+        "b": "The engine is not getting sufficient cooling because the water pumps are revolving slowly",
+        "c": "Soot could accumulate on the piston, the valves and at the end of the spray nozzle",
+        "d": "All answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 121,
+      "question": "Which signs could indicate that the engine is operating on overload?",
+      "options": {
+        "a": "Cooling water temperature is too low and black smoke at exhaust",
+        "b": "Cooling water temperature too high and black smoke at exhaust",
+        "c": "The engine revolutions cannot be increased",
+        "d": "Answers a and c are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 122,
+      "question": "While the engine is operating, it starts to \"stutter\", what could be the cause?",
+      "options": {
+        "a": "The sea water suction valve was erroneously closed",
+        "b": "Probably the fuel tank became empty, and the feed pump sucks air as well",
+        "c": "The engine is straining because of overload",
+        "d": "No air drainage was performed on the fuel system as should be done prior to every start up"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 123,
+      "question": "While sailing, the fuel in the tank ran out and the engine shut down, what is the next step?",
+      "options": {
+        "a": "Start up the engine again and check pressures and temperatures",
+        "b": "Clean the secondary fuel filter",
+        "c": "Fill the fuel tank and perform air drainage to the fuel system",
+        "d": "Start up again and check whether the feed pump is disposing overboard"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 124,
+      "question": "5 Cubic meters of water are equal in volume to:",
+      "options": {
+        "a": "5000 gallons",
+        "b": "500 liters",
+        "c": "50 liter",
+        "d": "5000 liters"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 125,
+      "question": "Output of 250 horse power is approximately equal to:",
+      "options": {
+        "a": "175 kilowatt",
+        "b": "186 kilowatt",
+        "c": "236 kilowatt",
+        "d": "265 kilowatt"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 126,
+      "question": "When should the oil level of the engine be checked?",
+      "options": {
+        "a": "Prior to engine start up",
+        "b": "After engine start up",
+        "c": "While the engine is operating",
+        "d": "It has no importance as in every stage the measurement is identical"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 127,
+      "question": "What does the thermometer in a diesel engine generally measure?",
+      "options": {
+        "a": "The diesel temperature in the excess line",
+        "b": "The oil temperature in the sump",
+        "c": "The water temperature in the oil system",
+        "d": "The water temperature coming out of the engine top cylinder head"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 128,
+      "question": "How is a diesel engine routinely shut?",
+      "options": {
+        "a": "Disconnecting the fuel flow with the control rod attached to the revolutions regulator",
+        "b": "Disconnecting the electric power to the feed pump",
+        "c": "Disconnecting the air supply",
+        "d": "Disconnecting the pumping mechanism by a mechanical control command"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 129,
+      "question": "What can an engine’s loose belt cause?",
+      "options": {
+        "a": "Off-key engine operation",
+        "b": "Decrease of oil pressure",
+        "c": "Deficient batteries charge",
+        "d": "Decrease in the fuel flow rate"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 130,
+      "question": "What will be the effect on the ship if we change the propeller to one of the same diameter but smaller pitch?",
+      "options": {
+        "a": "The load on the engine will increase",
+        "b": "The vessel speed will increase",
+        "c": "The load on the engine will decrease",
+        "d": "There is no significance to the pitch but the diameter only"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 131,
+      "question": "What does the propeller pitch indicate?",
+      "options": {
+        "a": "The force intensity in every revolution",
+        "b": "The pressure intensity in every revolution",
+        "c": "The advance of the vessel in every revolution",
+        "d": "The water pressure resistance braking the vessel"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 132,
+      "question": "What is the main impact emanating from the size of the propeller diameter?",
+      "options": {
+        "a": "The propulsion force transferred to the ship",
+        "b": "The vessels’ advance in every revolution",
+        "c": "The vertical pressure in every revolution",
+        "d": "The required shaft length size"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 133,
+      "question": "Why is the diameter of the piston smaller than the diameter of the cylinder?",
+      "options": {
+        "a": "To enable thermal expansion",
+        "b": "To create pressure",
+        "c": "To enable the passage of air",
+        "d": "There is no clearance between the cylinder and the piston"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 134,
+      "question": "What is the name of the lowest point the piston reaches while working?",
+      "options": {
+        "a": "The bottom point",
+        "b": "Lower dead point",
+        "c": "Upper dead point",
+        "d": "Piston minimum"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 135,
+      "question": "How is the gear box oiled?",
+      "options": {
+        "a": "By the gear box oil",
+        "b": "By the water flowing through it",
+        "c": "There is no oil in the gear box",
+        "d": "From the oil system of the engine"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 136,
+      "question": "What is the purpose of the oil in the engine?",
+      "options": {
+        "a": "To cool the engine",
+        "b": "To oil the engine parts",
+        "c": "To clean the soot",
+        "d": "All answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 137,
+      "question": "What does the shut down handle control?",
+      "options": {
+        "a": "The fuel tap of the tank",
+        "b": "The revolutions regulator",
+        "c": "Closure of the air to the engine",
+        "d": "The feed pump"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 138,
+      "question": "What does the throttle control?",
+      "options": {
+        "a": "The gear",
+        "b": "The battery",
+        "c": "The revolutions regulator",
+        "d": "Answers a and c are correct"
+      },
+      "terms": [],
+      "questionTerms": [],
+      "note": "The throttle controls the revolutions regulator."
+    },
+    {
+      "id": 139,
+      "question": "Which indicators must be on the control panel of the engine?",
+      "options": {
+        "a": "Oil pressure, engine temperature, engine rpm",
+        "b": "Just the oil pressure",
+        "c": "Fuel quantity, exhaust gases temperature, engine heat",
+        "d": "Oil pressure, engine rpm, gear position"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 140,
+      "question": "What is the purpose of the injection pump?",
+      "options": {
+        "a": "To provide high pressure fuel to the spray nozzles, in varying amounts and precise timing",
+        "b": "To provide fuel to the spray nozzles according to the injection order and in the shape of tiny drops",
+        "c": "To change the fuel pressure and maintain engine's fixed and steady speed",
+        "d": "To supply fuel in the shape of tiny drops to the spray nozzles"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 141,
+      "question": "What are the basic conditions required for catching fire?",
+      "options": {
+        "a": "Inflammable material, oxygen, heat",
+        "b": "Vapor, temperature, air",
+        "c": "Liquid, oxygen, temperature",
+        "d": "Inflammable material, temperature, pressure"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 142,
+      "question": "What must be checked prior to engine start up?",
+      "options": {
+        "a": "Fuel quantity, engine idle, sea water outlet and oil pressure",
+        "b": "Oil level, engine idle, electricity and air",
+        "c": "Engine idle, temperature, oil pressure, fuel quantity",
+        "d": "Oil level, fuel quantity, quantity of cooling water, idle engine"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 143,
+      "question": "What actions should be taken when the engine is overheating?",
+      "options": {
+        "a": "Reduction of load and locating the failure",
+        "b": "Adding water",
+        "c": "Cooling the engine",
+        "d": "Checking the sea water level"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 144,
+      "question": "What can cause a significant reduction and rapid loss in the amount of the cooling liquid in a closed cooling system?",
+      "options": {
+        "a": "Cooling of the engine and water shrinkage",
+        "b": "Engine overheating and boiling",
+        "c": "Revolutions speed higher than normal",
+        "d": "Leaks in the open cooling system"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 145,
+      "question": "What is the apparatus that causes the closure of the air entry openings in a two-stroke petrol engine?",
+      "options": {
+        "a": "The piston",
+        "b": "The liner",
+        "c": "The valves",
+        "d": "The sealing rings"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 146,
+      "question": "What is the common failure in diesel engines?",
+      "options": {
+        "a": "Penetration of air to the oil system",
+        "b": "Penetration of air to the fuel system",
+        "c": "Penetration of water to the fuel system",
+        "d": "Penetration of water to the air system"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 147,
+      "question": "What can cause the \"diluted oil\" phenomenon?",
+      "options": {
+        "a": "Mixing air with oil",
+        "b": "Penetration of water to the oil",
+        "c": "Penetration of fuel to the oil",
+        "d": "Penetration of cold combustion gases to the oil"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 148,
+      "question": "What protects the electric device from over-current or electric short circuit?",
+      "options": {
+        "a": "The battery",
+        "b": "The alternator",
+        "c": "Shore power switch",
+        "d": "The fuse"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 149,
+      "question": "What are the phenomena resulting from a dirty oil filter?",
+      "options": {
+        "a": "Decrease of oil pressure",
+        "b": "Increase of oil pressure (no outlet))",
+        "c": "Decrease of compression (no oil)",
+        "d": "Increase of compression"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 150,
+      "question": "What causes the ignition of fuel in the combustion chamber of a diesel engine?",
+      "options": {
+        "a": "A high voltage spark",
+        "b": "The extremely hot compressed air in the cylinder",
+        "c": "A chemical ignition mechanism",
+        "d": "A turbo electric ignition mechanism"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 151,
+      "question": "How will you act in the case of a low oil pressure warning?",
+      "options": {
+        "a": "Immediately check the oil meter reading",
+        "b": "Immediately shut down the engine",
+        "c": "Increase the speed of revolutions (increase of pressure)",
+        "d": "Reduce the speed of revolutions (cooling of oil)"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 152,
+      "question": "How the main bending moment of the propeller to the shaft is transferred?",
+      "options": {
+        "a": "By the tightening nut at the end of the shaft",
+        "b": "By the \"kyle\" in the shaft",
+        "c": "By the conic end of the shaft",
+        "d": "By the tightening bolts of the propeller"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 153,
+      "question": "What causes the fuel ignition in a two-stroke petrol engine?",
+      "options": {
+        "a": "An electric spark plug",
+        "b": "An electrochemical spark plug",
+        "c": "The pressure and heat created in the combustion chamber",
+        "d": "The pressure and heat of the mixture in the compression activity"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 154,
+      "question": "What is the purpose of the breather pipe, located in the fuel tank?",
+      "options": {
+        "a": "To let in cold air to the tank in order to prevent explosion",
+        "b": "To release water vapor into the atmosphere",
+        "c": "To enable the fuel tank \"to breathe and compensate by air\" while refueling or pumping fuel",
+        "d": "To take out the excess fuel from the fuel tank through the excess line"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 155,
+      "question": "What is the purpose of the thermostat fitted in the cooling system of the engine?",
+      "options": {
+        "a": "To enable engine operation in a stable and fixed temperature",
+        "b": "To enable rapid cooling of the engine",
+        "c": "To keep the temperature of the outgoing fuel",
+        "d": "To keep the temperature of the incoming fuel"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 156,
+      "question": "The thermostat in the cooling system is stuck in the open position, what could be the consequences?",
+      "options": {
+        "a": "There is no affect whatsoever to that",
+        "b": "The engine could boil as a result",
+        "c": "In the long run there will be damage, because the engine will work at a temperature lower than recommended",
+        "d": "The pistons might get stuck due to unstable temperatures"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 157,
+      "question": "At what frequency is it recommended to check the cooling water level?",
+      "options": {
+        "a": "Once a day",
+        "b": "After every engine operation",
+        "c": "Prior to every engine start up",
+        "d": "At least once a week"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 158,
+      "question": "A heat exchanger (cooler) is characteristic to the following cooling unit type:",
+      "options": {
+        "a": "Closed cooling system",
+        "b": "Open cooling unit",
+        "c": "Air cooling unit",
+        "d": "Water cooling unit by radiation"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 159,
+      "question": "What is the operating principle of a petrol engine?",
+      "options": {
+        "a": "Internal combustion and ignition by compression",
+        "b": "External combustion and ignition by compression",
+        "c": "Internal combustion and ignition by spark",
+        "d": "External combustion of diesel"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 160,
+      "question": "When will the oil pressure be lower than usual?",
+      "options": {
+        "a": "When there is lack of oil in the system",
+        "b": "After prolonged activity under load and heating of the engine above normal heat",
+        "c": "When the engine is started cold",
+        "d": "When there is pressured air penetration into the oil system"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 161,
+      "question": "At start up, the diesel engine is revolving and does not manage to start, what could be the cause?",
+      "options": {
+        "a": "There is air in the fuel system",
+        "b": "Electrical failure (no ignition)",
+        "c": "There is a fuel leak",
+        "d": "The oil pressure is low"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 162,
+      "question": "Which steps should be taken after discovering air in the fuel system?",
+      "options": {
+        "a": "Suction of the air from the fuel",
+        "b": "Shut down and restart",
+        "c": "Drainage of the air from the fuel system",
+        "d": "Adding fuel to the system (to prevent air entry)"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 163,
+      "question": "Which steps should be taken when the revolutions of a diesel engine increase beyond control?",
+      "options": {
+        "a": "Immediately shut down the engine by smothering the air",
+        "b": "Adjustment of the fuel regulator",
+        "c": "Immediate shutting off the fuel tap on the tank",
+        "d": "Adjustment of the air regulator"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 164,
+      "question": "What is the function of the revolutions regulator in a diesel engine?",
+      "options": {
+        "a": "Issues commands to the throttle to keep desirable engine speed",
+        "b": "Keeps desirable engine speed (rpm), by issuing commands to the injection pump",
+        "c": "Issues commands to the feed pump, to change the amount of the injected fuel",
+        "d": "Keeps desirable engine speed, by issuing commands to the spray nozzles"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 165,
+      "question": "Where is the thermostat in a cooling unit of the engine usually located?",
+      "options": {
+        "a": "At the outlet of the cooling water, from the engine top cylinder head",
+        "b": "Fitted at the entrance of the cooling water to the cylinder block",
+        "c": "Fitted at the outlet opening of the sea water pump",
+        "d": "No answer is correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 166,
+      "question": "The engine operates OK in idle position, but shuts down when engaged forward, what do you think happened?",
+      "options": {
+        "a": "A rope or nylon were caught by the propeller",
+        "b": "There is excess oil in the gear box",
+        "c": "Air has penetrated the fuel system",
+        "d": "Water has penetrated the fuel system"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 167,
+      "question": "What is required to be done routinely in order to shut down a diesel engine?",
+      "options": {
+        "a": "The throttle rod must be moved to \"middle\" position, otherwise the engine will not shut down",
+        "b": "Disconnecting the fuel to the spray nozzles by pulling the shut down handle connected to the fuel regulator",
+        "c": "Closing the fuel supply valve on the tank",
+        "d": "Moving the throttle backwards till the end and pulling the shut down handle"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 168,
+      "question": "What are the signs that may point to lack of lining of the propeller shaft?",
+      "options": {
+        "a": "Vibrations of the ship's hull",
+        "b": "Vibrations of the engine and gear box",
+        "c": "Too large water leak from the gland",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 169,
+      "question": "What must be done to perform \"priming\" (air drainage) to the tubes of the spray nozzles?",
+      "options": {
+        "a": "The engine should be continuously operated (the crankshaft) and the tubes connectors to the spray nozzles be released",
+        "b": "The feed pump should be operated manually",
+        "c": "The throttle (fuel throttle) should be moved to engine shut down position",
+        "d": "Answers a and c are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 170,
+      "question": "What is the main function of the cooling pump in the fresh water system?",
+      "options": {
+        "a": "To supply water to cool the oil gear box cooler",
+        "b": "To supply water to cool the sea water cooler",
+        "c": "To pump water from the expansion tank, located at the highest point in the system",
+        "d": "No answer is correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 171,
+      "question": "What is the purpose of the lubricating oil in the engine?",
+      "options": {
+        "a": "To reduce friction between the moving parts",
+        "b": "To assist in preventing rust",
+        "c": "To cool the bearings, the pistons and other moving parts",
+        "d": "All answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 172,
+      "question": "What is the purpose of the gland in the shaft propeller system?",
+      "options": {
+        "a": "To carry the weight of the propeller shaft at the point it exits the vessel to the sea",
+        "b": "To prevent leaking of dirty bilge water from the vessel to the sea",
+        "c": "To prevent penetration of sea water through the exit opening of the propeller shaft to the sea",
+        "d": "No answer is correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 173,
+      "question": "In which units is the battery capacity measured?",
+      "options": {
+        "a": "Volt",
+        "b": "Ampere",
+        "c": "Watt-hour",
+        "d": "Ampere-hour"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 174,
+      "question": "What is the significance when operating the navigation lights, that the voltage measured on the battery poles is 10 volts",
+      "options": {
+        "a": "The electrical connections of the communication instruments are out of order",
+        "b": "It is a natural situation, the battery is ok",
+        "c": "The communication instrument operates on 6 volts and therefore there is no problem",
+        "d": "The battery is weak and probably out of order"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 175,
+      "question": "What is one of the required conditions to start a diesel engine?",
+      "options": {
+        "a": "Hot air must be injected at high pressure, which will ignite the fuel in the cylinder",
+        "b": "It is enough to inject fuel to the cylinders in order to start the engine",
+        "c": "The crankshaft must be rotated fast in some way",
+        "d": "No answer is correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 176,
+      "question": "At start-up a knock is heard from the starter, however the engine does not turn, What could be the cause?",
+      "options": {
+        "a": "The battery is weak",
+        "b": "The engine is stuck and cannot turn",
+        "c": "The electrical contact of the solenoid (relay) of the starter are out of order",
+        "d": "All the answers are correct"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 177,
+      "question": "At start-up, the engine turns too slow and is not \"started\", what could be a probable cause?",
+      "options": {
+        "a": "Oil pressure is too low",
+        "b": "The battery triggers are not properly connected, or the battery is weak",
+        "c": "The shut down handle is in shut down position",
+        "d": "Failure of the start-up switch"
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 178,
+      "question": "You have started the engine and discover that water is not coming out of the exhaust pipe, what could be the cause?",
+      "options": {
+        "a": "The sea water entry valve is in a closed position",
+        "b": "Lack of water in the expansion tank",
+        "c": "No water should be coming out of the exhaust pipe, only gases",
+        "d": "You forgot to check the sea water level, prior start up"
+      },
+      "terms": [],
+      "questionTerms": []
+    }
+  ]
+}
