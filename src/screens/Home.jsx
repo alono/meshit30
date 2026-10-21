@@ -145,6 +145,14 @@ export default function Home({ progress, onOpen, theme, onThemeChange }) {
           מאגר שאלות למבחני הסמכה למשיטים — רשות הספנות והנמלים
         </a>
       </p>
+      <p className="meta sources">
+        השתדלנו שכל התוכן יהיה מדויק ככל האפשר. מצאתם טעות? נשמח אם תכתבו לנו:{' '}
+        <a href="mailto:meshit@ohad.info">meshit@ohad.info</a>
+      </p>
+      <p className="meta sources" dir="ltr" lang="en">
+        We have tried to make everything as accurate as possible. Found a mistake? Please email{' '}
+        <a href="mailto:meshit@ohad.info">meshit@ohad.info</a>
+      </p>
     </>
   );
 }
