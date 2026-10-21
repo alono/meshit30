@@ -40,6 +40,14 @@
       "icon": "⚓"
     },
     {
+      "slug": "seamanship-en",
+      "he": "ימאות ג' (אנגלית)",
+      "en": "Seamanship",
+      "lang": "en",
+      "status": "active",
+      "icon": "⚓"
+    },
+    {
       "slug": "nav-coastal",
       "he": "נווט א' — חופי",
       "en": "Coastal Navigation",
