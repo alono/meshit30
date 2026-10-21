@@ -2256,7 +2256,8 @@
         "digital-selective-calling",
         "maritime-identification-digits"
       ],
-      "questionTerms": []
+      "questionTerms": [],
+      "note": "תשובה אפשרית במבחן: קוד זיהוי MMSI של מתקן DSC של כלי שיט וגם קוד זיהוי MMSI אשר שייך למדינה בעלת קידומת MID 428"
     },
     {
       "id": 143,
