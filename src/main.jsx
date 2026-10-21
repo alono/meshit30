@@ -9,6 +9,22 @@ const Admin = import.meta.env.DEV && window.location.pathname.startsWith('/admin
   ? lazy(() => import('./screens/Admin.jsx'))
   : null;
 
+// A tab left open across a deploy still runs the old entry, whose content
+// chunks the new deploy no longer has. Reload onto the new version instead of
+// showing a load error — at most once a minute, so a chunk that is really
+// broken shows the error rather than reloading forever.
+window.addEventListener('vite:preloadError', (event) => {
+  try {
+    const last = Number(sessionStorage.getItem('meshit30:reloadedAt'));
+    if (Date.now() - last < 60_000) return;
+    sessionStorage.setItem('meshit30:reloadedAt', String(Date.now()));
+  } catch {
+    return;
+  }
+  event.preventDefault();
+  window.location.reload();
+});
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {Admin ? <Suspense fallback={null}><Admin /></Suspense> : <App />}

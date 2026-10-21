@@ -102,6 +102,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    setError(null);
     if (!slug || slug === 'signals') { setSubject(null); return; }
     let live = true;
     loadSubject(slug)
