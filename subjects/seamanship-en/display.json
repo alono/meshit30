@@ -1,0 +1,4357 @@
+{
+  "schema": 1,
+  "subject": "seamanship-en",
+  "generatedFrom": [
+    "questions.json",
+    "terms.json",
+    "text-overrides.json"
+  ],
+  "count": 362,
+  "questions": [
+    {
+      "id": 1,
+      "question": "When sailing a sailboat at night, you see in front of your bow the lights as depicted in picture 36, what is the required action?",
+      "options": {
+        "a": "You turn to starboard, and it must turn to starboard as well.",
+        "b": "Maintain course and speed.",
+        "c": "Yield because it is a large ship.",
+        "d": "Make contact on the radio and inquire as to its intentions."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 2,
+      "question": "What might a single white light in front of your bow be?",
+      "options": {
+        "a": "The stern light of a vessel.",
+        "b": "A row boat.",
+        "c": "The mooring light of a vessel under 50 meters long.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 3,
+      "question": "What is the vessel depicted in picture 39?",
+      "options": {
+        "a": "A grounded vessel.",
+        "b": "A limited maneuverability vessel due to draught, at anchor.",
+        "c": "A ship not under command, at anchor.",
+        "d": "A vessel in distress, requesting assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 4,
+      "question": "You have noticed the lights as depicted in picture 46. What is the vessel?",
+      "options": {
+        "a": "A pilot sailing to port.",
+        "b": "A sailboat sailing to port.",
+        "c": "A trawler sailing to port.",
+        "d": "A sailboat sailing to starboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 5,
+      "question": "What are the identifying signs for a marina entrance in Israel when coming in from sea?",
+      "options": {
+        "a": "A green light on the right and a red light on the left.",
+        "b": "A red ensign (elongated triangular flag) flown on the right in addition to a blinking red light and a blinking green light on the left.",
+        "c": "On the right a flashing green light and on the left a flashing red light.",
+        "d": "On the right a flashing red light and on the left a flashing green light."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 6,
+      "question": "What lights will a 100 meter long vessel with limited maneuverability vessel making its way display?",
+      "options": {
+        "a": "The lights as depicted in picture 66.",
+        "b": "The lights as depicted in picture 2.",
+        "c": "The lights as depicted in picture 25.",
+        "d": "The lights as depicted in picture 22."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 7,
+      "question": "What is the vessel displaying the lights as depicted picture 61?",
+      "options": {
+        "a": "A trawler.",
+        "b": "The port side of a tug boat.",
+        "c": "The starboard side of a mine sweeper.",
+        "d": "The starboard side of a moored vessel over 50 meters long."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 8,
+      "question": "What is the vessel displaying the lights as depicted in picture 28?",
+      "options": {
+        "a": "A fishing boat.",
+        "b": "A trawler.",
+        "c": "A towing vessel with the tow line less than 200 meters long.",
+        "d": "A sailboat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 9,
+      "question": "What is the vessel displaying the lights as depicted in picture 8?",
+      "options": {
+        "a": "A fishing boat.",
+        "b": "A tow boat with the tow line less than 200 meters long.",
+        "c": "A trawler with a net over 150 meters long.",
+        "d": "A tow boat pushing a barge."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 10,
+      "question": "At the entrance to a marina in Israel there are two flashing lighthouses (red and green). What is their meaning?",
+      "options": {
+        "a": "At the entrance to a marina, the green lighthouse is on the starboard of the vessel and the red on its port.",
+        "b": "At the exit from a marina, the green lighthouse is on the starboard of the vessel and the red on its port.",
+        "c": "At the entrance to a marina, the green lighthouse is on the port of the vessel and the red on its starboard.",
+        "d": "In any event you must pass to the starboard of the green and to port of the red."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 11,
+      "question": "50º to the starboard of your bow you notice a red light, underneath it a green light and underneath that a green navigation light. What is the vessel you are seeing?",
+      "options": {
+        "a": "A sailboat sailing to port.",
+        "b": "A pilot.",
+        "c": "A fishing vessel.",
+        "d": "A sailboat sailing to starboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 12,
+      "question": "A sailboat, sailing to north west, the wind from the north east, notices on its starboard flashing red + green lights (next to each other). What is the required action?",
+      "options": {
+        "a": "These are the lights of a sailboat windward on the same tack, she is up wind and will turn, you must maintain course and speed.",
+        "b": "These are the lights of a sailboat on a port tack, she will turn, you must maintain course and speed.",
+        "c": "It is the entrance to a marina, you increase watch and awareness, maintain course and speed.",
+        "d": "There is no correct answer."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 13,
+      "question": "While sailing, you notice in front of your boat’s bow a vessel displaying the lights as depicted in picture 39. What is the vessel signaling?",
+      "options": {
+        "a": "That it is grounded and so you must be careful.",
+        "b": "That it is not under command and you must rapidly approach it and offer assistance.",
+        "c": "That it is a fisherman collecting its nets. You may pass nearby.",
+        "d": "It is a sailboat which has turned on its discretionary lights."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 14,
+      "question": "A vessel displaying the lights as depicted in picture 39, what signal will it display during the day?",
+      "options": {
+        "a": "The signal depicted in picture 84.",
+        "b": "The signal depicted in picture 81.",
+        "c": "The signal depicted in picture 83.",
+        "d": "There is no need for a day signal."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 15,
+      "question": "What lights must you turn on when anchoring in a secluded bay with a vessel 13 meters long?",
+      "options": {
+        "a": "A sailboat will turn on a masthead light (steaming).",
+        "b": "Surround white light.",
+        "c": "Deck lights, stern light and masthead light (steaming).",
+        "d": "A motorized vessel will turn on a top of mast light."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 16,
+      "question": "You notice a vessel flying flag A: what does the flag mean, what are your actions and what will this boat display at night?",
+      "options": {
+        "a": "Diver flag, I will keep 200 meters away, at night a surround white light.",
+        "b": "Diver flag, I will keep 200 meters away, at night a surround red white red light.",
+        "c": "Diver flag, I will keep 200 meters away, at night a surround blue white light and navigation lights.",
+        "d": "Diver flag, I will keep 200 meters away, at night there is a ban on diving."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 17,
+      "question": "What is the vessel displaying the signs depicted in picture 78?",
+      "options": {
+        "a": "A barge being pushed by a tug boat.",
+        "b": "A tug boat with a tow which is over 200 meters long.",
+        "c": "A fishing vessel with the fishing equipment at work.",
+        "d": "A tug boat, limited in maneuverability."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 18,
+      "question": "What will a vessel display during the day that at night displays three red lights in a vertical line one above the other?",
+      "options": {
+        "a": "3 black balls one above the other vertically.",
+        "b": "2 black balls.",
+        "c": "A black cylinder.",
+        "d": "A black diamond."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 19,
+      "question": "At night you notice a vessel displaying, in addition to navigation lights, a white surround light and above it a green light. What is the day signal such a vessel should display?",
+      "options": {
+        "a": "2 triangles with their bases joined.",
+        "b": "2 triangles with their tips joined.",
+        "c": "A black diamond.",
+        "d": "A circle diamond circle."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 20,
+      "question": "A vessel displaying the lights depicted in picture 53, what day signal will it display?",
+      "options": {
+        "a": "The day signal depicted in picture 82.",
+        "b": "The day signal depicted in picture 86.",
+        "c": "The day signal depicted in picture 85.",
+        "d": "There is no need for a day signal."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 21,
+      "question": "You are in a sailboat at night, behind your stern you see the vessel lights depicted in picture 1, on an identical course to yours. With no additional information you know:",
+      "options": {
+        "a": "You are in danger of a collision because the direction to it is not changing.",
+        "b": "That you will be in danger of a collision only if the distance decreases and the magnetic direction does not change.",
+        "c": "That there is no danger of a collision in this situation.",
+        "d": "That if he is behind you, in any case he has to give way, so there is no reason for concern."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 22,
+      "question": "To what vessels must you give right of way when sailing a motorized vessel?",
+      "options": {
+        "a": "A vessel not under command.",
+        "b": "A vessel with a capacity of 40 thousand tons and over.",
+        "c": "A military vessel.",
+        "d": "A towing vessel with a tow line of over 200 meters."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 23,
+      "question": "How will a sailboat act when sailing in fog during the day, in limited visibility?",
+      "options": {
+        "a": "Turn on navigation lights, combined with the audible signal.",
+        "b": "Turn on navigation lights only at sunset.",
+        "c": "Only sound the audible signals.",
+        "d": "May turn on the flashing yellow light in addition to the fog horn."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 24,
+      "question": "You are sailing a 12 meter long vessel in the bay of Eilat at night under sails only. You are sailing slowly at a distance of about half a mile from shore. You turn on, as the law requires, side lights and stern lights. On your starboard appears a large tanker and you are directly in front of its bow. Mark the correct sentence:",
+      "options": {
+        "a": "The tanker must make way for me since I am a sailboat.",
+        "b": "According to the rules of the open seas she must make way for me but in this case I am in its path and must make way to it.",
+        "c": "I will turn on the discretionary lights (red over green), because these entitle me to right of way.",
+        "d": "I get out of there because you are not allowed to stop in the bay of Eilat at night."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 25,
+      "question": "To which of the following vessels must a motorized vessel en route make way?",
+      "options": {
+        "a": "A tug boat with no regard to the tow line length.",
+        "b": "A tug boat, only if the tow line length from the stern of the tug to the stern of the tow is over 200 meters.",
+        "c": "A vessel with limited maneuverability.",
+        "d": "A passenger ferry."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 26,
+      "question": "How will a motorized vessel act nearing the entrance to the Kishon port and from where it is located it is hard to determine that there are no vessels exiting the port?",
+      "options": {
+        "a": "Sail with special vigilance and caution and sound more than 5 short horn blasts.",
+        "b": "Sail with vigilance and caution and sound one long horn blast.",
+        "c": "The vessel must stop prior to entering, sound 3 short blasts, and if there is no vessel it can enter.",
+        "d": "There is no special limitation at the entrance, only attention to the rocks at the entrance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 27,
+      "question": "A vessel “en route” means:",
+      "options": {
+        "a": "A vessel which is not making its way in the water but drifting.",
+        "b": "A vessel tied to a dock.",
+        "c": "A vessel making its way in the water under motor power.",
+        "d": "A vessel not tied to a dock, not grounded, and not anchored."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 28,
+      "question": "When will an overtaking and passing vessel yield way?",
+      "options": {
+        "a": "An overtaking and passing vessel will always yield.",
+        "b": "When the passed vessel is lower than it on the “family hierarchy”.",
+        "c": "Only when the passing is on the starboard side.",
+        "d": "Only in limited visibility."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 29,
+      "question": "You are sailing a sailboat in fog during the day, with the engine in forward gear. You are unable to see beyond 50 meters around your boat. How will you act?",
+      "options": {
+        "a": "I will turn on sailing lights only.",
+        "b": "I will sound one long blast every two minutes.",
+        "c": "I will sound 2 long blasts every two minutes.",
+        "d": "I will turn on navigation lights and sound one long blast every two minutes."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 30,
+      "question": "Your vessel is motorized with a working radar. You have discovered on the radar at night a vessel at 020 to your starboard at a range of 3 miles. With the naked eye it is difficult to see the navigation lights. After 10 minutes, the direction changes, to 018 starboard, range of 2 miles, and from the navigation lights it is still difficult to determine the precise sailing direction. What do you deduce from the information?",
+      "options": {
+        "a": "That the vessel is crossing from starboard to port and there is danger of a collision.",
+        "b": "That the information is limited, and based on the regulations I must assume there is danger of collision.",
+        "c": "That the vessel is sailing on an opposite course and parallel to mine and there is no danger of collision.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 31,
+      "question": "You are sailing close hauled on a port tack and in front of you is a sailboat on an indeterminate tack. How will you determine whether there is danger of a collision?",
+      "options": {
+        "a": "The compass direction does not change at all, and the distance remains constant.",
+        "b": "There is no danger of a collision and I will not be able to pass it.",
+        "c": "The compass direction does not change significantly and the distance is decreasing.",
+        "d": "The compass direction changes significantly and the distance is decreasing."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 32,
+      "question": "While sailing at night you notice a vessel which according to the rules of the road is supposed to yield to you but is not doing so. What are your initial actions?",
+      "options": {
+        "a": "I check if my navigation lights are on.",
+        "b": "Sound 5 short blasts or more.",
+        "c": "Turn aside quickly.",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 33,
+      "question": "Who must yield when you are in a sailboat sailing with a broad reach on a starboard tack, on your starboard is a sailboat on a course almost parallel to yours which is bringing you slowly closer to danger of a collision. The other boat, “Sloop”, is sailing wing on wing, foresail to port and mainsail to starboard?",
+      "options": {
+        "a": "Your boat, because your maneuverability is better.",
+        "b": "Your boat, because with a following wind it is possible to maneuver better than when running wing on wing.",
+        "c": "The other boat because its mainsail is to starboard and this means a port tack.",
+        "d": "Your boat because you are on the same tack and you are to windward."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 34,
+      "question": "How will you act (based on the regulations) when you are sailing a sailboat on a port tack and on your port is another sailboat on a collision course and it is unclear what tack it is on?",
+      "options": {
+        "a": "Maintain course and speed.",
+        "b": "You try to communicate with it to determine what tack it is on.",
+        "c": "You yield.",
+        "d": "You yield only if you can determine for certain that it is on a starboard tack."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 35,
+      "question": "To which vessel must a sailboat en route yield?",
+      "options": {
+        "a": "A vessel with limited maneuverability.",
+        "b": "A tug boat towing.",
+        "c": "A tug boat, only if the tow line is over 150 meters long.",
+        "d": "An on-duty police boat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 36,
+      "question": "How will a motorized vessel act, when noticing close on its bow a single green light?",
+      "options": {
+        "a": "Turn to starboard, the light indicates a sunken ship.",
+        "b": "Continues straight, it is a race boat seeing me on its starboard and must make way for me.",
+        "c": "Turn to port, this is the starboard light of a sailboat.",
+        "d": "Stop, this is the light of a tow behind a tug boat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 37,
+      "question": "According to regulations, what areas are forbidden for sailing?",
+      "options": {
+        "a": "Bathing beaches, diving areas, closed areas.",
+        "b": "Fishing areas, bathing beaches, anchoring areas.",
+        "c": "Ports, bathing beaches, firing ranges.",
+        "d": "Nature reserves, bathing beaches, security zones."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 38,
+      "question": "What is meaning of “I.M.O.T.”?",
+      "options": {
+        "a": "Identification prior to entering the country, by a vessel to R.C.C. Haifa.",
+        "b": "The international sailing safety organization.",
+        "c": "The international maritime organization.",
+        "d": "It is a chapter out of the S.O.L.A.S. book."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 39,
+      "question": "To what distance away from shore may a vessel sail that is on a national voyage?",
+      "options": {
+        "a": "6 miles.",
+        "b": "No limitation.",
+        "c": "12 miles.",
+        "d": "35 miles."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 40,
+      "question": "What are the boundaries of a bathing beach with no sailing allowed?",
+      "options": {
+        "a": "There are no uniform rules – each beach has its own boundaries.",
+        "b": "400 meters along the shore and up to 250 meters into the sea.",
+        "c": "50 meters on each side of the declared area and to a distance of 300 meters of the low tide line.",
+        "d": "100 meters on each side of the lifeguard hut, and 150 meters to sea from the high tide line."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 41,
+      "question": "What additional item of equipment is required for a private vessel 13 meters long, sailing to a distance of 15 miles from shore?",
+      "options": {
+        "a": "G.P.S.",
+        "b": "Additional pyrotechnic equipment.",
+        "c": "Life raft.",
+        "d": "V.H.F radio."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 42,
+      "question": "When purchasing a boat you are interested in determining whether or not the importer equips the boat based on the requirements of the Israeli Seaworthiness Regulations. Where can you find this information?",
+      "options": {
+        "a": "The boat must be equipped according to the S.O.L.A.S. standard, which can be found in publications for sailors.",
+        "b": "You can find the list of equipment in the Israel Ports Authority publications and on the Ministry of Transportation website.",
+        "c": "You must submit a formal request to the technical department, as seamanship standards are different for each boat.",
+        "d": "You can find the list of required equipment with Marina managers."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 43,
+      "question": "What is required based on the regulations if there is open flame cooking on the boat?",
+      "options": {
+        "a": "A fire fighting blanket.",
+        "b": "An automatic fire extinguishing system.",
+        "c": "An additional CO2 fire extinguisher.",
+        "d": "There are no additional requirements."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 44,
+      "question": "When must a vessel turn on navigation lights?",
+      "options": {
+        "a": "15 minutes before sunset until 15 minutes after sunrise.",
+        "b": "15 minutes after sunset until 15 minutes before sunrise.",
+        "c": "Only when there is enough voltage in the boat batteries.",
+        "d": "As in “a” and in addition whenever visibility is limited."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 45,
+      "question": "What will you do with leftover food and garbage bags when you are over 3 miles from shore?",
+      "options": {
+        "a": "You can always throw garbage to the sea when you are over 3 miles from shore.",
+        "b": "It is forbidden to throw garbage to sea at any time while sailing.",
+        "c": "Only if the bag will sink.",
+        "d": "It is forbidden if there is plastic in the bag."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 46,
+      "question": "What is true of a life vest?",
+      "options": {
+        "a": "The number of life vests must equal the number of people on board as per the sea worthiness rating of the vessel.",
+        "b": "Adult life vests also fit children.",
+        "c": "Life vests of model 4 do not need to be ready for immediate use.",
+        "d": "Life vests must be stored in a designated compartment for life vests."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 47,
+      "question": "A vessel is displaying the sign depicted in picture 84 and sailing at about 100 meters from shore and parallel to it (where there is no declared swimming beach). What do the regulations stipulate about it?",
+      "options": {
+        "a": "It is breaking the law. It is a motorized sailboat.",
+        "b": "It is allowed, it is a motorized vessel displaying a permit for sailing near the shore.",
+        "c": "It is allowed, it is a fishing vessel at work.",
+        "d": "It is breaking the law, it is a fishing vessel at work."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 48,
+      "question": "What is the correct statement regarding the pyrotechnic equipment on board for an international voyage?",
+      "options": {
+        "a": "A smoke buoy operates for 6 minutes at least.",
+        "b": "A parachute rocket goes up to a height of at least 3,000 meters.",
+        "c": "A vessel must carry at least 4 parachute rockets.",
+        "d": "A vessel must carry at least 4 hand torches."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 49,
+      "question": "At what time intervals must a private boat be periodically inspected for sea worthiness?",
+      "options": {
+        "a": "Once a year.",
+        "b": "Once every 24 months.",
+        "c": "Once every 18 months.",
+        "d": "Once every 30 months."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 50,
+      "question": "What will you do when returning from an international trip with your boat, as you near Israel and are under 25 miles from shore?",
+      "options": {
+        "a": "Initiate communication on channel 16 with the Navy and report my location, identity, etc.",
+        "b": "Initiate communication on channel 12 with the Haifa Port watch and report my location, identity, and anything else they request.",
+        "c": "Initiate communication with RCC HAIFA on channel 16 (4X0) and report my location, identity, etc.",
+        "d": "Initiate communication with the border checkpoint on channel 11 and report my location, identity, etc."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 51,
+      "question": "What is the length of a sailing vessel defined as a boat?",
+      "options": {
+        "a": "7 to 24 meters.",
+        "b": "20 to 70 feet.",
+        "c": "5 to 20 meters.",
+        "d": "7 to 24 feet."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 52,
+      "question": "What is the most appropriate answer regarding the pyrotechnic equipment?",
+      "options": {
+        "a": "Pyrotechnic equipment is fit to be used up to 7 years.",
+        "b": "A smoke buoy generates a flame that is very visible at night, especially to aircraft.",
+        "c": "A red hand torch will continue to burn if it has fallen into the water.",
+        "d": "A boat on a national journey must carry 4 smoke buoys."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 53,
+      "question": "What is the correct statement regarding the pyrotechnic equipment on board for a national trip?",
+      "options": {
+        "a": "A parachute rocket goes up to a height of at least 3,000 meters.",
+        "b": "A vessel must carry at least 4 parachute rockets.",
+        "c": "A vessel must carry at least 4 hand torches.",
+        "d": "A smoke buoy operates for at least 12 minutes."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 54,
+      "question": "Which of the following contains only distress signals?",
+      "options": {
+        "a": "A call for HELP on the VHF, a square flag plus a ball, the flags C + N.",
+        "b": "The flags N + A, the sound of a cannon shot, a short horn blast.",
+        "c": "A red rocket, a constant long horn blow, slow waving of the hands up and down on the side of the body.",
+        "d": "Flames on the vessel, 3 black balls, transmitting SOS on the radio."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 55,
+      "question": "Which of the following is not a distress signal?",
+      "options": {
+        "a": "Continuous gong rings.",
+        "b": "A call of MAYDAY on the radio.",
+        "c": "Raising of one flag from the international code.",
+        "d": "Continuous horn blast with no stopping."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 56,
+      "question": "Which of the following contains only distress signs or signals?",
+      "options": {
+        "a": "A black ball on the mast, C flag over N flag, waving of the arms on the sides of the body.",
+        "b": "A square flag and above it a black ball, sounding of explosive sounds every minute, a non-ceasing horn blast, red rockets.",
+        "c": "Activating the pyrotechnic equipment, transmitting S.O.S. on the radio, continuous bangs on the gong, more than 5 short horn blasts every 2 minutes.",
+        "d": "A flag and above it a black ball, orange smoke, a man waving a red flag in his hand, display of a yellow hand torch."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 57,
+      "question": "Which picture describes the audible signal that a sailboat will sound in fog?",
+      "options": {
+        "a": "Picture 112.",
+        "b": "Picture 118.",
+        "c": "Picture 120.",
+        "d": "Picture 122."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 58,
+      "question": "In fog you hear in front of your bow the audible signal described in picture 122, every 2 minutes, on the port of your bow you hear the audible signal described in picture 120 every 2 minutes. What is the meaning of the signals?",
+      "options": {
+        "a": "A ship stopped and not moving in the water.",
+        "b": "A dredger busy digging.",
+        "c": "A tug boat towing another vessel.",
+        "d": "A motorized vessel towing a sailboat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 59,
+      "question": "You are sailing within a narrow sea lane and nearby are two ships sailing one behind the other. You, based on the regulations, are sailing so that you do not hinder the sailing of the ships. You hear the rear ship sounding the signal described in picture 116. What is the meaning of these horn blasts?",
+      "options": {
+        "a": "I change my course to starboard and his ship has stopped in the water.",
+        "b": "I am about to pass you on your port.",
+        "c": "I am about to pass you on your starboard.",
+        "d": "Sailboat near me (meaning you), do not hinder my sailing."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 60,
+      "question": "What is the vessel raising the flag described in picture 106 signaling?",
+      "options": {
+        "a": "Careful, do not come near, man overboard.",
+        "b": "My ship is healthy, requesting permission for free operation within the port.",
+        "c": "My boat is on medical quarantine.",
+        "d": "A doctor is on board my boat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 61,
+      "question": "In poor visibility at night you hear the audible signal described in picture 118 every 2 minutes. What do the sounds mean?",
+      "options": {
+        "a": "Make way I am towing another vessel.",
+        "b": "Be careful I am limited in maneuverability.",
+        "c": "Requesting permission to pass you on the starboard side.",
+        "d": "I am a motorized vessel not under way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 62,
+      "question": "Which picture describes the audible signal a motorized vessel would sound that is about to overtake another vessel on the port side?",
+      "options": {
+        "a": "Picture 116.",
+        "b": "Picture 118.",
+        "c": "Picture 120.",
+        "d": "Picture 122."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 63,
+      "question": "What is a vessel flying the flag described in picture 104 signaling?",
+      "options": {
+        "a": "Man overboard.",
+        "b": "My boat is healthy, requesting permission for free operation within the port.",
+        "c": "My boat is on medical quarantine.",
+        "d": "A doctor is on board my boat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 64,
+      "question": "When entering a foreign port, you must fly the following flags:",
+      "options": {
+        "a": "On the port of the mast, an Israeli flag, and the flag of the host country to the starboard side of the mast.",
+        "b": "In the stern, the flag of the host country, on the bow an Israeli flag (on a pole), to the starboard of the mast a Q flag.",
+        "c": "On the starboard of the mast, the flag of the host country, to the port of the mast the Q flag, in the stern the Israeli flag on a pole.",
+        "d": "To the starboard of the mast, the Q flag, and underneath it the flag of the host country, and to the port of the mast the Israeli flag."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 65,
+      "question": "In front of you appears a vessel flying a white flag with blue split, how will you act?",
+      "options": {
+        "a": "I will maintain at least 200 meters distance from the vessel.",
+        "b": "I will find out what the problem is (coordinate positions).",
+        "c": "I will approach immediately, as immediate assistance is required.",
+        "d": "There is no problem, it is the national flag of Monzia."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 66,
+      "question": "Which of the following code flags must be on board a vessel?",
+      "options": {
+        "a": "A. B. C. Q. K. O",
+        "b": "A. B. C. D. Q. O",
+        "c": "N. A. B. C. Q. O",
+        "d": "Z. O. Q. E. C. B."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 67,
+      "question": "Which flags must you raise when entering the territorial waters of another country?",
+      "options": {
+        "a": "A yellow flag, the flag of the country of registration, the flag of the host country.",
+        "b": "A green flag, flag of the country of origin, flag of the country of destination.",
+        "c": "A blue flag, the flag of the most recently departed country, the flag of the host country.",
+        "d": "A yellow flag, the flag of the shipping company, the national flag."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 68,
+      "question": "What will your actions be when you are entering a marina and you recognize a vessel located near the entrance and flying flag “B” of the international code?",
+      "options": {
+        "a": "I cannot enter the marina since I must keep at least 200 meters from this vessel.",
+        "b": "As in “a” but the safe distance for passage is only 100 meters.",
+        "c": "I can enter the marina, but must be vigilant and avoid getting too close.",
+        "d": "I will wait outside until the vessel clears way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 69,
+      "question": "In good visibility, a vessel to your starboard sounds at least 5 short horn blasts. What does the signal mean?",
+      "options": {
+        "a": "The vessel is turning to starboard.",
+        "b": "The vessel is in distress.",
+        "c": "Your actions are unclear.",
+        "d": "There is no such signal."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 70,
+      "question": "Which of the following vessels will sound, in limited visibility, a long horn blast followed by two short ones at two minute intervals?",
+      "options": {
+        "a": "A sailboat also running on motor.",
+        "b": "A motorized vessel.",
+        "c": "A fishing vessel.",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 71,
+      "question": "You are sailing on vessel G and see vessel K sounding the audible signal described in picture 119. What is it signaling?",
+      "options": {
+        "a": "K is signaling that it is turning to starboard since it needs to yield way to me.",
+        "b": "In fog this signal indicates that a vessel is not making way in the water.",
+        "c": "That the vessel is in distress and needs help.",
+        "d": "The signal is not clear so I will sound at least 5 short horn blasts because I do not understand his intentions."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 72,
+      "question": "You are sailing on “F” and hear that vessel “H” sounds the following audible signal: three short horn blasts, 3 long horn blasts, 3 short blasts. What is the meaning of the horn blasts?",
+      "options": {
+        "a": "This is a vessel wanting to draw attention.",
+        "b": "This is a vessel indicating that it is in distress.",
+        "c": "There is no meaning to these horn blasts.",
+        "d": "It is a vessel with its engines engaged in reverse because it has a man overboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 73,
+      "question": "You are sailing a motor assisted sailboat. In front of your bow is a vessel flying a flag as depicted in picture 98. What lights must he display at night, and how should you act?",
+      "options": {
+        "a": "Lights as depicted in picture 26. It is indicating the side of a hazard, I can pass beside it with no concern.",
+        "b": "Lights as depicted in picture 61. It is anchored and there is no danger in passing nearby.",
+        "c": "Lights as depicted in picture 70. It is indicating a diving area and I must keep 200 meters distance from it.",
+        "d": "Lights as depicted in picture 33. It is without control. I should approach as quickly as possible and offer assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 74,
+      "question": "Vessel F hears vessel H sounding the audible signal comprised of: six short blasts, three long blasts, six short blasts. What is the meaning of the horn blasts?",
+      "options": {
+        "a": "This is a vessel wanting to draw attention.",
+        "b": "This is a vessel indicating that it is in distress.",
+        "c": "There is no meaning to these horn blasts.",
+        "d": "It is a vessel with its engines engaged in reverse because it has a man overboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 75,
+      "question": "When will you use a parachute rocket?",
+      "options": {
+        "a": "Both during the day and at night.",
+        "b": "At night only.",
+        "c": "During the day only.",
+        "d": "To light survivors."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 76,
+      "question": "You must tow a 10 meter long yacht in open seas. The waves are 2 meters high. What tow rope will you prefer to use?",
+      "options": {
+        "a": "A 4 inch circumference rope, 10 meters long.",
+        "b": "A 4 inch circumference rope, 50 meters long.",
+        "c": "A 3 inch circumference rope, 20 meters long.",
+        "d": "A 1*19 cable."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 77,
+      "question": "What is a relative wind (virtual)?",
+      "options": {
+        "a": "The wind created only as a result of the boat movement.",
+        "b": "The weighted value between the head wind and the real wind component.",
+        "c": "The wind illusion created when the following wind is stronger than the vessel speed.",
+        "d": "The wind the vessel operator estimates based on the sea waves."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 78,
+      "question": "On a one engine and one shaft boat, with a right hand propeller, what will happen when you engage the engine in reverse?",
+      "options": {
+        "a": "The bow of the boat will veer to port.",
+        "b": "The stern of the boat will veer to starboard.",
+        "c": "The bow of the boat will veer to starboard.",
+        "d": "There will be no veering and the steering will determine the direction."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 79,
+      "question": "The emergency steering handle on a vessel with a steering wheel is there for situations where:",
+      "options": {
+        "a": "The steering cable breaks.",
+        "b": "There is a break in the steering wheel axle.",
+        "c": "The rudder breaks.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 80,
+      "question": "What must you avoid when sailing in a lightning storm with rain?",
+      "options": {
+        "a": "From nearing any metal objects on board.",
+        "b": "From tightening the sail lines.",
+        "c": "From touching water pipes.",
+        "d": "From frequent course changes."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 81,
+      "question": "The vessel is moving backwards. You want to turn the bow to starboard, in which direction must you turn the wheel (wheel steering)?",
+      "options": {
+        "a": "Starboard.",
+        "b": "Port.",
+        "c": "The wheel has no effect.",
+        "d": "You must leave the steering wheel neutral, the deflection of the propeller will cause the turn."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 82,
+      "question": "When there is a man overboard, you must toss a life ring with a light to the sea. How will the light be turned on?",
+      "options": {
+        "a": "You must turn it on before tossing it to sea.",
+        "b": "The light will turn on when the life ring turns over and starts floating on the water.",
+        "c": "The light is switched on by the person at sea once he reaches the life ring.",
+        "d": "The light is switched on by a switch activated by contact with the water."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 83,
+      "question": "What must you do when preparing to abandon ship and you have cast a life raft which inflated upside down?",
+      "options": {
+        "a": "You must immediately launch another life raft, because you cannot use a life raft which has been turned upside down, and it cannot be righted.",
+        "b": "You must pull the rope tied to it, secure the raft to the side of the boat to windward, and then right it.",
+        "c": "You send a swimmer who will stand on the gas container, grab the rope intended for it, and right the life raft.",
+        "d": "Take the air out of the raft and inflate it again properly."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 84,
+      "question": "What is the main function of the DROGUE (a type of floating anchor)?",
+      "options": {
+        "a": "Slow the vessel down when coming off high waves.",
+        "b": "Prevent damage to the propeller when it leaves the water in waves.",
+        "c": "Prevent the vessel rolling over in a storm.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 85,
+      "question": "You are sailing parallel to Herzliya close hauled, the wind you sense on your face is very strong, when you tack to running the wind you feel is much weaker. The reason for that is:",
+      "options": {
+        "a": "The wind velocity has suddenly dropped.",
+        "b": "The speed is low, so the wind is weaker.",
+        "c": "The relative wind (perceived) decreases and so you feel a weaker wind.",
+        "d": "The head wind has weakened."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 86,
+      "question": "You are sailing a motorboat and have run aground on a sandbank. What is the first action you will take?",
+      "options": {
+        "a": "Increase speed to pass the sandbank quickly.",
+        "b": "Cast anchor immediately.",
+        "c": "Abandon the boat immediately.",
+        "d": "Put the engine into neutral."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 87,
+      "question": "What is the purpose of the safety harness?",
+      "options": {
+        "a": "To secure equipment on the deck to avoid movement when rolling.",
+        "b": "Tying the main sail boom in its place when the sail is down.",
+        "c": "Safety of the crew in inclement weather to prevent going overboard.",
+        "d": "Sealing the roller of the foresail, so it doesn’t open in strong winds."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 88,
+      "question": "What is the most correct statement regarding the following situations when sailing under sails?",
+      "options": {
+        "a": "When close hauled: the lee way is large, the healing is strong, the speed is very high, the sail is in maximum stretch.",
+        "b": "When running: the speed is high to medium, the healing is high, there is lee way, there is risk of capsizing.",
+        "c": "In beam reach: the speed is high to very high, the lee way is small, there is healing.",
+        "d": "In a close reach, the speed is lower than when close hauled, there is lee way, the sails are taught close to the keel line."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 89,
+      "question": "You wish to anchor in a bay. What seamanship considerations will affect your decision?",
+      "options": {
+        "a": "Shore services, convenient dock, nearby restaurant.",
+        "b": "The density of vessels moored in the bay, mooring services, availability of the responsible authorities.",
+        "c": "The type of bottom, the wind direction and intensity, the density of vessels in the bay, the weather forecast.",
+        "d": "There is no correct answer."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 90,
+      "question": "What are the requirements of a tow rope?",
+      "options": {
+        "a": "High tensile strength.",
+        "b": "Be of a natural material.",
+        "c": "To be no longer than the length of the towing vessel so it does not get tangled in the propeller.",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 91,
+      "question": "What will be your first actions when abandoning a vessel and after all the survivors are on board the life raft?",
+      "options": {
+        "a": "Activate the pyrotechnic equipment immediately to calm the survivors.",
+        "b": "Have the survivors take a pill against sea sickness.",
+        "c": "Distribute the food and water allotment for each survivor.",
+        "d": "There is no correct answer."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 92,
+      "question": "What of the following is the most effective way of determining that the anchor has secured to the bottom of the ocean and will not drag?",
+      "options": {
+        "a": "Taking bearings to other vessels.",
+        "b": "Checking “vibrations” on the anchor line.",
+        "c": "Checking your location by measuring the current.",
+        "d": "By measuring the angle between the vessel and the perceived wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 93,
+      "question": "What is the hydrostatic release of the life raft?",
+      "options": {
+        "a": "Serves as an additional security measure for the life raft.",
+        "b": "Sounds an alarm in distress.",
+        "c": "Releases the life raft automatically at a certain depth.",
+        "d": "Releases the life raft when the crew is unable to release its security."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 94,
+      "question": "What is a “dead anchor”?",
+      "options": {
+        "a": "An anchor permanently affixed to the sea bottom.",
+        "b": "A floating anchor for emergencies.",
+        "c": "A decommissioned anchor.",
+        "d": "An anchor that has come loose and been lost."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 95,
+      "question": "The administration of the marina where you are docked (sailboat), has instructed you to tie in parallel to another vessel (a sailboat identical to yours) due to congestion. How will you tie your boat?",
+      "options": {
+        "a": "You do not do side-to-side tying in a marina since this takes up a lot of space.",
+        "b": "I will tie in parallel “bow to bow”.",
+        "c": "I will tie in parallel “bow to stern”.",
+        "d": "There is no significance as to how I tie the boat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 96,
+      "question": "What is your action immediately upon hitting a sandbar?",
+      "options": {
+        "a": "Raising two balls one above the other on the highest possible point.",
+        "b": "If I have cast anchor, I must remove the two balls from point “a” and raise one ball only.",
+        "c": "Empty the water and fuel, so the boat will rise and free itself from the sandbar.",
+        "d": "Damage assessment and attempt to minimize damage based on the situation, prepare for abandoning or rescue."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 97,
+      "question": "What are the topics on which you will brief and instruct passengers who are inexperienced, prior to a trip of several hours close to shore?",
+      "options": {
+        "a": "There is no need for any special explanation when going out for only a few hours.",
+        "b": "I will explain the location and use of safety equipment.",
+        "c": "I will explain how to navigate the boat based on the rules of the sea.",
+        "d": "I will explain the importance of the skipper role on board."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 98,
+      "question": "How is it recommended to reduce the load on the anchor winch, whenmooring?",
+      "options": {
+        "a": "You can use a rope that will tie to the winch chain and tie it to the bow deck cleat, and so divide the load between them and create an additional safety aspect.",
+        "b": "You can secure the winch base and thus lower the load.",
+        "c": "You can tie the anchor to the bow deck cleat intended for tying the chain.",
+        "d": "You can move the anchor rope to the stern winch."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 99,
+      "question": "What are the requirements of a mooring rope?",
+      "options": {
+        "a": "Fire proof.",
+        "b": "To sink in the water.",
+        "c": "High tensile strength.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 100,
+      "question": "When entering the Herzliya marina, turning the steering wheel does not affect the boat’s maneuvering, what is your immediate option?",
+      "options": {
+        "a": "Engage the engine in reverse and increase RPM.",
+        "b": "Attach the emergency steering handle on the axle of the rudder.",
+        "c": "Cast anchor.",
+        "d": "Transmit an urgent request for assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 101,
+      "question": "Which of the following ropes, of equal thickness, is the strongest?",
+      "options": {
+        "a": "Polypropylene.",
+        "b": "Manila.",
+        "c": "Nylon.",
+        "d": "Kevlar."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 102,
+      "question": "What is the “life rope” (safety)?",
+      "options": {
+        "a": "Life rope is a rope tied from bow to stern and used for attaching the safety harness while working on deck in stormy weather.",
+        "b": "Life rope is a rope that is supposed to be installed on board at all times and secures the crew when climbing the mast.",
+        "c": "Life rope is a rope attached to a life preserver and used for pulling people out of the water.",
+        "d": "Life rope is a rope which enables saving lives in a stormy sea and used to slow the boat down in waves and prevent bow dive."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 103,
+      "question": "Which is the correct sentence, in relation to tacking or gybing?",
+      "options": {
+        "a": "The diameter of the turn when gybing is smaller than when tacking.",
+        "b": "The danger when tacking, is that the boom moves from side to side suddenly.",
+        "c": "The danger when gybing is that the boom may move from side to side suddenly.",
+        "d": "The danger when gybing is that the boat may come to a standstill with bow to the wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 104,
+      "question": "What does a large heel of the boat cause?",
+      "options": {
+        "a": "Lowers the boat speed.",
+        "b": "Improves steering.",
+        "c": "Increases the boat speed.",
+        "d": "Lowers the lee way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 105,
+      "question": "What is preferred for optimal mooring?",
+      "options": {
+        "a": "It is better to tie one rope tightly to a secure point, than two weak ropes which together will provide the same strength as the strong rope.",
+        "b": "It is better to use two weaker ropes with one tied tightly and the other loosely.",
+        "c": "It is better to tie as many ropes as possible, even if they are weak.",
+        "d": "It is better to use two weak ropes for each tie point so that if one breaks the other will hold."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 106,
+      "question": "You are sailing a 14 meter long boat with a 2 meter keel from Ashkelon to Haifa, at a distance of 2 miles from shore. Opposite the Tel Aviv harbor a south west wind of 25 knots has started, what will you do?",
+      "options": {
+        "a": "Return to Ashkelon.",
+        "b": "Turn back and perform a HEAVE TO.",
+        "c": "Continue north to shelter in the Herzliya marina.",
+        "d": "Turn to the south east and enter the Tel Aviv marina."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 107,
+      "question": "What is the effect of a knot or splice on a rope?",
+      "options": {
+        "a": "Any knot or splice on the rope weakens the original strength.",
+        "b": "Any splice on the rope lowers its strength by one half of the original strength.",
+        "c": "Any splice on the rope increases its strength by one quarter of the original strength.",
+        "d": "Any knot on the rope increases its strength by one eighth of the original strength."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 108,
+      "question": "What is the meaning of the marking 6/12 in cables?",
+      "options": {
+        "a": "6 mains, 12 strings in each main.",
+        "b": "12 millimeter diameter, 6 ton work load.",
+        "c": "12 mains, 6 strings in each main.",
+        "d": "6 ton work load, 12 ton breaking load."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 109,
+      "question": "What is the correct statement about a life raft?",
+      "options": {
+        "a": "The life raft inflates as the result of the impact from the fall to the water from a height of at least 2 meters.",
+        "b": "Only the hydrostatic mechanism inflates the raft.",
+        "c": "Under no circumstances should an inflatable raft be secured to the deck.",
+        "d": "On the bottom of the raft is a strap for righting the raft."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 110,
+      "question": "What is the primary use of a floating anchor?",
+      "options": {
+        "a": "To store objects that help anchoring for a vessel without an anchor.",
+        "b": "To prevent drifting and maintain the bow or stern of the boat to the wind and waves.",
+        "c": "Reduce the drift due to currents.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 111,
+      "question": "Which of the following actions is forbidden while refueling the boat?",
+      "options": {
+        "a": "Verify that the fuel tank breather is free and aerated and there are rags for absorbing diesel fuel next to it.",
+        "b": "Raise the B flag.",
+        "c": "Leave the bilge pump switch on auto.",
+        "d": "Have a crew member watch the fuel gauge."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 112,
+      "question": "When sailing in a slow beam reach, on a starboard tack, you must turn into the wind. How will you act and what will you make sure of?",
+      "options": {
+        "a": "I must turn the boat to port.",
+        "b": "The first step is to go downwind and release the main sail accordingly.",
+        "c": "I will turn the wheel to starboard, if the ship stops facing the wind while turning one must reverse the direction of the rudder.",
+        "d": "Nothing needs to be done, the difference in sail sizes and their lack of balance will turn the boat as needed."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 113,
+      "question": "The boat is tied on its starboard side parallel to the dock with only one rope which serves as the stern brake, the engine is engaged in reverse and the steering wheel is centered. How will the boatreact?",
+      "options": {
+        "a": "The boat will move backwards along the dock.",
+        "b": "The stern will veer to port.",
+        "c": "The bow will veer to port.",
+        "d": "The boat will not move at all, since the rope will not allow it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 114,
+      "question": "You are sailing parallel to the shore at a distance of about 500 meters from it. The wind increases and pushes the boat towards the shore, and you are five hours sailing away from your home anchorage. What action should you take?",
+      "options": {
+        "a": "I will return to the home anchorage.",
+        "b": "I will move quickly away from the shore.",
+        "c": "I will tow a floating anchor from the stern.",
+        "d": "I will continue as planned."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 115,
+      "question": "What is the meaning of the definition “TO RUN BEFORE”?",
+      "options": {
+        "a": "To sail against the wind and waves.",
+        "b": "To sail with the wind and waves.",
+        "c": "There is no such phrase in use for defining sailing with respect to the wind and waves.",
+        "d": "During a sailboat race, an expression which means: “to precede the others”."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 116,
+      "question": "The wind is east, you are on your way from Limassol (Cyprus) to Haifa on a course of 135°. At what approximate angle is the wind blowing on your boat? (angle and tack to the wind relative to the bow of the boat)",
+      "options": {
+        "a": "Starboard tack, about 045° from the bow.",
+        "b": "Starboard tack, about 145° from the bow.",
+        "c": "Port tack, about 045° from the bow.",
+        "d": "Port tack, about 145° from the bow."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 117,
+      "question": "How will you act initially when the anchor is dragging?",
+      "options": {
+        "a": "I will shorten the rope until the dragging stops.",
+        "b": "I will release more anchor rope or chain.",
+        "c": "I will move the tie point to the stern (less resistance).",
+        "d": "All the answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 118,
+      "question": "Which of the following statements is the most accurate regarding cables? (reading from left to right of the cable structure)",
+      "options": {
+        "a": "A 7x19 cable serves for securing the raft.",
+        "b": "A 7x19 cable serves for the anchor as it is more flexible.",
+        "c": "A 7x19 cable is the most rigid.",
+        "d": "A 1x19 cable serves mostly for the safety railing."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 119,
+      "question": "What is the TOPPING LIFT system used for on a sailboat?",
+      "options": {
+        "a": "To support and secure the boom when the mainsail is up.",
+        "b": "To pull the boom downward in a strong wind.",
+        "c": "As a raiser for the foresail.",
+        "d": "To support and secure the boom when the main sail is lowered."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 120,
+      "question": "You are sailing on a 090° course on a north wind, rated 4 on the Beaufort scale, (the boat has two masts). What will be the effect of carrying the following sails on your progress and on the steering? (the boat is balanced in terms of pressure)",
+      "options": {
+        "a": "When sailing on main sail only – the progress is quickest, the boat has a tendency to turn into the wind.",
+        "b": "When sailing with a foresail only – the boat has a tendency to turn to a following wind.",
+        "c": "When sailing with all sails – progress is quick and there are no steering issues.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 121,
+      "question": "The wind gauge shows 25 knots and the sea is white with foam. Describe and define the weather situation on the Beaufort scale.",
+      "options": {
+        "a": "Strong gusts, 7 on the Beaufort scale.",
+        "b": "Strong wind, 3 on the Beaufort scale.",
+        "c": "Very strong wind, 6 on the Beaufort scale.",
+        "d": "Stormy weather, 5 on the Beaufort scale."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 122,
+      "question": "Your boat Sloop is sailing in a headwind of 25 knots, with 4 meter waves, mainsail and foresail reefed. All of a sudden the foresail halyard breaks, you must send people to work on the bow, what is preferable (in terms of crew safety)?",
+      "options": {
+        "a": "Change to a beam reach and make sure the helmsman maintains course.",
+        "b": "Continue on the present course and make sure the helmsman maintains it.",
+        "c": "Change to running and make sure the helmsman maintains course.",
+        "d": "Change to a broad reach wind and make sure the helmsman maintains course."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 123,
+      "question": "What are your first actions when recognizing flooding on board?",
+      "options": {
+        "a": "Taste the water, activate pumps, seal openings.",
+        "b": "Start the engine, transmit a distress signal, activate the pumps.",
+        "c": "Transmit a distress signal on the radio, open a life raft.",
+        "d": "Put on the life vests and head quickly to a marina."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 124,
+      "question": "At what angle to the wind is the yacht in danger of an uncontrolled gybe?",
+      "options": {
+        "a": "When turning.",
+        "b": "When running.",
+        "c": "When in a broad reach.",
+        "d": "When close hauled."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 125,
+      "question": "Which of the following means help us determine that the sails are set correctly for sailing in a head wind?",
+      "options": {
+        "a": "Boat speed.",
+        "b": "The lean of the yacht.",
+        "c": "The limit of flutter of the foresail.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 126,
+      "question": "How will the sails be set when the yacht is sailing close hauled?",
+      "options": {
+        "a": "The sails are loose.",
+        "b": "The sails are tight to the keel line.",
+        "c": "The foresail should be tight to the middle.",
+        "d": "There is no need to set the sails."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 127,
+      "question": "While sailing in the bay of Atlit you have hit a sandbar. What are your actions to get free from it?",
+      "options": {
+        "a": "I will empty the water and fuel so that the boat becomes lighter, I will ask the people to get off and into the water and I will try to get off the sandbar by engaging reverse gear.",
+        "b": "I will engage neutral or lower sails, will conduct damage assessment and check the type of ground, and then call the insurance company emergency center to get further instructions.",
+        "c": "I will engage neutral or lower the sails and conduct damage assessment, and if possible I will try to free the boat by engaging reverse.",
+        "d": "I can free the boat by increasing speed and engine RPM and trying to skip over the sandbar."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 128,
+      "question": "You are sailing a sailboat in direction 300º, the wind is north at 10 knots. You would like to change the sailing course to 060º. What is the most effective action you can take?",
+      "options": {
+        "a": "I will turn the steering wheel to starboard and perform a gybe.",
+        "b": "I will turn the steering wheel to starboard and perform a tack.",
+        "c": "I will turn the steering wheel to port and perform a gybe.",
+        "d": "I will turn the steering wheel to port and perform a tack."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 129,
+      "question": "You are sailing a sailboat in direction 120º , the wind is west at 30 knots, and you would like to change direction to 060º . What is the most effective and safest action you can take?",
+      "options": {
+        "a": "I will turn the steering wheel to starboard and perform a gybe.",
+        "b": "I will turn the steering wheel to starboard and perform a turn.",
+        "c": "I will turn the steering wheel to port and perform a gybe.",
+        "d": "I will turn the steering wheel to port and perform a turn."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 130,
+      "question": "You are sailing a 12 meter long boat heading north west (on board in addition to yourself are 5 crew members for whom this is a first sailing. 3 of them are children). The wind is south west (240º) at 15 knots with gusts to 20 knots. You are sailing with full sails and your boat assumes a strong healing every time there is a wind gust. You would like to change the situation. What should you do?",
+      "options": {
+        "a": "I will turn upwind to a close haul and reduce the healing.",
+        "b": "I will flutter the sails during wind gusts.",
+        "c": "I will go downwind to running in order to reduce the healing.",
+        "d": "I will reef the sails and consider sailing on foresail alone."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 131,
+      "question": "What are the most important things you will brief inexperienced people on prior to a sailing of several days?",
+      "options": {
+        "a": "There is no need for a detailed briefing prior to departure, we have a whole week to learn to operate the boat. I will explain to them about the assistance I will need during engine maneuvers.",
+        "b": "I will explain about the dangers of going overboard, the assistance I will need during the sailing, ask them to alert me to anything they think is out of the ordinary, advise them to be careful with fire, the actions when abandoning ship and the workings of the toilet.",
+        "c": "I will explain the principles of engine maneuvers and basic rules of the sea, actions when abandoning ship and the location of the life raft.",
+        "d": "I will explain to them about what we should expect in the coming week, about the course for the first day, the meaning of life on a boat, the conservation of water, the working of the toilet, conserving electricity, the rules of environmental friendliness and the assistance I will need."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 132,
+      "question": "How should ropes be maintained?",
+      "options": {
+        "a": "They should be replaced periodically.",
+        "b": "Wash them in sweet water and dry and store them in the shade.",
+        "c": "Roll them up following use, and keep in a locker.",
+        "d": "Most of the ropes are synthetic and do not require special maintenance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 133,
+      "question": "What are the desired characteristics of an anchor rope and what rope would you prefer to use?",
+      "options": {
+        "a": "A sinking rope, and non-stretching.",
+        "b": "A stretchable rope, floating, braided rope.",
+        "c": "A stretchable rope, floating, interwoven.",
+        "d": "A stretchable and sinking (non-floating) rope."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 134,
+      "question": "You would like to make a turn in a narrow channel, the width of the channel is slightly greater than the length of your boat. You boat has a right hand propeller, through which side would you prefer to turn (assuming the wind is negligible)?",
+      "options": {
+        "a": "I would prefer to turn through the starboard side so I can use the prop work when moving backwards.",
+        "b": "I would prefer to turn through the starboard side so I can use the offset.",
+        "c": "The wind is more significant than the prop work so there is no importance to the side through which I choose to turn.",
+        "d": "I would prefer to turn through the stern since the axis of turn moves backwards."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 135,
+      "question": "You have tied a 19 meter boat to a refueling dock at a marina, the wind is pushing you into to the dock and you would like to depart from there. What is a possible solution to this challenge?",
+      "options": {
+        "a": "I will issue instruction to move the bow out with a pole and I will exit bow forward.",
+        "b": "I will move the stern away from the dock and exit with the bow forward.",
+        "c": "I will use a bow brake (spring) and fender in the bow and engage engine forward.",
+        "d": "I will use a bow brake (spring) and fender in the bow and sail by engaging engine to reverse."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 136,
+      "question": "You are interested in Mediterranean mooring in one of the marinas in Greece. Where can you find information on the marina and mooring location?",
+      "options": {
+        "a": "In the pilot book, sea charts and information from friends who have sailed in the area.",
+        "b": "In the pilot book, tour guides, and almanac.",
+        "c": "There is no structured literature for the Greek Islands in Hebrew, I must approach slowly and check every single location.",
+        "d": "In the almanac and in the anchorages and ports guide."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 137,
+      "question": "When will you prefer to dock with the bow to the dock as opposed to the stern to the dock?",
+      "options": {
+        "a": "When there is a strong wind and I have a hard time sailing backwards.",
+        "b": "When the depth changes near the dock and there is fear of hitting the rudder.",
+        "c": "When I am interested in privacy.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 138,
+      "question": "You are tied to a dead anchor using a mooring line. What is the danger when leaving?",
+      "options": {
+        "a": "That when releasing the rope I will fall on the boat next to me.",
+        "b": "That there is no possibility of using the rope as assistance in maneuvering.",
+        "c": "That it is not possible to engage the engine until the rope has sunk.",
+        "d": "There is no correct answer."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 139,
+      "question": "How can you determine if your boat’s anchor is dragging?",
+      "options": {
+        "a": "There is no way to know if the anchor is dragging you must keep anchor watch as long as the boat is anchored.",
+        "b": "The bow of the boat will remain into the wind but the boat will move backwards.",
+        "c": "There will be no vibrations on the anchor chain and I will feel the boat changing location.",
+        "d": "There will be vibrations on the anchor line and the boat will not maintain its bow to the wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 140,
+      "question": "What is the correct sequence of actions when mooring?",
+      "options": {
+        "a": "Select the mooring location, brief the crew, reach the mooring location with the wind on the stern, stop, cast anchor and use reverse gear to plant the anchor.",
+        "b": "Select the mooring location, brief the crew, reach the mooring location bow to the wind, stop, cast anchor and check if the anchor is dragging.",
+        "c": "Select a mooring location, set the anchor line length and prepare it on board, approach the mooring location and cast the anchor while moving backwards.",
+        "d": "While moving forward cast the anchor, stop the boat and check if the anchor is dragging."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 141,
+      "question": "What are your actions when a man goes overboard in a stormy sea while sailing on sails?",
+      "options": {
+        "a": "Call the person in the water, toss a life preserver, maintain visual contact, turn to a beam reach and perform a man at sea maneuver.",
+        "b": "Call the person in the water, toss a life preserver, press MOB on the navigation system, maintain visual contact, turn to a beam reach and perform a man at sea maneuver.",
+        "c": "Toss a life preserver, roll in the foresail, start the engine and approach the person in the water.",
+        "d": "Call the person in the water, toss a life preserver with a rope, perform a heave to and wait for the person to swim to you."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 142,
+      "question": "You are sailing to Cyprus and suddenly hear a call for help and towing from an Israeli sailboat which is 90 miles from Cyprus. The weather is good but the forecast predicts a low pressure in 48 hours (the request for towing is due to engine failure). What will your actions be?",
+      "options": {
+        "a": "Lower sails and immediately proceed to rescue the boat, based on the rules of the sea I must assist a vessel in distress.",
+        "b": "Lower sails, prepare a towing triangle in the stern, approach the boat from the windward side and tow it carefully to Cyprus.",
+        "c": "Check if I am able to perform the tow (fuel status, appropriate ropes, etc.), I have no obligation to assist the boat since it is not in distress.",
+        "d": "I will proceed to it from windward and tow it to Haifa since Haifa is closer."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 143,
+      "question": "A 10 knot wind is blowing directly from the south, you are sailing on sails on a course of 205°, the steering is limp in your hands and you have trouble maintaining course. What is the reason for that?",
+      "options": {
+        "a": "The wind is probably too strong.",
+        "b": "You are too “close” to the wind, and your speed in the water is too low.",
+        "c": "The wind must be too weak.",
+        "d": "You are too “close” to the wind, and your speed in the water is too high."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 144,
+      "question": "In the CARDINAL buoy system you see a yellow and black buoy, and above it this symbol . From where should you pass the buoy?",
+      "options": {
+        "a": "You must pass the buoy to the north.",
+        "b": "You must pass the buoy to the south.",
+        "c": "You must pass the buoy to the east.",
+        "d": "You must pass the buoy to the west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 145,
+      "question": "How will lowering one of the sails affect a two mast boat reaching in a beam reach? (the boat is trimmed in terms of pressure)",
+      "options": {
+        "a": "Lowering the mainsail will cause the boat to turn windward.",
+        "b": "Lowering the foresail will cause the boat to turn windward.",
+        "c": "Lowering the aft sail will cause the boat to turn windward.",
+        "d": "Lowering the mainsail will cause the boat to turn leeward."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 146,
+      "question": "Which factors must you take into account when towing another vessel?",
+      "options": {
+        "a": "The sea condition, the fuel quantity, the strength of the tie point.",
+        "b": "The fuel quantity, the number of crew on the towed vessel and if it is according to the ministry of transportation regulations.",
+        "c": "If the towed vessel is larger and heavier than the towing vessel, this is impossible from a physics point of view.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 147,
+      "question": "What is the reason that when a boat is turning, it is recommended to turn the rudder to a maximum angle of 45° to the keel and no more?",
+      "options": {
+        "a": "This angle represents a 90° counter to the forces at work and the resultant force is the shortest vector.",
+        "b": "At an angle greater than 45° the turning force is greater than the braking force.",
+        "c": "At 45° the turning force to braking force ration is optimal.",
+        "d": "At 45° the braking force is minimal."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 148,
+      "question": "The weight of your rubber boat with an outboard motor is 320 kilograms. You attach to the end of the main boom a set of pulleys so that 4 cables extend from the moving pulley (the one which attaches to the rubber boat) and you would like to lift the boat using the pulleys. Ignoring friction, what is the force required to lift the boat?",
+      "options": {
+        "a": "64 kilograms.",
+        "b": "54 kilograms.",
+        "c": "70 kilograms.",
+        "d": "80 kilograms."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 149,
+      "question": "When you are about to enter a marina you wish to roll down the foresail. The foresail roller is not moving. What are your possible actions?",
+      "options": {
+        "a": "Reduce the load on the foresail and try again.",
+        "b": "I will pass the rope from the foresail roller to a stronger winch and try again.",
+        "c": "I will release the foresail chord and lower the sail to the deck.",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 150,
+      "question": "At what angle to the wind will the boat’s bow be at “HEAVE TO”?",
+      "options": {
+        "a": "About 180° from the real wind direction.",
+        "b": "About 60° from the real wind direction.",
+        "c": "About 130° from the real winddirection.",
+        "d": "About 140° from the real winddirection."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 151,
+      "question": "You are caught in a storm with your boat sloop, with winds of 45 knots, estimated wave height of 7 meters, the mainsail is fully lowered, the reefed foresail you raised was ripped, and the boat is being swept with its side to the wind and waves. What is the required action?",
+      "options": {
+        "a": "Prevent bowing under by reducing excess weight in the bow.",
+        "b": "Cast a floating anchor, to stabilize the boat facing the wind and waves.",
+        "c": "Make sure the valve controlling sea water entrance to the engine cooling is closed to prevent flooding of the boat.",
+        "d": "Shut the water suction valves to prevent water entering the boat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 152,
+      "question": "On your initial entrance to a port in Turkey you are required to have a TRANSIT LOG. What is this document?",
+      "options": {
+        "a": "Waiver of port fees.",
+        "b": "Approval for free movement in Turkish coastal waters.",
+        "c": "Approval for entry into ports on nearby Greek islands as well.",
+        "d": "Approval for taking trips in Turkish cities."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 153,
+      "question": "How should you act when encountering stormy weather?",
+      "options": {
+        "a": "You must switch off the engine immediately (so no air enters when the suction opening is out of the water in a heal).",
+        "b": "You must respond quickly and try to bypass the storm.",
+        "c": "You must reduce sails, but not lower them fully, so you have some means of propulsion.",
+        "d": "You must lower sails as they will not withstand the pressure."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 154,
+      "question": "Under which of the following conditions is the boat’s steering more effective?",
+      "options": {
+        "a": "When the boat is sailing with the waves.",
+        "b": "When the boat is sailing with the wind and the waves at a high speed.",
+        "c": "When the boat is sailing with the waves at a slow speed.",
+        "d": "When the boat is sailing against the waves."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 155,
+      "question": "Your boat Ketch is sailing downwind almost running, with a 20 knot wind and waves from behind. The automatic steering is having difficulty maintaining course. What is the danger in this situation?",
+      "options": {
+        "a": "The aft sail will deflect wind from the main sail.",
+        "b": "The pressure on the rear vents is too high.",
+        "c": "A sudden change of sides of the boom can cause serious damage.",
+        "d": "The foresail will cease getting any wind due to obstruction from the main and aft sails."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 156,
+      "question": "When sailing at sea (with a 2 mast boat) in a beam reach, you felt a strong tendency of your boat to turn windward. How will you react in terms of sailmanship?",
+      "options": {
+        "a": "I will change to a smaller foresail.",
+        "b": "I will reduce the aft sail.",
+        "c": "I will release the foresail a little.",
+        "d": "I will reduce the mail sail."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 157,
+      "question": "You are sailing on course 225°, the real wind is from the NE, the wind gauge is showing 12 knots, your boat speed is 12 knots, what is the force of the real wind in the area?",
+      "options": {
+        "a": "17 knots.",
+        "b": "24 knots.",
+        "c": "0 knots.",
+        "d": "12 knots."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 158,
+      "question": "How does healing affect the boat?",
+      "options": {
+        "a": "The healing reduces speed and increases deviation.",
+        "b": "The healing reduces speed and reduces the deviation.",
+        "c": "The healing improves the steering and increases speed.",
+        "d": "The healing reduces the deviation only without affecting the speed."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 159,
+      "question": "Your 12 meter long and 4.5 meter wide boat is towing, with engine assistance, a sailboat which is 10 meters long and 3.5 meters wide. The tow rope which is 10 meters long is tied to the towing triangle in the stern. You must make a sharp turn to starboard that has caused slack in the tow rope. What might be the immediate effect on your boat when the rope tightens again and prior to the bow of the towed vessel passing your stern?",
+      "options": {
+        "a": "That the towed boat will cause your bow to veer to port.",
+        "b": "That the towed vessel will veer its bow sharply to starboard.",
+        "c": "There will be no effect.",
+        "d": "There is danger that the towing vessel will capsize."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 160,
+      "question": "What correctly describes the relative situation between the wind and your bow when sailing on sails only?",
+      "options": {
+        "a": "Close hauled is between 60° and 70° to the wind.",
+        "b": "Close hauled is about 45° to the wind.",
+        "c": "A broad reach is about 40° to the wind.",
+        "d": "A running wind is about 145° to the wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 161,
+      "question": "What is recommended when towing, in rough weather?",
+      "options": {
+        "a": "Increase the length of the tow rope and make it as heavy is possible.",
+        "b": "Shorten the tow rope as much as possible.",
+        "c": "Lengthen the tow rope as much as possible and float it.",
+        "d": "Shorten the tow rope and make it as heavy as possible."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 162,
+      "question": "You are sailing on course 225°, the real wind is from the NE, the wind gauge is showing 0 knots, your boat speed is 12 knots, what is the real wind speed in the area?",
+      "options": {
+        "a": "17 knots.",
+        "b": "24 knots.",
+        "c": "0 knots.",
+        "d": "12 knots."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 163,
+      "question": "While docked at a marina you get a warning that a very strong wind (Beaufort 9) is expected in the morning with high waves. What will you do?",
+      "options": {
+        "a": "There is nothing to worry about, the boat is inside the marina and protected.",
+        "b": "I will lower sails and keep them inside the boat so they do not suffer damage.",
+        "c": "I will use double tie ropes to strengthen the mooring to the dock.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 164,
+      "question": "What must you do when you have received a distress call on radio channel 16 from a vessel 20 miles off your course?",
+      "options": {
+        "a": "Turn immediately towards the vessel in distress, because I have an obligation to save human life at any cost.",
+        "b": "Go to save human life only when the distance is reasonable.",
+        "c": "You are exempt from going to assist, unless a shore radio station notifies you that you are the closest to the distress site and it is your duty to rescue.",
+        "d": "Go and rescue human life unless you have considered it and have concluded that the risk to the life of your crew is too high."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 165,
+      "question": "Where is it possible and advisable to store your boat’s life raft?",
+      "options": {
+        "a": "In the stern locker and make sure it is padded to prevent damage.",
+        "b": "Inside the boat, in an area protected from sun and wet.",
+        "c": "Tied on deck or on the stern railing and make sure the painter line is tied.",
+        "d": "Prior to sailing it must be filled with air and towed behind my vessel."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 166,
+      "question": "Of the following anchor types, which will have the best hold in a sandy bottom?",
+      "options": {
+        "a": "Bruce anchor.",
+        "b": "Mushroom anchor.",
+        "c": "Cat anchor.",
+        "d": "Floating anchor."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 167,
+      "question": "What are the Meltemi winds?",
+      "options": {
+        "a": "A type of cyclone wind, like the tornado and hurricane.",
+        "b": "A strong south seasonal wind in the region of France, primarily in the months of January to March.",
+        "c": "A strong north wind appearing primarily during the months of July and August in the Aegean Sea.",
+        "d": "A strong south wind appearing primarily during the months of April and May, in the area of Limassol in Cyprus."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 168,
+      "question": "What do cumulonimbus clouds portend?",
+      "options": {
+        "a": "Warning of a warm front.",
+        "b": "Warning of a barometric high.",
+        "c": "Stormy weather accompanied by lightning, rain and a strong wind.",
+        "d": "Comfortable weather, partially cloudy to cloudy."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 169,
+      "question": "What are the isobars on a synoptic chart?",
+      "options": {
+        "a": "Lines passing through points of identical temperature.",
+        "b": "Lines passing through points where the wind is identical.",
+        "c": "Lines connecting the points on a cold front.",
+        "d": "Lines connecting the points where the pressure is the same."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 170,
+      "question": "What will be the direction of the wind around a barometric low pressure in the northern hemisphere?",
+      "options": {
+        "a": "Clockwise.",
+        "b": "Directly to the center of the low pressure.",
+        "c": "Counter clockwise.",
+        "d": "Directly from the center of the low pressure outwards."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 171,
+      "question": "What is the correct statement?",
+      "options": {
+        "a": "A breeze is only felt on the shores of Israel when the Cypriot high strengthens.",
+        "b": "Sharqiya is a strong dry east wind which blows primarily during the transition seasons and is felt primarily in the north of Israel.",
+        "c": "The permanent wind blowing in the bay of Eilat in the winter months is a weak south wind.",
+        "d": "Bora is a north wind, dry and very strong, blowing in the bay of Lyon (southern France)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 172,
+      "question": "What is the correct statement?",
+      "options": {
+        "a": "A red low pressure trough in summer causes north west winds along the Mediterranean coast of Israel.",
+        "b": "North west winds and high sea waves on the shores of Israel in winter are the sign of an approaching low pressure from the west.",
+        "c": "A cold front in the Mediterranean Sea is accompanied by cumulous and cumulonimbus clouds.",
+        "d": "A cold front in the northern hemisphere is characterizes by stratus and cirrus clouds."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 173,
+      "question": "What is the incorrect statement?",
+      "options": {
+        "a": "In a warm front there are cumulous and cumulonimbus clouds.",
+        "b": "Cumulonimbus clouds are created when there is atmospheric instability.",
+        "c": "In our area cumulonimbus clouds are associated with the passing of a cold front.",
+        "d": "An approaching warm front is characterized by the slow descent of the cloud base."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 174,
+      "question": "What is the correct statement?",
+      "options": {
+        "a": "“Trough” – is an extension of a high.",
+        "b": "“Ridge” – is an extension of a low.",
+        "c": "“Saddle” – is a meeting point of two highs and two lows.",
+        "d": "When you move away from the center of a low the pressure drops."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 175,
+      "question": "What is the meaning of the term “breeze”?",
+      "options": {
+        "a": "A strong wind from the south west in the winter.",
+        "b": "The wind typical of the Adriatic sea in Italy.",
+        "c": "Wind created as a result of the temperature difference between the sea and the land.",
+        "d": "A wind in our country called “Sharqa” in Arabic."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 176,
+      "question": "What does it mean when the weatherman states that at the end of the week a “cold front” will enter our region from the sea?",
+      "options": {
+        "a": "The weather will be nice and the sea calm.",
+        "b": "Stormy weather is expected with a rise in sea height.",
+        "c": "Stable weather is expected.",
+        "d": "Strong north east winds are expected in the Haifa Bay with a calm sea."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 177,
+      "question": "Which meteorological phenomenon is not characteristic of our region?",
+      "options": {
+        "a": "On the Mediterranean shore of Israel one can expect, after the passing of a cold front related to a low, a change in wind from south west to west.",
+        "b": "After the passing of a cold front on the shores of Israel, the barometric pressure will drop sharply.",
+        "c": "Strong cold east winds blowing in the north of Israel in winter, will be characterized by a calm sea near the shore.",
+        "d": "A drop in barometric pressure may signal an approaching low."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 178,
+      "question": "When you are planning on sailing in the area of the Greek Islands in the months of July-August which of the following weather phenomena might you encounter?",
+      "options": {
+        "a": "Bora – strong north winds.",
+        "b": "Meltemi – strong north winds.",
+        "c": "Shirocco – a hot low pressure.",
+        "d": "Hot dry winds from the south west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 179,
+      "question": "What do tight isobars on the synoptic map indicate?",
+      "options": {
+        "a": "The tighter the isobars the stronger the wind.",
+        "b": "The tighter the isobars the weaker the wind.",
+        "c": "The more twisting the isobars the stronger the wind.",
+        "d": "The denseness of the isobars indicates the direction of the wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 180,
+      "question": "What can you learn from the synoptic map on the wind direction (northern hemisphere)?",
+      "options": {
+        "a": "The wind around a low will be counterclockwise and diverging.",
+        "b": "The wind around a low will be counterclockwise and converging.",
+        "c": "The wind blows with the isobars.",
+        "d": "The wind blows clockwise around a saddle and counter clockwise around a high."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 181,
+      "question": "What is the correct statement regarding the attached synoptic chart?",
+      "options": {
+        "a": "Picture 1 is prior to the passing of a warm front, the barometric pressure will rise and the sea will be calm before the storm.",
+        "b": "Picture 4 is following the passing of a warm front and prior to the passing of the cold front.",
+        "c": "Picture 3 is during the passing of a warm front, the barometric pressure is dropping and the sea is rising.",
+        "d": "Picture 2 is prior to the passing of the cold front, the sea is high and the wind is strong from the south west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 182,
+      "question": "You would like to sail to Cyprus. The forecast is showing a low in the area of Greece heading towards our region. What will you do?",
+      "options": {
+        "a": "I will leave earlier and prepare for a storm. The low may pass above me.",
+        "b": "I will delay my departure until after the passing of the low, as it will catch me on the way.",
+        "c": "There is no way to determine the direction of progress of the low so I will depart as planned.",
+        "d": "I will depart since the low will bring south west winds which are convenient for sailing to Cyprus and following the passing of the low the wind will shift to a north wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 183,
+      "question": "While approaching the Herzliya marina from the west you are sailing in a sea with 2 meter swell waves from the west. What do you think will be the height of the waves close to the entrance and what will you do?",
+      "options": {
+        "a": "Prepare a floating anchor in the stern, and be prepared to cast it should I encounter high shore waves.",
+        "b": "Most likely at the entrance there will be high waves so I will try to time my entrance to a lull between waves.",
+        "c": "I will approach the long way from the north so I can verify that the entrance is clear.",
+        "d": "I will approach from the west at speed so that the people on board do not get sea sick and I will keep as far away from the breaker as possible."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 184,
+      "question": "You are sailing from Cyprus to Israel in December. 30 miles from Cyprus you receive a weather forecast and it appears there will be a worsening of the wind and waves and the barometric pressure is dropping. What will you do?",
+      "options": {
+        "a": "I will prepare the boat for stormy weather, prepare a life harness and return to Cyprus.",
+        "b": "I will prepare the boat for stormy weather and change my destination to Haifa.",
+        "c": "I will prepare the boat for stormy weather, drill the crew on the abandoning ship protocol and enter a “heave to”.",
+        "d": "I will raise the spinnaker and try to reach Herzliya before the storm."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 185,
+      "question": "You are sailing at night in a sailboat on a starboard tack, on your starboard and in front of the bow you see a red light. What are your actions?",
+      "options": {
+        "a": "There is no danger of collision.",
+        "b": "I turn to port he is to leeward.",
+        "c": "I turn to starboard, he is on a port tack.",
+        "d": "Maintain course and speed, he is windward."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 186,
+      "question": "You are sailing at night in a motor boat and on your port and before the beam you see a green light. What are your actions?",
+      "options": {
+        "a": "It is a motorized vessel on my starboard. It yields, I maintain course and speed.",
+        "b": "It is a sailboat so I yield to the port side of the boat.",
+        "c": "I maintain course and speed. The other boat is motorized and gaining and will pass me.",
+        "d": "There is no danger of collision."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 187,
+      "question": "You are sailing in a sailboat on a starboard tack, on your port and on a collision course with you is a sailboat on a port tack. What is your action?",
+      "options": {
+        "a": "Maintain course and speed, he will yield way.",
+        "b": "He yields, I am exempt from taking any action.",
+        "c": "Yield to port, behind his stern.",
+        "d": "Start the engine prior to yielding to be on the safe side."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 188,
+      "question": "When nearing a marina entrance during the day you notice a vessel carrying the following day signals: ball, diamond, ball which is stationary in the entrance. To the starboard of the vessel you see two black balls. What do you identify the vessel as and what to you do?",
+      "options": {
+        "a": "A limited maneuverability vessel due to its work it is forbidden to pass on the starboard side. I will pass it on its port side.",
+        "b": "A limited maneuverability vessel due to its work it is forbidden to pass on the port side. I will pass it on its starboard side.",
+        "c": "A limited maneuverability trolley, broken down in the entrance of the marina. I yield to starboard.",
+        "d": "A vessel grounded on a sandbar in the entrance to the marina. I yield to port while checking the depth."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 189,
+      "question": "What meteorological phenomenon is not typical for our region?",
+      "options": {
+        "a": "On the Mediterranean shores of Israel one can expect, following the passing of a cold front related to a low, a change in wind from south west to west.",
+        "b": "Following the passing of a cold front on the shores of Israel, the barometric pressure will sharplyrise.",
+        "c": "Strong cold east winds blowing in the north of Israel in winter, are most likely the result of a barometric low in the south of Russia.",
+        "d": "A drop in barometric pressure may indicate an approaching low."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 190,
+      "question": "With reference to the following chart, what will be the wind direction at the meeting point of the island of Cyprus and isobar 1004?",
+      "options": {
+        "a": "North east.",
+        "b": "West.",
+        "c": "South west.",
+        "d": "South east."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 191,
+      "question": "With reference to the attached chart, when sailing from A to B, what will be the change of the barometric pressure (for the sake of the question the low is stationary)?",
+      "options": {
+        "a": "The barometric pressure will be rising.",
+        "b": "The barometric pressure will be steady.",
+        "c": "The barometric pressure will be dropping.",
+        "d": "It is not possible to determine from the chart the trend of the pressure."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 192,
+      "question": "With reference to the attached chart, what will be the wind direction at point C?",
+      "options": {
+        "a": "The wind at this point will be north to north east.",
+        "b": "The wind at this point will be east.",
+        "c": "The wind at this point will be south.",
+        "d": "The wind at this point will be west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 193,
+      "question": "Which of the following is the most correct statement regarding waves?",
+      "options": {
+        "a": "Wind waves are necessarily moving in the same direction as swell waves.",
+        "b": "Swell waves were formed in a distant stormy region, which had sustained strong winds.",
+        "c": "Shore waves are formed due to the Coriolis effect.",
+        "d": "In Israel, high shore waves are created when there is a “sharqiya” blowing."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 194,
+      "question": "What is the most correct statement regards a high, low, extended low, and ridge?",
+      "options": {
+        "a": "In a high or ridge in the northern hemisphere, the wind swings clockwise while diverging.",
+        "b": "In a high or ridge in the northern hemisphere, the wind swings clockwise while converging.",
+        "c": "In a low there is the convergence and coming down of hot air, which causes cloud formation.",
+        "d": "In a high there is the convergence and rise of cold air, causing cloud formation."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 195,
+      "question": "What meteorological phenomenon is appropriate for the most part in our region? (on the Mediterranean shores)",
+      "options": {
+        "a": "A Red Sea low in winter causes south west winds on the northern Mediterranean shores of Israel.",
+        "b": "South west winds and high waves on the shores of Israel in the winter are the sign of an approaching low from the east.",
+        "c": "A cold front in the Mediterranean Sea is usually accompanies by cumulous and cumulonimbus clouds.",
+        "d": "Answers “b” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 196,
+      "question": "With reference to the attached chart, what will be the wind direction in the Bosphorus strait (without taking into account the effects of the topography)? (the strait is in Turkey)",
+      "options": {
+        "a": "North West.",
+        "b": "West.",
+        "c": "South West.",
+        "d": "South East."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 197,
+      "question": "On your bow’s port side you notice a white light, underneath it a flashing yellow light and a green light below both of them. What is the required action?",
+      "options": {
+        "a": "I maintain course and speed.",
+        "b": "There is no danger of collision.",
+        "c": "I yield, a motorized vessel yields to a hovercraft.",
+        "d": "I yield, a motorized vessel yields to a limited maneuverability vessel."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 198,
+      "question": "You are sailing in a sloop type sailboat running in a starboard tack foresail on the starboard side. On your starboard on a collision course you notice a ketch type sailboat running with its mainsail on its port side, the foresail and aft sail on the starboard side. What will be your action?",
+      "options": {
+        "a": "I will yield as I see it on my starboard.",
+        "b": "I will yield as I am windward.",
+        "c": "It yields since it is on a port tack.",
+        "d": "It yields since you are both on starboard tacks and it is to windward."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 199,
+      "question": "You are sailing a sloop type sailboat (single mast) running on a starboard tack. On your starboard and on a collision course is a Ketch type sailboat, mainsail to port and aft sail to port. Who yields way?",
+      "options": {
+        "a": "You, since the other boat is to your starboard.",
+        "b": "You, since it is to leeward.",
+        "c": "The other boat, since its mainsail is to port.",
+        "d": "The other boat, since it is to windward."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 200,
+      "question": "You are sailing in a motorized vessel, on your bow appear lights as described in picture 58. What is it and what is your action?",
+      "options": {
+        "a": "A pilot boat, we will each turn to starboard.",
+        "b": "A fishing boat, I must yield to starboard.",
+        "c": "It is a sailboat with engine running, I must yield to starboard.",
+        "d": "It is a sailboat showing permission lights, I must yield to starboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 201,
+      "question": "Sailboat P notices sailboat H. The wind is from the south west. What is the required action?",
+      "options": {
+        "a": "P is on a starboard tack and H is on a starboard tack, P is to windward, P yields.",
+        "b": "P is on a starboard tack and H is on a port tack, H yields.",
+        "c": "P is on a port tack and H is on a port tack, H is to windward, H yields.",
+        "d": "P is on a port tack H is on a starboard tack, P yields."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 202,
+      "question": "Sailboat B, which is displaying two black balls, notices sailboat J. What is the required action?",
+      "options": {
+        "a": "There is danger of collision, B yields.",
+        "b": "J yields since it is on a port tack and B on an unknown tack.",
+        "c": "J yields in the most effective direction.",
+        "d": "There is no danger of collision, B is anchored."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 203,
+      "question": "Vessel M, displaying a black diamond, notices vessel K also displaying a black diamond. What is the required action?",
+      "options": {
+        "a": "M yields to K: a motorized vessel yields to a limited maneuverability vessel.",
+        "b": "K yields to M: a motorized vessel yields to a limited maneuverability vessel.",
+        "c": "M yields to K, he who sees to starboard yields.",
+        "d": "K yields to M: a motorized vessel yields to a vessel that is not under command."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 204,
+      "question": "Vessel P, displaying a black diamond, notices vessel H also displaying a black diamond. What is the required action?",
+      "options": {
+        "a": "P yields to H a motorized vessel yields to a limited maneuverability vessel.",
+        "b": "H yields to P a fishing vessel yields to a limited maneuverability vessel.",
+        "c": "Each vessel yields to its starboard, two motorized vessels bow to bow.",
+        "d": "Each vessel yields to its starboard, two limited maneuverability vessels bow to bow."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 205,
+      "question": "You notice a vessel flying a blue and white flag with a split in the middle (flag A). What is the vessel and how will you act?",
+      "options": {
+        "a": "It is a grounded vessel, I will determine the location and distance myself.",
+        "b": "It is a vessel in distress, I will approach to assist.",
+        "c": "It is a vessel engaged in maritime work.",
+        "d": "It is a vessel lowering divers, I must keep at least 200 meters away."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 206,
+      "question": "You are sailing a motorized vessel and notice to your port the light as depicted in picture 65. What is the vessel and what is the required action?",
+      "options": {
+        "a": "It is a limited maneuverability vessel due to work up to 50 meters.",
+        "b": "There is no danger of collision.",
+        "c": "It is a limited maneuverability vessel with a hazard on its starboard side.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 207,
+      "question": "You are sailboat N, the wind is from the north, and you notice a red light on your starboard. What is the vessel and what is the required action?",
+      "options": {
+        "a": "It is the port side of a sailboat.",
+        "b": "I maintain course and speed.",
+        "c": "I must yield way.",
+        "d": "Answers “a” and “c” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 208,
+      "question": "You are sailing in vessel A and notice vessel I flying flag O with a black ball above it. How will you react?",
+      "options": {
+        "a": "It is an anchored vessel with a man at sea, I reduce speed quickly and maintain distance.",
+        "b": "It is an anchored vessel, there is no danger of collision.",
+        "c": "It is a grounded vessel, I maintain my distance.",
+        "d": "It is a vessel in distress, I approach to offer assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 209,
+      "question": "Sailboat D on a collision course with motorized vessel H. What is the required action?",
+      "options": {
+        "a": "There is danger, I yield way.",
+        "b": "D maintains course and speed, H is obligated to yield.",
+        "c": "Each turns to starboard.",
+        "d": "The one seeing on its starboard yields."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 210,
+      "question": "You are sailing vessel K, a sailboat, and notice sailboat A with main sail to starboard and foresail to port. The wind is from the north. How will you act?",
+      "options": {
+        "a": "I am on a port tack, it is on a starboard tack, I yield to it.",
+        "b": "I am on a starboard tack and so is it. It yields to me (it is to windward).",
+        "c": "I am on a port tack and so is it. It yields to me (it is to windward).",
+        "d": "I am on a port tack, it is to my starboard, I yield to it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 211,
+      "question": "Sailboat O notices vessel C displaying the lights as depicted in picture 53. What is the vessel and what is the required action? (there appears to be danger of collision)",
+      "options": {
+        "a": "C is a limited maneuverability vessel. Sailboat O yields to port.",
+        "b": "C is a fishing vessel. Sailboat O will yield to port.",
+        "c": "C is an anchored vessel. Sailboat O will continue on its course.",
+        "d": "C is a towing vessel and must give way. Sailboat O will continue on its course."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 212,
+      "question": "You are sailing on vessel J on sails alone, on a port tack, and see vessel B sailing on sails and displaying the configuration depicted in picture 82. What is the required action?",
+      "options": {
+        "a": "There is danger of collision, so I will yield to starboard.",
+        "b": "You are on a port tack and it is unclear to you what tack B is on, therefore based on the regulations you yield.",
+        "c": "B is motorized and I am on a port tack, therefore each yields to starboard.",
+        "d": "I will continue on course and speed."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 213,
+      "question": "You are on vessel H on a course of 340 º and display the lights depicted in picture 1. You are in danger of a collision with P, showing the lights depicted in picture 58. East wind. What will be your action?",
+      "options": {
+        "a": "Continue on course and speed.",
+        "b": "Yield to port.",
+        "c": "Yield to starboard.",
+        "d": "Yield in the most effective manner."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 214,
+      "question": "Vessel K displaying the lights shown in picture 16 sees vessel C displaying the lights shown in picture 28. What is the required action?",
+      "options": {
+        "a": "K yields to C. C is towing.",
+        "b": "C yields to K since K is in danger.",
+        "c": "Each turn to starboard.",
+        "d": "C is towing, K is a hovercraft, so C yields."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 215,
+      "question": "Vessel K displaying the day signal depicted in picture 86, sees vessel F also displaying the same day signal. What is the required action?",
+      "options": {
+        "a": "K yields to F, based on the regulations for collision avoidance.",
+        "b": "It is a special situation, and both must stop.",
+        "c": "K is a limited maneuverability vessel and so it has the right of way.",
+        "d": "F will yield since K is fishing."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 216,
+      "question": "Vessel H displaying the lights depicted in picture 36 notices vessel K displaying the lights depicted in picture 40. What is the required action?",
+      "options": {
+        "a": "H continues on course and speed, since there is no danger of collision.",
+        "b": "H yields to the other vessel since it is towing.",
+        "c": "K yields way to H since H is on its starboard.",
+        "d": "K is a hovercraft that can also be overtaken from behind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 217,
+      "question": "Vessel “P” displaying the lights depicted in picture 24, sees vessel “C” displaying the lights depicted in picture 53. What is the required action?",
+      "options": {
+        "a": "“P” is a sailboat and “C” is towing, “P” continues on course and speed.",
+        "b": "“P” is a sailboat and “C” a trawler, “P” yields way.",
+        "c": "“P” is a vessel not under control on the starboard side, everyone must clear the way for it.",
+        "d": "“P” is a sailboat that must yield way to a pilot on duty."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 218,
+      "question": "Vessel “H” flying the flag depicted in picture 97, sees vessel “J” flying the flag depicted in picture 106 above its structure and on its bow a black ball. What is the required action?",
+      "options": {
+        "a": "H continues on course and speed since it is on J’s port side.",
+        "b": "H is a vessel engaged in diving activity and all others must keep at least 200 meters from it.",
+        "c": "J is anchored and flying a flag indicating its vessel is healthy and requesting permission to enter an anchorage. There is no need of action.",
+        "d": "J is in distress and H must go and assist it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 219,
+      "question": "Vessel J displaying the lights depicted in picture 35 notices vessel B displaying the lights depicted in picture 15 and on deck are visible flames. What is the required action?",
+      "options": {
+        "a": "B is in distress so J must approach and assist it.",
+        "b": "J is stopped and has cast anchor. B can pass by it.",
+        "c": "B yields way to J.",
+        "d": "J yields way to B: he who sees on his starboard yields."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 220,
+      "question": "Vessel M displaying the lights depicted in picture 1, is in danger of collision with vessel E displaying the lights depicted in picture 37. The wind is south. Who has the responsibility to yield based on the regulations?",
+      "options": {
+        "a": "M is a motorized vessel of under 50 meters – so it will yield to E.",
+        "b": "E is a sailboat from behind and to windward, so it must yield.",
+        "c": "M is “passing” so it has the responsibility to yield.",
+        "d": "M is on a port tack and so must yield to E."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 221,
+      "question": "Sailboat (N) notices sailboat (F). What is the required action? The wind is from the north at 12 knots.",
+      "options": {
+        "a": "Each continues on its way.",
+        "b": "F yields to N.",
+        "c": "Each turns to its starboard.",
+        "d": "N yields to F."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 222,
+      "question": "Vessel (J) showing the lights depicted in picture 35, notices vessel (B) showing the lights depicted in picture 15. What is the required action?",
+      "options": {
+        "a": "B is in distress, J must go and assist it.",
+        "b": "J is stopped and has cast anchor. B can pass by it.",
+        "c": "B yields to J.",
+        "d": "J yields to B."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 223,
+      "question": "Vessel K displaying the lights depicted in picture 16, sees vessel C displaying the lights depicted in picture 28 (the wind is from the east, 4 on the Beaufort scale). What is the required action?",
+      "options": {
+        "a": "K yields to C. C is towing.",
+        "b": "C yields to K, which will maintain course and speed.",
+        "c": "Each will turn to starboard.",
+        "d": "C is towing, K is a hovercraft, so C maintains course and speed."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 224,
+      "question": "Vessel H flying the flag depicted in picture 97, sees vessel J flying the flag depicted in picture 104 and below it a black ball. What is the required action?",
+      "options": {
+        "a": "H continues on course and speed since it is on J’s port side.",
+        "b": "H is an anchored vessel engaged in diving and everyone must keep at least 200 meters from it.",
+        "c": "J is anchored and flying a man at sea flag.",
+        "d": "J is in distress and one must go and provide assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 225,
+      "question": "Vessel H showing the lights depicted in picture 36, notices vessel K displaying the lights depicted in picture 40. What is the required action? (the wind is north at 5 knots)",
+      "options": {
+        "a": "H continues on its way, there is no danger of collision.",
+        "b": "K will yield way to H since H is on its starboard.",
+        "c": "H yields to the other vessel since it is towing.",
+        "d": "K is a hovercraft, and H can pass it from behind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 226,
+      "question": "Vessel “P” displaying the lights depicted in picture 24 sees vessel “C” displaying the lights depicted in picture 53. (In the area there is a 15 knot west wind). What is the required action?",
+      "options": {
+        "a": "P is a sailboat and C is towing, P continues on course and speed.",
+        "b": "P is a sailboat and C is towing, P yields.",
+        "c": "P is a vessel with not under control on the starboard side, everyone must yield to it.",
+        "d": "P is a sailboat that must yield to a pilot on duty towing another vessel behind it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 227,
+      "question": "Vessel “J” displaying the lights depicted in picture 33 sees vessel M displaying the lights depicted in picture 67. What is the required action?",
+      "options": {
+        "a": "This is an extreme situation so each turns to starboard.",
+        "b": "M must yield to J.",
+        "c": "J is a sailboat yields to M which is limited in maneuverability.",
+        "d": "Based on the rules of the sea both vessels must do their utmost to avoid a collision."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 228,
+      "question": "The sea is calm with no wind, your boat Sloop is sailing on engine. Suddenly a lot of smoke comes out of the engine bay, and it is clear that a fire has broken out there. What must you do?",
+      "options": {
+        "a": "Open the engine bay to see the problem and spray water on the fire sources.",
+        "b": "Air the engine bay well while taking fire extinguishing actions.",
+        "c": "Shut off the engine, cut off the fuel flow if possible and spray fire extinguishing powder through a narrow opening.",
+        "d": "Use the fire extinguishing blanket to smother the flame."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 229,
+      "question": "What will be your first action when you discover white smoke coming out of the sail storage area in the bow?",
+      "options": {
+        "a": "Turn the bow of the boat to the wind to cool the fire area.",
+        "b": "Direct all the crew and passengers to emergency stations.",
+        "c": "Use all means available to immediately extinguish the fire.",
+        "d": "Turn the stern of the boat to the wind, and use all available means to immediately extinguish the fire."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 230,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "a": "A foam extinguisher is appropriate for all types of fires.",
+        "b": "A foam extinguisher is not appropriate for any type of fire.",
+        "c": "A foam extinguisher is appropriate primarily for liquid fires.",
+        "d": "A foam extinguisher is appropriate primarily for electrical fires."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 231,
+      "question": "Which of the following is the first thing to do if a fire has broken out in the stern of the boat?",
+      "options": {
+        "a": "Stop the boat.",
+        "b": "Increase speed and cool the area.",
+        "c": "Toss the gas balloons located in the stern to sea.",
+        "d": "Lower sails so they do not catch on fire."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 232,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "a": "Extinguishing a fire with foam is accomplished by separating the burning material from the oxygen in the air.",
+        "b": "It is possible to extinguish a bilge fire using a water hose.",
+        "c": "Extinguishing a fire is achieved by cooling, and foam is a cooling agent.",
+        "d": "After extinguishing using pressurized sprayed water there is no danger of the fire reigniting."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 233,
+      "question": "The chart depicts a horizontal cross section of a frontal low in the northern hemisphere. You are sailing from B to A. what will be the change of the atmospheric pressure while passing the hot zone?",
+      "options": {
+        "a": "Increasing pressure (you are moving away from the center of the low).",
+        "b": "Decreasing pressure (you are moving towards the center of the low).",
+        "c": "Stable pressure.",
+        "d": "At the beginning the pressure rises then remains constant."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 234,
+      "question": "When your boat crosses the line of a warm front from point B to point A, the wind direction will change from…",
+      "options": {
+        "a": "From north to south.",
+        "b": "From south to north.",
+        "c": "From south to south west.",
+        "d": "From north to north west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 235,
+      "question": "When sailing from the cold front to point A, what will be the change in the visibility?",
+      "options": {
+        "a": "No change in the visibility.",
+        "b": "The visibility continuously worsens.",
+        "c": "The visibility continuously improves.",
+        "d": "The visibility remains unchanged, and as you approach point A the visibility worsens."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 236,
+      "question": "Based on the attached schematic, which is the most appropriate statement?",
+      "options": {
+        "a": "This is a hot low typical of the summer, the winds in Eilat will be from the north at about 15 knots and the visibility along the Mediterranean coast of Israel will be mediocre.",
+        "b": "This is a hot low typical of autumn, the winds in Eilat will be from the south at about 15 knots and the visibility along the Mediterranean coast of Israel will be poor.",
+        "c": "This is a hot low typical of spring, the winds in Eilat will be from the south at about 15 knots and the visibility along the Mediterranean coast of Israel will be poor.",
+        "d": "This is a hot low typical of spring, the winds in Eilat will be from the south at about 15 knots and the visibility along the Mediterranean coast of Israel will be mediocre."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 237,
+      "question": "Based on the diagram for the northern hemisphere, choose the correct answer:",
+      "options": {
+        "a": "At point “A” the wind direction will be from the north west and the estimated pressure 1005.",
+        "b": "At point “A” the wind direction will be from the north east and the estimated pressure 1010.",
+        "c": "At point “A” the wind direction will be from the north west and the estimated pressure 1010.",
+        "d": "At point “A” the wind direction will be from the south west and the estimated pressure 1005."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 238,
+      "question": "What is meant when you hear a weather forecast which says that atmospheric stability is expected at a certain altitude?",
+      "options": {
+        "a": "The rising air mass is colder than its surrounding.",
+        "b": "The rising air mass is warmer than its surrounding.",
+        "c": "The rising air mass has cooled and is equal to its surrounding.",
+        "d": "The rising air mass has warmed and is equal to its surrounding."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 239,
+      "question": "“Sea fog” – mark the correct statement;",
+      "options": {
+        "a": "Cold and saturated air is passing over warm water.",
+        "b": "Hot and humid air is passing over cold water.",
+        "c": "In order for sea fog to form the wind must be at least 20 knots.",
+        "d": "When the dew point temperature is equal to the sea water temperature, then there is potential for sea fog."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 240,
+      "question": "Mark the most appropriate answer with respect to the illustration:",
+      "options": {
+        "a": "This is a frontal low (in summer).",
+        "b": "This is a hot low (in the spring).",
+        "c": "In the Red Sea area the winds are expected to be from the north west.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 241,
+      "question": "What will be the wind direction in Crete based on the illustration?",
+      "options": {
+        "a": "North.",
+        "b": "South.",
+        "c": "West.",
+        "d": "East."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 242,
+      "question": "What will be the wind direction in Eilat based on the illustration?",
+      "options": {
+        "a": "South west.",
+        "b": "North east.",
+        "c": "North west.",
+        "d": "It is impossible to determine based on a synoptic chart."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 243,
+      "question": "Where can you expect the strongest winds based on the illustration?",
+      "options": {
+        "a": "Along the Red Sea.",
+        "b": "In the Dead Sea area.",
+        "c": "In the south of Egypt.",
+        "d": "Between Cyprus and the Israel shoreline."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 244,
+      "question": "At what altitude will a cloud base be formed?",
+      "options": {
+        "a": "When the temperature of the air mass is equal to the surrounding temperature.",
+        "b": "When the air mass temperature reaches the dew point and continues to rise.",
+        "c": "When the air mass temperature is lower than the surrounding temperature and continues to rise.",
+        "d": "None of the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 245,
+      "question": "What is a Catabatic wind?",
+      "options": {
+        "a": "Wind descending from the mountains and cooling.",
+        "b": "Wind descending from the mountains and drying.",
+        "c": "Wind rising on the mountains and warming.",
+        "d": "Wind rising on the mountains and drying."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 246,
+      "question": "How can you tell that a life raft is well inflated?",
+      "options": {
+        "a": "By entering it and checking the inflation.",
+        "b": "When the one-way valve begins to whistle.",
+        "c": "The inflation time is written on the raft.",
+        "d": "When the light at the top of the canopy comes on."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 247,
+      "question": "On the radio it was announced that you need to dock in the marina with a type of connection called “Middle Eastern docking” so the procedure will be:",
+      "options": {
+        "a": "Port side to the dock.",
+        "b": "Starboard side to the dock.",
+        "c": "An anchor or buoy at the bow and the stern to the dock.",
+        "d": "Side to the side of another vessel (there is not enough space)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 248,
+      "question": "Mark the most appropriate statement regarding the PAINTER in a life raft:",
+      "options": {
+        "a": "The attachment of the raft to the vessel after its inflation.",
+        "b": "Used to activate the raft inflation.",
+        "c": "The PAINTER length is written on the raft wrapping.",
+        "d": "All the above statements are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 249,
+      "question": "How will a boat respond when tied to the dock with a BOW SPRING rope only, on its starboard side, with the engines engaged slowly forward and the steering in the middle?",
+      "options": {
+        "a": "The bow will move forward.",
+        "b": "The bow will veer to starboard.",
+        "c": "The bow will veer to port.",
+        "d": "The bow will not move at all, because the rope does not allow the boat to move."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 250,
+      "question": "What is “Bora” wind?",
+      "options": {
+        "a": "Cold north wind in the Lyon bay.",
+        "b": "Warm north wind in the Agean Sea.",
+        "c": "Cold north wind in the Adriatic Sea.",
+        "d": "Dry east wind in the area of the Gibraltar Straits."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 251,
+      "question": "The wind is south west, you are on your way from Larnaca to Haifa on a course of 150°, at what angle and tack approximately is the wind blowing over your boat? (relative to the boat’s bow)",
+      "options": {
+        "a": "Starboard tack, about 075°.",
+        "b": "Port tack, about 105°.",
+        "c": "Port tack, about 075°.",
+        "d": "Starboard tack, about 105°."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 252,
+      "question": "How can you tell on a boat what is the mandatory safety equipment that must be on board when sailing?",
+      "options": {
+        "a": "You can find the list of equipment in the manufacturer literature.",
+        "b": "In the boat’s insurance policy.",
+        "c": "In the boat’s sea worthiness certificate.",
+        "d": "In the boat’s registration certificate."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 253,
+      "question": "You are on a sailboat with sails folded. A north west wind is blowing at 20 knots. At the entrance to the Herzliya marina and between the breakers, suddenly the engine stops and you are unable to restart it. What will you do?",
+      "options": {
+        "a": "Turn the boat away from the marina entrance and cast anchor.",
+        "b": "Spread one of the sails so as not to remain without propulsion.",
+        "c": "Cast anchor on the spot and try to pinpoint the problem.",
+        "d": "Call the insurance company and request assistance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 254,
+      "question": "What is the power gain in the pulley system of main sail, which is comprised of a double pulley on the boom and another double pulley on deck? (the pulling rope extends from the pulley on the boom)",
+      "options": {
+        "a": "The power gain will be double.",
+        "b": "The power gain will be 3 times.",
+        "c": "The power gain will be 4 times.",
+        "d": "The power gain will be 5 times."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 255,
+      "question": "What does the term I.M.O. mean in maritime organizations?",
+      "options": {
+        "a": "Israeli Ministry of Transportation.",
+        "b": "International Maritime Organization.",
+        "c": "International Shippers Organization.",
+        "d": "This is a chapter from the S.O.L.A.S. book."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 256,
+      "question": "In good visibility you hear on your starboard side a vessel sounding seven short horn blasts accompanied by seven flashes simultaneously. What is his meaning and what is he signaling to you?",
+      "options": {
+        "a": "There are no such horn blasts accompanied by flashes (during the day horn blasts, at night flashes).",
+        "b": "He meant to sound five short blasts and must have gotten confused.",
+        "c": "That he is in distress, the accompanying flashes to the horn will only appear at night.",
+        "d": "That your intentions are unclear to him, while trying to draw attention."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 257,
+      "question": "What is the most correct statement regarding swell waves?",
+      "options": {
+        "a": "On Israeli shores there are no swell waves in summer, due to the frequent changes in the breeze (day, night).",
+        "b": "Swell waves are always in the direction of the wind.",
+        "c": "When a wind is blowing opposite the direction of the swell waves, the height of the swell waves will decrease.",
+        "d": "Swell waves are perpendicular to the wind waves, due to the Coriolis effect (which causes the wind to veer to the right in the northern hemisphere)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 258,
+      "question": "What will be the direction of the wind in the south of the country along the shore?",
+      "options": {
+        "a": "East wind.",
+        "b": "North wind.",
+        "c": "South west wind.",
+        "d": "South east wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 259,
+      "question": "On the attached synoptic map, where can you expect cumulonimbus clouds to develop?",
+      "options": {
+        "a": "In the area of the cold front.",
+        "b": "In the area of the hot front.",
+        "c": "In the middle of the low.",
+        "d": "In the middle of the high."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 260,
+      "question": "Vessel J displaying the day signal depicted in picture 84 sees vessel D displaying the flag described in picture 98 on its mast and a black ball in the bow. What is it signaling and what is the required action?",
+      "options": {
+        "a": "It is a limited maneuverability vessel which is anchored. One must yield to starboard to avoid a collision.",
+        "b": "It is a man overboard flag and so one must go and provide assistance in searching for the person.",
+        "c": "It is the sign of a vessel in distress and one is obligated to go and offer assistance.",
+        "d": "It is an anchored vessel with divers so one must keep at least 200 meters away."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 261,
+      "question": "Motor boat (A) notices row boat (D). What is the required action?",
+      "options": {
+        "a": "There is no risk of collision: a motorized vessel is always faster.",
+        "b": "D yields to A: he who sees a vessel on its starboard yields.",
+        "c": "A yields to D: a motorized vessel yields to a row boat.",
+        "d": "D yields to A: a row boat yields to a motorized vessel."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 262,
+      "question": "You are on a sailboat, sailing to the east (090°). The wind is south west (240° direction) at 15 knots with gusts of 25 knots. The boat is with a full rig and experiences strong healing with every gust. You would like to change the situation. What will you do?",
+      "options": {
+        "a": "Release the sails during wind gusts.",
+        "b": "Reduce sails and consider sailing with foresail only.",
+        "c": "Change to close hauled and reduce the heal.",
+        "d": "Change sailing course to 060° degrees to reduce the pressure on the sails."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 263,
+      "question": "What is true of a life raft?",
+      "options": {
+        "a": "In a life raft there will be at least one floating anchor.",
+        "b": "The raft inflates as a result of the impact of the fall of the raft from the deck to the water.",
+        "c": "The hydrostatic release mechanism is the only one that inflates the raft.",
+        "d": "Under no circumstances are you allowed to secure an inflatable raft to the deck."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 264,
+      "question": "What characterizes “cumulonimbus” clouds?",
+      "options": {
+        "a": "They are clouds with vertical development.",
+        "b": "They are clouds that usually indicate nice weather.",
+        "c": "They develop when there is atmospheric stability at all altitudes.",
+        "d": "There is no correct answer."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 265,
+      "question": "What should you do with the “CARDINAL” buoy system when you see a sequence of 9 short flashes?",
+      "options": {
+        "a": "Pass the buoy to the north.",
+        "b": "Pass the buoy to the south.",
+        "c": "Pass the buoy to the east.",
+        "d": "Pass the buoy to the west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 266,
+      "question": "What is the meaning of the marking 6/12 in cables? (the marking is from left to right)",
+      "options": {
+        "a": "6 mains, 12 strings in each main.",
+        "b": "12 mains, 6 strings in each main.",
+        "c": "12 millimeter diameter, 6 ton work load.",
+        "d": "6 ton work load, 12 ton breaking load."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 267,
+      "question": "What is the safety harness on board the vessel intended for?",
+      "options": {
+        "a": "To secure equipment on board from movement during a storm.",
+        "b": "To tie the mainsail boom in its place when the ship is running to prevent uncontrolled gybing.",
+        "c": "To close the foresail roller furling to prevent it opening in strong winds.",
+        "d": "In rough weather to secure the crew from going overboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 268,
+      "question": "What is the most accurate statement regarding clouds?",
+      "options": {
+        "a": "Cumulonimbus clouds develop in conditions of good weather.",
+        "b": "Stratus clouds are light colored clouds at low altitude.",
+        "c": "Cumulonimbus clouds are developed horizontally.",
+        "d": "Showers and hail can develop in cumulonimbus clouds."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 269,
+      "question": "You have decided to come close to shore, (in a motor boat) with the boat’s bow turned to the open sea. You intend to use an anchor to help you achieve this. What must you do?",
+      "options": {
+        "a": "Let out a little chain and avoid the anchor touching bottom at any time.",
+        "b": "Replace the chain with rope because it is easier to work with a rope.",
+        "c": "Monitor the lowering of the chain or rope, so that the anchor stops your boat with full control over the process.",
+        "d": "Let out as much anchor chain as possible, when starting the approach."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 270,
+      "question": "What characterizes the passing of a winter low on the costs of Israel most times?",
+      "options": {
+        "a": "A warm front precedes the cold front.",
+        "b": "In our area the warm front usually passes south of Israel.",
+        "c": "Following the passing of the cold front the barometric pressure drops.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 271,
+      "question": "You are sailing a boat from Herzliya to Cyprus in the winter months, the wind is west. The sequence of barometric pressure readings has been: at 08:00 = 1000 milibars At 12:00 = 996 milibars At 16:00 = 992 milibars What does the data indicate?",
+      "options": {
+        "a": "The boat is nearing a low and the wind is strengthening.",
+        "b": "The boat is nearing a high, the weather is improving.",
+        "c": "The change in barometric pressure is insignificant, this is the norm for the breeze.",
+        "d": "There is no impact to the change in pressure, which is a vertical component, on the wind which is a horizontal component."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 272,
+      "question": "During a storm at sea, a lot of water flows into your boat. What additional means can you use to pump out the water?",
+      "options": {
+        "a": "The engine water pump.",
+        "b": "The engine sweet water pump.",
+        "c": "The electrical pump for the transmission fluid.",
+        "d": "The engine centrifugal pump."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 273,
+      "question": "You are nearing the Pataya marina in Turkey, for initial entry. What flags will you fly on your Israeli boat?",
+      "options": {
+        "a": "On the starboard side the “Q” flag, on the port side the Turkish flag and in the stern the Israeliflag.",
+        "b": "On the starboard side the Israeli flag, on the port side the Turkish flag and in the stern the “Q” flag.",
+        "c": "On the starboard side the Turkish flag, on the port side the “Q” flag and in the stern the Israeli flag.",
+        "d": "On the starboard side the Turkish flag, on the port side the Israeli flag and in the stern the “Q”flag."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 274,
+      "question": "Your boat Ketch is sailing in a strengthening following wind, with full sail configuration, the real wind is 20 knots. You have decided to reduce the sail area. Usually, how will you act?",
+      "options": {
+        "a": "Lower the mainsail and continue with a foresail and aft sail.",
+        "b": "Lower the mainsail, close the foresail and continue on aft sail.",
+        "c": "Close (or lower) the foresail and reduce the mainsail.",
+        "d": "Lower the aft sail, and reduce the mainsail."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 275,
+      "question": "From the synoptic chart shown below, when sailing from A to B (and assuming the front is not moving) what is the wind direction at the spot on your course before you pass the warm front? (north is at the top)",
+      "options": {
+        "a": "North west.",
+        "b": "South.",
+        "c": "South west.",
+        "d": "North."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 276,
+      "question": "Based on the synoptic map what clouds will be present (if at all) at point “F”?",
+      "options": {
+        "a": "Cumulonimbus clouds.",
+        "b": "Almost clear sky with no clouds.",
+        "c": "Cirrus clouds.",
+        "d": "Nimbostratus clouds (rain clouds)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 277,
+      "question": "Based on the synoptic map where can you expect the best visibility?",
+      "options": {
+        "a": "At point “A”",
+        "b": "At point “B”",
+        "c": "At the passing of the warm front.",
+        "d": "At the passing of the cold front."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 278,
+      "question": "When sailing a motor boat, you have hit a sandbar. What is the first action you will take?",
+      "options": {
+        "a": "Put the engine into neutral and perform damage assessment.",
+        "b": "Raise two balls one above the other.",
+        "c": "If the sandbar is made of loose sand I will try to use the engine to dislodge from it.",
+        "d": "I must try to empty the water and fuel, so the boat will rise and I can get free from the sandbar."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 279,
+      "question": "What is the most correct statement?",
+      "options": {
+        "a": "In a broad reach, the force causing the boat to give lee way is smaller than the force causing it to give lee way when running.",
+        "b": "If there is a sudden heal from a strong wind gust in a close reach situation you should turn downwind and tighten the sails.",
+        "c": "The steering angle in a broad reach wind is greater than when close hauled.",
+        "d": "In a broad reach, the face wind hinders the boat’s progress more than when running."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 280,
+      "question": "What are the requirements from a mooring rope?",
+      "options": {
+        "a": "That it be as long as possible.",
+        "b": "That it will have as high a tensile strength as possible.",
+        "c": "That it be of a type that sinks in water.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": [],
+      "note": "The official Hebrew answer key gives d, but it is wrong: a mooring rope need not be as long as possible or of a type that sinks in water. b is correct, as this English key states."
+    },
+    {
+      "id": 281,
+      "question": "What are the requirements from the pyrotechnic equipment?",
+      "options": {
+        "a": "In a boat for a national trip you need 4 smoke buoys.",
+        "b": "Pyrotechnic equipment is usable for 7 years.",
+        "c": "A smoke buoy will operate for only 1 minute.",
+        "d": "A red hand torch will continue to burn even after it has fallen into the water."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 282,
+      "question": "You are about to perform a Mediterranean mooring in a marina packed with moored boats. Your boat is 12 meters long (anchor in the bow) the water depth is 7 meters, the anchor cable is 70 meters long and there is a strong side wind blowing from starboard of the bow. Where will you cast the anchor?",
+      "options": {
+        "a": "I will cast the anchor to starboard of the mooring point.",
+        "b": "I will cast the anchor perpendicular to the tie point, as far as possible from the dock.",
+        "c": "I will cast the anchor as usual, there is no significance to the wind.",
+        "d": "I will cast the anchor to port of the mooring point."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 283,
+      "question": "You are sailing on motor, on course 180°. The real wind is from the north, the wind gauge is indicating 12 knots, your boat speed is 12 knots, what is the real wind in the area?",
+      "options": {
+        "a": "22 knots.",
+        "b": "24 knots.",
+        "c": "0 knots.",
+        "d": "12 knots."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 284,
+      "question": "What information can you find in the “PILOT BOOK”?",
+      "options": {
+        "a": "All the communication frequencies of the shore stations operating in the area.",
+        "b": "The lighthouse and buoy data.",
+        "c": "List of emergency frequencies in the area of sailing.",
+        "d": "Most of the information you need for navigating and routing in the given area."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 285,
+      "question": "You are sailing on course 150°, the wind is south west at 5 on the Beaufort scale, one of the shrouds that was under load has torn. What will be your reaction?",
+      "options": {
+        "a": "The shroud is on the starboard side so you must execute a turn to reduce the pressure on the mast.",
+        "b": "The shroud is on the port side so you must execute a turn, to reduce the pressure on the mast.",
+        "c": "First thing you must lower the sails.",
+        "d": "The shroud is to the stern and so you will change course to running to reduce the pressure."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 286,
+      "question": "Which is the most accurate statement?",
+      "options": {
+        "a": "When close hauled the lee way is very large, the healing is strong, the speed is high, the sails are fluttering.",
+        "b": "When running the speed is good to medium, the healing is medium, there is lee way, there is danger of a gybe.",
+        "c": "In a beam reach, the speed is good to very good, slight lee way, there is no healing.",
+        "d": "In a close reach, the speed is a little better than in a beam reach, there is lee way, the sails are taught close to the keel line and there is healing."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 287,
+      "question": "In the “CADINAL” buoy system you see a yellow and black buoy, and above it the following sign in black. On which side of the buoy should you pass?",
+      "options": {
+        "a": "One must pass the buoy to the north.",
+        "b": "One must pass the buoy to the south.",
+        "c": "One must pass the buoy to the east.",
+        "d": "One must pass the buoy to the west."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 288,
+      "question": "What will the prop work of a right hand propeller cause, with the engine engaged in reverse and the steering neutral?",
+      "options": {
+        "a": "Veering of the bow to starboard.",
+        "b": "Veering of the bow to port.",
+        "c": "Initially there is no effect, and only after the boat has gained some acceleration the bow will veer to starboard.",
+        "d": "There is no correct answer."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 289,
+      "question": "What is the approximate direction of the real wind when the wind gauge on your boat is showing a south wind, and you are sailing west?",
+      "options": {
+        "a": "South.",
+        "b": "South west.",
+        "c": "North east.",
+        "d": "South east."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 290,
+      "question": "What is the role of the tie ropes called “SPRING” ropes?",
+      "options": {
+        "a": "These are ropes that prevent boat movement along and in parallel to the dock (after the boat is tied).",
+        "b": "These ropes are used to stop the boat in spring weather only.",
+        "c": "These are ropes used to closely secure the bow or the stern to the dock after tying the boat.",
+        "d": "These are ropes intended for towing as they are made of nylon."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 291,
+      "question": "While sailing your boat (engine + sails) the propeller has come off, what must you do?",
+      "options": {
+        "a": "I must raise two black balls since I am a vessel without control.",
+        "b": "I must lower the cone, the boat will be considered a sailboat in terms of rules of the sea.",
+        "c": "There is no need to raise two black balls, I can drift with the current and use the rudder for control.",
+        "d": "I will stop the boat, add weight to the bow so that the propeller shaft rises out of the water and attach the spare propeller."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 292,
+      "question": "You are sailing in torrential rain in a 23 meter boat, and can hardly see the bow of your boat, which is under sails only. What audible signal will you sound?",
+      "options": {
+        "a": "Three short blasts and one long one at intervals of no more than 2 minutes.",
+        "b": "Two long blasts every two minutes.",
+        "c": "One long blast followed by two short blasts at intervals of no more than 2 minutes.",
+        "d": "Rapid rings of the bell every minute and in addition a signal comprised of a long blast – short blast – long blast."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 293,
+      "question": "The wind is directly from the east (at 9 knots) and you are sailing under sails on a course of 125° and having difficulty maintaining the sailing course. What might be the possible reason for that?",
+      "options": {
+        "a": "The wind is too weak so the sail is not well utilized.",
+        "b": "The wind is too strong and the healing too great so it is hard to maintain direction.",
+        "c": "You are too close to the wind, your speed in the water is too high.",
+        "d": "You are too close to the wind, your speed in the water is too low."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 294,
+      "question": "What is a “BOOM – VANG” (BOOM- JACK) used for in a system of sails.",
+      "options": {
+        "a": "To tighten the lower edge of the sail.",
+        "b": "To support the boom so it does not fall when the sails are lowered.",
+        "c": "To secure the boom so it does not rise in broad winds.",
+        "d": "When running, it is used as an additional force in tightening the main sail."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 295,
+      "question": "You are sailing in good visibility in a narrow sea channel and hear behind you two long blasts and one short blast. What is the meaning of the signal?",
+      "options": {
+        "a": "A motorized vessel is changing course to starboard.",
+        "b": "A sailboat is about to pass you on the port side.",
+        "c": "A motorized vessel is about to pass you on the starboard side.",
+        "d": "There is no such signal in the regulations (it is not allowed to pass in a narrow sea channel, particularly small vessels less than 20 meters long)."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 296,
+      "question": "Which is the most correct statement?",
+      "options": {
+        "a": "A “sharqiya” is: a dry east wind originating in the Persian trough.",
+        "b": "A “bora” is: a catabatic strong and dry north east wind in winter, occurring in the Adriatic Sea.",
+        "c": "A “bora” is: a strong and dry north wind in winter, occurring in the Black Sea.",
+        "d": "A steady north east wind occurring in the summer in the Aegean Sea is call “Levanter”."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 297,
+      "question": "Which is the most accurate statement?",
+      "options": {
+        "a": "In the zone between a warm front and a cold front, the isobars are almost straight lines.",
+        "b": "In the northern hemisphere, the wind direction around a high, is clock wise and converging.",
+        "c": "In the southern hemisphere, the wind direction around a low, is counter clock wise and converging.",
+        "d": "In the northern hemisphere a warm front usually causes a barometric high."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 298,
+      "question": "In the attached barometric chart, what is the wind direction at point B?",
+      "options": {
+        "a": "East wind.",
+        "b": "North west wind.",
+        "c": "North east wind.",
+        "d": "None of the above answers is correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 299,
+      "question": "Which of the following items is not found in a life raft? (as part of the permanent equipment)",
+      "options": {
+        "a": "Pyrotechnic equipment.",
+        "b": "A floating throw rope.",
+        "c": "A portable S.A.R.T. device.",
+        "d": "Survival manual."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 300,
+      "question": "What are, usually, the requirements of a tow rope?",
+      "options": {
+        "a": "That it be very rigid and heavy.",
+        "b": "That it has high tensile characteristics.",
+        "c": "The most appropriate rope for towing is a manila rope.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 301,
+      "question": "How is the weight of the anchor determined relative to the size of the vessel?",
+      "options": {
+        "a": "In the safety equipment regulations of the Israel Ports Authority there is a reference to this question.",
+        "b": "The weight and construction material of the anchor are derived from the length and width of the vessel alone.",
+        "c": "There is no significance to the weight and construction material of the anchor, the significance is to the type of bottom.",
+        "d": "No boat manufacturer or importer can determine the type and weight of the anchor he supplies."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 302,
+      "question": "In the sailing log it is customary to list the following data: a- Odometer b- engine temperature c- distress signals d- wind direction e- cloud cover f- vessel location g- oil pressure h- wind speed i- names of crew on shift Of the above, which ones can help you determine the vessel’s course?",
+      "options": {
+        "a": "b, c, d, f.",
+        "b": "a, h, d, f.",
+        "c": "a, c, g, i.",
+        "d": "a, d, e, i."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 303,
+      "question": "which of the vessels listed below fulfills the definition of a “fishing vessel engaged in fishing”?",
+      "options": {
+        "a": "A motor boat over 12 meters dragging a net on the sea floor.",
+        "b": "A motor boat over 12 meters spreading a net.",
+        "c": "A vessel over 22 meters engaged in lobster fishing.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 304,
+      "question": "In a single engine boat with a single shaft and right hand propeller. What will be the effect of engaging the engine in forward gear?",
+      "options": {
+        "a": "The stern of the boat will veer sharply to starboard.",
+        "b": "The bow of the boat will veer sharply to starboard.",
+        "c": "The bow of the boat will veer sharply to port.",
+        "d": "There will be no lee way and the steering will determine the direction."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 305,
+      "question": "In the attached barometric chart, choose the most accurate statement regarding the visibility.",
+      "options": {
+        "a": "At point A the visibility is very limited.",
+        "b": "At point B the visibility is nearly “zero”.",
+        "c": "The visibility at point L (the center of the southern low) is very good due to the rains in the area.",
+        "d": "The visibility along the southern coast of Israel is very good."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 306,
+      "question": "With respect to the attached barometric chart, when sailing from Cyprus to Israel (on a course of 150 º) on what tack will the boat be sailing? (during most of the trip)",
+      "options": {
+        "a": "Close hauled on a starboard tack.",
+        "b": "Close hauled on a port tack.",
+        "c": "Beam reach on a port tack.",
+        "d": "Running."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 307,
+      "question": "Based on the attached chart, what will affect the island of Cyprus?",
+      "options": {
+        "a": "The cold front of the winter low.",
+        "b": "The warm front of the winter low.",
+        "c": "The cold zone of the winter low.",
+        "d": "The warm zone of the winter low."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 308,
+      "question": "Which is the most accurate statement of the following options regarding the “breeze” in our area?",
+      "options": {
+        "a": "The typical wind in the summer in our area is caused by the Persian Trough, which causes a weakening of the daily breeze.",
+        "b": "The “breeze” typical of our area in the summer, is caused by the temperature difference between the sea and the land.",
+        "c": "The typical wind causes the breeze to strengthen at night because it blows from the same direction.",
+        "d": "There is no impact from the Persian Trough on the intensity of the breeze."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 309,
+      "question": "G is a motorized vessel and sees vessel K sounding the audible signal depicted in picture 119. What is he signaling?",
+      "options": {
+        "a": "K is signaling that he is turning to starboard as he must yield way for me based on the rules of the road and is sounding a long blast.",
+        "b": "In fog this is a sign that the vessel is not making way in the water.",
+        "c": "K is in distress and needs assistance.",
+        "d": "The signal is unclear so I will sound at least 5 short blasts because I do not understand his intentions."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 310,
+      "question": "What is a vessel displaying the signal depicted in picture 81 signaling?",
+      "options": {
+        "a": "A vessel not under command.",
+        "b": "A vessel in distress.",
+        "c": "A vessel limited in maneuverability indicating the side for passing.",
+        "d": "A grounded vessel."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 311,
+      "question": "Sailboat O notices vessel C displaying the lights depicted in picture 53. What is the vessel and what is the required action? (there is apparent risk of collision).",
+      "options": {
+        "a": "C is a limited maneuverability vessel. Sailboat O will yield to port.",
+        "b": "C is a vessel engaged in fishing. Sailboat O will yield to port.",
+        "c": "C is a vessel towing and must yield. Sailboat O will continue on its course.",
+        "d": "C is an anchored vessel. Sailboat O will continue on its course."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 312,
+      "question": "A vessel displaying the signal depicted in picture 84 is sailing at a distance of about 100 meters from shore (declared bathing beach). What do the regulations stipulate about it?",
+      "options": {
+        "a": "It is allowed, this is a fishing vessel engaged in fishing.",
+        "b": "It is breaking the law. It is not allowed to sail in a declared beach area.",
+        "c": "It is allowed, it is a motorized vessel displaying a permit for sailing close to shore.",
+        "d": "It is breaking the law. It is a fishing vessel engaged in fishing less than 300 meters from shore."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 313,
+      "question": "What day signal will the vessel displaying the lights depicted in picture 53 display?",
+      "options": {
+        "a": "There is no need for a day signal.",
+        "b": "The day signal depicted in picture 82.",
+        "c": "The day signal depicted in picture 78.",
+        "d": "The day signal depicted in picture 86."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 314,
+      "question": "What day signal will a vessel display that is displaying lights as depicted in picture 39?",
+      "options": {
+        "a": "The signal depicted in picture 78.",
+        "b": "The signal depicted in picture 80.",
+        "c": "The signal depicted in picture 83.",
+        "d": "The signal depicted in picture 81."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 315,
+      "question": "Vessel M is a sailboat running, the main sail is on the starboard side. It notices vessel E displaying the lights depicted in picture 37 (the light intensity is growing). Indicate the correct answer.",
+      "options": {
+        "a": "These are two sailboats on a collision course. M is on a starboard tack and E is on a port tack, so E yields to M.",
+        "b": "M is a gaining and passing vessel, so there is no significance to the tack. M will yield way.",
+        "c": "E is a vessel under sail and motor and therefore is considered motorized and must yield to M.",
+        "d": "It is not possible to determine if there is danger of collision, only with radar is it possible to determine danger of collision, so there is no need for any action."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 316,
+      "question": "What is a vessel displaying the flag depicted in picture 92 and above it a black ball signaling?",
+      "options": {
+        "a": "I am anchored. Keep your distance from me.",
+        "b": "I am in distress and need assistance.",
+        "c": "I am anchored searching for a man overboard.",
+        "d": "I am conducting engine testing, keep your distance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 317,
+      "question": "You notice a white light in front of your boat’s bow, what might it be and what will be your action? (the light intensity is increasing)",
+      "options": {
+        "a": "This is the stern light of a vessel. I will yield to it.",
+        "b": "This is the mooring light of a vessel over 50 meters long. I will pass carefully beside it.",
+        "c": "This is the way light of a vessel less than 50 meters long. I will continue on course and speed.",
+        "d": "Answers “a” and “b” are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 318,
+      "question": "While sailing a sailboat, you notice in front of your boat’s bow a vessel displaying the lights as depicted in picture 39. What is the vessel signaling and what will be your action?",
+      "options": {
+        "a": "That it is without control and anchored, I will approach to assist.",
+        "b": "That it is a fishing vessel collecting its nets. I can pass close.",
+        "c": "It is a sailboat with discretionary lights on. I must yield to one side.",
+        "d": "That it is grounded so I must be careful."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 319,
+      "question": "You are on vessel H on a course of 340ºdisplaying the lights depicted in picture 1. You are in danger of collision with P, displaying the lights depicted in picture 58. The wind is west. What will be your action?",
+      "options": {
+        "a": "Continue on course and speed.",
+        "b": "Turn about 50 degrees to starboard.",
+        "c": "Turn about 50 degrees to port.",
+        "d": "The vessels will each yield to starboard this is a bow to bow situation."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 320,
+      "question": "You are on boat J under sails only, on a starboard tack, and see vessel B displaying the shape depicted in picture 80. What is the required action?",
+      "options": {
+        "a": "There is danger of collision, B yields.",
+        "b": "You are on a port tack and it is unclear what tack B is on, so according to regulations you yield.",
+        "c": "B is motorized, I am on a port tack, so each turns to starboard.",
+        "d": "J yields to B in the most effective way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 321,
+      "question": "Vessel J on sailing course 020 º and displaying the lights depicted in picture 1, is in danger of collision with B, displaying the lights depicted in picture 58. The wind is from the west. What is the required action? (north is to the top of the page)",
+      "options": {
+        "a": "J continues on course and speed as much as possible.",
+        "b": "Each of the vessels yields to starboard.",
+        "c": "Only B yields to port.",
+        "d": "J yields in the most effective manner."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 322,
+      "question": "Vessel J displaying the day signals depicted in picture 84 sees vessel D displaying the flag depicted in picture 98 on the mast and a black ball in the bow. What is the vessel signaling and what is the required action?",
+      "options": {
+        "a": "It is an anchored limited maneuverability vessel, one must turn to starboard to avoid a collision.",
+        "b": "It is the flag of a man overboard so one must go to assist in the search for the person.",
+        "c": "It is the signal of a vessel in distress and it is an obligation to go offer assistance.",
+        "d": "It is an anchored vessel with divers so one must keep at least 200 meters distance."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 323,
+      "question": "Sailboat (H) notices motor boat (L) sounding the signal depicted in picture 119. What is the requiredaction?",
+      "options": {
+        "a": "L is in distress, H must go offer assistance.",
+        "b": "There is no danger of collision, each vessel will continue on its way.",
+        "c": "L yields to H, he who sees a vessel on its starboard yields.",
+        "d": "L yields to H, a motorized yields to a sailboat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 324,
+      "question": "Dual engine vessel (O) notices motor boat (B). What is the required action?",
+      "options": {
+        "a": "B yields to O.",
+        "b": "B yields to O, because O is bigger and stronger (has 2 engines).",
+        "c": "B and O each change their course to starboard.",
+        "d": "O yields to B."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 325,
+      "question": "A vessel displaying the lights depicted in picture 55, what day signal must it display?",
+      "options": {
+        "a": "As depicted in picture 83.",
+        "b": "As depicted in picture 79.",
+        "c": "As depicted in picture 88.",
+        "d": "As depicted in picture 84."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 326,
+      "question": "Sailboat “K” on a port tack in a north wind, sees sailboat “A” with the mainsail on its port side. What is the required action?",
+      "options": {
+        "a": "A collision cannot happen in this situation.",
+        "b": "“A” is running so it is easier for it to yield.",
+        "c": "“K” yields since it is on a port tack.",
+        "d": "“A” yields since it is on a port tack and to windward."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 327,
+      "question": "Sailboat (F) notices sailboat (C), the wind is from the south. What is the required action?",
+      "options": {
+        "a": "F yields to C, he who sees a vessel on its starboard yields.",
+        "b": "F yields to C, F is on the windward side on the same tack.",
+        "c": "C yields to F, a port tack yields to a starboard tack.",
+        "d": "There is no danger of collision, by the time F gets there C will have crossed."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 328,
+      "question": "Motor boat (A) notices row boat (D). what is the required action.",
+      "options": {
+        "a": "There is no danger of collision, a motorized is always faster.",
+        "b": "D yields to A, he who sees a vessel on it starboard yields.",
+        "c": "A yields to D, a motorized yields to a row boat.",
+        "d": "D yields to A, a row boat yields to a motorized."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 329,
+      "question": "Sailboat “O” displaying the day signal depicted in picture 82, sees “M” displaying the day signal depicted in picture 84, and in addition the day signal depicted in picture 85 on the port side. What is the requiredaction?",
+      "options": {
+        "a": "“O” is a sailboat, “M” is a fishing vessel, so “O” yields.",
+        "b": "“M” is motorized and a fishing vessel which is not sailing with the net spread on the starboard side so “O” continues on course and speed.",
+        "c": "“O” is motorized and “M” is a fishing vessel, the obligation to yield is with “O” so it must keep its distance from the hazard on the port side.",
+        "d": "A collision is not possible in this situation."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 330,
+      "question": "Vessel “M” displaying the lights depicted in picture 43, sees “E” displaying the same lights. There is danger of collision. What is the required action?",
+      "options": {
+        "a": "Each turns to starboard.",
+        "b": "M yields to E.",
+        "c": "E yields to M.",
+        "d": "If vessel M is faster than vessel E there is no need of any action."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 331,
+      "question": "Vessel “C” displaying the day signal depicted in picture 84, sees “G” displaying the day signal depicted in picture 81. What is the required action?",
+      "options": {
+        "a": "“C” is a fishing vessel, “G” is grounded, you must keep as far away as possible.",
+        "b": "“C” is limited due to its draught so “G” will continue on its way.",
+        "c": "“C” is limited in maneuverability and “G” is without control so will yield.",
+        "d": "“G” is anchored, it is possible to pass carefully near it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 332,
+      "question": "Vessel J sailing on course 022° and displaying the lights as depicted in picture 1, is in danger of collision with vessel B displaying the lights depicted in picture 66. The wind is west. What is the required action?",
+      "options": {
+        "a": "B continues on course and speed as much as possible.",
+        "b": "B turns to starboard.",
+        "c": "B turns to port.",
+        "d": "J and B are bow to bow, each turns to starboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 333,
+      "question": "Vessel K displaying the lights depicted in picture 16, sees vessel C displaying the lights depicted in picture 28. What is the required action?",
+      "options": {
+        "a": "K yields.",
+        "b": "C yields.",
+        "c": "Each turns to starboard.",
+        "d": "K is a hovercraft and C is towing, so K yields. A hovercraft yields to a tow boat."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 334,
+      "question": "Vessel K displaying the lights depicted in picture 14, sees vessel G displaying the lights depicted in picture 55. What is the required action? (the wind is north)",
+      "options": {
+        "a": "G yields to port, behind K’s stern.",
+        "b": "K continues on course and speed.",
+        "c": "K yields to G.",
+        "d": "There is no need to do anything as there is no danger of collision."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 335,
+      "question": "Vessel G displaying the signal depicted in picture 82 sees vessel O displaying flag 98 over the structure and a black ball in the bow area. What is the required action?",
+      "options": {
+        "a": "These are two motorized vessels, each will turn to starboard.",
+        "b": "O is motorized, it is in distress, so one must go and provide assistance.",
+        "c": "One must keep at least 200 meters distance from vessel O, it is anchored and engaged in diving.",
+        "d": "This is an anchored navigator vessel, one can pass by it carefully."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 336,
+      "question": "Motorized vessel (K) displaying the day signal depicted in picture 86 notices sailboat (C) on a port tack. What is the required action?",
+      "options": {
+        "a": "C yields to K.",
+        "b": "K yields to C.",
+        "c": "C is windward and yields.",
+        "d": "Each continues on its way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 337,
+      "question": "Sailboat (M) displaying the day signal depicted in picture 82, notices row boat (D), and there is danger of collision. What is the required action?",
+      "options": {
+        "a": "D yields to M.",
+        "b": "M yields to D.",
+        "c": "There is no danger of collision, a sailboat is faster than a row boat.",
+        "d": "Each continues on its way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 338,
+      "question": "You are sailing sailboat A, the wind is north, your boat speed is 12 knots, you notice sailboat I its speed is 8 knots. Sailboat A is on a starboard tack and sailboat I is on a port tack. What is the required action?",
+      "options": {
+        "a": "It is not possible that the two sailboats are on different tacks so A will yield to I.",
+        "b": "Based on the rules of the sea A must yield to I.",
+        "c": "There is no danger of collision between the two vessels.",
+        "d": "In case there is danger of collision, a port tack must yield to a starboard tack, I will yield to A."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 339,
+      "question": "You are sailing in a sailboat and see in front of you what is depicted in picture 39. How should you act?",
+      "options": {
+        "a": "This is a vessel greater than 50 meters in length in distress. I will go to assist it.",
+        "b": "It is a vessel not under command, I will yield to it to starboard.",
+        "c": "It is a grounded vessel over 50 meters in length, I will move away from the danger.",
+        "d": "It is a seaplane not under command moving away from me. I will continue on my way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 340,
+      "question": "Vessel “M” displaying the day signal depicted in picture 86 is in danger of collision with vessel “K” displaying the same day signal. What is the vessel and what is the required action?",
+      "options": {
+        "a": "M is towing with a line under 200 meters. M yields.",
+        "b": "M is towing with a line over 200 meters. M yields.",
+        "c": "Vessel K is towing with a line over 200 meters K yields to port.",
+        "d": "If vessel K does not yield, M will turn to port to prevent a collision."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 341,
+      "question": "A north wind while sailing on sails due east and you notice on your bow a vessel, displaying the lights depicted in picture 58. How will you act?",
+      "options": {
+        "a": "It is a fishing vessel, I must yield.",
+        "b": "A vessel not under command, I must yield to it.",
+        "c": "A vessel in distress I must assist it.",
+        "d": "A sailboat on a starboard tack so I must yield to it."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 342,
+      "question": "A vessel displaying the lights depicted in picture 38, what day signal will it display?",
+      "options": {
+        "a": "As depicted in picture 84.",
+        "b": "As depicted in picture 75.",
+        "c": "As depicted in picture 83.",
+        "d": "There is no need for a day signal."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 343,
+      "question": "Vessel “K” displaying the lights depicted in picture 11, sees vessel “O” displaying the lights depicted in picture 14. What is the required action?",
+      "options": {
+        "a": "Based on the regulations, O yields to K.",
+        "b": "This is an unclear situation in which the regulations do not apply so I will act based on the rules of good seamanship.",
+        "c": "“K” yields to “O” by stopping.",
+        "d": "If “K” does not yield, “O” must turn to starboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 344,
+      "question": "You are on a vessel departing the Herzliya marina at night, what lights do you expect to see on the breaker in relation to your boat’s bow?",
+      "options": {
+        "a": "Picture 62.",
+        "b": "Picture 74.",
+        "c": "Picture 71.",
+        "d": "Picture 16."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 345,
+      "question": "What lights will a vessel flying flag 95 during the day turn on at night? (in a marina)",
+      "options": {
+        "a": "As depicted in picture 27.",
+        "b": "As depicted in picture 48.",
+        "c": "As depicted in picture 13.",
+        "d": "As depicted in picture 62."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 346,
+      "question": "Sailboat (O) notices vessel (M) also a sailboat, the wind is south. What is the required action?",
+      "options": {
+        "a": "O yields to M.",
+        "b": "M is windward of O, and yields to it.",
+        "c": "M is leeward of O, so it yields.",
+        "d": "Each turns to starboard."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 347,
+      "question": "When might a boat encounter the danger of an uncontrolled gybe?",
+      "options": {
+        "a": "When turning.",
+        "b": "When running.",
+        "c": "When in beam reach.",
+        "d": "When sailing into the wind."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 348,
+      "question": "You are sailing a sailboat on course 300°. The wind is from the north at 10 knots. You would like to change course to 060°. How will you do so most effectively?",
+      "options": {
+        "a": "I will turn the rudder to starboard and perform a gybe.",
+        "b": "I will turn the rudder to starboard and perform a turn.",
+        "c": "I will turn the rudder to port and perform a gybe.",
+        "d": "I will turn the rudder to port and perform a turn."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 349,
+      "question": "You are sailing a 12 meter long boat due north west. Besides you there are five crew members on board for whom this is their first sailing, amongst them 3 children. The wind is south west (240º ) at 15 knots with gusts to 20 knots. You are sailing with a full array and your boat assumes a sharp lean every time there is a wind gust. You would like to improve the situation. What should you do?",
+      "options": {
+        "a": "I will go upwind to a close haul and reduce the lean.",
+        "b": "I will flutter the sails during wind gusts.",
+        "c": "I will change course to running to reduce the lean.",
+        "d": "I will reduce sails and consider sailing on foresail alone."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 350,
+      "question": "The boat is moving backwards. You would like to turn the bow to starboard. In which direction should you turn the wheel?",
+      "options": {
+        "a": "To starboard.",
+        "b": "To port.",
+        "c": "The wheel does not affect the direction of the turn.",
+        "d": "One must leave the wheel neutral. The propeller deflection will create the turn."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 351,
+      "question": "You notice a vessel during the day flying flag A. What does this flag indicate, how will you react, and what lights will this vessel display at night?",
+      "options": {
+        "a": "A man overboard flag, I will keep 200 meters away. At night the vessel will display the following lights: white, red, white surround.",
+        "b": "A divers flag, I will keep 200 meters away. At night the vessel will display the following lights: red, white, red surround.",
+        "c": "A man overboard flag, I will keep 200 meters away. At night the vessel will display the following lights: white surround and navigation lights.",
+        "d": "A divers flag, I will keep 300 meters away. At night the vessel will display the following lights: white and red, white surround."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 352,
+      "question": "To what distance from shore can a vessel go that is on a sailing trip within the coastal waters.",
+      "options": {
+        "a": "Up to 6 miles from shore.",
+        "b": "There is no limit on the distance from the shore.",
+        "c": "Up to 12 miles from shore.",
+        "d": "Up to 35 miles from shore."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 353,
+      "question": "What are the boundaries of a beach marked as a declared bathing beach restricted to vessels?",
+      "options": {
+        "a": "There are no uniform rules – each beach and its own rules.",
+        "b": "400 meters along the shore and 250 meters into the sea.",
+        "c": "50 meters on each side of the declared area, and 300 meters to sea from the low tide line.",
+        "d": "100 meters on each side of the lifeguard hut, and 150 meters to sea from the high tide line."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 354,
+      "question": "You are approaching a marina and you notice a vessel standing in the entrance and flying flag B of the international signal codes. How will you act?",
+      "options": {
+        "a": "I will wait outside the marina since I must keep at least 200 meters from this vessel.",
+        "b": "I will wait outside the marina since I must keep at least 100 meters from this vessel.",
+        "c": "I can enter the marina, but avoid getting too close to the ship as a precaution.",
+        "d": "I will wait outside until the vessel clears way."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 355,
+      "question": "When will you use a parachute flare?",
+      "options": {
+        "a": "Both at day and night.",
+        "b": "At night only.",
+        "c": "During the day only.",
+        "d": "When I need to light survivors."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 356,
+      "question": "You are sailing a sailboat at night. In front of your bow you see lights, as depicted in picture 36. What is the required action?",
+      "options": {
+        "a": "I will turn to starboard, and so will the other vessel.",
+        "b": "I will maintain course and speed.",
+        "c": "I will yield way to the other vessel as it is a large vessel.",
+        "d": "I will communicate with the other vessel to inquire as to its intentions."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 357,
+      "question": "At night you notice a vessel displaying the navigation lights as well as a white surround light, and above it a green surround light. What is the day signal this vessel should display?",
+      "options": {
+        "a": "Two triangles with their bases joined together.",
+        "b": "Two triangles with their tips joined together.",
+        "c": "A black wheel.",
+        "d": "A ball above it a diamond and above them a ball."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 358,
+      "question": "In the “CARDINAL” buoy system you notice nine short flashes within 15 seconds. On which side should you pass the buoy?",
+      "options": {
+        "a": "North.",
+        "b": "South.",
+        "c": "East.",
+        "d": "West."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 359,
+      "question": "Select the correct statement:",
+      "options": {
+        "a": "A foam extinguisher is appropriate for all kinds of fires.",
+        "b": "A foam extinguisher is appropriate for a solids fire.",
+        "c": "A foam extinguisher is appropriate for a liquids fire.",
+        "d": "A foam extinguisher is appropriate for an electrical fire."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 360,
+      "question": "When does one anchor with two anchors?",
+      "options": {
+        "a": "When the wind and current are moving in different directions.",
+        "b": "When one anchor cannot hold the vessel in place against the wind.",
+        "c": "In a river, where the current changes direction.",
+        "d": "All the above answers are correct."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 361,
+      "question": "In what position will the foresail be in a “HEAVE TO”?",
+      "options": {
+        "a": "When it is taut to windward.",
+        "b": "When it is taut leeward.",
+        "c": "When it is totally limp.",
+        "d": "When it is limp to leeward."
+      },
+      "terms": [],
+      "questionTerms": []
+    },
+    {
+      "id": 362,
+      "question": "The visibility is good and a vessel on your starboard sounds seven short horn blasts that mean:",
+      "options": {
+        "a": "The vessel is turning to starboard.",
+        "b": "The vessel is passing you on the port side.",
+        "c": "Your intentions are unclear.",
+        "d": "Engines engaged in reverse."
+      },
+      "terms": [],
+      "questionTerms": []
+    }
+  ]
+}
