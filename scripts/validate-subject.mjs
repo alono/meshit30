@@ -12,8 +12,7 @@ import { join } from 'node:path';
 import { lettersOnly } from './lib/repair.mjs';
 import { SUBJECTS_DIR, readManifest, readJson } from './lib/subjects.mjs';
 import { ANSWER_TYPES, PART_KEYS, parseAnswerValue } from '../src/lib/open.js';
-
-const OPTION_KEYS = ['א', 'ב', 'ג', 'ד'];
+import { LANG_CODES, strings } from '../src/lib/i18n.js';
 const HAS_LATIN = /[a-zA-Z]/;
 
 // Chart 1000 covers the Israeli coast; a position outside this box is a typo.
@@ -55,13 +54,21 @@ function validate(slug) {
     if (!['active', 'coming-soon'].includes(entry.status)) {
       errors.push(`manifest status must be "active" or "coming-soon", got "${entry.status}"`);
     }
+    if (entry.lang !== undefined && !LANG_CODES.includes(entry.lang)) {
+      errors.push(`manifest lang must be one of ${LANG_CODES.join('/')}, got "${entry.lang}"`);
+    }
   }
+  // An English edition reads a/b/c/d and may come without a cheatsheet (and so
+  // without terms); a Hebrew subject must have both.
+  const lang = entry?.lang ?? 'he';
+  const OPTION_KEYS = strings(lang).optionKeys;
+  const hasCheatsheet = existsSync(path('cheatsheet.md'));
 
   if (!existsSync(dir)) {
     errors.push('subject folder does not exist');
     return { errors, warnings };
   }
-  for (const file of ['questions.json', 'cheatsheet.md', 'terms.json', 'display.json']) {
+  for (const file of ['questions.json', 'terms.json', 'display.json', ...(lang === 'he' ? ['cheatsheet.md'] : [])]) {
     if (!existsSync(path(file))) errors.push(`missing ${file}`);
   }
   if (errors.length) return { errors, warnings };
@@ -182,7 +189,7 @@ function validate(slug) {
 
   // --- terms.json: the flashcard deck and the in-question hints ------------
   const terms = readJson(path('terms.json')).terms ?? [];
-  if (!terms.length) errors.push('terms.json holds no terms');
+  if (!terms.length && hasCheatsheet) errors.push('terms.json holds no terms');
   const knownTerms = new Set(terms.map((t) => t.id));
 
   // The Hebrew-only rule bans English translations, not the exam's own Latin
@@ -191,7 +198,7 @@ function validate(slug) {
   // pool that includes the model answers, which is where COG/CTS/ETA live.
   const poolLatin = new Set(
     questions
-      .flatMap((q) => textFields(kind, q).map(([, source]) => source ?? ''))
+      .flatMap((q) => textFields(kind, q, OPTION_KEYS).map(([, source]) => source ?? ''))
       .join(' ')
       .match(/[A-Za-z]+/g)
       ?.map((t) => t.toUpperCase()) ?? [],
@@ -233,7 +240,7 @@ function validate(slug) {
       errors.push(`question ${q.id}: missing from display.json`);
       continue;
     }
-    const fields = textFields(kind, q, d);
+    const fields = textFields(kind, q, OPTION_KEYS, d);
     const fieldKeys = new Set(fields.map(([key]) => key));
     const reconstructed = new Set(d.reconstructed ?? []);
     for (const key of reconstructed) {
@@ -261,7 +268,7 @@ function validate(slug) {
             `      source:   ${source}\n      rendered: ${rendered}`,
         );
       }
-      if (HAS_LATIN.test(rendered)) latinQuestions.push(`${q.id}${key === 'question' ? '' : `/${key}`}`);
+      if (lang === 'he' && HAS_LATIN.test(rendered)) latinQuestions.push(`${q.id}${key === 'question' ? '' : `/${key}`}`);
     }
 
     for (const id of d.terms ?? []) {
@@ -290,7 +297,7 @@ function validate(slug) {
 
   // --- freshness -----------------------------------------------------------
   const stale = (generated, source) => statSync(path(generated)).mtimeMs < statSync(path(source)).mtimeMs;
-  if (stale('terms.json', 'cheatsheet.md')) {
+  if (hasCheatsheet && stale('terms.json', 'cheatsheet.md')) {
     warnings.push('terms.json is older than cheatsheet.md — re-run build-terms.mjs');
   }
   if (existsSync(path('term-overrides.json')) && stale('terms.json', 'term-overrides.json')) {
@@ -301,20 +308,20 @@ function validate(slug) {
       warnings.push(`display.json is older than ${src} — re-run build-display.mjs`);
     }
   }
-  if (!readFileSync(path('cheatsheet.md'), 'utf8').trim()) errors.push('cheatsheet.md is empty');
+  if (hasCheatsheet && !readFileSync(path('cheatsheet.md'), 'utf8').trim()) errors.push('cheatsheet.md is empty');
 
   return { errors, warnings };
 }
 
 /**
  * Every learner-facing text field of one question as [key, source, rendered],
- * where key doubles as the `reconstructed` marker name: "question" and א/ב/ג/ד
- * for multiple choice; "question" plus "<part>.question" / "<part>.solution"
+ * where key doubles as the `reconstructed` marker name: "question" and the
+ * subject's option letters for multiple choice; "question" plus "<part>.question" / "<part>.solution"
  * for open exercises (an unlettered single part is addressed as "1").
  */
-function textFields(kind, q, d = {}) {
+function textFields(kind, q, optionKeys, d = {}) {
   if (kind !== 'open') {
-    return [['question', q.question, d.question], ...OPTION_KEYS.map((k) => [k, q.options?.[k], d.options?.[k]])];
+    return [['question', q.question, d.question], ...optionKeys.map((k) => [k, q.options?.[k], d.options?.[k]])];
   }
   const fields = [];
   if (q.question !== undefined) fields.push(['question', q.question, d.question]);

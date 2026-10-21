@@ -151,7 +151,7 @@ a { color: var(--brand); }
 .tile {
   display: block;
   width: 100%;
-  text-align: right;
+  text-align: start;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -191,7 +191,7 @@ a { color: var(--brand); }
   gap: 12px;
   align-items: start;
   width: 100%;
-  text-align: right;
+  text-align: start;
   min-height: var(--tap);
   padding: 14px;
   border: 1.5px solid var(--line);
@@ -446,7 +446,9 @@ a { color: var(--brand); }
 
 table.topics { width: 100%; border-collapse: collapse; }
 table.topics td { padding: 8px 0; border-bottom: 1px solid var(--line); vertical-align: middle; }
-table.topics td.num { text-align: left; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.topics td.num { text-align: end; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Two number columns side by side ("25%" then "8/33") must not read as one. */
+table.topics td.num + td.num { padding-inline-start: 8px; }
 
 .sheet { line-height: 1.75; overflow-wrap: anywhere; }
 .sheet table { width: 100%; border-collapse: collapse; margin: 12px 0; display: block; overflow-x: auto; }

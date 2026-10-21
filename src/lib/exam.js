@@ -5,8 +5,7 @@
 // 50 questions / 60 minutes / pass 84 is baked in here.
 
 import { deriveSeed, rng, shuffle } from './rng.js';
-
-export const OPTION_KEYS = ['א', 'ב', 'ג', 'ד'];
+import { strings } from './i18n.js';
 
 /** Questions the PDF damaged past the point of being fairly answerable. */
 export const isAnswerable = (q) => !q.issue;
@@ -46,6 +45,7 @@ export function buildAttempt(subject, seed) {
   }
 
   const picked = quotas.flatMap(({ list, take }) => shuffle(list, random).slice(0, take));
+  const keys = strings(subject.lang).optionKeys;
 
   return {
     seed,
@@ -54,7 +54,7 @@ export function buildAttempt(subject, seed) {
     // Option order is drawn from a stream derived per question, so it stays
     // stable even if the question order changes.
     optionOrder: Object.fromEntries(
-      picked.map((q) => [q.id, shuffle(OPTION_KEYS, rng(deriveSeed(seed, q.id)))]),
+      picked.map((q) => [q.id, shuffle(keys, rng(deriveSeed(seed, q.id)))]),
     ),
   };
 }

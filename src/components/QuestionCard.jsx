@@ -1,15 +1,18 @@
 import { useEffect } from 'react';
 import TermText from './TermText.jsx';
+import { strings } from '../lib/i18n.js';
 
 /**
  * One question with its four options.
  *
  * `reveal` switches it from answering to showing the outcome, which is what
  * separates תרגול (reveal immediately) from סימולציה (reveal only after
- * submitting the whole paper).
+ * submitting the whole paper). `lang` is the subject's: it picks the option
+ * letters and the card's own words.
  */
 export default function QuestionCard({
   question,
+  lang,
   order,
   terms,
   picked,
@@ -20,10 +23,11 @@ export default function QuestionCard({
   total,
   children,
 }) {
-  const keys = order ?? ['א', 'ב', 'ג', 'ד'];
+  const t = strings(lang);
+  const keys = order ?? t.optionKeys;
   const termRecords = (question.terms ?? []).map((id) => terms.get(id)).filter(Boolean);
 
-  // Keyboard answering: 1–4 by position, or the Hebrew letter itself.
+  // Keyboard answering: 1–4 by position, or the option letter itself.
   useEffect(() => {
     if (reveal || !onPick) return undefined;
     const onKey = (e) => {
@@ -50,7 +54,7 @@ export default function QuestionCard({
     <section className="card">
       {(index != null) && (
         <p className="meta">
-          שאלה {index + 1} מתוך {total} · {question.topic}
+          {t.questionOf(index + 1, total)} · {question.topic}
         </p>
       )}
 
@@ -95,14 +99,14 @@ export default function QuestionCard({
             <span>
               <TermText text={question.options[key]} terms={termRecords} enabled={reveal} />
               {reveal && question.reconstructed?.includes(key) && (
-                <span className="meta"> · נוסח משוחזר</span>
+                <span className="meta">{t.reconstructed}</span>
               )}
             </span>
           </button>
         ))}
       </div>
 
-      {reveal && showNote && question.note && <p className="notice">הערה: {question.note}</p>}
+      {reveal && showNote && question.note && <p className="notice">{t.note(question.note)}</p>}
       {children}
     </section>
   );

@@ -10,36 +10,25 @@ const AREAS = { answers: 'answers', deck: 'deck', attempts: 'attempts', wrong: '
  *
  * They are genuinely independent rather than views of one blob: clearing the
  * exam history leaves the per-question statistics alone, and vice versa — which
- * is why each says plainly what it holds and what resetting it costs.
+ * is why each says plainly what it holds and what resetting it costs (the
+ * words, per language, are `areas` in i18n.js).
  */
 export const RESETTABLE = [
   {
     id: AREAS.answers,
-    he: 'סטטיסטיקת שאלות',
-    note: 'כיסוי המאגר והדיוק לפי נושא. אינו מוחק את היסטוריית הסימולציות.',
     count: (slug) => Object.keys(loadAnswers(slug)).length,
-    unit: 'שאלות',
   },
   {
     id: AREAS.deck,
-    he: 'כרטיסיות השינון',
-    note: 'הקופסאות של כל הכרטיסיות חוזרות לקופסה הראשונה.',
     count: (slug) => Object.keys(loadDeck(slug)).length,
-    unit: 'כרטיסיות',
   },
   {
     id: AREAS.attempts,
-    he: 'היסטוריית הסימולציות',
-    note: 'הציונים, הרצף והגרף. אינו מוחק את סטטיסטיקת השאלות.',
     count: (slug) => loadAttempts(slug).length,
-    unit: 'ניסיונות',
   },
   {
     id: AREAS.wrong,
-    he: 'תור התרגול החוזר',
-    note: 'רשימת השאלות שטעית בהן, המשמשת לסינון בתרגול.',
     count: (slug) => loadWrongQueue(slug).length,
-    unit: 'שאלות',
   },
 ];
 

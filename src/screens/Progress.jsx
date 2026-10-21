@@ -4,11 +4,13 @@ import { buildAttempt, scoreAttempt } from '../lib/exam.js';
 import { scoreOpenAttempt } from '../lib/open.js';
 import Results from './Results.jsx';
 import OpenResults from './OpenResults.jsx';
+import { strings } from '../lib/i18n.js';
 
 const pct = (n) => (n == null ? '—' : `${Math.round(n * 100)}%`);
 
 /** התקדמות — pool coverage, per-topic accuracy, attempt history, and resets. */
 export default function Progress({ subject }) {
+  const t = strings(subject.lang);
   // Owned here rather than passed in, so a reset can refresh the figures
   // without leaving the screen.
   const [stats, setStats] = useState(() => summarize(subject));
@@ -42,26 +44,24 @@ export default function Progress({ subject }) {
   return (
     <>
       <div className="card">
-        <b>כיסוי המאגר</b>
+        <b>{t.poolCoverage}</b>
         <div className="bar" style={{ margin: '10px 0' }}>
           <i style={{ width: pct(stats.coverage) }} />
         </div>
         <p className="meta">
-          תרגלת {stats.totalSeen} מתוך {subject.questions.length} שאלות · דיוק כולל {pct(stats.accuracy)} ·
-          {' '}{stats.learned} כרטיסיות שינון בקופסה האחרונה
+          {t.practiced(stats.totalSeen, subject.questions.length, pct(stats.accuracy))}
+          {subject.terms.length > 0 && t.deckLearned(stats.learned)}
         </p>
       </div>
 
       <div className="card">
-        <b>סימולציות</b>
+        <b>{t.simulations}</b>
         {attempts.length === 0 ? (
-          <p className="meta">טרם ביצעת סימולציה.</p>
+          <p className="meta">{t.noAttempts}</p>
         ) : (
           <>
             <p className="meta">
-              {attempts.length} ניסיונות · הציון הגבוה ביותר {stats.best} ·{' '}
-              {stats.streak > 0 ? `${stats.streak} עוברות ברצף` : 'אין רצף פעיל'} · ציון עובר{' '}
-              {subject.exam.pass}
+              {t.attemptsLine(attempts.length, stats.best, stats.streak, subject.exam.pass)}
             </p>
             <div className="history">
               {attempts.map((a) => (
@@ -77,13 +77,13 @@ export default function Progress({ subject }) {
               <tbody>
                 {[...attempts].reverse().slice(0, 8).map((a) => (
                   <tr key={a.at}>
-                    <td className="meta">{new Date(a.at).toLocaleDateString('he-IL')}</td>
+                    <td className="meta">{new Date(a.at).toLocaleDateString(t.locale)}</td>
                     <td className="num">
                       <b>{a.score}</b> / 100 {a.passed ? '✓' : ''}
                     </td>
                     <td className="num">
                       <button type="button" className="chip" onClick={() => setReplay(a)}>
-                        צפייה
+                        {t.view}
                       </button>
                     </td>
                   </tr>
@@ -95,7 +95,7 @@ export default function Progress({ subject }) {
       </div>
 
       <div className="card">
-        <b>דיוק לפי נושא</b>
+        <b>{t.accuracyByTopic}</b>
         <table className="topics">
           <tbody>
             {stats.byTopic.map((t) => (
@@ -112,7 +112,7 @@ export default function Progress({ subject }) {
             ))}
           </tbody>
         </table>
-        <p className="meta">העמודה האחרונה: כמה שאלות מהנושא כבר ראית.</p>
+        <p className="meta">{t.seenColumn}</p>
       </div>
 
       <ResetPanel subject={subject} onChange={refresh} />
@@ -121,6 +121,7 @@ export default function Progress({ subject }) {
 }
 
 function ResetPanel({ subject, onChange }) {
+  const t = strings(subject.lang);
   // Which row is awaiting confirmation. Resets are irreversible, so nothing
   // happens on the first press.
   const [pending, setPending] = useState(null);
@@ -131,27 +132,30 @@ function ResetPanel({ subject, onChange }) {
     onChange();
   };
 
-  const rows = RESETTABLE.map((area) => ({ ...area, n: area.count(subject.slug) }));
+  // A subject with no flashcards has no deck to reset.
+  const rows = RESETTABLE
+    .filter((area) => area.id !== 'deck' || subject.terms.length > 0)
+    .map((area) => {
+      const [label, note, unit] = t.areas[area.id];
+      return { ...area, label, note, unit, n: area.count(subject.slug) };
+    });
   const total = rows.reduce((sum, r) => sum + r.n, 0);
 
   return (
     <div className="card">
-      <b>איפוס התקדמות</b>
-      <p className="meta">
-        אפשר לאפס כל חלק בנפרד. הנתונים נשמרים במכשיר הזה בלבד, והאיפוס אינו ניתן לביטול —
-        כדאי לייצא גיבוי מהמסך הראשי לפני איפוס.
-      </p>
+      <b>{t.resetTitle}</b>
+      <p className="meta">{t.resetIntro}</p>
 
       <table className="topics">
         <tbody>
           {rows.map((area) => (
             <tr key={area.id}>
               <td>
-                {area.he}
+                {area.label}
                 <div className="meta">{area.note}</div>
                 {pending === area.id && (
                   <div className="notice" style={{ marginTop: 8 }}>
-                    לאפס {area.n} {area.unit}? הפעולה אינה ניתנת לביטול.
+                    {t.resetConfirm(area.n, area.unit)}
                   </div>
                 )}
               </td>
@@ -160,14 +164,14 @@ function ResetPanel({ subject, onChange }) {
                 {pending === area.id ? (
                   <span className="row" style={{ justifyContent: 'flex-end' }}>
                     <button type="button" className="chip" onClick={() => setPending(null)}>
-                      ביטול
+                      {t.cancel}
                     </button>
                     <button
                       type="button"
                       className="chip danger"
                       onClick={() => run(() => resetArea(subject.slug, area.id))}
                     >
-                      אישור האיפוס
+                      {t.confirmReset}
                     </button>
                   </span>
                 ) : (
@@ -177,7 +181,7 @@ function ResetPanel({ subject, onChange }) {
                     disabled={area.n === 0}
                     onClick={() => setPending(area.id)}
                   >
-                    איפוס
+                    {t.reset}
                   </button>
                 )}
               </td>
@@ -190,18 +194,18 @@ function ResetPanel({ subject, onChange }) {
         {pending === 'all' ? (
           <>
             <div className="notice" style={{ width: '100%' }}>
-              לאפס את כל ההתקדמות בנושא {subject.he}? כל ארבעת החלקים יימחקו. שאר הנושאים לא ייפגעו.
+              {t.resetAllConfirm(subject.title)}
             </div>
             <span style={{ flex: 1 }} />
             <button type="button" className="btn ghost" onClick={() => setPending(null)}>
-              ביטול
+              {t.cancel}
             </button>
             <button
               type="button"
               className="btn danger"
               onClick={() => run(() => resetSubject(subject.slug))}
             >
-              אישור האיפוס
+              {t.confirmReset}
             </button>
           </>
         ) : (
@@ -211,7 +215,7 @@ function ResetPanel({ subject, onChange }) {
             disabled={total === 0}
             onClick={() => setPending('all')}
           >
-            איפוס הכול בנושא זה
+            {t.resetAll}
           </button>
         )}
       </div>

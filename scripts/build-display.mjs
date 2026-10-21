@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Build subjects/<slug>/display.json — the Hebrew text the app actually renders.
+// Build subjects/<slug>/display.json — the text the app actually renders.
 //
 //   node scripts/build-display.mjs mechonaut
 //   node scripts/build-display.mjs --all
@@ -13,9 +13,8 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { findTerms } from './lib/hebrew.mjs';
 import { assertLettersPreserved, buildVocabulary, repairText } from './lib/repair.mjs';
-import { SUBJECTS_DIR, listSubjects, readJson, writeJson } from './lib/subjects.mjs';
-
-const OPTION_KEYS = ['א', 'ב', 'ג', 'ד'];
+import { SUBJECTS_DIR, listSubjects, readJson, subjectLang, writeJson } from './lib/subjects.mjs';
+import { strings } from '../src/lib/i18n.js';
 
 const argv = process.argv.slice(2);
 const slugs = argv.includes('--all')
@@ -37,6 +36,8 @@ function build(slug) {
     throw new Error(`${slug}: no terms.json — run "node scripts/build-terms.mjs ${slug}" first`);
   }
 
+  const lang = subjectLang(slug);
+  const optionKeys = strings(lang).optionKeys;
   const pool = readJson(path('questions.json'));
   const questions = pool.questions;
   // Open pools carry lettered sub-parts with model answers instead of options;
@@ -49,11 +50,11 @@ function build(slug) {
   // Spacing repair exists for OCR-damaged sources (mechonaut's PDF). A cleanly
   // typed pool must pass through verbatim: on clean text the repairer can only
   // do harm — it welds enumeration letters ("א ו-ב נכונות") and glues articles
-  // onto Latin terms ("את ה-E.P.I.R.B" -> "אתה").
-  const repairEnabled = overrides.repair !== false;
+  // onto Latin terms ("את ה-E.P.I.R.B" -> "אתה"). It only knows Hebrew.
+  const repairEnabled = lang === 'he' && overrides.repair !== false;
 
   const vocab = buildVocabulary({
-    cheatsheet: readFileSync(path('cheatsheet.md'), 'utf8'),
+    cheatsheet: existsSync(path('cheatsheet.md')) ? readFileSync(path('cheatsheet.md'), 'utf8') : '',
     corpus: questions.flatMap((q) =>
       kind === 'open'
         ? [q.question ?? '', ...q.parts.flatMap((p) => [p.question, p.solution])]
@@ -123,7 +124,7 @@ function build(slug) {
 
     const question = render('question', q.question, reconstructed.has('question') ? ov.question : undefined);
     const options = Object.fromEntries(
-      OPTION_KEYS.map((k) => [k, render(`opt ${k}`, q.options[k], ov.options?.[k])]),
+      optionKeys.map((k) => [k, render(`opt ${k}`, q.options[k], ov.options?.[k])]),
     );
 
     const haystack = [question, ...Object.values(options)].join(' \n ');
@@ -155,10 +156,12 @@ function build(slug) {
       `${counts.repair ?? 0} repaired, ${counts['repair?'] ?? 0} by morphology, ` +
       `${counts.reconstructed ?? 0} reconstructed`,
   );
-  console.log(
-    `  terms tagged on ${out.length - untagged.length}/${out.length}` +
-      (untagged.length ? ` — none on: ${untagged.join(', ')}` : ''),
-  );
+  if (dictionary.length) {
+    console.log(
+      `  terms tagged on ${out.length - untagged.length}/${out.length}` +
+        (untagged.length ? ` — none on: ${untagged.join(', ')}` : ''),
+    );
+  }
   if (unresolved.length) {
     console.log(`  ⚠ ${unresolved.length} fragment(s) left unrepaired — see repairs.report.txt`);
   }
