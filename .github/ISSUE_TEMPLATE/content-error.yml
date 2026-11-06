@@ -1,0 +1,39 @@
+name: Content error
+description: Report a wrong answer, a damaged question, or a bad translation
+title: "[Content] "
+labels: [content]
+body:
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Subject
+      options:
+        - מכונאות (Mechanics)
+        - Engineering (English edition)
+        - ניווט ב' — מכשירים (Instrument Navigation)
+        - Navigation B — Instruments (English edition)
+        - ימאות ג' (Seamanship)
+        - Seamanship (English edition)
+        - נווט א' — חופי (Coastal Navigation)
+        - אורות וסימנים (Lights and signals)
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question text
+      description: Paste the question as it appears. The number shown in the app changes with the shuffle, so it can't identify a question.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: What the app says, and what it should say.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Where the correct answer comes from, such as the official pool or a textbook page.
