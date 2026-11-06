@@ -18,8 +18,8 @@ Choice lives in `localStorage` under `meshit30:theme:v1` and is reflected as
 attribute rather than setting a value, which is what hands control back to the
 media query.
 
-Run `npm run check:theme` after any change here. It is also a CI step, so a
-violation fails the deploy.
+Run `npm run check:theme` after any change here. CI also runs it on every pull
+request and deploy, so a violation fails both.
 
 ## The one rule
 

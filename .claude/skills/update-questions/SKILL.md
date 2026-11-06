@@ -3,7 +3,7 @@ name: update-questions
 description: How to merge a NEW official question-set PDF into an existing subject's questions.json. Read this before touching any questions.json because a new PDF arrived. Triggers on - new question set, updated pool, new PDF in data/, merge questions, refresh a subject, מאגר חדש, עדכון שאלות, שאלון חדש.
 ---
 
-# עדכון מאגר שאלות מ-PDF חדש
+# Updating a question pool from a new PDF
 
 Inputs: a subject slug and the new official PDF (drop it in `data/`). The subject's
 kind comes from its `questions.json`: no `kind` field means multiple choice;
@@ -31,7 +31,7 @@ id gaps as a warning, not an error.
 
 ## 1. Extraction — the hazards checklist
 
-- `pdftotext -layout` first (installed at `/opt/homebrew/bin/`); render pages with
+- `pdftotext -layout` first (from Poppler); render pages with
   `pdftoppm -png -r 150` and treat the **rendered page as authoritative** — the
   text layer lies in known ways:
   - Bidi controls (U+200E/F, U+202A–202E, U+2066–2069) — strip before parsing.
