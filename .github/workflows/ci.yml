@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build content and validate
+        run: npm run content
+
+      # The same staleness gate as deploy.yml: derived files must match their sources.
+      - name: Check generated content is up to date
+        run: |
+          changed=$(git status --porcelain -- subjects/)
+          if [ -n "$changed" ]; then
+            echo "$changed"
+            echo "::error::subjects/ is stale — run 'npm run content' and commit the result."
+            exit 1
+          fi
+
+      - name: Check the theming contract
+        run: npm run check:theme
+
+      - run: npm test
+
+      - run: npm run build

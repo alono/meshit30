@@ -50,6 +50,8 @@ jobs:
       - name: Check the theming contract
         run: npm run check:theme
 
+      - run: npm test
+
       - run: npm run build
 
       - name: Publish to Cloudflare Pages

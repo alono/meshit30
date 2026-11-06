@@ -4,6 +4,16 @@
   "private": true,
   "type": "module",
   "description": "Exam trainer for the Israeli RASPAN Meshit-30 theory exams",
+  "license": "MIT",
+  "author": "Alon Ohad",
+  "homepage": "https://meshit30.pages.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alono/meshit30.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alono/meshit30/issues"
+  },
   "scripts": {
     "terms": "node scripts/build-terms.mjs --all",
     "display": "node scripts/build-display.mjs --all",
@@ -13,6 +23,7 @@
     "build": "vite build && node scripts/build-sw.mjs",
     "preview": "vite preview",
     "check:theme": "node scripts/check-theme.mjs",
+    "test": "node --test",
     "icons": "node scripts/make-icons.mjs"
   },
   "dependencies": {
