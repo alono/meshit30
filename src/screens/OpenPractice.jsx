@@ -16,7 +16,7 @@ import { cheatsheetSnippet } from '../lib/snippet.js';
 // The list is fixed for the length of a filter selection: re-reading the
 // wrong queue here (instead of depending on the `wrongQueue` state) means
 // grading an exercise in next() can't shrink/reshuffle the array out from
-// under the cursor she is about to advance onto. See Practice.jsx for the
+// under the cursor as it advances. See Practice.jsx for the
 // same fix and the bug it closes.
 const buildQuestions = (subject, topic, onlyWrong, onlyMarked, seed) => {
   const wrong = new Set(loadWrongQueue(subject.slug));
@@ -66,7 +66,7 @@ export default function OpenPractice({ subject }) {
     [subject, topic, onlyWrong, onlyMarked, seed],
   );
 
-  // Remember where she is, so leaving (or a reload) can offer to pick up here
+  // Remember the position, so leaving (or a reload) can offer to pick up here
   // instead of losing the spot. Held off while the resume choice is still
   // pending so it can't overwrite the very save it's about to offer.
   useEffect(() => {

@@ -18,7 +18,7 @@ const api = async (path, init) => {
  * Every edit lands in a hand-kept file — questions.json for a question,
  * term-overrides.json for a term — and the derived display.json/terms.json
  * are rebuilt on the spot. The preview under each form is the app's own card
- * on the rebuilt files, so what is shown here is what she sees.
+ * on the rebuilt files, so what is shown here is what learners see.
  *
  * The admin itself stays Hebrew; an English edition's text fields and preview
  * take that subject's direction and option letters.

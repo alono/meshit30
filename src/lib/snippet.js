@@ -1,4 +1,4 @@
-// Pull the relevant lines out of the cheat sheet for a question she got wrong.
+// Pull the relevant lines out of the cheat sheet for a question answered wrong.
 //
 // The terms tagged on the question are the index: any cheat-sheet line that
 // mentions one of them is worth showing. Preferring the terms in the stem keeps

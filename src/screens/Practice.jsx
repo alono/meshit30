@@ -15,8 +15,8 @@ import { strings } from '../lib/i18n.js';
 
 // The list is fixed for the length of a filter selection: re-reading the
 // wrong queue here (instead of depending on the `wrongQueue` state) means
-// answering a question can't shrink/reshuffle the array she is mid-question
-// on, which used to shift the current index onto a different question
+// answering a question can't shrink/reshuffle the array mid-question,
+// which used to shift the current index onto a different question
 // while its reveal state was still showing — marking the wrong one — or,
 // when the shrink landed on an empty array, crash the screen outright.
 const buildQuestions = (subject, topic, onlyWrong, onlyMarked, seed) => {
@@ -35,7 +35,7 @@ const buildQuestions = (subject, topic, onlyWrong, onlyMarked, seed) => {
  * תרגול — questions by topic with immediate feedback.
  *
  * A wrong answer shows the correct option plus the matching lines from the
- * cheat sheet, and puts the question into the review queue until she gets it
+ * cheat sheet, and puts the question into the review queue until answered
  * right. Questions the source PDF damaged stay available here (with their
  * warning) because they are still worth reading — they are only excluded from
  * the simulated exam.
@@ -59,8 +59,8 @@ export default function Practice({ subject }) {
   const [topic, setTopic] = useState(null);
   const [onlyWrong, setOnlyWrong] = useState(false);
   const [onlyMarked, setOnlyMarked] = useState(false);
-  // Her pick per position, so stepping back shows the question as she left
-  // it (already revealed) instead of letting it be answered twice.
+  // The pick per position, so stepping back shows the question as it was left
+  // (already revealed) instead of letting it be answered twice.
   const [picks, setPicks] = useState({});
   const [cursor, setCursor] = useState(0);
   const [wrongQueue, setWrongQueue] = useState(() => loadWrongQueue(subject.slug));
@@ -78,7 +78,7 @@ export default function Practice({ subject }) {
     [subject, topic, onlyWrong, onlyMarked, seed, order],
   );
 
-  // Remember where she is, so leaving (or a reload) can offer to pick up here
+  // Remember the position, so leaving (or a reload) can offer to pick up here
   // instead of losing the spot. Held off while the resume choice is still
   // pending so it can't overwrite the very save it's about to offer.
   useEffect(() => {
