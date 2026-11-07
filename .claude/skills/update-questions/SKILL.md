@@ -43,7 +43,7 @@ id gaps as a warning, not an error.
   - Glyph zoo for minutes/degrees (`’ ׳ ° º ⁰`) — normalize to `'` and `°`.
 - **Answer-key grids** (MC subjects) print as columns and are prone to row-order
   traps: the ימאות key printed two rows labelled "253" and never printed 252
-  (resolved in commit 242413a by strict row order plus semantic confirmation).
+  (resolved in commit 9507e19 by strict row order plus semantic confirmation).
   Parse column-wise, assert the id sequence, and hand-check every anomaly.
 
 ## 2. Matching new ↔ old
@@ -60,7 +60,7 @@ id gaps as a warning, not an error.
 
 - Key length must equal question count; every id covered exactly once.
 - Duplicate stems must agree with each other across old+new (the nav-instruments
-  import cross-checked q6/q170, q33/34/176, q53/171 this way — commit a73022c).
+  import cross-checked q6/q170, q33/34/176, q53/171 this way — commit c372e2d).
 - Semantic spot checks on ~5% of questions, favouring ones whose key CHANGED:
   a changed key is either a genuine rule-1 content update or an off-by-one smell.
   Investigate each individually; never bulk-accept a shifted key.
@@ -95,7 +95,7 @@ npm run content        # build-terms → build-display → validate, all active 
 
 Title: `Update <subject> pool from data/<pdf> — +N new, M changed, K removed, J kept though absent`
 
-Body: a judgement-call log in the style of commits a73022c / 242413a — every
+Body: a judgement-call log in the style of commits c372e2d / 9507e19 — every
 changed answer key with its reason, every kept-though-absent id, every deletion
 with why the material changed, every reconstruction, and how the key was
 verified. The next update leans on this log the way this one leans on theirs.
