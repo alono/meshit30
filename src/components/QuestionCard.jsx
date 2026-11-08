@@ -59,7 +59,7 @@ export default function QuestionCard({
       )}
 
       <p className="qtext">
-        {/* Keyed so an open term box closes when she answers or moves on. */}
+        {/* Keyed so an open term box closes on answering or moving on. */}
         <TermText key={`${question.id}:${picked}`} text={question.question} terms={termRecords} />
       </p>
 

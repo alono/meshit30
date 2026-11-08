@@ -33,7 +33,7 @@ export function autoVerdict(part, input) {
  *
  * The learner solves on the physical chart. Parts with typed answers take
  * keyboard input and are auto-checked on reveal; every part is finally graded
- * by the learner herself against the official solution — chart-work tolerance
+ * by the learner against the official solution — chart-work tolerance
  * calls belong to a person, so the auto-check only pre-fills the verdict.
  */
 export default function OpenQuestionCard({

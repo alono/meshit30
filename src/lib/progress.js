@@ -1,5 +1,5 @@
-// Per-subject progress: what she has seen, what she keeps getting wrong, and
-// how her exam attempts are trending.
+// Per-subject progress: what the learner has seen, keeps getting wrong, and
+// how their exam attempts are trending.
 
 import { clearSubject, read, remove, write } from './storage.js';
 
@@ -43,15 +43,15 @@ export const loadDeck = (slug) => read(slug, AREAS.deck, {});
 export const loadAttempts = (slug) => read(slug, AREAS.attempts, []);
 export const loadWrongQueue = (slug) => read(slug, AREAS.wrong, []);
 
-// Where she left off in תרגול — filter selection and position — so leaving
-// (or a reload) can offer to pick up there instead of losing the spot.
+// Where the learner left off in תרגול — filter selection and position — so
+// leaving (or a reload) can offer to pick up there instead of losing the spot.
 export const loadPracticePos = (slug) => read(slug, AREAS.practicePos, null);
 export const savePracticePos = (slug, pos) => write(slug, AREAS.practicePos, pos);
 export const clearPracticePos = (slug) => remove(slug, AREAS.practicePos);
 
 export const saveDeck = (slug, deck) => write(slug, AREAS.deck, deck);
 
-// Questions she starred in תרגול, to come back to whenever she likes.
+// Questions starred in תרגול, to come back to at any time.
 export const loadBookmarks = (slug) => read(slug, AREAS.bookmarks, []);
 export function toggleBookmark(slug, questionId) {
   const marked = loadBookmarks(slug);
@@ -89,7 +89,7 @@ export function recordAnswer(slug, questionId, right) {
 export function recordAttempt(slug, attempt, result) {
   // Exam answers count towards coverage and per-topic accuracy exactly like
   // practice answers do — otherwise a full 50-question paper leaves the
-  // progress screen claiming she has barely touched the pool.
+  // progress screen claiming the learner has barely touched the pool.
   const answers = loadAnswers(slug);
   for (const row of result.rows) {
     const prev = answers[row.id] ?? { seen: 0, right: 0, wrong: 0 };

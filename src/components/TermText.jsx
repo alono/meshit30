@@ -3,8 +3,8 @@ import { highlightTerms } from '../lib/highlight.js';
 
 /**
  * Hebrew text with its technical terms underlined. Tapping one opens its
- * Hebrew definition underneath — the whole point of the app is that she picks
- * up the vocabulary while drilling, so the explanation stays in Hebrew too.
+ * Hebrew definition underneath — the whole point of the app is that learners
+ * pick up the vocabulary while drilling, so the explanation stays in Hebrew too.
  */
 export default function TermText({ text, terms, enabled = true }) {
   const [open, setOpen] = useState(null);

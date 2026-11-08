@@ -3,8 +3,8 @@ import { THEME_ICON, THEME_LABEL, THEMES, nextTheme } from '../lib/theme.js';
 /**
  * Two presentations of the same choice:
  *
- * - `cycle` sits in the header, reachable from any screen — she may want to
- *   switch to dark part-way through a practice session at night.
+ * - `cycle` sits in the header, reachable from any screen — a learner may
+ *   want to switch to dark part-way through a practice session at night.
  * - `picker` is the labelled version on the home screen, because a lone cycling
  *   icon does not tell a first-time reader that three states exist.
  */
